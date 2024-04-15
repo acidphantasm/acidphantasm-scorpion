@@ -23,18 +23,15 @@ import { Money } from "@spt-aki/models/enums/Money";
 import { Traders } from "@spt-aki/models/enums/Traders";
 import { HashUtil } from "@spt-aki/utils/HashUtil";
 
-class HideoutHarry implements IPreAkiLoadMod, IPostDBLoadMod
+class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
 {
     private mod: string
     private logger: ILogger
     private traderHelper: TraderHelper
     private fluentAssortCreator: FluentAssortCreator
-    private static config: Config;
-    private static itemsPath = path.resolve(__dirname, "../config/items.json");
-    private static configPath = path.resolve(__dirname, "../config/config.json");
 
     constructor() {
-        this.mod = "HarryHideout"; // Set name of mod so we can log it to console later
+        this.mod = "acidphantasm-scorpion"; // Set name of mod so we can log it to console later
     }
     /**
      * Some work needs to be done prior to SPT code being loaded, registering the profile image + setting trader update time inside the trader config json
@@ -72,16 +69,11 @@ class HideoutHarry implements IPreAkiLoadMod, IPostDBLoadMod
      */
     public postDBLoad(container: DependencyContainer): void
     {
-
-        HideoutHarry.config = JSON.parse(fs.readFileSync(HideoutHarry.configPath, "utf-8"));
-
         // Resolve SPT classes we'll use
         const logger = container.resolve<ILogger>("WinstonLogger");
         const databaseServer: DatabaseServer = container.resolve<DatabaseServer>("DatabaseServer");
         const configServer: ConfigServer = container.resolve<ConfigServer>("ConfigServer");
         const jsonUtil: JsonUtil = container.resolve<JsonUtil>("JsonUtil");
-        const priceTable = databaseServer.getTables().templates.prices;
-        const handbookTable = databaseServer.getTables().templates.handbook;
 
         // Get a reference to the database tables
         const tables = databaseServer.getTables();
@@ -91,79 +83,9 @@ class HideoutHarry implements IPreAkiLoadMod, IPostDBLoadMod
         
         const start = performance.now();
 
-        const itemList = JSON.parse(fs.readFileSync(HideoutHarry.itemsPath, "utf-8"));
-        const nonBarterItems = itemList.nonBarterItems;
-        const barterItems = itemList.barterItems;
-
-        // Non-Barter Items Iteration
-        for (const item in nonBarterItems){
-            {
-                const itemID = nonBarterItems[item].itemID;
-                if (HideoutHarry.config.useFleaPrices)
-                {
-                    let price = (priceTable[itemID] * HideoutHarry.config.itemPriceMultiplier);
-                    if (!price)
-                    {
-                        price = (handbookTable.Items.find(x => x.Id === itemID)?.Price ?? 1) * HideoutHarry.config.itemPriceMultiplier;
-                    }
-                    this.fluentAssortCreator.createSingleAssortItem(itemID)
-                        .addUnlimitedStackCount()
-                        .addMoneyCost(Money.ROUBLES, Math.round(price))
-                        .addLoyaltyLevel(1)
-                        .export(tables.traders[baseJson._id])
-                    if (HideoutHarry.config.enableConsoleDebug){
-                        logger.log("ItemID: " + itemID + " for price: " + Math.round(price), "cyan");
-                    }
-                }
-                else  
-                {
-                    const price = nonBarterItems[item].price
-                    this.fluentAssortCreator.createSingleAssortItem(itemID)
-                        .addUnlimitedStackCount()
-                        .addMoneyCost(Money.ROUBLES, Math.round(price))
-                        .addLoyaltyLevel(1)
-                        .export(tables.traders[baseJson._id]);
-                    if (HideoutHarry.config.enableConsoleDebug){
-                        logger.log("ItemID: " + itemID + " for price: " + Math.round(price), "cyan");
-                    }
-                }
-            }
-        }
-
-        // Barter Items Iteration
-        for (const item in barterItems){
-            {
-                const itemID = barterItems[item].itemID;
-                const barterItem = barterItems[item].barterItemID;
-                const barterAmount = barterItems[item].barterAmount;
-                if (HideoutHarry.config.useBarters)
-                {
-                    this.fluentAssortCreator.createSingleAssortItem(itemID)
-                        .addUnlimitedStackCount()
-                        .addBarterCost(barterItem, barterAmount)
-                        .addLoyaltyLevel(1)
-                        .export(tables.traders[baseJson._id])
-                    if (HideoutHarry.config.enableConsoleDebug){
-                        logger.log("ItemID: " + itemID + " for barter: " + barterAmount + " "+ barterItem, "cyan");
-                    }
-                }
-                else  
-                {
-                    const price = barterItems[item].price
-                    this.fluentAssortCreator.createSingleAssortItem(itemID)
-                        .addUnlimitedStackCount()
-                        .addMoneyCost(Money.ROUBLES, Math.round(price))
-                        .addLoyaltyLevel(1)
-                        .export(tables.traders[baseJson._id]);
-                    if (HideoutHarry.config.enableConsoleDebug){
-                        logger.log("ItemID: " + itemID + " for price: " + Math.round(price), "cyan");
-                    }
-                }
-            }
-        }
         // Add trader to locale file, ensures trader text shows properly on screen
         // WARNING: adds the same text to ALL locales (e.g. chinese/french/english)
-        this.traderHelper.addTraderToLocales(baseJson, tables, baseJson.name, "Hideout Harry", baseJson.nickname, baseJson.location, "I'm sellin', what are you buyin'?");
+        this.traderHelper.addTraderToLocales(baseJson, tables, baseJson.name, "Scorpion", baseJson.nickname, baseJson.location, "I'm sellin', what are you buyin'?");
 
         this.logger.debug(`[${this.mod}] loaded... `);
 
@@ -172,12 +94,4 @@ class HideoutHarry implements IPreAkiLoadMod, IPostDBLoadMod
     }
 }
 
-interface Config 
-{
-    useBarters: boolean,
-    itemPriceMultiplier: number,
-    useFleaPrices: boolean,
-    enableConsoleDebug: boolean,
-}
-
-module.exports = { mod: new HideoutHarry() }
+module.exports = { mod: new Scorpion() }

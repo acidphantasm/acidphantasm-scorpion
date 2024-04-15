@@ -4,7 +4,26 @@
     "availableInRaid": false,
     "items_buy": {
         "category": [
-            "5448eb774bdc2d0a728b4567"
+            "57864c8c245977548867e7f1",
+            "57864ada245977548638de91",
+            "543be6564bdc2df4348b4568",
+            "57bef4c42459772e8d35a53b",
+            "57864a66245977548f04a81f",
+            "5447e1d04bdc2dff2f8b4567",
+            "57864ee62459775490116fc1",
+            "5448e53e4bdc2d60728b4567",
+            "57864bb7245977548b3b66c2",
+            "5448e5284bdc2dcb718b4567",
+            "5448eb774bdc2d0a728b4567",
+            "543be6674bdc2df1348b4569",
+            "5448fe124bdc2da5018b4567",
+            "57864e4c24597754843f8723",
+            "543be5e94bdc2df1348b4568",
+            "5448f3a64bdc2d60728b456a",
+            "57864a3d24597754843f8721",
+            "543be5664bdc2dd4348b4569",
+            "5448ecbe4bdc2d60728b4568",
+            "567849dd4bdc2d150f8b456e"
         ],
         "id_list": []
     },
@@ -16,8 +35,8 @@
     "location": "You should get the hell out of here before you're seen.",
     "avatar": "/files/trader/avatar/harry.jpg",
     "balance_rub": 5000000,
-    "balance_dol": 0,
-    "balance_eur": 0,
+    "balance_dol": 23000,
+    "balance_eur": 20000,
     "unlockedByDefault": true,
     "discount": 0,
     "discount_end": 0,
@@ -45,10 +64,40 @@
     "loyaltyLevels": [{
             "minLevel": 1,
             "minSalesSum": 0,
-            "minStanding": 0,
-            "buy_price_coef": 38,
-            "repair_price_coef": 175,
+            "minStanding": 0.00,
+            "buy_price_coef": 32,
+            "repair_price_coef": 150,
             "insurance_price_coef": 10,
+            "exchange_price_coef": 0,
+            "heal_price_coef": 0
+        },
+        {
+            "minLevel": 10,
+            "minSalesSum": 500000,
+            "minStanding": 0.25,
+            "buy_price_coef": 28,
+            "repair_price_coef": 160,
+            "insurance_price_coef": 13,
+            "exchange_price_coef": 0,
+            "heal_price_coef": 0
+        },
+        {
+            "minLevel": 25,
+            "minSalesSum": 1500000,
+            "minStanding": 0.45,
+            "buy_price_coef": 24,
+            "repair_price_coef": 170,
+            "insurance_price_coef": 15,
+            "exchange_price_coef": 0,
+            "heal_price_coef": 0
+        },
+        {
+            "minLevel": 40,
+            "minSalesSum": 3000000,
+            "minStanding": 0.75,
+            "buy_price_coef": 20,
+            "repair_price_coef": 200,
+            "insurance_price_coef": 20,
             "exchange_price_coef": 0,
             "heal_price_coef": 0
         }
