@@ -45,7 +45,7 @@
     "nextResupply": 1615141448,
     "repair": {
         "availability": false,
-        "quality": "2",
+        "quality": "1",
         "excluded_id_list": [],
         "excluded_category": [],
         "currency": "5449016a4bdc2d6f028b456f",
@@ -64,20 +64,20 @@
     "loyaltyLevels": [{
             "minLevel": 1,
             "minSalesSum": 0,
-            "minStanding": 0.00,
+            "minStanding": 0.15,
             "buy_price_coef": 32,
-            "repair_price_coef": 150,
-            "insurance_price_coef": 10,
+            "repair_price_coef": 1,
+            "insurance_price_coef": 1,
             "exchange_price_coef": 0,
             "heal_price_coef": 0
         },
         {
             "minLevel": 10,
             "minSalesSum": 500000,
-            "minStanding": 0.25,
+            "minStanding": 0.30,
             "buy_price_coef": 28,
-            "repair_price_coef": 160,
-            "insurance_price_coef": 13,
+            "repair_price_coef": 1,
+            "insurance_price_coef": 1,
             "exchange_price_coef": 0,
             "heal_price_coef": 0
         },
@@ -86,8 +86,8 @@
             "minSalesSum": 1500000,
             "minStanding": 0.45,
             "buy_price_coef": 24,
-            "repair_price_coef": 170,
-            "insurance_price_coef": 15,
+            "repair_price_coef": 1,
+            "insurance_price_coef": 1,
             "exchange_price_coef": 0,
             "heal_price_coef": 0
         },
@@ -96,8 +96,8 @@
             "minSalesSum": 3000000,
             "minStanding": 0.75,
             "buy_price_coef": 20,
-            "repair_price_coef": 200,
-            "insurance_price_coef": 20,
+            "repair_price_coef": 1,
+            "insurance_price_coef": 1,
             "exchange_price_coef": 0,
             "heal_price_coef": 0
         }

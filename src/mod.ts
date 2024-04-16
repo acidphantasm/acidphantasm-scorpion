@@ -15,13 +15,14 @@ import { JsonUtil } from "@spt-aki/utils/JsonUtil";
 import * as fs from "node:fs";
 import * as path from "node:path";
 
-// New trader settings
-import * as baseJson from "../db/base.json";
+// New trader settings\
 import { TraderHelper } from "./traderHelpers";
 import { FluentAssortConstructor as FluentAssortCreator } from "./fluentTraderAssortCreator";
 import { Money } from "@spt-aki/models/enums/Money";
 import { Traders } from "@spt-aki/models/enums/Traders";
 import { HashUtil } from "@spt-aki/utils/HashUtil";
+import * as baseJson            from "../db/base.json";
+import * as questAssort         from "../db/questassort.json";
 
 class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
 {
@@ -54,7 +55,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         this.traderHelper = new TraderHelper();
         this.fluentAssortCreator = new FluentAssortCreator(hashUtil, this.logger);
         this.traderHelper.registerProfileImage(baseJson, this.mod, preAkiModLoader, imageRouter, "harry.jpg");
-        this.traderHelper.setTraderUpdateTime(traderConfig, baseJson, 3600, 4000);
+        this.traderHelper.setTraderUpdateTime(traderConfig, baseJson, 1200, 3600);
 
         // Add trader to trader enum
         Traders[baseJson._id] = baseJson._id;
@@ -78,14 +79,14 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         // Get a reference to the database tables
         const tables = databaseServer.getTables();
 
-        // Add new trader to the trader dictionary in DatabaseServer - has no assorts (items) yet
+        // Add new trader to the trader dictionary in DatabaseServer       
+        // Add trader to locale file, ensures trader text shows properly on screen
         this.traderHelper.addTraderToDb(baseJson, tables, jsonUtil);
+        tables.traders[baseJson._id].questassort = questAssort;
+        this.traderHelper.addTraderToLocales(baseJson, tables, baseJson.name, "Scorpion", baseJson.nickname, baseJson.location, "I'm sellin', what are you buyin'?");
         
         const start = performance.now();
 
-        // Add trader to locale file, ensures trader text shows properly on screen
-        // WARNING: adds the same text to ALL locales (e.g. chinese/french/english)
-        this.traderHelper.addTraderToLocales(baseJson, tables, baseJson.name, "Scorpion", baseJson.nickname, baseJson.location, "I'm sellin', what are you buyin'?");
 
         this.logger.debug(`[${this.mod}] loaded... `);
 
