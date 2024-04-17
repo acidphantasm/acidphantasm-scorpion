@@ -64,7 +64,7 @@
     "loyaltyLevels": [{
             "minLevel": 1,
             "minSalesSum": 0,
-            "minStanding": 0.15,
+            "minStanding": 0.00,
             "buy_price_coef": 32,
             "repair_price_coef": 1,
             "insurance_price_coef": 1,
@@ -72,7 +72,7 @@
             "heal_price_coef": 0
         },
         {
-            "minLevel": 10,
+            "minLevel": 15,
             "minSalesSum": 500000,
             "minStanding": 0.30,
             "buy_price_coef": 28,
@@ -82,7 +82,7 @@
             "heal_price_coef": 0
         },
         {
-            "minLevel": 25,
+            "minLevel": 27,
             "minSalesSum": 1500000,
             "minStanding": 0.45,
             "buy_price_coef": 24,
