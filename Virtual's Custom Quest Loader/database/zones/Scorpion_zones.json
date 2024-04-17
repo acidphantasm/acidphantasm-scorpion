@@ -1,0 +1,46 @@
+[
+  {
+    "ZoneId": "gz_ambulance_0_marker",
+    "ZoneName": "gz_ambulance_0_marker",
+    "ZoneLocation": "Sandbox",
+    "ZoneType": "placeitem",
+    "FlareType": "",
+    "Position": {
+      "X": "80.05547",
+      "Y": "24.07533",
+      "Z": "226.9641"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0",
+      "Z": "-1.661429E-07"
+    },
+    "Scale": {
+      "X": "2.25",
+      "Y": "2",
+      "Z": "5.25"
+    }
+  },
+  {
+    "ZoneId": "gz_ambulance_1_marker",
+    "ZoneName": "gz_ambulance_1_marker",
+    "ZoneLocation": "Sandbox",
+    "ZoneType": "placeitem",
+    "FlareType": "",
+    "Position": {
+      "X": "158.0843",
+      "Y": "23.8611",
+      "Z": "-88.77029"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "-0.09584575",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "5",
+      "Y": "1.75",
+      "Z": "2.25"
+    }
+  }
+]
