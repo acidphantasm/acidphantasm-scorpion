@@ -802,5 +802,250 @@
     "successMessageText": "Scorpion_1_3 successMessageText",
     "traderId": "Scorpion",
     "type": "Elimination"
+  },
+  "Scorpion_2_2": {
+    "QuestName": "Hotline Follow-up",
+    "_id": "Scorpion_2_2",
+    "acceptPlayerMessage": "Scorpion_2_2 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "Scorpion_2_2 changeQuestMessageText",
+    "completePlayerMessage": "Scorpion_2_2 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "VisitPlace",
+                "dynamicLocale": false,
+                "id": "Scorpion_2_2 req_0_0",
+                "target": "qlight_extension_prapor1_exploration1",
+                "value": 1
+              }
+            ],
+            "id": "Scorpion_2_2 req_0_1"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_2_2 req_0",
+          "index": 0,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Exploration",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "VisitPlace",
+                "dynamicLocale": false,
+                "id": "Scorpion_2_2 req_1_0",
+                "target": "qlight_extension_prapor1_exploration2",
+                "value": 1
+              }
+            ],
+            "id": "Scorpion_2_2 req_1_1"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_2_2 req_1",
+          "index": 1,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Exploration",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "VisitPlace",
+                "dynamicLocale": false,
+                "id": "Scorpion_2_2 req_2_0",
+                "target": "qlight_extension_prapor1_exploration3",
+                "value": 1
+              }
+            ],
+            "id": "Scorpion_2_2 req_2_1"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_2_2 req_2",
+          "index": 2,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Exploration",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "ExitStatus",
+                "dynamicLocale": false,
+                "id": "Scorpion_2_2 req_3_0",
+                "status": [
+                  "Survived"
+                ]
+              },
+              {
+                "conditionType": "Location",
+                "dynamicLocale": false,
+                "id": "Scorpion_2_2 req_3_1",
+                "target": [
+                  "bigmap"
+                ]
+              }
+            ],
+            "id": "Scorpion_2_2 req_3_2"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_2_2 req_3",
+          "index": 4,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Completion",
+          "value": 1,
+          "visibilityConditions": [
+            {
+              "conditionType": "CompleteCondition",
+              "id": "Scorpion_2_2 req_0_2",
+              "target": "Scorpion_2_2 req_0"
+            },
+            {
+              "conditionType": "CompleteCondition",
+              "id": "Scorpion_2_2 req_1_2",
+              "target": "Scorpion_2_2 req_1"
+            },
+            {
+              "conditionType": "CompleteCondition",
+              "id": "Scorpion_2_2 req_2_2",
+              "target": "Scorpion_2_2 req_2"
+            }
+          ]
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_2_2 start_0",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_2_1",
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "declinePlayerMessage": "Scorpion_2_2 declinePlayerMessage",
+    "description": "Scorpion_2_2 description",
+    "failMessageText": "Scorpion_2_2 failMessageText",
+    "image": "/files/quest/icon/lotus_newcontact.png",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "56f40101d2720b2a4d8b45d6",
+    "name": "Scorpion_2_2 name",
+    "note": "Scorpion_2_2 note",
+    "restartable": false,
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": [
+        {
+          "id": "Scorpion_2_2 reward_0",
+          "index": 0,
+          "type": "Experience",
+          "value": 6684
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_2_2 reward_1",
+          "index": 1,
+          "items": [
+            {
+              "_id": "Scorpion_2_2 reward_1_0",
+              "_tpl": "5449016a4bdc2d6f028b456f",
+              "upd": {
+                "StackObjectsCount": 41857
+              }
+            }
+          ],
+          "target": "Scorpion_2_2 reward_1_0",
+          "type": "Item",
+          "value": "41857"
+        },
+        {
+          "id": "Scorpion_2_2 reward_2",
+          "index": 2,
+          "target": "Scorpion",
+          "type": "TraderStanding",
+          "value": "0.04"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_2_2 reward_3",
+          "index": 3,
+          "items": [
+            {
+              "_id": "661f33776b5151c024011d64",
+              "_tpl": "5f5f41476bdad616ad46d631",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "661f33776b5151c024011d64",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_2_2 reward_4",
+          "index": 4,
+          "items": [
+            {
+              "_id": "661f33776b5151c024011d63",
+              "_tpl": "5d1b36a186f7742523398433",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "661f33776b5151c024011d63",
+          "type": "Item",
+          "value": "1"
+        }
+      ]
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "Scorpion_2_2 startedMessageText",
+    "successMessageText": "Scorpion_2_2 successMessageText",
+    "traderId": "Scorpion",
+    "type": "Exploration"
   }
 }
