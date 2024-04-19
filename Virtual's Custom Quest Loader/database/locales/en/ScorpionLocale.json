@@ -17,7 +17,7 @@
     "Scorpion_2_1 description": "One of my folks received an anonymous call saying he left some intel for us that might have information on the guy we've been trying to find. Trouble is the fucker didn't tell us where to find it. I need you to go out there and see what you can dig up.",
     "Scorpion_2_1 startedMessageText": "What are you waiting for, go find that damn intel!",
     "Scorpion_2_1 successMessagetext": "We'll review this and let you know if the intel is any good. Thanks for risking your ass to get it, let's see if it pans out.",
-    "Scorpion_1_3 req_0": "Eliminate 10 Scavs on Shoreline",
+    "Scorpion_1_3 req_0": "Eliminate any 10 targets on Shoreline",
     "Scorpion_1_3 name": "Takedown",
     "Scorpion_1_3 description": "Those ambulances you tracked for us earlier? One of 'em is on the move. It looks like it's headed to the coast. See if you can get there first and clear out some of the local life to make spotting the ambulance a bit safer.",
     "Scorpion_1_3 startedMessageText": "Get a move on! If those locals are still around when the ambulance gets there, we're going to be riding down shit creek.",
@@ -38,5 +38,5 @@
     "Scorpion_2_2 name": "Hotline Follow-up",
     "Scorpion_2_2 description": "That intel didn't give us much, but it does reference a few rooms in the dormatories on Customs. Go poke around and see if you can find anything out of the ordinary.",
     "Scorpion_2_2 startedMessageText": "I don't have high hopes for this lead, but maybe we'll get lucky.",
-    "Scorpion_2_2 successMessagetext": "We should have known this was a dead end, random intelligence - my ass! I'll let you know when I've got a new lead to track down. Thanks for risking your ass, I know Reshala likes to hang out around there and that group ain't easy to deal with."
+    "Scorpion_2_2 successMessagetext": "We should have known this was a dead end, random intelligence - my ass! I'll let you know when I've got a new lead to track down. Thanks for risking your rear, I know Reshala likes to hang out around there and that group ain't easy to deal with."
 }

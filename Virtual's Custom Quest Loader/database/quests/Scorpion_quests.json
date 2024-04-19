@@ -734,7 +734,7 @@
       "Started": [],
       "Success": [
         {
-          "id": "Scorpion_3_1 reward_0",
+          "id": "Scorpion_1_3 reward_0",
           "index": 0,
           "type": "Experience",
           "value": "4580"
@@ -748,40 +748,40 @@
         },
         {
           "findInRaid": true,
-          "id": "Scorpion_3_1 reward_1",
+          "id": "Scorpion_1_3 reward_1",
           "index": 2,
           "items": [
             {
-              "_id": "Scorpion_3_1 reward_1_0",
+              "_id": "Scorpion_1_3 reward_1_0",
               "_tpl": "5449016a4bdc2d6f028b456f",
               "upd": {
                 "StackObjectsCount": 31500
               }
             }
           ],
-          "target": "Scorpion_3_1 reward_1_0",
+          "target": "Scorpion_1_3 reward_1_0",
           "type": "Item",
           "value": "31500"
         },
         {
           "findInRaid": true,
-          "id": "Scorpion_3_1 reward_2",
+          "id": "Scorpion_1_3 reward_2",
           "index": 3,
           "items": [
             {
-              "_id": "Scorpion_3_1 reward_2_0",
+              "_id": "Scorpion_1_3 reward_2_0",
               "_tpl": "56dff2ced2720bb4668b4567",
               "upd": {
                 "StackObjectsCount": 90
               }
             }
           ],
-          "target": "Scorpion_3_1 reward_2_0",
+          "target": "Scorpion_1_3 reward_2_0",
           "type": "Item",
           "value": "90"
         },
         {
-          "id": "Scorpion_3_1 reward_3",
+          "id": "Scorpion_1_3 reward_3",
           "index": 4,
           "items": [
             {
@@ -859,7 +859,7 @@
                 "enemyEquipmentExclusive": [],
                 "enemyEquipmentInclusive": [],
                 "enemyHealthEffects": [],
-                "id": "Scorpion_4_1 req_1_0",
+                "id": "Scorpion_1_4 req_1_0",
                 "resetOnSessionEnd": false,
                 "savageRole": [],
                 "target": "Any",
@@ -872,25 +872,30 @@
               {
                 "conditionType": "InZone",
                 "dynamicLocale": false,
-                "id": "Scorpion_4_1 req_1_1",
+                "id": "Scorpion_1_4 req_1_1",
                 "target": [
-                  "ZoneSanatorium1",
-                  "ZoneSanatorium2"
+                  "shoreline_sanitorium_killzone"
                 ]
               }
             ],
-            "id": "Scorpion_4_1 req_1_2"
+            "id": "Scorpion_1_4 req_1_2"
           },
           "doNotResetIfCounterCompleted": false,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
-          "id": "Scorpion_4_1 req_1",
+          "id": "Scorpion_1_4 req_1",
           "index": 0,
           "oneSessionOnly": false,
           "parentId": "",
           "type": "Elimination",
           "value": 5,
-          "visibilityConditions": []
+          "visibilityConditions": [
+            {
+              "conditionType": "CompleteCondition",
+              "id": "Scorpion_1_4 req_1_3",
+              "target": "Scorpion_1_4 req_0"
+            }
+          ]
         },
         {
           "completeInSeconds": 0,
@@ -987,7 +992,7 @@
           "id": "Scorpion_1_4 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": 4314
+          "value": 5314
         },
         {
           "findInRaid": true,
@@ -1028,6 +1033,7 @@
           ],
           "target": "661f33776b5151c024011d51",
           "type": "Item",
+          "unknown": true,
           "value": "1"
         },
         {
