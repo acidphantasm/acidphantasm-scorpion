@@ -896,9 +896,61 @@
           "counter": {
             "conditions": [
               {
-                "conditionType": "ExitStatus",
+                "conditionType": "VisitPlace",
                 "dynamicLocale": false,
                 "id": "Scorpion_2_2 req_3_0",
+                "target": "qlight_extension_prapor1_exploration3",
+                "value": 1
+              }
+            ],
+            "id": "Scorpion_2_2 req_3_1"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_2_2 req_3",
+          "index": 2,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Exploration",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "VisitPlace",
+                "dynamicLocale": false,
+                "id": "Scorpion_2_2 req_4_0",
+                "target": "qlight_extension_prapor1_exploration3",
+                "value": 1
+              }
+            ],
+            "id": "Scorpion_2_2 req_4_1"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_2_2 req_4",
+          "index": 2,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Exploration",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "ExitStatus",
+                "dynamicLocale": false,
+                "id": "Scorpion_2_2 req_5_0",
                 "status": [
                   "Survived"
                 ]
@@ -906,18 +958,18 @@
               {
                 "conditionType": "Location",
                 "dynamicLocale": false,
-                "id": "Scorpion_2_2 req_3_1",
+                "id": "Scorpion_2_2 req_5_1",
                 "target": [
                   "bigmap"
                 ]
               }
             ],
-            "id": "Scorpion_2_2 req_3_2"
+            "id": "Scorpion_2_2 req_5_2"
           },
           "doNotResetIfCounterCompleted": false,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
-          "id": "Scorpion_2_2 req_3",
+          "id": "Scorpion_2_2 req_5",
           "index": 4,
           "oneSessionOnly": false,
           "parentId": "",
@@ -938,6 +990,16 @@
               "conditionType": "CompleteCondition",
               "id": "Scorpion_2_2 req_2_2",
               "target": "Scorpion_2_2 req_2"
+            },
+            {
+              "conditionType": "CompleteCondition",
+              "id": "Scorpion_2_2 req_3_2",
+              "target": "Scorpion_2_2 req_3"
+            },
+            {
+              "conditionType": "CompleteCondition",
+              "id": "Scorpion_2_2 req_4_2",
+              "target": "Scorpion_2_2 req_4"
             }
           ]
         }
