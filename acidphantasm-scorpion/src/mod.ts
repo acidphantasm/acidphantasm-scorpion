@@ -30,6 +30,8 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
     private logger: ILogger
     private traderHelper: TraderHelper
     private fluentAssortCreator: FluentAssortCreator
+    private static config: Config;
+    private static configPath = path.resolve(__dirname, "../config/config.json");
 
     constructor() {
         this.mod = "acidphantasm-scorpion"; // Set name of mod so we can log it to console later
@@ -55,7 +57,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         this.traderHelper = new TraderHelper();
         this.fluentAssortCreator = new FluentAssortCreator(hashUtil, this.logger);
         this.traderHelper.registerProfileImage(baseJson, this.mod, preAkiModLoader, imageRouter, "harry.jpg");
-        this.traderHelper.setTraderUpdateTime(traderConfig, baseJson, 1200, 3600);
+        this.traderHelper.setTraderUpdateTime(traderConfig, baseJson, Scorpion.config.traderRefreshMin, Scorpion.config.traderRefreshMax);
 
         // Add trader to trader enum
         Traders[baseJson._id] = baseJson._id;
@@ -75,6 +77,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         const databaseServer: DatabaseServer = container.resolve<DatabaseServer>("DatabaseServer");
         const configServer: ConfigServer = container.resolve<ConfigServer>("ConfigServer");
         const jsonUtil: JsonUtil = container.resolve<JsonUtil>("JsonUtil");
+        Scorpion.config = JSON.parse(fs.readFileSync(Scorpion.configPath, "utf-8"));
 
         // Get a reference to the database tables
         const tables = databaseServer.getTables();
@@ -93,6 +96,12 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         const timeTaken = performance.now() - start;
         logger.log(`[${this.mod}] Assort generation took ${timeTaken.toFixed(3)}ms.`, "green");
     }
+}
+
+interface Config 
+{
+    traderRefreshMin: number,
+    traderRefreshMax: number,
 }
 
 module.exports = { mod: new Scorpion() }
