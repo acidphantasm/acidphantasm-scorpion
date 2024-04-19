@@ -33,7 +33,8 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
     private static config: Config;
     private static configPath = path.resolve(__dirname, "../config/config.json");
 
-    constructor() {
+    constructor() 
+    {
         this.mod = "acidphantasm-scorpion"; // Set name of mod so we can log it to console later
     }
     /**
