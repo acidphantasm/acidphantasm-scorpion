@@ -53,6 +53,9 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         const configServer = container.resolve<ConfigServer>("ConfigServer");
         const traderConfig: ITraderConfig = configServer.getConfig<ITraderConfig>(ConfigTypes.TRADER);
         const ragfairConfig = configServer.getConfig<IRagfairConfig>(ConfigTypes.RAGFAIR);
+        
+        //Load config file before accessing it
+        Scorpion.config = JSON.parse(fs.readFileSync(Scorpion.configPath, "utf-8"));
 
         // Create helper class and use it to register our traders image/icon + set its stock refresh time
         this.traderHelper = new TraderHelper();
@@ -80,7 +83,6 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         const databaseServer: DatabaseServer = container.resolve<DatabaseServer>("DatabaseServer");
         const configServer: ConfigServer = container.resolve<ConfigServer>("ConfigServer");
         const jsonUtil: JsonUtil = container.resolve<JsonUtil>("JsonUtil");
-        Scorpion.config = JSON.parse(fs.readFileSync(Scorpion.configPath, "utf-8"));
 
         // Get a reference to the database tables
         const tables = databaseServer.getTables();
