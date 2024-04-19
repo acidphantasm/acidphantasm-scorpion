@@ -1074,7 +1074,7 @@
                 "conditionType": "VisitPlace",
                 "dynamicLocale": false,
                 "id": "Scorpion_2_2 req_0_0",
-                "target": "qlight_extension_prapor1_exploration1",
+                "target": "3fl_dorms_115",
                 "value": 1
               }
             ],
@@ -1100,7 +1100,7 @@
                 "conditionType": "VisitPlace",
                 "dynamicLocale": false,
                 "id": "Scorpion_2_2 req_1_0",
-                "target": "qlight_extension_prapor1_exploration2",
+                "target": "3fl_dorms_206",
                 "value": 1
               }
             ],
@@ -1126,7 +1126,7 @@
                 "conditionType": "VisitPlace",
                 "dynamicLocale": false,
                 "id": "Scorpion_2_2 req_2_0",
-                "target": "qlight_extension_prapor1_exploration3",
+                "target": "3fl_dorms_212",
                 "value": 1
               }
             ],
@@ -1152,7 +1152,7 @@
                 "conditionType": "VisitPlace",
                 "dynamicLocale": false,
                 "id": "Scorpion_2_2 req_3_0",
-                "target": "qlight_extension_prapor1_exploration3",
+                "target": "3fl_dorms_310",
                 "value": 1
               }
             ],
@@ -1178,7 +1178,7 @@
                 "conditionType": "VisitPlace",
                 "dynamicLocale": false,
                 "id": "Scorpion_2_2 req_4_0",
-                "target": "qlight_extension_prapor1_exploration3",
+                "target": "2fl_dorms_213",
                 "value": 1
               }
             ],

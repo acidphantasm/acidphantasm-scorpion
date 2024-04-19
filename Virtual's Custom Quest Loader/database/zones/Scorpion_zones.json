@@ -46,7 +46,7 @@
   {
     "ZoneId": "factory_exit_0",
     "ZoneName": "factory_exit_0",
-    "ZoneLocation": "factory4_day",
+    "ZoneLocation": "factory4_night",
     "ZoneType": "placeitem",
     "FlareType": "",
     "Position": {
@@ -68,7 +68,7 @@
   {
     "ZoneId": "factory_exit_1",
     "ZoneName": "factory_exit_1",
-    "ZoneLocation": "factory4_day",
+    "ZoneLocation": "factory4_night",
     "ZoneType": "placeitem",
     "FlareType": "",
     "Position": {
@@ -90,7 +90,7 @@
   {
     "ZoneId": "factory_exit_2",
     "ZoneName": "factory_exit_2",
-    "ZoneLocation": "factory4_day",
+    "ZoneLocation": "factory4_night",
     "ZoneType": "placeitem",
     "FlareType": "",
     "Position": {
@@ -112,7 +112,7 @@
   {
     "ZoneId": "factory_exit_3",
     "ZoneName": "factory_exit_3",
-    "ZoneLocation": "factory4_day",
+    "ZoneLocation": "factory4_night",
     "ZoneType": "placeitem",
     "FlareType": "",
     "Position": {
@@ -129,6 +129,116 @@
       "X": "1.75",
       "Y": "2",
       "Z": "1.75"
+    }
+  },
+  {
+    "ZoneId": "2fl_dorms_213",
+    "ZoneName": "2fl_dorms_213",
+    "ZoneLocation": "bigmap",
+    "ZoneType": "visit",
+    "FlareType": "",
+    "Position": {
+      "X": "228.8841",
+      "Y": "3.871597",
+      "Z": "164.2464"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0.08932889",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "5.5",
+      "Y": "2.75",
+      "Z": "2"
+    }
+  },
+  {
+    "ZoneId": "3fl_dorms_115",
+    "ZoneName": "3fl_dorms_115",
+    "ZoneLocation": "bigmap",
+    "ZoneType": "visit",
+    "FlareType": "",
+    "Position": {
+      "X": "190.6794",
+      "Y": "0.8317988",
+      "Z": "178.5991"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0.06757996",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "1.5",
+      "Y": "2",
+      "Z": "1.75"
+    }
+  },
+  {
+    "ZoneId": "3fl_dorms_206",
+    "ZoneName": "3fl_dorms_206",
+    "ZoneLocation": "bigmap",
+    "ZoneType": "visit",
+    "FlareType": "",
+    "Position": {
+      "X": "172.9314",
+      "Y": "3.893329",
+      "Z": "153.4115"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0.0348995",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "1.75",
+      "Y": "2.25",
+      "Z": "1.5"
+    }
+  },
+  {
+    "ZoneId": "3fl_dorms_212",
+    "ZoneName": "3fl_dorms_212",
+    "ZoneLocation": "bigmap",
+    "ZoneType": "visit",
+    "FlareType": "",
+    "Position": {
+      "X": "176.8356",
+      "Y": "3.831593",
+      "Z": "181.8597"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0.06104854",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "1.75",
+      "Y": "2.25",
+      "Z": "1.75"
+    }
+  },
+  {
+    "ZoneId": "3fl_dorms_310",
+    "ZoneName": "3fl_dorms_310",
+    "ZoneLocation": "bigmap",
+    "ZoneType": "visit",
+    "FlareType": "",
+    "Position": {
+      "X": "176.6819",
+      "Y": "7.08158",
+      "Z": "181.6478"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0.06322598",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "2.25",
+      "Y": "2.5",
+      "Z": "1.5"
     }
   }
 ]
