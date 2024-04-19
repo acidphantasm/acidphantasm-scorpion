@@ -73,6 +73,8 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
      */
     public postDBLoad(container: DependencyContainer): void
     {
+        const start = performance.now();
+
         // Resolve SPT classes we'll use
         const logger = container.resolve<ILogger>("WinstonLogger");
         const databaseServer: DatabaseServer = container.resolve<DatabaseServer>("DatabaseServer");
@@ -84,18 +86,18 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         const tables = databaseServer.getTables();
 
         // Add new trader to the trader dictionary in DatabaseServer       
+        // Add quest assort
         // Add trader to locale file, ensures trader text shows properly on screen
         this.traderHelper.addTraderToDb(baseJson, tables, jsonUtil);
         tables.traders[baseJson._id].questassort = questAssort;
         this.traderHelper.addTraderToLocales(baseJson, tables, baseJson.name, "Scorpion", baseJson.nickname, baseJson.location, "I'm sellin', what are you buyin'?");
         
-        const start = performance.now();
 
 
         this.logger.debug(`[${this.mod}] loaded... `);
 
         const timeTaken = performance.now() - start;
-        logger.log(`[${this.mod}] Assort generation took ${timeTaken.toFixed(3)}ms.`, "green");
+        logger.log(`[${this.mod}] Trader load took ${timeTaken.toFixed(3)}ms.`, "green");
     }
 }
 
