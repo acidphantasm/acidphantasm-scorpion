@@ -2288,17 +2288,9 @@
                 "weaponCaliber": [],
                 "weaponModsExclusive": [],
                 "weaponModsInclusive": []
-              },
-              {
-                "conditionType": "Location",
-                "dynamicLocale": false,
-                "id": "Scorpion_2_4 req_0_1",
-                "target": [
-                  "Any"
-                ]
               }
             ],
-            "id": "Scorpion_2_4 req_0_2"
+            "id": "Scorpion_2_4 req_0_1"
           },
           "doNotResetIfCounterCompleted": false,
           "dynamicLocale": false,
