@@ -280,7 +280,7 @@
         {
           "findInRaid": true,
           "id": "Scorpion_1_2 startreward_1",
-          "index": 3,
+          "index": 0,
           "items": [
             {
               "_id": "Scorpion_1_2 startreward_1_0",
@@ -297,7 +297,7 @@
         {
           "findInRaid": true,
           "id": "Scorpion_1_2 startreward_2",
-          "index": 3,
+          "index": 1,
           "items": [
             {
               "_id": "Scorpion_1_2 startreward_2_0",
@@ -465,7 +465,7 @@
           "dynamicLocale": false,
           "globalQuestCounterId": "",
           "id": "Scorpion_1_3 start_1",
-          "index": 0,
+          "index": 1,
           "parentId": "",
           "status": [
             4
@@ -641,7 +641,7 @@
           "dynamicLocale": false,
           "globalQuestCounterId": "",
           "id": "Scorpion_1_4 req_1",
-          "index": 0,
+          "index": 1,
           "oneSessionOnly": false,
           "parentId": "",
           "type": "Elimination",
@@ -682,7 +682,7 @@
           "dynamicLocale": false,
           "globalQuestCounterId": "",
           "id": "Scorpion_1_4 req_2",
-          "index": 4,
+          "index": 2,
           "oneSessionOnly": false,
           "parentId": "",
           "type": "Completion",
@@ -723,7 +723,7 @@
           "dynamicLocale": false,
           "globalQuestCounterId": "",
           "id": "Scorpion_1_4 start_1",
-          "index": 0,
+          "index": 1,
           "parentId": "",
           "value": 10,
           "visibilityConditions": []
@@ -894,7 +894,7 @@
           "dynamicLocale": false,
           "globalQuestCounterId": "",
           "id": "Scorpion_1_5 req_3",
-          "index": 2,
+          "index": 3,
           "isEncoded": false,
           "maxDurability": 0,
           "minDurability": 0,
@@ -917,7 +917,7 @@
           "dynamicLocale": false,
           "globalQuestCounterId": "",
           "id": "Scorpion_1_5 start_0",
-          "index": 1,
+          "index": 0,
           "parentId": "",
           "status": [
             4
@@ -934,7 +934,7 @@
     "image": "/files/quest/icon/lotus_newcontact.png",
     "instantComplete": false,
     "isKey": false,
-    "location": "any",
+    "location": "59fc81d786f774390775787e",
     "name": "Scorpion_1_5 name",
     "note": "Scorpion_1_5 note",
     "restartable": false,
@@ -976,14 +976,14 @@
           "index": 2,
           "items": [
             {
-              "_id": "6492e44af4287b13040fc88b",
+              "_id": "Scorpion_1_5 reward_2_0",
               "_tpl": "5449016a4bdc2d6f028b456f",
               "upd": {
                 "StackObjectsCount": 42358
               }
             }
           ],
-          "target": "6492e44af4287b13040fc88b",
+          "target": "Scorpion_1_5 reward_2_0",
           "type": "Item",
           "value": "42358"
         },
@@ -993,20 +993,37 @@
           "index": 3,
           "items": [
             {
+              "_id": "Scorpion_1_5 reward_3_0",
+              "_tpl": "5696686a4bdc2da3298b456a",
+              "upd": {
+                "StackObjectsCount": 1870
+              }
+            }
+          ],
+          "target": "Scorpion_1_5 reward_3_0",
+          "type": "Item",
+          "value": "1870"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_1_5 reward_4",
+          "index": 4,
+          "items": [
+            {
               "_id": "661f33776b5151c024011d4e",
               "_tpl": "584924ec24597768f12ae244",
               "upd": {
-                "StackObjectsCount": 2
+                "StackObjectsCount": 3
               }
             }
           ],
           "target": "661f33776b5151c024011d4e",
           "type": "Item",
-          "value": "2"
+          "value": "3"
         },
         {
           "findInRaid": true,
-          "id": "Scorpion_1_5 reward_4",
+          "id": "Scorpion_1_5 reward_5",
           "index": 4,
           "items": [
             {
@@ -1020,6 +1037,24 @@
           "target": "661f33776b5151c024011d4d",
           "type": "Item",
           "value": "2"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_1_5 reward_5",
+          "index": 4,
+          "items": [
+            {
+              "_id": "661f33776b5151c024011d43",
+              "_tpl": "5c0558060db834001b735271",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "661f33776b5151c024011d43",
+          "type": "Item",
+          "unknown": true,
+          "value": "1"
         }
       ]
     },
@@ -1379,7 +1414,7 @@
           "dynamicLocale": false,
           "globalQuestCounterId": "",
           "id": "Scorpion_2_2 req_3",
-          "index": 2,
+          "index": 3,
           "oneSessionOnly": false,
           "parentId": "",
           "type": "Exploration",
@@ -1405,7 +1440,7 @@
           "dynamicLocale": false,
           "globalQuestCounterId": "",
           "id": "Scorpion_2_2 req_4",
-          "index": 2,
+          "index": 4,
           "oneSessionOnly": false,
           "parentId": "",
           "type": "Exploration",
@@ -1440,7 +1475,7 @@
           "dynamicLocale": false,
           "globalQuestCounterId": "",
           "id": "Scorpion_2_2 req_5",
-          "index": 4,
+          "index": 5,
           "oneSessionOnly": false,
           "parentId": "",
           "type": "Completion",
@@ -1692,7 +1727,7 @@
           "dynamicLocale": false,
           "globalQuestCounterId": "",
           "id": "Scorpion_2_3 req_1",
-          "index": 0,
+          "index": 1,
           "oneSessionOnly": false,
           "parentId": "",
           "type": "Elimination",
@@ -1721,8 +1756,8 @@
           "conditionType": "Level",
           "dynamicLocale": false,
           "globalQuestCounterId": "",
-          "id": "Scorpion_2_2 start_1",
-          "index": 0,
+          "id": "Scorpion_2_3 start_1",
+          "index": 1,
           "parentId": "",
           "value": 10,
           "visibilityConditions": []
@@ -1853,6 +1888,20 @@
           "type": "Item",
           "unknown": true,
           "value": "1"
+        },
+        {
+          "id": "Scorpion_2_4 reward_5",
+          "index": 5,
+          "target": "Health",
+          "type": "Skill",
+          "value": "250"
+        },
+        {
+          "id": "Scorpion_2_4 reward_5",
+          "index": 5,
+          "target": "Vitality",
+          "type": "Skill",
+          "value": "250"
         }
       ]
     },
@@ -1860,6 +1909,202 @@
     "side": "Pmc",
     "startedMessageText": "Scorpion_2_3 startedMessageText",
     "successMessageText": "Scorpion_2_3 successMessageText",
+    "traderId": "Scorpion",
+    "type": "Exploration"
+  },
+  "Scorpion_2_4": {
+    "QuestName": "Going Insane",
+    "_id": "Scorpion_2_4",
+    "acceptPlayerMessage": "Scorpion_2_4 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "Scorpion_2_4 changeQuestMessageText",
+    "completePlayerMessage": "Scorpion_2_4 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "bodyPart": [ 
+                  "Head"
+                ],
+                "compareMethod": ">=",
+                "conditionType": "Kills",
+                "daytime": {
+                  "from": 0,
+                  "to": 0
+                },
+                "distance": {
+                  "compareMethod": "<=",
+                  "value": 25
+                },
+                "dynamicLocale": false,
+                "enemyEquipmentExclusive": [],
+                "enemyEquipmentInclusive": [],
+                "enemyHealthEffects": [],
+                "id": "Scorpion_2_4 req_0_0",
+                "resetOnSessionEnd": false,
+                "savageRole": [],
+                "target": "AnyPmc",
+                "value": 1,
+                "weapon": [],
+                "weaponCaliber": [],
+                "weaponModsExclusive": [],
+                "weaponModsInclusive": []
+              },
+              {
+                "conditionType": "Location",
+                "dynamicLocale": false,
+                "id": "Scorpion_2_4 req_0_1",
+                "target": [
+                  "any"
+                ]
+              }
+            ],
+            "id": "Scorpion_2_4 req_0_2"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_2_4 req_0",
+          "index": 0,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Elimination",
+          "value": 10,
+          "visibilityConditions": []
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_2_4 start_0",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_2_3",
+          "visibilityConditions": []
+        },
+        {
+          "compareMethod": ">=",
+          "conditionType": "Level",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_2_4 start_1",
+          "index": 1,
+          "parentId": "",
+          "value": 15,
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "declinePlayerMessage": "Scorpion_2_4 declinePlayerMessage",
+    "description": "Scorpion_2_4 description",
+    "failMessageText": "Scorpion_2_4 failMessageText",
+    "image": "/files/quest/icon/lotus_newcontact.png",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "Any",
+    "name": "Scorpion_2_4 name",
+    "note": "Scorpion_2_4 note",
+    "restartable": false,
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": [
+        {
+          "id": "Scorpion_2_4 reward_0",
+          "index": 0,
+          "type": "Experience",
+          "value": 8948
+        },
+        {
+          "id": "Scorpion_2_4 reward_1",
+          "index": 1,
+          "target": "Scorpion",
+          "type": "TraderStanding",
+          "value": "0.05"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_2_4 reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "Scorpion_2_4 reward_2_0",
+              "_tpl": "5449016a4bdc2d6f028b456f",
+              "upd": {
+                "StackObjectsCount": 48789
+              }
+            }
+          ],
+          "target": "Scorpion_2_4 reward_2_0",
+          "type": "Item",
+          "value": "48789"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_2_4 reward_3",
+          "index": 3,
+          "items": [
+            {
+              "_id": "661f33776b5151c024011d44",
+              "_tpl": "5aafbde786f774389d0cbc0f",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "661f33776b5151c024011d44",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "id": "Scorpion_2_4 reward_4",
+          "index": 4,
+          "items": [
+            {
+              "_id": "661f33776b5151c024011d09",
+              "_tpl": "5aafbde786f774389d0cbc0f",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "loyaltyLevel": 2,
+          "target": "661f33776b5151c024011d09",
+          "traderId": "Scorpion",
+          "type": "AssortmentUnlock"
+        },
+        {
+          "id": "Scorpion_2_4 reward_5",
+          "index": 5,
+          "target": "Sniper",
+          "type": "Skill",
+          "value": "250"
+        },
+        {
+          "id": "Scorpion_2_4 reward_6",
+          "index": 6,
+          "target": "Assault",
+          "type": "Skill",
+          "value": "250"
+        }
+      ]
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "Scorpion_2_4 startedMessageText",
+    "successMessageText": "Scorpion_2_4 successMessageText",
     "traderId": "Scorpion",
     "type": "Exploration"
   }
