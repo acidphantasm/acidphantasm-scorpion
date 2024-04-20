@@ -381,7 +381,7 @@
     "startedMessageText": "Scorpion_1_2 startedMessageText",
     "successMessageText": "Scorpion_1_2 successMessageText",
     "traderId": "Scorpion",
-    "type": "Elimination"
+    "type": "Completion"
   },
   "Scorpion_1_3": {
     "QuestName": "Takedown",
@@ -2245,7 +2245,7 @@
     "startedMessageText": "Scorpion_2_3 startedMessageText",
     "successMessageText": "Scorpion_2_3 successMessageText",
     "traderId": "Scorpion",
-    "type": "Exploration"
+    "type": "Elimination"
   },
   "Scorpion_2_4": {
     "QuestName": "Going Insane",
@@ -2441,6 +2441,6 @@
     "startedMessageText": "Scorpion_2_4 startedMessageText",
     "successMessageText": "Scorpion_2_4 successMessageText",
     "traderId": "Scorpion",
-    "type": "Exploration"
+    "type": "Elimination"
   }
 }
