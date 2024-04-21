@@ -82,5 +82,12 @@
     "Scorpion_2_7 name": "Going the Distance",
     "Scorpion_2_7 description": "I think we've toyed with our prey an adequate amount, I'm not sure I've heard someone be so fuckin' mad. Go to the Factory and wipe those metal floors with his skull. Bring back his baseball cap as proof for the faction leaders. Hopefully we'll make some amends with them..after all you did take the heads off quite a few of them.",
     "Scorpion_2_7 startedMessageText": "Tagilla is a tough customer, take this with you for protection.",
-    "Scorpion_2_7 successMessagetext": "The Factory should be clean for awhile until another impersonator moves in. Hopefully whoever takes up the mantle isn't as brutal as Tagilla was."
+    "Scorpion_2_7 successMessagetext": "The Factory should be clean for awhile until another impersonator moves in. Hopefully whoever takes up the mantle isn't as brutal as Tagilla was.",
+    "Scorpion_3_1 req_0": "Hand over the found in raid Slickers candy bars",
+    "Scorpion_3_1 req_1": "Hand over the found in raid Alyonka candy bars",
+    "Scorpion_3_1 req_2": "Hand over the found in raid TarCola soda cans",
+    "Scorpion_3_1 name": "Hungry Men",
+    "Scorpion_3_1 description": "I know you're new around here but I've got a favour to ask of you. My guys could use a 'pick me up' and I was thinking you could get some supplies for me to give out. We've got plenty of water and regular food, but they've had a hard time lately and could use some sweets. Can you go find these items and hand em over?",
+    "Scorpion_3_1 startedMessageText": "You can probably find them at the mall or on some of the locals around the region.",
+    "Scorpion_3_1 successMessagetext": "I appreciate it! Have some of our extra supplies. You can probably use the water to quench that thirst while you're out and about."
 }
