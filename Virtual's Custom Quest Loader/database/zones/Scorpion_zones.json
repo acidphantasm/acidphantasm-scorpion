@@ -262,5 +262,72 @@
       "Y": "29.5",
       "Z": "122"
     }
+  },
+  {
+    "ZoneId": "customs_zb012",
+    "ZoneName": "customs_zb012",
+    "ZoneLocation": "bigmap",
+    "ZoneType": "placeitem",
+    "FlareType": "",
+    "Position": {
+      "X": "471.2749",
+      "Y": "-1.506827",
+      "Z": "-112.866"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0.04797813",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "2",
+      "Y": "2.5",
+      "Z": "1.5"
+    }
+  },
+  {
+    "ZoneId": "customs_zb011",
+    "ZoneName": "customs_zb011",
+    "ZoneLocation": "bigmap",
+    "ZoneType": "placeitem",
+    "FlareType": "",
+    "Position": {
+      "X": "634.3759",
+      "Y": "-1.650039",
+      "Z": "-128.3362"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0.06975647",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "1.5",
+      "Y": "2.5",
+      "Z": "1.5"
+    }
+  },
+  {
+    "ZoneId": "customs_zb013",
+    "ZoneName": "customs_zb013",
+    "ZoneLocation": "bigmap",
+    "ZoneType": "placeitem",
+    "FlareType": "",
+    "Position": {
+      "X": "200.3717",
+      "Y": "-1.969651",
+      "Z": "-149.0952"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "-0.07062699",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "1.3",
+      "Y": "1.7",
+      "Z": "1.5"
+    }
   }
+
 ]
