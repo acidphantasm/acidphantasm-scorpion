@@ -18,7 +18,6 @@ import * as path from "node:path";
 // New trader settings\
 import { TraderHelper } from "./traderHelpers";
 import { FluentAssortConstructor as FluentAssortCreator } from "./fluentTraderAssortCreator";
-import { Money } from "@spt-aki/models/enums/Money";
 import { Traders } from "@spt-aki/models/enums/Traders";
 import { HashUtil } from "@spt-aki/utils/HashUtil";
 import * as baseJson            from "../db/base.json";
@@ -81,7 +80,6 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         // Resolve SPT classes we'll use
         const logger = container.resolve<ILogger>("WinstonLogger");
         const databaseServer: DatabaseServer = container.resolve<DatabaseServer>("DatabaseServer");
-        const configServer: ConfigServer = container.resolve<ConfigServer>("ConfigServer");
         const jsonUtil: JsonUtil = container.resolve<JsonUtil>("JsonUtil");
 
         // Get a reference to the database tables
