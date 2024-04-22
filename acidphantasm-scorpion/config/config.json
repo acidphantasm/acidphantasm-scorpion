@@ -1,4 +1,6 @@
 {
     "traderRefreshMin": 1800,
-    "traderRefreshMax": 3600
+    "traderRefreshMax": 3600,
+
+    "addTraderToFlea": true
 }

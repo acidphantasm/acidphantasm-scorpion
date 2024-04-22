@@ -56,9 +56,10 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         //Load config file before accessing it
         Scorpion.config = JSON.parse(fs.readFileSync(Scorpion.configPath, "utf-8"));
 
-        //Validate config values
+        // Set config values to local variables for validation & use
         let minRefresh = Scorpion.config.traderRefreshMin;
         let maxRefresh = Scorpion.config.traderRefreshMax;
+        const addToFlea = Scorpion.config.addTraderToFlea;
         if (minRefresh >= maxRefresh)
         {
             minRefresh = 1800;
@@ -82,7 +83,14 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         Traders[baseJson._id] = baseJson._id;
 
         // Add trader to flea market
-        ragfairConfig.traders[baseJson._id] = true;
+        if (addToFlea)
+        {
+            ragfairConfig.traders[baseJson._id] = true;
+        }
+        else
+        {
+            ragfairConfig.traders[baseJson._id] = false;
+        }
     }
     
     /**
@@ -121,6 +129,7 @@ interface Config
 {
     traderRefreshMin: number,
     traderRefreshMax: number,
+    addTraderToFlea: boolean,
 }
 
 module.exports = { mod: new Scorpion() }
