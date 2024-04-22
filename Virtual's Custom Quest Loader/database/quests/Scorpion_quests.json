@@ -250,6 +250,7 @@
         {
           "availableAfter": 0,
           "conditionType": "Quest",
+          "dispersion": 0,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
           "id": "Scorpion_1_2 start_0",
@@ -1380,6 +1381,199 @@
     "traderId": "Scorpion",
     "type": "Completion"
   },
+  "Scorpion_1_7": {
+    "QuestName": "Targetting Hopefulness",
+    "_id": "Scorpion_1_7",
+    "acceptPlayerMessage": "Scorpion_1_7 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "Scorpion_1_7 changeQuestMessageText",
+    "completePlayerMessage": "Scorpion_1_7 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "bodyPart": [],
+                "compareMethod": ">=",
+                "conditionType": "Kills",
+                "daytime": {
+                  "from": 21,
+                  "to": 7
+                },
+                "distance": {
+                  "compareMethod": ">=",
+                  "value": 0
+                },
+                "dynamicLocale": false,
+                "enemyEquipmentExclusive": [],
+                "enemyEquipmentInclusive": [],
+                "enemyHealthEffects": [],
+                "id": "Scorpion_1_7 req_0_0",
+                "resetOnSessionEnd": false,
+                "savageRole": [],
+                "target": "Any",
+                "value": 1,
+                "weapon": [],
+                "weaponCaliber": [],
+                "weaponModsExclusive": [],
+                "weaponModsInclusive": []
+              },
+              {
+                "conditionType": "InZone",
+                "dynamicLocale": false,
+                "id": "Scorpion_1_7 req_0_1",
+                "zoneIds": [
+                  "huntsman_020"
+                ]
+              },
+              {
+                "conditionType": "Location",
+                "dynamicLocale": false,
+                "id": "Scorpion_1_7 req_0_2",
+                "target": [
+                  "bigmap"
+                ]
+              }
+            ],
+            "id": "Scorpion_1_7 req_0_3"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_1_7 req_0",
+          "index": 0,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Elimination",
+          "value": 5,
+          "visibilityConditions": []
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_1_7 start_0",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_1_6",
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "declinePlayerMessage": "Scorpion_1_7 declinePlayerMessage",
+    "description": "Scorpion_1_7 description",
+    "failMessageText": "Scorpion_1_7 failMessageText",
+    "image": "/files/quest/icon/5d69474486f77414077d1cc8.jpg",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "56f40101d2720b2a4d8b45d6",
+    "name": "Scorpion_1_7 name",
+    "note": "Scorpion_1_7 note",
+    "restartable": false,
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": [
+        {
+          "id": "Scorpion_1_7 reward_0",
+          "index": 0,
+          "type": "Experience",
+          "value": 9100
+        },
+        {
+          "id": "Scorpion_1_7 reward_1",
+          "index": 1,
+          "target": "Scorpion",
+          "type": "TraderStanding",
+          "value": "0.03"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_1_7 reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "Scorpion_1_7 reward_2_0",
+              "_tpl": "5449016a4bdc2d6f028b456f",
+              "upd": {
+                "StackObjectsCount": 68910
+              }
+            }
+          ],
+          "target": "Scorpion_1_7 reward_2_0",
+          "type": "Item",
+          "value": "68910"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_1_7 reward_3",
+          "index": 3,
+          "items": [
+            {
+              "_id": "662344f0ca75908fcd0f97d3",
+              "_tpl": "5c12613b86f7743bbe2c3f76",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "unknown": true,
+          "target": "662344f0ca75908fcd0f97d3",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_1_7 reward_4",
+          "index": 1,
+          "items": [
+            {
+              "_id": "662344f0ca75908fcd0f97d4",
+              "_tpl": "590c621186f774138d11ea29",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "unknown": true,
+          "target": "662344f0ca75908fcd0f97d4",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "id": "Scorpion_1_7 reward_5",
+          "index": 5,
+          "items": [
+            {
+              "_id": "662344f0ca75908fcd0f97d2",
+              "_tpl": "59e6906286f7746c9f75e847"
+            }
+          ],
+          "loyaltyLevel": 2,
+          "target": "662344f0ca75908fcd0f97d2",
+          "traderId": "Scorpion",
+          "type": "AssortmentUnlock"
+        }
+      ]
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "Scorpion_1_7 startedMessageText",
+    "successMessageText": "Scorpion_1_7 successMessageText",
+    "traderId": "Scorpion",
+    "type": "Completion"
+  },
   "Scorpion_2_1": {
     "QuestName": "Mysterious Hotline",
     "_id": "Scorpion_2_1",
@@ -1945,7 +2139,7 @@
           "counter": {
             "conditions": [
               {
-                "bodyPart": [ 
+                "bodyPart": [
                   "Head"
                 ],
                 "compareMethod": ">=",
@@ -2000,7 +2194,7 @@
           "counter": {
             "conditions": [
               {
-                "bodyPart": [ 
+                "bodyPart": [
                   "Head"
                 ],
                 "compareMethod": ">=",
@@ -2242,7 +2436,7 @@
           "counter": {
             "conditions": [
               {
-                "bodyPart": [ 
+                "bodyPart": [
                   "Head"
                 ],
                 "compareMethod": ">=",
@@ -2719,7 +2913,7 @@
               "_tpl": "58d2912286f7744e27117493",
               "parentId": "662344f0ca75908fcd0f97bc",
               "slotId": "mod_stock"
-            }  
+            }
           ],
           "target": "662344f0ca75908fcd0f97ae",
           "type": "Item",
@@ -2949,62 +3143,106 @@
           "index": 3,
           "items": [
             {
-              "_id": "65ba7538bf3fc35a9a0a016a",
-              "_tpl": "583990e32459771419544dd2",
+              "_id": "662344f0ca75908fcd0f97c2",
+              "_tpl": "56dee2bdd2720bc8328b4567",
               "upd": {
                 "FireMode": {
                   "FireMode": "single"
-                },
-                "Foldable": {
-                  "Folded": false
                 },
                 "StackObjectsCount": 1
               }
             },
             {
-              "_id": "65ba7538bf3fc35a9a0a016b",
-              "_tpl": "5649ad3f4bdc2df8348b4585",
-              "parentId": "65ba7538bf3fc35a9a0a016a",
-              "slotId": "mod_pistol_grip"
+              "_id": "662344f0ca75908fcd0f97c3",
+              "_tpl": "56deec93d2720bec348b4568",
+              "parentId": "662344f0ca75908fcd0f97c2",
+              "slotId": "mod_barrel"
             },
             {
-              "_id": "65ba7538bf3fc35a9a0a016c",
-              "_tpl": "57dc347d245977596754e7a1",
-              "parentId": "65ba7538bf3fc35a9a0a016a",
-              "slotId": "mod_stock"
+              "_id": "662344f0ca75908fcd0f97c4",
+              "_tpl": "56deed6ed2720b4c698b4583",
+              "parentId": "662344f0ca75908fcd0f97c2",
+              "slotId": "mod_handguard"
             },
             {
-              "_id": "65ba7538bf3fc35a9a0a016d",
-              "_tpl": "564ca99c4bdc2d16268b4589",
-              "parentId": "65ba7538bf3fc35a9a0a016a",
+              "_id": "662344f0ca75908fcd0f97c5",
+              "_tpl": "55d485804bdc2d8c2f8b456b",
+              "parentId": "662344f0ca75908fcd0f97c2",
               "slotId": "mod_magazine"
             },
             {
-              "_id": "65ba7538bf3fc35a9a0a016e",
-              "_tpl": "57dc324a24597759501edc20",
-              "parentId": "65ba7538bf3fc35a9a0a016a",
+              "_id": "662344f0ca75908fcd0f97c6",
+              "_tpl": "56083a334bdc2dc8488b4571",
+              "parentId": "662344f0ca75908fcd0f97c2",
+              "slotId": "mod_stock"
+            },
+            {
+              "_id": "662344f0ca75908fcd0f97c7",
+              "_tpl": "55d48ebc4bdc2d8c2f8b456c",
+              "parentId": "662344f0ca75908fcd0f97c2",
+              "slotId": "mod_mount_000"
+            },
+            {
+              "_id": "662344f0ca75908fcd0f97c8",
+              "_tpl": "560838c94bdc2d77798b4569",
+              "parentId": "662344f0ca75908fcd0f97c3",
               "slotId": "mod_muzzle"
             },
             {
-              "_id": "65ba7538bf3fc35a9a0a016f",
-              "_tpl": "57dc334d245977597164366f",
-              "parentId": "65ba7538bf3fc35a9a0a016a",
-              "slotId": "mod_reciever"
+              "_id": "662344f0ca75908fcd0f97c9",
+              "_tpl": "609b9e31506cf869cf3eaf41",
+              "parentId": "662344f0ca75908fcd0f97c3",
+              "slotId": "mod_mount",
+              "upd": {
+                "Sight": {
+                  "ScopesCurrentCalibPointIndexes": [
+                    0
+                  ],
+                  "ScopesSelectedModes": [
+                    0
+                  ],
+                  "SelectedScope": 0
+                }
+              }
             },
             {
-              "_id": "65ba7538bf3fc35a9a0a0170",
-              "_tpl": "59d36a0086f7747e673f3946",
-              "parentId": "65ba7538bf3fc35a9a0a016a",
-              "slotId": "mod_gas_block"
+              "_id": "662344f0ca75908fcd0f97ca",
+              "_tpl": "626becf9582c3e319310b837",
+              "parentId": "662344f0ca75908fcd0f97c7",
+              "slotId": "mod_tactical_001",
+              "upd": {
+                "Light": {
+                  "IsActive": true,
+                  "SelectedMode": 0
+                }
+              }
             },
             {
-              "_id": "65ba7538bf3fc35a9a0a0171",
-              "_tpl": "57dc32dc245977596d4ef3d3",
-              "parentId": "65ba7538bf3fc35a9a0a0170",
-              "slotId": "mod_handguard"
+              "_id": "662344f0ca75908fcd0f97cb",
+              "_tpl": "626becf9582c3e319310b837",
+              "parentId": "662344f0ca75908fcd0f97c7",
+              "slotId": "mod_tactical_002",
+              "upd": {
+                "Light": {
+                  "IsActive": true,
+                  "SelectedMode": 0
+                }
+              }
+            },
+            {
+              "_id": "662344f0ca75908fcd0f97cc",
+              "_tpl": "626becf9582c3e319310b837",
+              "parentId": "662344f0ca75908fcd0f97c7",
+              "slotId": "mod_tactical_003",
+              "upd": {
+                "Light": {
+                  "IsActive": true,
+                  "SelectedMode": 0
+                }
+              }
             }
           ],
-          "target": "65ba7538bf3fc35a9a0a016a",
+          "target": "662344f0ca75908fcd0f97c2",
           "type": "Item",
           "value": "1"
         },
@@ -3014,33 +3252,30 @@
           "index": 4,
           "items": [
             {
-              "_id": "662344f0ca75908fcd0f97be",
-              "_tpl": "564ca99c4bdc2d16268b4589",
+              "_id": "662344f0ca75908fcd0f97cd",
+              "_tpl": "5d6e689ca4b9361bc8618956",
               "upd": {
-                "StackObjectsCount": 3
+                "StackObjectsCount": 40
               }
             }
           ],
-          "target": "662344f0ca75908fcd0f97be",
+          "target": "662344f0ca75908fcd0f97cd",
           "type": "Item",
-          "value": "3"
+          "value": "40"
         },
         {
-          "findInRaid": true,
-          "id": "Scorpion_2_6 reward_5",
+          "id": "Scorpion_2_7 reward_5",
           "index": 5,
           "items": [
             {
-              "_id": "662344f0ca75908fcd0f97bf",
-              "_tpl": "56dff2ced2720bb4668b4567",
-              "upd": {
-                "StackObjectsCount": 180
-              }
+              "_id": "662344f0ca75908fcd0f97ce",
+              "_tpl": "5d6e68c4a4b9361b93413f79"
             }
           ],
-          "target": "662344f0ca75908fcd0f97bf",
-          "type": "Item",
-          "value": "180"
+          "loyaltyLevel": 2,
+          "target": "662344f0ca75908fcd0f97ce",
+          "traderId": "Scorpion",
+          "type": "AssortmentUnlock"
         }
       ]
     },
@@ -3269,81 +3504,16 @@
           "index": 2,
           "items": [
             {
-              "_id": "65ba7538bf3fc35a9a0a0169",
-              "_tpl": "5449016a4bdc2d6f028b456f",
+              "_id": "Scorpion_2_7 reward_2_0",
+              "_tpl": "569668774bdc2da2298b4568",
               "upd": {
-                "StackObjectsCount": 71220
+                "StackObjectsCount": 1100
               }
             }
           ],
-          "target": "65ba7538bf3fc35a9a0a0169",
+          "target": "Scorpion_2_7 reward_2_0",
           "type": "Item",
-          "value": "71220"
-        },
-        {
-          "findInRaid": true,
-          "id": "Scorpion_2_7 reward_3",
-          "index": 3,
-          "items": [
-            {
-              "_id": "65ba7538bf3fc35a9a0a016a",
-              "_tpl": "583990e32459771419544dd2",
-              "upd": {
-                "FireMode": {
-                  "FireMode": "single"
-                },
-                "Foldable": {
-                  "Folded": false
-                },
-                "StackObjectsCount": 1
-              }
-            },
-            {
-              "_id": "65ba7538bf3fc35a9a0a016b",
-              "_tpl": "5649ad3f4bdc2df8348b4585",
-              "parentId": "65ba7538bf3fc35a9a0a016a",
-              "slotId": "mod_pistol_grip"
-            },
-            {
-              "_id": "65ba7538bf3fc35a9a0a016c",
-              "_tpl": "57dc347d245977596754e7a1",
-              "parentId": "65ba7538bf3fc35a9a0a016a",
-              "slotId": "mod_stock"
-            },
-            {
-              "_id": "65ba7538bf3fc35a9a0a016d",
-              "_tpl": "564ca99c4bdc2d16268b4589",
-              "parentId": "65ba7538bf3fc35a9a0a016a",
-              "slotId": "mod_magazine"
-            },
-            {
-              "_id": "65ba7538bf3fc35a9a0a016e",
-              "_tpl": "57dc324a24597759501edc20",
-              "parentId": "65ba7538bf3fc35a9a0a016a",
-              "slotId": "mod_muzzle"
-            },
-            {
-              "_id": "65ba7538bf3fc35a9a0a016f",
-              "_tpl": "57dc334d245977597164366f",
-              "parentId": "65ba7538bf3fc35a9a0a016a",
-              "slotId": "mod_reciever"
-            },
-            {
-              "_id": "65ba7538bf3fc35a9a0a0170",
-              "_tpl": "59d36a0086f7747e673f3946",
-              "parentId": "65ba7538bf3fc35a9a0a016a",
-              "slotId": "mod_gas_block"
-            },
-            {
-              "_id": "65ba7538bf3fc35a9a0a0171",
-              "_tpl": "57dc32dc245977596d4ef3d3",
-              "parentId": "65ba7538bf3fc35a9a0a0170",
-              "slotId": "mod_handguard"
-            }
-          ],
-          "target": "65ba7538bf3fc35a9a0a016a",
-          "type": "Item",
-          "value": "1"
+          "value": "1100"
         },
         {
           "findInRaid": true,
@@ -3351,45 +3521,42 @@
           "index": 4,
           "items": [
             {
-              "_id": "662344f0ca75908fcd0f97be",
-              "_tpl": "564ca99c4bdc2d16268b4589",
+              "_id": "662344f0ca75908fcd0f97cf",
+              "_tpl": "5c127c4486f7745625356c13",
               "upd": {
-                "StackObjectsCount": 3
+                "StackObjectsCount": 1
               }
             }
           ],
-          "target": "662344f0ca75908fcd0f97be",
+          "target": "662344f0ca75908fcd0f97cf",
           "type": "Item",
-          "value": "3"
+          "value": "1"
         },
         {
-          "findInRaid": true,
           "id": "Scorpion_2_7 reward_5",
           "index": 5,
           "items": [
             {
-              "_id": "662344f0ca75908fcd0f97bf",
-              "_tpl": "56dff2ced2720bb4668b4567",
-              "upd": {
-                "StackObjectsCount": 180
-              }
+              "_id": "662344f0ca75908fcd0f97cf",
+              "_tpl": "5c127c4486f7745625356c13"
             }
           ],
-          "target": "662344f0ca75908fcd0f97bf",
-          "type": "Item",
-          "value": "180"
+          "loyaltyLevel": 2,
+          "target": "662344f0ca75908fcd0f97cf",
+          "traderId": "Scorpion",
+          "type": "AssortmentUnlock"
         },
         {
           "id": "Scorpion_2_7 reward_6",
           "index": 6,
           "items": [
             {
-              "_id": "65ba7538bf3fc35a9a0a017a",
-              "_tpl": "5c0e3eb886f7742015526062"
+              "_id": "662344f0ca75908fcd0f97d0",
+              "_tpl": "56dff061d2720bb5668b4567"
             }
           ],
           "loyaltyLevel": 2,
-          "target": "65ba7538bf3fc35a9a0a017a",
+          "target": "662344f0ca75908fcd0f97d0",
           "traderId": "Scorpion",
           "type": "AssortmentUnlock"
         }
@@ -3481,6 +3648,17 @@
           ],
           "target": "Scorpion_1_3",
           "visibilityConditions": []
+        },
+        {
+          "compareMethod": ">=",
+          "conditionType": "Level",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_3_1 start_1",
+          "index": 0,
+          "parentId": "",
+          "value": 5,
+          "visibilityConditions": []
         }
       ],
       "Fail": []
@@ -3552,7 +3730,7 @@
     "side": "Pmc",
     "startedMessageText": "Scorpion_3_1 startedMessageText",
     "successMessageText": "Scorpion_3_1 successMessageText",
-    "traderId": "5c0647fdd443bc2504c2d371",
+    "traderId": "Scorpion",
     "type": "Completion"
   }
 }
