@@ -56,11 +56,27 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         //Load config file before accessing it
         Scorpion.config = JSON.parse(fs.readFileSync(Scorpion.configPath, "utf-8"));
 
+        //Validate config values
+        let minRefresh = Scorpion.config.traderRefreshMin;
+        let maxRefresh = Scorpion.config.traderRefreshMax;
+        if (minRefresh >= maxRefresh)
+        {
+            minRefresh = 1800;
+            maxRefresh = 3600;
+            this.logger.log(`[${this.mod}] [Config]  traderRefreshMin must be less than traderRefreshMax. Refresh timers have been reset to default.`, "red");
+        }
+        if (maxRefresh <= 2)
+        {
+            minRefresh = 1800;
+            maxRefresh = 3600;
+            this.logger.log(`[${this.mod}] [Config]  You set traderRefreshMax too low. Refresh timers have been reset to default.`, "red");
+        }
+
         // Create helper class and use it to register our traders image/icon + set its stock refresh time
         this.traderHelper = new TraderHelper();
         this.fluentAssortCreator = new FluentAssortCreator(hashUtil, this.logger);
         this.traderHelper.registerProfileImage(baseJson, this.mod, preAkiModLoader, imageRouter, "scorpion.jpg");
-        this.traderHelper.setTraderUpdateTime(traderConfig, baseJson, Scorpion.config.traderRefreshMin, Scorpion.config.traderRefreshMax);
+        this.traderHelper.setTraderUpdateTime(traderConfig, baseJson, minRefresh, maxRefresh);
 
         // Add trader to trader enum
         Traders[baseJson._id] = baseJson._id;
