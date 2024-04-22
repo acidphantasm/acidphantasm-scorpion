@@ -59,7 +59,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         // Create helper class and use it to register our traders image/icon + set its stock refresh time
         this.traderHelper = new TraderHelper();
         this.fluentAssortCreator = new FluentAssortCreator(hashUtil, this.logger);
-        this.traderHelper.registerProfileImage(baseJson, this.mod, preAkiModLoader, imageRouter, "scorpion.png");
+        this.traderHelper.registerProfileImage(baseJson, this.mod, preAkiModLoader, imageRouter, "scorpion.jpg");
         this.traderHelper.setTraderUpdateTime(traderConfig, baseJson, Scorpion.config.traderRefreshMin, Scorpion.config.traderRefreshMax);
 
         // Add trader to trader enum
