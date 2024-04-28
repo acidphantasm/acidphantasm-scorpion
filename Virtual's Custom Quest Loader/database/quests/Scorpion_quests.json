@@ -1989,7 +1989,33 @@
           "parentId": "",
           "type": "Completion",
           "value": 1,
-          "visibilityConditions": []
+          "visibilityConditions": [
+            {
+              "conditionType": "CompleteCondition",
+              "id": "Scorpion_2_2 req_0_2",
+              "target": "Scorpion_2_2 req_0"
+            },
+            {
+              "conditionType": "CompleteCondition",
+              "id": "Scorpion_2_2 req_1_2",
+              "target": "Scorpion_2_2 req_1"
+            },
+            {
+              "conditionType": "CompleteCondition",
+              "id": "Scorpion_2_2 req_2_2",
+              "target": "Scorpion_2_2 req_2"
+            },
+            {
+              "conditionType": "CompleteCondition",
+              "id": "Scorpion_2_2 req_3_2",
+              "target": "Scorpion_2_2 req_3"
+            },
+            {
+              "conditionType": "CompleteCondition",
+              "id": "Scorpion_2_2 req_4_2",
+              "target": "Scorpion_2_2 req_4"
+            }
+          ]
         }
       ],
       "AvailableForStart": [
@@ -2061,80 +2087,14 @@
           "index": 3,
           "items": [
             {
-              "_id": "661f33776b5151c024011d0d",
+              "_id": "662344f0ca75908fcd0f97ec",
               "_tpl": "5f5f41476bdad616ad46d631",
               "upd": {
                 "StackObjectsCount": 1
               }
-            },
-            {
-              "_id": "661f33776b5151c024011d0e",
-              "_tpl": "65731b46cea9255e2102360a",
-              "parentId": "661f33776b5151c024011d0d",
-              "slotId": "Soft_armor_front"
-            },
-            {
-              "_id": "661f33776b5151c024011d0f",
-              "_tpl": "65731b4fcea9255e2102360e",
-              "parentId": "661f33776b5151c024011d0d",
-              "slotId": "Soft_armor_back"
-            },
-            {
-              "_id": "661f33776b5151c024011d10",
-              "_tpl": "65731b576e709cddd001ec3f",
-              "parentId": "661f33776b5151c024011d0d",
-              "slotId": "Soft_armor_left"
-            },
-            {
-              "_id": "661f33776b5151c024011d11",
-              "_tpl": "65731b60ff6dc44a7d068c4a",
-              "parentId": "661f33776b5151c024011d0d",
-              "slotId": "soft_armor_right"
-            },
-            {
-              "_id": "661f33776b5151c024011d12",
-              "_tpl": "65731b666e709cddd001ec43",
-              "parentId": "661f33776b5151c024011d0d",
-              "slotId": "Collar"
-            },
-            {
-              "_id": "661f33776b5151c024011d13",
-              "_tpl": "65731b716e709cddd001ec47",
-              "parentId": "661f33776b5151c024011d0d",
-              "slotId": "Groin"
-            },
-            {
-              "_id": "661f33776b5151c024011d14",
-              "_tpl": "65731b6b6042b0f210020ef6",
-              "parentId": "661f33776b5151c024011d0d",
-              "slotId": "Groin_back"
-            },
-            {
-              "_id": "661f33776b5151c024011d15",
-              "_tpl": "656f664200d62bcd2e024077",
-              "parentId": "661f33776b5151c024011d0d",
-              "slotId": "Front_plate"
-            },
-            {
-              "_id": "661f33776b5151c024011d16",
-              "_tpl": "654a4f8bc721968a4404ef18",
-              "parentId": "661f33776b5151c024011d0d",
-              "slotId": "Left_side_plate"
-            },
-            {
-              "_id": "661f33776b5151c024011d17",
-              "_tpl": "654a4f8bc721968a4404ef18",
-              "parentId": "661f33776b5151c024011d0d",
-              "slotId": "Right_side_plate"
-            },
-            {
-              "_id": "661f33776b5151c024011d18",
-              "_tpl": "657b2797c3dbcb01d60c35ea",
-              "parentId": "661f33776b5151c024011d0d",
-              "slotId": "Back_plate"
             }
           ],
-          "target": "661f33776b5151c024011d64",
+          "target": "662344f0ca75908fcd0f97ec",
           "type": "Item",
           "value": "1"
         },
