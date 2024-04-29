@@ -42,7 +42,7 @@
     "Scorpion_1_7 name": "Targetting Hopefulness",
     "Scorpion_1_7 description": "Alright we saw them all arrive shortly after each other in the afternoon. My crew setup scouts around the construction zone and it looks like they're all headed over to the dorms. Probably to meet up - see if you can catch up to them and interrupt their party. You'll probably show up to the party a bit late, I expect them to be gathered by 21:00.",
     "Scorpion_1_7 startedMessageText": "I've got an idea of who is behind this, but if you can make it out there and get eyes on target it'll confirm my suspicious. Try to inspect each of them for identifying marks.",
-    "Scorpion_1_7 successMessagetext": "Tell me what you find out. Anything indentifiable about those marks?",
+    "Scorpion_1_7 successMessagetext": "We found this folder and flash drive in the bodies you left behind. Read through the data and report back ASAP.",
     "Scorpion_2_1 req_0": "Find an Intelligence Folder in raid",
     "Scorpion_2_1 req_1": "Turn in found in raid Intelligence Folder",
     "Scorpion_2_1 name": "Mysterious Hotline",
@@ -101,5 +101,12 @@
     "Scorpion_3_2 name": "Let's Go To The Mall!",
     "Scorpion_3_2 description": "My guys loved that junk food I decided to give them an extra morale boost by throwing a party. Unfortunately, I'm out of liquor so I'm going to need some more. Usually we find some when we go out and have to fight some of the locals, so they probably have a few bottles on them. There's usually a lot of scavengers around the mall so check out the 2nd floor - there's quite a few drink and food shops around there so maybe you can nick some off the folks who nicked 'em from the stores.",
     "Scorpion_3_2 startedMessageText": "Let's go to the mall, today! Fuck, I hate that saying but it's so damn catchy.",
-    "Scorpion_3_2 successMessagetext": "Thanks for getting those bottles for us, I kept a couple of my high end bottles around so you can have those as a reward."
+    "Scorpion_3_2 successMessagetext": "Thanks for getting those bottles for us, I kept a couple of my high end bottles around so you can have those as a reward.",
+    "Scorpion_3_3 req_0": "Hand over the found in raid syringes",
+    "Scorpion_3_3 req_1": "Hand over the pristine found in raid AFAK",
+    "Scorpion_3_3 req_2": "Hand over the pristine found in raid Surv-12 surgical kit",
+    "Scorpion_3_3 name": "Oops At The Party!",
+    "Scorpion_3_3 description": "Fuck fuck fuck! I need you to quickly find me several sterile unused syringes, a completely sterile unused AFAK, and unused surgical kit! Two guys got in a drunken brawl, it's bad. I'll explain later. Go now!",
+    "Scorpion_3_3 startedMessageText": "JUST GET THEM MAN, GET THEM QUICKLY!",
+    "Scorpion_3_3 successMessagetext": "Thank you! We didn't manage to save both of them, but we did save one."
 }
