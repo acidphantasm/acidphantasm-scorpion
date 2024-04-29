@@ -95,7 +95,7 @@
           "id": "Scorpion_1_1 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": 1850
+          "value": 1120
         },
         {
           "id": "Scorpion_1_1 reward_1",
@@ -318,7 +318,7 @@
           "id": "Scorpion_1_2 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": 2050
+          "value": 1800
         },
         {
           "id": "Scorpion_1_2 reward_1",
@@ -495,7 +495,7 @@
           "id": "Scorpion_1_3 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": 4580
+          "value": 2750
         },
         {
           "id": "Scorpion_1_3 reward_1",
@@ -750,7 +750,7 @@
           "id": "Scorpion_1_4 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": 5314
+          "value": 3300
         },
         {
           "id": "Scorpion_1_4 reward_1",
@@ -962,7 +962,7 @@
           "id": "Scorpion_1_5 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": 7818
+          "value": 4200
         },
         {
           "id": "Scorpion_1_5 reward_1",
@@ -1184,7 +1184,7 @@
           "id": "Scorpion_1_6 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": 8670
+          "value": 4800
         },
         {
           "id": "Scorpion_1_6 reward_1",
@@ -1489,7 +1489,7 @@
           "id": "Scorpion_1_7 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": 9100
+          "value": 5500
         },
         {
           "id": "Scorpion_1_7 reward_1",
@@ -1654,7 +1654,7 @@
           "id": "Scorpion_1_2 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": 5050
+          "value": 1800
         },
         {
           "id": "Scorpion_1_2 reward_1",
@@ -2055,7 +2055,7 @@
           "id": "Scorpion_2_2 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": 6684
+          "value": 2800
         },
         {
           "id": "Scorpion_2_2 reward_1",
@@ -2358,7 +2358,7 @@
           "id": "Scorpion_2_3 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": 7901
+          "value": 3950
         },
         {
           "id": "Scorpion_2_3 reward_1",
@@ -2581,7 +2581,7 @@
           "id": "Scorpion_2_4 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": 8948
+          "value": 4500
         },
         {
           "id": "Scorpion_2_4 reward_1",
@@ -2813,7 +2813,7 @@
           "id": "Scorpion_2_5 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": 8000
+          "value": 5500
         },
         {
           "id": "Scorpion_2_5 reward_1",
@@ -3177,7 +3177,7 @@
           "id": "Scorpion_2_6 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": 8400
+          "value": 5950
         },
         {
           "id": "Scorpion_2_6 reward_1",
@@ -3555,7 +3555,7 @@
           "id": "Scorpion_2_7 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": 9000
+          "value": 7000
         },
         {
           "id": "Scorpion_2_7 reward_1",
@@ -3747,7 +3747,7 @@
           "id": "Scorpion_3_1 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": 3900
+          "value": 2000
         },
         {
           "id": "Scorpion_3_1 reward_1",
@@ -3947,7 +3947,7 @@
           "id": "Scorpion_3_2 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": 4800
+          "value": 4500
         },
         {
           "id": "Scorpion_3_2 reward_1",
@@ -4111,14 +4111,14 @@
           "id": "Scorpion_3_3 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": 7648
+          "value": 5000
         },
         {
           "id": "Scorpion_3_3 reward_1",
           "index": 1,
           "target": "5c0647fdd443bc2504c2d371",
           "type": "TraderStanding",
-          "value": "0.04"
+          "value": "0.03"
         },
         {
           "id": "Scorpion_3_3 reward_2",
