@@ -4702,13 +4702,13 @@
               "_id": "Scorpion_3_4 reward_1_0",
               "_tpl": "5449016a4bdc2d6f028b456f",
               "upd": {
-                "StackObjectsCount": 500000
+                "StackObjectsCount": 250000
               }
             }
           ],
           "target": "Scorpion_3_4 reward_1_0",
           "type": "Item",
-          "value": "500000"
+          "value": "250000"
         },
         {
           "id": "Scorpion_3_4 reward_2",
@@ -4742,6 +4742,601 @@
           "id": "Scorpion_3_4 reward_6",
           "index": 6,
           "target": "Perception",
+          "type": "Skill",
+          "value": "500"
+        }
+      ]
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "Scorpion_3_4 startedMessageText",
+    "successMessageText": "Scorpion_3_4 successMessageText",
+    "traderId": "Scorpion",
+    "type": "Completion"
+  },
+  "Scorpion_3_5": {
+    "QuestName": "The Bet II",
+    "_id": "Scorpion_3_5",
+    "acceptPlayerMessage": "Scorpion_3_5 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "Scorpion_3_5 changeQuestMessageText",
+    "completePlayerMessage": "Scorpion_3_5 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "bodyPart": [],
+                "compareMethod": ">=",
+                "conditionType": "Kills",
+                "daytime": {
+                  "from": 0,
+                  "to": 0
+                },
+                "distance": {
+                  "compareMethod": ">=",
+                  "value": 0
+                },
+                "dynamicLocale": false,
+                "enemyEquipmentExclusive": [],
+                "enemyEquipmentInclusive": [],
+                "enemyHealthEffects": [],
+                "id": "Scorpion_3_5 req_0_0",
+                "resetOnSessionEnd": false,
+                "savageRole": [
+                  "bossSanitar"
+                ],
+                "target": "Savage",
+                "value": 1,
+                "weapon": [],
+                "weaponCaliber": [],
+                "weaponModsExclusive": [],
+                "weaponModsInclusive": []
+              }
+            ],
+            "id": "Scorpion_3_5 req_0_1"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_3_5 req_0",
+          "index": 0,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Elimination",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "bodyPart": [],
+                "compareMethod": ">=",
+                "conditionType": "Kills",
+                "daytime": {
+                  "from": 0,
+                  "to": 0
+                },
+                "distance": {
+                  "compareMethod": ">=",
+                  "value": 0
+                },
+                "dynamicLocale": false,
+                "enemyEquipmentExclusive": [],
+                "enemyEquipmentInclusive": [],
+                "enemyHealthEffects": [],
+                "id": "Scorpion_3_5 req_1_0",
+                "resetOnSessionEnd": false,
+                "savageRole": [
+                  "bossKilla"
+                ],
+                "target": "Savage",
+                "value": 1,
+                "weapon": [],
+                "weaponCaliber": [],
+                "weaponModsExclusive": [],
+                "weaponModsInclusive": []
+              }
+            ],
+            "id": "Scorpion_3_5 req_1_1"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_3_5 req_1",
+          "index": 1,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Elimination",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "bodyPart": [],
+                "compareMethod": ">=",
+                "conditionType": "Kills",
+                "daytime": {
+                  "from": 0,
+                  "to": 0
+                },
+                "distance": {
+                  "compareMethod": ">=",
+                  "value": 0
+                },
+                "dynamicLocale": false,
+                "enemyEquipmentExclusive": [],
+                "enemyEquipmentInclusive": [],
+                "enemyHealthEffects": [],
+                "id": "Scorpion_3_5 req_2_0",
+                "resetOnSessionEnd": false,
+                "savageRole": [
+                  "bossTagilla"
+                ],
+                "target": "Savage",
+                "value": 1,
+                "weapon": [],
+                "weaponCaliber": [],
+                "weaponModsExclusive": [],
+                "weaponModsInclusive": []
+              }
+            ],
+            "id": "Scorpion_3_5 req_2_1"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_3_5 req_2",
+          "index": 1,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Elimination",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "bodyPart": [],
+                "compareMethod": ">=",
+                "conditionType": "Kills",
+                "daytime": {
+                  "from": 0,
+                  "to": 0
+                },
+                "distance": {
+                  "compareMethod": ">=",
+                  "value": 0
+                },
+                "dynamicLocale": false,
+                "enemyEquipmentExclusive": [],
+                "enemyEquipmentInclusive": [],
+                "enemyHealthEffects": [],
+                "id": "Scorpion_3_5 req_3_0",
+                "resetOnSessionEnd": false,
+                "savageRole": [
+                  "bossBully"
+                ],
+                "target": "Savage",
+                "value": 1,
+                "weapon": [],
+                "weaponCaliber": [],
+                "weaponModsExclusive": [],
+                "weaponModsInclusive": []
+              }
+            ],
+            "id": "Scorpion_3_5 req_3_1"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_3_5 req_3",
+          "index": 1,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Elimination",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "bodyPart": [],
+                "compareMethod": ">=",
+                "conditionType": "Kills",
+                "daytime": {
+                  "from": 0,
+                  "to": 0
+                },
+                "distance": {
+                  "compareMethod": ">=",
+                  "value": 0
+                },
+                "dynamicLocale": false,
+                "enemyEquipmentExclusive": [],
+                "enemyEquipmentInclusive": [],
+                "enemyHealthEffects": [],
+                "id": "Scorpion_3_5 req_4_0",
+                "resetOnSessionEnd": false,
+                "savageRole": [
+                  "bossKojaniy"
+                ],
+                "target": "Savage",
+                "value": 1,
+                "weapon": [],
+                "weaponCaliber": [],
+                "weaponModsExclusive": [],
+                "weaponModsInclusive": []
+              }
+            ],
+            "id": "Scorpion_3_5 req_4_1"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_3_5 req_4",
+          "index": 4,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Elimination",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "bodyPart": [],
+                "compareMethod": ">=",
+                "conditionType": "Kills",
+                "daytime": {
+                  "from": 0,
+                  "to": 0
+                },
+                "distance": {
+                  "compareMethod": ">=",
+                  "value": 0
+                },
+                "dynamicLocale": false,
+                "enemyEquipmentExclusive": [],
+                "enemyEquipmentInclusive": [],
+                "enemyHealthEffects": [],
+                "id": "Scorpion_3_5 req_5_0",
+                "resetOnSessionEnd": false,
+                "savageRole": [
+                  "bossGluhar"
+                ],
+                "target": "Savage",
+                "value": 1,
+                "weapon": [],
+                "weaponCaliber": [],
+                "weaponModsExclusive": [],
+                "weaponModsInclusive": []
+              }
+            ],
+            "id": "Scorpion_3_5 req_5_1"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_3_5 req_5",
+          "index": 5,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Elimination",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "bodyPart": [],
+                "compareMethod": ">=",
+                "conditionType": "Kills",
+                "daytime": {
+                  "from": 0,
+                  "to": 0
+                },
+                "distance": {
+                  "compareMethod": ">=",
+                  "value": 0
+                },
+                "dynamicLocale": false,
+                "enemyEquipmentExclusive": [],
+                "enemyEquipmentInclusive": [],
+                "enemyHealthEffects": [],
+                "id": "Scorpion_3_5 req_6_0",
+                "resetOnSessionEnd": false,
+                "savageRole": [
+                  "bossKolontay"
+                ],
+                "target": "Savage",
+                "value": 1,
+                "weapon": [],
+                "weaponCaliber": [],
+                "weaponModsExclusive": [],
+                "weaponModsInclusive": []
+              }
+            ],
+            "id": "Scorpion_3_5 req_6_1"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_3_5 req_6",
+          "index": 6,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Elimination",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "bodyPart": [],
+                "compareMethod": ">=",
+                "conditionType": "Kills",
+                "daytime": {
+                  "from": 0,
+                  "to": 0
+                },
+                "distance": {
+                  "compareMethod": ">=",
+                  "value": 0
+                },
+                "dynamicLocale": false,
+                "enemyEquipmentExclusive": [],
+                "enemyEquipmentInclusive": [],
+                "enemyHealthEffects": [],
+                "id": "Scorpion_3_5 req_7_0",
+                "resetOnSessionEnd": false,
+                "savageRole": [
+                  "bossBoar"
+                ],
+                "target": "Savage",
+                "value": 1,
+                "weapon": [],
+                "weaponCaliber": [],
+                "weaponModsExclusive": [],
+                "weaponModsInclusive": []
+              }
+            ],
+            "id": "Scorpion_3_5 req_7_1"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_3_5 req_7",
+          "index": 6,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Elimination",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "bodyPart": [],
+                "compareMethod": ">=",
+                "conditionType": "Kills",
+                "daytime": {
+                  "from": 0,
+                  "to": 0
+                },
+                "distance": {
+                  "compareMethod": ">=",
+                  "value": 0
+                },
+                "dynamicLocale": false,
+                "enemyEquipmentExclusive": [],
+                "enemyEquipmentInclusive": [],
+                "enemyHealthEffects": [],
+                "id": "Scorpion_3_5 req_8_0",
+                "resetOnSessionEnd": false,
+                "savageRole": [
+                  "bossBoar",
+                  "bossKilla",
+                  "bossTagilla",
+                  "bossBully",
+                  "bossKojaniy",
+                  "bossGluhar",
+                  "bossSanitar",
+                  "bossKolontay"
+                ],
+                "target": "Savage",
+                "value": 1,
+                "weapon": [],
+                "weaponCaliber": [],
+                "weaponModsExclusive": [],
+                "weaponModsInclusive": []
+              }
+            ],
+            "id": "Scorpion_3_5 req_8_1"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_3_5 req_8",
+          "index": 7,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Elimination",
+          "value": 8,
+          "visibilityConditions": []
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_3_5 start_0",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_3_4",
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": [
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "ExitStatus",
+                "dynamicLocale": false,
+                "id": "Scorpion_3_5 fail_0_0",
+                "status": [
+                  "Killed",
+                  "Left",
+                  "MissingInAction"
+                ]
+              },
+              {
+                "conditionType": "Location",
+                "dynamicLocale": false,
+                "id": "Scorpion_3_5 fail_0_1",
+                "target": [
+                  "factory4_day",
+                  "laboratory",
+                  "factory4_night",
+                  "Interchange",
+                  "Shoreline",
+                  "Lighthouse",
+                  "bigmap",
+                  "Woods",
+                  "RezervBase",
+                  "TarkovStreets",
+                  "sandbox"
+                ]
+              }
+            ],
+            "id": "Scorpion_3_5 fail_0_2"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_3_5 fail_0",
+          "index": 0,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Exploration",
+          "value": 1,
+          "visibilityConditions": []
+        }
+      ]
+    },
+    "declinePlayerMessage": "Scorpion_3_5 declinePlayerMessage",
+    "description": "Scorpion_3_5 description",
+    "failMessageText": "Scorpion_3_5 failMessageText",
+    "image": "/files/quest/icon/scorpion_questpic.png",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "Any",
+    "name": "Scorpion_3_5 name",
+    "note": "Scorpion_3_5 note",
+    "restartable": true,
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": [
+        {
+          "id": "Scorpion_3_5 reward_0",
+          "index": 0,
+          "type": "Experience",
+          "value": "15000"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_3_5 reward_1",
+          "index": 1,
+          "items": [
+            {
+              "_id": "Scorpion_3_5 reward_1_0",
+              "_tpl": "5449016a4bdc2d6f028b456f",
+              "upd": {
+                "StackObjectsCount": 250000
+              }
+            }
+          ],
+          "target": "Scorpion_3_5 reward_1_0",
+          "type": "Item",
+          "value": "250000"
+        },
+        {
+          "id": "Scorpion_3_5 reward_2",
+          "index": 2,
+          "target": "Assault",
+          "type": "Skill",
+          "value": "500"
+        },
+        {
+          "id": "Scorpion_3_5 reward_3",
+          "index": 3,
+          "target": "SMG",
+          "type": "Skill",
+          "value": "500"
+        },
+        {
+          "id": "Scorpion_3_5 reward_4",
+          "index": 4,
+          "target": "LMG",
+          "type": "Skill",
+          "value": "500"
+        },
+        {
+          "id": "Scorpion_3_5 reward_5",
+          "index": 5,
+          "target": "Shotgun",
+          "type": "Skill",
+          "value": "500"
+        },
+        {
+          "id": "Scorpion_3_5 reward_6",
+          "index": 6,
+          "target": "Sniper",
+          "type": "Skill",
+          "value": "500"
+        },
+        {
+          "id": "Scorpion_3_5 reward_7",
+          "index": 7,
+          "target": "DMR",
           "type": "Skill",
           "value": "500"
         }

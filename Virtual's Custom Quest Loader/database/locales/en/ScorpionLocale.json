@@ -122,5 +122,18 @@
     "Scorpion_3_4 name": "The Bet",
     "Scorpion_3_4 description": "Alright, heres the deal. Those guys at the party? Yeah they were fighting about whether or not they would continue their bet. It's a dumb bet, but someone has passed away over it. I need to get their morale in order from the passing of their comrade. I want you to take this bet to the next level and go out there and prove to them that it can be done. You'll need to survive and extract from every location we know of, all while not using any healing items. If you can do this, I'll handsomely reward you with a personal training session.",
     "Scorpion_3_4 startedMessageText": "Good fucking luck man.",
-    "Scorpion_3_4 successMessagetext": "Haha! I can't believe you did it! I'm sure the gang will be happy to hear about this feat, I'll gather them up and tell them your tale!"
+    "Scorpion_3_4 successMessagetext": "Haha! I can't believe you did it! I'm sure the gang will be happy to hear about this feat, I'll gather them up and tell them your tale!",
+    "Scorpion_3_5 req_0": "Eliminate Sanitar",
+    "Scorpion_3_5 req_1": "Eliminate Killa",
+    "Scorpion_3_5 req_2": "Eliminate Tagilla",
+    "Scorpion_3_5 req_3": "Eliminate Reshala",
+    "Scorpion_3_5 req_4": "Eliminate Schturman",
+    "Scorpion_3_5 req_5": "Eliminate Gluhar",
+    "Scorpion_3_5 req_6": "Eliminate Kolontay",
+    "Scorpion_3_5 req_7": "Eliminate Kaban",
+    "Scorpion_3_5 req_8": "Eliminate all targets without dying",
+    "Scorpion_3_5 name": "The Bet II",
+    "Scorpion_3_5 description": "My guys got a HUGE morale boost from you trip around Tarkov. They bet you couldn't also go take out all the local gang leaders. If you can do this we'll do a second round of one-on-one training. I might be able to get my guys rallied enough to do the impossible if you can pull this one off. Good luck and stay safe!",
+    "Scorpion_3_5 startedMessageText": "Good fucking luck.",
+    "Scorpion_3_5 successMessagetext": "I just...I just can't believe you made it back in one piece. If my guys come up with any more challenges for you, I'll make sure to let you know."
 }
