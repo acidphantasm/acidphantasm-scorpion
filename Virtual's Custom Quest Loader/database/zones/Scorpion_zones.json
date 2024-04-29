@@ -1,7 +1,7 @@
 [
   {
-    "ZoneId": "gz_ambulance_0_marker",
-    "ZoneName": "gz_ambulance_0_marker",
+    "ZoneId": "scorpion_gz_ambulance_0_marker",
+    "ZoneName": "scorpion_gz_ambulance_0_marker",
     "ZoneLocation": "Sandbox",
     "ZoneType": "placeitem",
     "FlareType": "",
@@ -22,8 +22,8 @@
     }
   },
   {
-    "ZoneId": "gz_ambulance_1_marker",
-    "ZoneName": "gz_ambulance_1_marker",
+    "ZoneId": "scorpion_gz_ambulance_1_marker",
+    "ZoneName": "scorpion_gz_ambulance_1_marker",
     "ZoneLocation": "Sandbox",
     "ZoneType": "placeitem",
     "FlareType": "",
@@ -44,8 +44,8 @@
     }
   },
   {
-    "ZoneId": "factory_exit_0",
-    "ZoneName": "factory_exit_0",
+    "ZoneId": "scorpion_factory_exit_0",
+    "ZoneName": "scorpion_factory_exit_0",
     "ZoneLocation": "factory4_night",
     "ZoneType": "placeitem",
     "FlareType": "",
@@ -66,8 +66,8 @@
     }
   },
   {
-    "ZoneId": "factory_exit_1",
-    "ZoneName": "factory_exit_1",
+    "ZoneId": "scorpion_factory_exit_1",
+    "ZoneName": "scorpion_factory_exit_1",
     "ZoneLocation": "factory4_night",
     "ZoneType": "placeitem",
     "FlareType": "",
@@ -88,8 +88,8 @@
     }
   },
   {
-    "ZoneId": "factory_exit_2",
-    "ZoneName": "factory_exit_2",
+    "ZoneId": "scorpion_factory_exit_2",
+    "ZoneName": "scorpion_factory_exit_2",
     "ZoneLocation": "factory4_night",
     "ZoneType": "placeitem",
     "FlareType": "",
@@ -110,8 +110,8 @@
     }
   },
   {
-    "ZoneId": "factory_exit_3",
-    "ZoneName": "factory_exit_3",
+    "ZoneId": "scorpion_factory_exit_3",
+    "ZoneName": "scorpion_factory_exit_3",
     "ZoneLocation": "factory4_night",
     "ZoneType": "placeitem",
     "FlareType": "",
@@ -132,8 +132,8 @@
     }
   },
   {
-    "ZoneId": "2fl_dorms_213",
-    "ZoneName": "2fl_dorms_213",
+    "ZoneId": "scorpion_2fl_dorms_213",
+    "ZoneName": "scorpion_2fl_dorms_213",
     "ZoneLocation": "bigmap",
     "ZoneType": "visit",
     "FlareType": "",
@@ -154,8 +154,8 @@
     }
   },
   {
-    "ZoneId": "3fl_dorms_115",
-    "ZoneName": "3fl_dorms_115",
+    "ZoneId": "scorpion_3fl_dorms_115",
+    "ZoneName": "scorpion_3fl_dorms_115",
     "ZoneLocation": "bigmap",
     "ZoneType": "visit",
     "FlareType": "",
@@ -176,8 +176,8 @@
     }
   },
   {
-    "ZoneId": "3fl_dorms_206",
-    "ZoneName": "3fl_dorms_206",
+    "ZoneId": "scorpion_3fl_dorms_206",
+    "ZoneName": "scorpion_3fl_dorms_206",
     "ZoneLocation": "bigmap",
     "ZoneType": "visit",
     "FlareType": "",
@@ -198,8 +198,8 @@
     }
   },
   {
-    "ZoneId": "3fl_dorms_212",
-    "ZoneName": "3fl_dorms_212",
+    "ZoneId": "scorpion_3fl_dorms_212",
+    "ZoneName": "scorpion_3fl_dorms_212",
     "ZoneLocation": "bigmap",
     "ZoneType": "visit",
     "FlareType": "",
@@ -220,8 +220,8 @@
     }
   },
   {
-    "ZoneId": "3fl_dorms_310",
-    "ZoneName": "3fl_dorms_310",
+    "ZoneId": "scorpion_3fl_dorms_310",
+    "ZoneName": "scorpion_3fl_dorms_310",
     "ZoneLocation": "bigmap",
     "ZoneType": "visit",
     "FlareType": "",
@@ -242,8 +242,8 @@
     }
   },
   {
-    "ZoneId": "shoreline_sanitorium_killzone",
-    "ZoneName": "shoreline_sanitorium_killzone",
+    "ZoneId": "scorpion_shoreline_sanitorium_killzone",
+    "ZoneName": "scorpion_shoreline_sanitorium_killzone",
     "ZoneLocation": "Shoreline",
     "ZoneType": "botkillzone",
     "FlareType": "",
@@ -264,8 +264,8 @@
     }
   },
   {
-    "ZoneId": "customs_zb012",
-    "ZoneName": "customs_zb012",
+    "ZoneId": "scorpion_customs_zb012",
+    "ZoneName": "scorpion_customs_zb012",
     "ZoneLocation": "bigmap",
     "ZoneType": "placeitem",
     "FlareType": "",
@@ -286,8 +286,8 @@
     }
   },
   {
-    "ZoneId": "customs_zb011",
-    "ZoneName": "customs_zb011",
+    "ZoneId": "scorpion_customs_zb011",
+    "ZoneName": "scorpion_customs_zb011",
     "ZoneLocation": "bigmap",
     "ZoneType": "placeitem",
     "FlareType": "",
@@ -308,8 +308,8 @@
     }
   },
   {
-    "ZoneId": "customs_zb013",
-    "ZoneName": "customs_zb013",
+    "ZoneId": "scorpion_customs_zb013",
+    "ZoneName": "scorpion_customs_zb013",
     "ZoneLocation": "bigmap",
     "ZoneType": "placeitem",
     "FlareType": "",
@@ -328,6 +328,49 @@
       "Y": "1.7",
       "Z": "1.5"
     }
+  },
+  {
+    "ZoneId": "scorpion_interchange_2fl_hallarea",
+    "ZoneName": "scorpion_interchange_2fl_hallarea",
+    "ZoneLocation": "Interchange",
+    "ZoneType": "botkillzone",
+    "FlareType": "",
+    "Position": {
+      "X": "28.59651",
+      "Y": "39.56964",
+      "Z": "-54.47475"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "158.75",
+      "Y": "6",
+      "Z": "31"
+    }
+  },
+  {
+    "ZoneId": "scorpion_interchange_techlight",
+    "ZoneName": "scorpion_interchange_techlight",
+    "ZoneLocation": "Interchange",
+    "ZoneType": "placeitem",
+    "FlareType": "",
+    "Position": {
+      "X": "97.22383",
+      "Y": "37.06973",
+      "Z": "65.86802"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "1.5",
+      "Y": "2.5",
+      "Z": "2"
+    }
   }
-
 ]
