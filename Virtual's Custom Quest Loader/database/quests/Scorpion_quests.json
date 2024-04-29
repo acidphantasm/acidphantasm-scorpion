@@ -3965,13 +3965,13 @@
               "_id": "Scorpion_3_2 reward_2_0",
               "_tpl": "5449016a4bdc2d6f028b456f",
               "upd": {
-                "StackObjectsCount": 47113
+                "StackObjectsCount": 47000
               }
             }
           ],
           "target": "Scorpion_3_2 reward_2_0",
           "type": "Item",
-          "value": "47113"
+          "value": "47000"
         },
         {
           "findInRaid": true,
@@ -4139,14 +4139,14 @@
           "index": 3,
           "target": "Vitality",
           "type": "Skill",
-          "value": "200"
+          "value": "300"
         },
         {
           "id": "Scorpion_3_3 reward_3",
           "index": 4,
           "target": "Health",
           "type": "Skill",
-          "value": "200"
+          "value": "300"
         }
       ]
     },
@@ -4154,6 +4154,603 @@
     "side": "Pmc",
     "startedMessageText": "Scorpion_3_3 startedMessageText",
     "successMessageText": "Scorpion_3_3 successMessageText",
+    "traderId": "Scorpion",
+    "type": "Completion"
+  },
+  "Scorpion_3_4": {
+    "QuestName": "The Bet",
+    "_id": "Scorpion_3_4",
+    "acceptPlayerMessage": "Scorpion_3_4 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "Scorpion_3_4 changeQuestMessageText",
+    "completePlayerMessage": "Scorpion_3_4 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "Location",
+                "dynamicLocale": false,
+                "id": "Scorpion_3_4 req_0_0",
+                "target": [
+                  "Woods"
+                ]
+              },
+              {
+                "conditionType": "ExitStatus",
+                "dynamicLocale": false,
+                "id": "Scorpion_3_4 req_0_1",
+                "status": [
+                  "Survived"
+                ]
+              }
+            ],
+            "id": "Scorpion_3_4 req_0_2"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_3_4 req_0",
+          "index": 0,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Exploration",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "Location",
+                "dynamicLocale": false,
+                "id": "Scorpion_3_4 req_1_0",
+                "target": [
+                  "bigmap"
+                ]
+              },
+              {
+                "conditionType": "ExitStatus",
+                "dynamicLocale": false,
+                "id": "Scorpion_3_4 req_1_1",
+                "status": [
+                  "Survived"
+                ]
+              }
+            ],
+            "id": "Scorpion_3_4 req_1_2"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_3_4 req_1",
+          "index": 1,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Exploration",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "Location",
+                "dynamicLocale": false,
+                "id": "Scorpion_3_4 req_2_0",
+                "target": [
+                  "Interchange"
+                ]
+              },
+              {
+                "conditionType": "ExitStatus",
+                "dynamicLocale": false,
+                "id": "Scorpion_3_4 req_2_1",
+                "status": [
+                  "Survived"
+                ]
+              }
+            ],
+            "id": "Scorpion_3_4 req_2_2"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_3_4 req_2",
+          "index": 2,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Exploration",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "Location",
+                "dynamicLocale": false,
+                "id": "Scorpion_3_4 req_3_0",
+                "target": [
+                  "Shoreline"
+                ]
+              },
+              {
+                "conditionType": "ExitStatus",
+                "dynamicLocale": false,
+                "id": "Scorpion_3_4 req_3_1",
+                "status": [
+                  "Survived"
+                ]
+              }
+            ],
+            "id": "Scorpion_3_4 req_3_2"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_3_4 req_3",
+          "index": 3,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Exploration",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "Location",
+                "dynamicLocale": false,
+                "id": "Scorpion_3_4 req_4_0",
+                "target": [
+                  "factory4_day",
+                  "factory4_night"
+                ]
+              },
+              {
+                "conditionType": "ExitStatus",
+                "dynamicLocale": false,
+                "id": "Scorpion_3_4 req_4_1",
+                "status": [
+                  "Survived"
+                ]
+              }
+            ],
+            "id": "Scorpion_3_4 req_4_2"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_3_4 req_4",
+          "index": 4,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Exploration",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "Location",
+                "dynamicLocale": false,
+                "id": "Scorpion_3_4 req_5_0",
+                "target": [
+                  "laboratory"
+                ]
+              },
+              {
+                "conditionType": "ExitStatus",
+                "dynamicLocale": false,
+                "id": "Scorpion_3_4 req_5_1",
+                "status": [
+                  "Survived"
+                ]
+              }
+            ],
+            "id": "Scorpion_3_4 req_5_2"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_3_4 req_5",
+          "index": 5,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Exploration",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "Location",
+                "dynamicLocale": false,
+                "id": "Scorpion_3_4 req_6_0",
+                "target": [
+                  "RezervBase"
+                ]
+              },
+              {
+                "conditionType": "ExitStatus",
+                "dynamicLocale": false,
+                "id": "Scorpion_3_4 req_6_1",
+                "status": [
+                  "Survived"
+                ]
+              }
+            ],
+            "id": "Scorpion_3_4 req_6_2"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_3_4 req_6",
+          "index": 6,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Exploration",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "Location",
+                "dynamicLocale": false,
+                "id": "Scorpion_3_4 req_7_0",
+                "target": [
+                  "lighthouse"
+                ]
+              },
+              {
+                "conditionType": "ExitStatus",
+                "dynamicLocale": false,
+                "id": "Scorpion_3_4 req_7_1",
+                "status": [
+                  "Survived"
+                ]
+              }
+            ],
+            "id": "Scorpion_3_4 req_7_2"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_3_4 req_7",
+          "index": 7,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Exploration",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "Location",
+                "dynamicLocale": false,
+                "id": "Scorpion_3_4 req_8_0",
+                "target": [
+                  "TarkovStreets"
+                ]
+              },
+              {
+                "conditionType": "ExitStatus",
+                "dynamicLocale": false,
+                "id": "Scorpion_3_4 req_8_1",
+                "status": [
+                  "Survived"
+                ]
+              }
+            ],
+            "id": "Scorpion_3_4 req_8_2"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_3_4 req_8",
+          "index": 8,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Exploration",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "Location",
+                "dynamicLocale": false,
+                "id": "Scorpion_3_4 req_9_0",
+                "target": [
+                  "sandbox"
+                ]
+              },
+              {
+                "conditionType": "ExitStatus",
+                "dynamicLocale": false,
+                "id": "Scorpion_3_4 req_9_1",
+                "status": [
+                  "Survived"
+                ]
+              }
+            ],
+            "id": "Scorpion_3_4 req_9_2"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_3_4 req_9",
+          "index": 9,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Exploration",
+          "value": 1,
+          "visibilityConditions": []
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_3_4 start_0",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_3_3",
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": [
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "compareMethod": ">=",
+                "conditionType": "UseItem",
+                "dynamicLocale": false,
+                "id": "Scorpion_3_4 fail_0_0",
+                "target": [
+                  "590c661e86f7741e566b646a",
+                  "590c678286f77426c9660122",
+                  "590c657e86f77412b013051d",
+                  "5755356824597772cb798962",
+                  "544fb45d4bdc2dee738b4568",
+                  "590c695186f7741e566b64a2",
+                  "5751a89d24597722aa0e8db0",
+                  "5af0548586f7743a532b7e99",
+                  "544fb3f34bdc2d03748b456a",
+                  "544fb37f4bdc2dee738b4567",
+                  "5755383e24597772cb798966",
+                  "544fb25a4bdc2dfb738b4567",
+                  "5751a25924597722c463c472",
+                  "5d02778e86f774203e7dedbe",
+                  "5af0454c86f7746bf20992e8",
+                  "544fb3364bdc2d34748b456a",
+                  "5af0454c86f7746bf20992e8",
+                  "5d02797c86f774203f38e30a",
+                  "5c10c8fd86f7743d7d706df3",
+                  "5c0e530286f7747fa1419862",
+                  "5c0e531286f7747fa54205c2",
+                  "5c0e531d86f7747fa23f4d42",
+                  "5c0e533786f7747fa23f4d47",
+                  "5c0e534186f7747fa1419867",
+                  "60098ad7c2240c0fe85c570a",
+                  "5e8488fa988a8701445df1e4",
+                  "5fca138c2a7b221b2852a5c6",
+                  "5fca13ca637ee0341a484f46",
+                  "5e831507ea0a7c419c2f9bd9",
+                  "5ed5166ad380ab312177c100",
+                  "60098af40accd37ef2175f27",
+                  "5ed5160a87bb8443d10680b5",
+                  "5ed515c8d380ab312177c0fa",
+                  "5ed515f6915ec335206e4152",
+                  "5ed51652f6c34d2cc26336a1",
+                  "5ed515e03a40a50460332579",
+                  "5ed515ece452db0eb56fc028",
+                  "637b60c3b7afa97bfc3d7001",
+                  "637b6179104668754b72f8f5",
+                  "637b6251104668754b72f8f9",
+                  "637b612fb7afa97bfc3d7005",
+                  "637b620db7afa97bfc3d7009"
+                ],
+                "value": 1
+              },
+              {
+                "conditionType": "Location",
+                "dynamicLocale": false,
+                "id": "Scorpion_3_4 fail_0_1",
+                "target": [
+                  "factory4_day",
+                  "laboratory",
+                  "factory4_night",
+                  "Interchange",
+                  "Shoreline",
+                  "Lighthouse",
+                  "bigmap",
+                  "Woods",
+                  "RezervBase",
+                  "TarkovStreets",
+                  "sandbox"
+                ]
+              }
+            ],
+            "id": "Scorpion_3_4 fail_0_2"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_3_4 fail_0",
+          "index": 0,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Completion",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "ExitStatus",
+                "dynamicLocale": false,
+                "id": "Scorpion_3_4 fail_1_0",
+                "status": [
+                  "Killed",
+                  "Left",
+                  "MissingInAction"
+                ]
+              },
+              {
+                "conditionType": "Location",
+                "dynamicLocale": false,
+                "id": "Scorpion_3_4 fail_1_1",
+                "target": [
+                  "factory4_day",
+                  "laboratory",
+                  "factory4_night",
+                  "Interchange",
+                  "Shoreline",
+                  "Lighthouse",
+                  "bigmap",
+                  "Woods",
+                  "RezervBase",
+                  "TarkovStreets",
+                  "sandbox"
+                ]
+              }
+            ],
+            "id": "Scorpion_3_4 fail_1_2"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_3_4 fail_1",
+          "index": 1,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Exploration",
+          "value": 1,
+          "visibilityConditions": []
+        }
+      ]
+    },
+    "declinePlayerMessage": "Scorpion_3_4 declinePlayerMessage",
+    "description": "Scorpion_3_4 description",
+    "failMessageText": "Scorpion_3_4 failMessageText",
+    "image": "/files/quest/icon/scorpion_questpic.png",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "Any",
+    "name": "Scorpion_3_4 name",
+    "note": "Scorpion_3_4 note",
+    "restartable": true,
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": [
+        {
+          "id": "Scorpion_3_4 reward_0",
+          "index": 0,
+          "type": "Experience",
+          "value": "15000"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_3_4 reward_1",
+          "index": 1,
+          "items": [
+            {
+              "_id": "Scorpion_3_4 reward_1_0",
+              "_tpl": "5449016a4bdc2d6f028b456f",
+              "upd": {
+                "StackObjectsCount": 500000
+              }
+            }
+          ],
+          "target": "Scorpion_3_4 reward_1_0",
+          "type": "Item",
+          "value": "500000"
+        },
+        {
+          "id": "Scorpion_3_4 reward_2",
+          "index": 2,
+          "target": "Endurance",
+          "type": "Skill",
+          "value": "500"
+        },
+        {
+          "id": "Scorpion_3_4 reward_3",
+          "index": 3,
+          "target": "Strength",
+          "type": "Skill",
+          "value": "500"
+        },
+        {
+          "id": "Scorpion_3_4 reward_4",
+          "index": 4,
+          "target": "Vitality",
+          "type": "Skill",
+          "value": "500"
+        },
+        {
+          "id": "Scorpion_3_4 reward_5",
+          "index": 5,
+          "target": "Attention",
+          "type": "Skill",
+          "value": "500"
+        },
+        {
+          "id": "Scorpion_3_4 reward_6",
+          "index": 6,
+          "target": "Perception",
+          "type": "Skill",
+          "value": "500"
+        }
+      ]
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "Scorpion_3_4 startedMessageText",
+    "successMessageText": "Scorpion_3_4 successMessageText",
     "traderId": "Scorpion",
     "type": "Completion"
   }

@@ -108,5 +108,19 @@
     "Scorpion_3_3 name": "Oops At The Party!",
     "Scorpion_3_3 description": "Fuck fuck fuck! I need you to quickly find me several sterile unused syringes, a completely sterile unused AFAK, and unused surgical kit! Two guys got in a drunken brawl, it's bad. I'll explain later. Go now!",
     "Scorpion_3_3 startedMessageText": "JUST GET THEM MAN, GET THEM QUICKLY!",
-    "Scorpion_3_3 successMessagetext": "Thank you! We didn't manage to save both of them, but we did save one."
+    "Scorpion_3_3 successMessagetext": "Thank you! We didn't manage to save both of them, but we did save one.",
+    "Scorpion_3_4 req_0": "Survive and extract from Woods with the 'Survived' exit status without using healing items",
+    "Scorpion_3_4 req_1": "Survive and extract from Customs with the 'Survived' exit status without using healing items",
+    "Scorpion_3_4 req_2": "Survive and extract from Interchange with the 'Survived' exit status without using healing items",
+    "Scorpion_3_4 req_3": "Survive and extract from Shoreline with the 'Survived' exit status without using healing items",
+    "Scorpion_3_4 req_4": "Survive and extract from Factory with the 'Survived' exit status without using healing items",
+    "Scorpion_3_4 req_5": "Survive and extract from The Lab with the 'Survived' exit status without using healing items",
+    "Scorpion_3_4 req_6": "Survive and extract from Reserve with the 'Survived' exit status without using healing items",
+    "Scorpion_3_4 req_7": "Survive and extract from Lighthouse with the 'Survived' exit status without using healing items",
+    "Scorpion_3_4 req_8": "Survive and extract from Streets of Tarkov with the 'Survived' exit status without using healing items",
+    "Scorpion_3_4 req_9": "Survive and extract from Ground Zero with the 'Survived' exit status without using healing items",
+    "Scorpion_3_4 name": "The Bet",
+    "Scorpion_3_4 description": "Alright, heres the deal. Those guys at the party? Yeah they were fighting about whether or not they would continue their bet. It's a dumb bet, but someone has passed away over it. I need to get their morale in order from the passing of their comrade. I want you to take this bet to the next level and go out there and prove to them that it can be done. You'll need to survive and extract from every location we know of, all while not using any healing items. If you can do this, I'll handsomely reward you with a personal training session.",
+    "Scorpion_3_4 startedMessageText": "Good fucking luck man.",
+    "Scorpion_3_4 successMessagetext": "Haha! I can't believe you did it! I'm sure the gang will be happy to hear about this feat, I'll gather them up and tell them your tale!"
 }
