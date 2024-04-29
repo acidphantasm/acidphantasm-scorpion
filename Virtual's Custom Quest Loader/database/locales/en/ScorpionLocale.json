@@ -94,5 +94,12 @@
     "Scorpion_3_1 name": "Hungry Men",
     "Scorpion_3_1 description": "I know you're new around here but I've got a favour to ask of you. My guys could use a 'pick me up' and I was thinking you could get some supplies for me to give out. We've got plenty of water and regular food, but they've had a hard time lately and could use some sweets. Can you go find these items and hand em over?",
     "Scorpion_3_1 startedMessageText": "You can probably find them at the mall or on some of the locals around the region.",
-    "Scorpion_3_1 successMessagetext": "I appreciate it! Have some of our extra supplies. You can probably use the water to quench that thirst while you're out and about."
+    "Scorpion_3_1 successMessagetext": "I appreciate it! Have some of our extra supplies. You can probably use the water to quench that thirst while you're out and about.",
+    "Scorpion_3_2 req_0": "Hand over the found in raid vodka",
+    "Scorpion_3_2 req_1": "Hand over the found in raid whiskey",
+    "Scorpion_3_2 req_2": "Eliminate SCAVs at the mall on the 2nd floor near the escalators",
+    "Scorpion_3_2 name": "Let's Go To The Mall!",
+    "Scorpion_3_2 description": "My guys loved that junk food I decided to give them an extra morale boost by throwing a party. Unfortunately, I'm out of liquor so I'm going to need some more. Usually we find some when we go out and have to fight some of the locals, so they probably have a few bottles on them. There's usually a lot of scavengers around the mall so check out the 2nd floor - there's quite a few drink and food shops around there so maybe you can nick some off the folks who nicked 'em from the stores.",
+    "Scorpion_3_2 startedMessageText": "Let's go to the mall, today! Fuck, I hate that saying but it's so damn catchy.",
+    "Scorpion_3_2 successMessagetext": "Thanks for getting those bottles for us, I kept a couple of my high end bottles around so you can have those as a reward."
 }

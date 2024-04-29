@@ -182,7 +182,7 @@
           ],
           "value": 1,
           "visibilityConditions": [],
-          "zoneId": "gz_ambulance_0_marker"
+          "zoneId": "scorpion_gz_ambulance_0_marker"
         },
         {
           "conditionType": "PlaceBeacon",
@@ -196,7 +196,7 @@
           ],
           "value": 1,
           "visibilityConditions": [],
-          "zoneId": "gz_ambulance_1_marker"
+          "zoneId": "scorpion_gz_ambulance_1_marker"
         },
         {
           "completeInSeconds": 0,
@@ -632,7 +632,7 @@
                 "dynamicLocale": false,
                 "id": "Scorpion_1_4 req_1_1",
                 "zoneIds": [
-                  "shoreline_sanitorium_killzone"
+                  "scorpion_shoreline_sanitorium_killzone"
                 ]
               }
             ],
@@ -847,7 +847,7 @@
           ],
           "value": 1,
           "visibilityConditions": [],
-          "zoneId": "factory_exit_0"
+          "zoneId": "scorpion_factory_exit_0"
         },
         {
           "conditionType": "LeaveItemAtLocation",
@@ -867,7 +867,7 @@
           ],
           "value": 1,
           "visibilityConditions": [],
-          "zoneId": "factory_exit_1"
+          "zoneId": "scorpion_factory_exit_1"
         },
         {
           "conditionType": "LeaveItemAtLocation",
@@ -887,7 +887,7 @@
           ],
           "value": 1,
           "visibilityConditions": [],
-          "zoneId": "factory_exit_2"
+          "zoneId": "scorpion_factory_exit_2"
         },
         {
           "conditionType": "LeaveItemAtLocation",
@@ -907,7 +907,7 @@
           ],
           "value": 1,
           "visibilityConditions": [],
-          "zoneId": "factory_exit_3"
+          "zoneId": "scorpion_factory_exit_3"
         }
       ],
       "AvailableForStart": [
@@ -1093,7 +1093,7 @@
           ],
           "value": 1,
           "visibilityConditions": [],
-          "zoneId": "customs_zb011"
+          "zoneId": "scorpion_customs_zb011"
         },
         {
           "conditionType": "LeaveItemAtLocation",
@@ -1113,7 +1113,7 @@
           ],
           "value": 1,
           "visibilityConditions": [],
-          "zoneId": "customs_zb012"
+          "zoneId": "scorpion_customs_zb012"
         },
         {
           "conditionType": "LeaveItemAtLocation",
@@ -1133,7 +1133,7 @@
           ],
           "value": 1,
           "visibilityConditions": [],
-          "zoneId": "customs_zb013"
+          "zoneId": "scorpion_customs_zb013"
         }
       ],
       "AvailableForStart": [
@@ -1835,7 +1835,7 @@
                 "conditionType": "VisitPlace",
                 "dynamicLocale": false,
                 "id": "Scorpion_2_2 req_0_0",
-                "target": "3fl_dorms_115",
+                "target": "scorpion_3fl_dorms_115",
                 "value": 1
               }
             ],
@@ -1861,7 +1861,7 @@
                 "conditionType": "VisitPlace",
                 "dynamicLocale": false,
                 "id": "Scorpion_2_2 req_1_0",
-                "target": "3fl_dorms_206",
+                "target": "scorpion_3fl_dorms_206",
                 "value": 1
               }
             ],
@@ -1887,7 +1887,7 @@
                 "conditionType": "VisitPlace",
                 "dynamicLocale": false,
                 "id": "Scorpion_2_2 req_2_0",
-                "target": "3fl_dorms_212",
+                "target": "scorpion_3fl_dorms_212",
                 "value": 1
               }
             ],
@@ -1913,7 +1913,7 @@
                 "conditionType": "VisitPlace",
                 "dynamicLocale": false,
                 "id": "Scorpion_2_2 req_3_0",
-                "target": "3fl_dorms_310",
+                "target": "scorpion_3fl_dorms_310",
                 "value": 1
               }
             ],
@@ -1939,7 +1939,7 @@
                 "conditionType": "VisitPlace",
                 "dynamicLocale": false,
                 "id": "Scorpion_2_2 req_4_0",
-                "target": "2fl_dorms_213",
+                "target": "scorpion_2fl_dorms_213",
                 "value": 1
               }
             ],
@@ -3796,6 +3796,206 @@
     "side": "Pmc",
     "startedMessageText": "Scorpion_3_1 startedMessageText",
     "successMessageText": "Scorpion_3_1 successMessageText",
+    "traderId": "Scorpion",
+    "type": "Completion"
+  },
+  "Scorpion_3_2": {
+    "QuestName": "Let's Go To The Mall!",
+    "_id": "Scorpion_3_2",
+    "acceptPlayerMessage": "Scorpion_3_2 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "Scorpion_3_2 changeQuestMessageText",
+    "completePlayerMessage": "Scorpion_3_2 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "conditionType": "HandoverItem",
+          "dogtagLevel": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_3_2 req_0",
+          "index": 0,
+          "isEncoded": false,
+          "maxDurability": 100,
+          "minDurability": 0,
+          "onlyFoundInRaid": true,
+          "parentId": "",
+          "target": [
+            "5d40407c86f774318526545a"
+          ],
+          "value": 5,
+          "visibilityConditions": []
+        },
+        {
+          "conditionType": "HandoverItem",
+          "dogtagLevel": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_3_2 req_1",
+          "index": 1,
+          "isEncoded": false,
+          "maxDurability": 100,
+          "minDurability": 0,
+          "onlyFoundInRaid": true,
+          "parentId": "",
+          "target": [
+            "5d403f9186f7743cac3f229b"
+          ],
+          "value": 2,
+          "visibilityConditions": []
+        },
+        
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "bodyPart": [],
+                "compareMethod": ">=",
+                "conditionType": "Kills",
+                "daytime": {
+                  "from": 0,
+                  "to": 0
+                },
+                "distance": {
+                  "compareMethod": ">=",
+                  "value": 0
+                },
+                "dynamicLocale": false,
+                "enemyEquipmentExclusive": [],
+                "enemyEquipmentInclusive": [],
+                "enemyHealthEffects": [],
+                "id": "Scorpion_3_2 req_2_0",
+                "resetOnSessionEnd": false,
+                "savageRole": [],
+                "target": "Savage",
+                "value": 1,
+                "weapon": [],
+                "weaponCaliber": [],
+                "weaponModsExclusive": [],
+                "weaponModsInclusive": []
+              },
+              {
+                "conditionType": "InZone",
+                "dynamicLocale": false,
+                "id": "Scorpion_3_2 req_2_1",
+                "zoneIds": [
+                  "scorpion_interchange_2fl_hallarea"
+                ]
+              }
+            ],
+            "id": "Scorpion_3_2 req_2_2"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_3_2 req_2",
+          "index": 2,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Elimination",
+          "value": 5,
+          "visibilityConditions": []
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "compareMethod": ">=",
+          "conditionType": "Level",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_3_2 start_0",
+          "index": 0,
+          "parentId": "",
+          "value": 10,
+          "visibilityConditions": []
+        },
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_3_2 start_1",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_3_1",
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "declinePlayerMessage": "Scorpion_3_2 declinePlayerMessage",
+    "description": "Scorpion_3_2 description",
+    "failMessageText": "Scorpion_3_2 failMessageText",
+    "image": "/files/quest/icon/scorpion_questpic.png",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "any",
+    "name": "Scorpion_3_2 name",
+    "note": "Scorpion_3_2 note",
+    "restartable": false,
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": [
+        {
+          "id": "Scorpion_3_2 reward_0",
+          "index": 0,
+          "type": "Experience",
+          "value": 4800
+        },
+        {
+          "id": "Scorpion_3_2 reward_1",
+          "index": 1,
+          "target": "Scorpion",
+          "type": "TraderStanding",
+          "value": "0.03"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_3_2 reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "Scorpion_3_2 reward_2_0",
+              "_tpl": "5449016a4bdc2d6f028b456f",
+              "upd": {
+                "StackObjectsCount": 47113
+              }
+            }
+          ],
+          "target": "Scorpion_3_2 reward_2_0",
+          "type": "Item",
+          "value": "47113"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_3_2 reward_3",
+          "index": 3,
+          "items": [
+            {
+              "_id": "662344f0ca75908fcd0f97f8",
+              "_tpl": "5d1b376e86f774252519444e",
+              "upd": {
+                "StackObjectsCount": 2
+              }
+            }
+          ],
+          "target": "662344f0ca75908fcd0f97f8",
+          "type": "Item",
+          "value": "2"
+        }
+      ]
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "Scorpion_3_2 startedMessageText",
+    "successMessageText": "Scorpion_3_2 successMessageText",
     "traderId": "Scorpion",
     "type": "Completion"
   }
