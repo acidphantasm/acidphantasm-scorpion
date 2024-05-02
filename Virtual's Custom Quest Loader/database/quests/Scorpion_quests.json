@@ -4985,56 +4985,56 @@
           "value": "15000"
         },
         {
-          "findInRaid": true,
           "id": "Scorpion_3_4 reward_1",
           "index": 1,
-          "items": [
-            {
-              "_id": "Scorpion_3_4 reward_1_0",
-              "_tpl": "5449016a4bdc2d6f028b456f",
-              "upd": {
-                "StackObjectsCount": 250000
-              }
-            }
-          ],
-          "target": "Scorpion_3_4 reward_1_0",
-          "type": "Item",
-          "value": "250000"
+          "target": "Endurance",
+          "type": "Skill",
+          "value": "500"
         },
         {
           "id": "Scorpion_3_4 reward_2",
           "index": 2,
-          "target": "Endurance",
+          "target": "Strength",
           "type": "Skill",
           "value": "500"
         },
         {
           "id": "Scorpion_3_4 reward_3",
           "index": 3,
-          "target": "Strength",
+          "target": "Vitality",
           "type": "Skill",
           "value": "500"
         },
         {
           "id": "Scorpion_3_4 reward_4",
           "index": 4,
-          "target": "Vitality",
+          "target": "Attention",
           "type": "Skill",
           "value": "500"
         },
         {
           "id": "Scorpion_3_4 reward_5",
           "index": 5,
-          "target": "Attention",
+          "target": "Perception",
           "type": "Skill",
           "value": "500"
         },
         {
+          "findInRaid": true,
           "id": "Scorpion_3_4 reward_6",
           "index": 6,
-          "target": "Perception",
-          "type": "Skill",
-          "value": "500"
+          "items": [
+            {
+              "_id": "662344feca75908fcd0f982b",
+              "_tpl": "5b6d9ce188a4501afc1b2b25",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "662344feca75908fcd0f982b",
+          "type": "Item",
+          "value": "1"
         }
       ]
     },
@@ -5573,63 +5573,63 @@
           "value": "15000"
         },
         {
-          "findInRaid": true,
           "id": "Scorpion_3_5 reward_1",
           "index": 1,
-          "items": [
-            {
-              "_id": "Scorpion_3_5 reward_1_0",
-              "_tpl": "5449016a4bdc2d6f028b456f",
-              "upd": {
-                "StackObjectsCount": 250000
-              }
-            }
-          ],
-          "target": "Scorpion_3_5 reward_1_0",
-          "type": "Item",
-          "value": "250000"
+          "target": "Assault",
+          "type": "Skill",
+          "value": "500"
         },
         {
           "id": "Scorpion_3_5 reward_2",
           "index": 2,
-          "target": "Assault",
+          "target": "SMG",
           "type": "Skill",
           "value": "500"
         },
         {
           "id": "Scorpion_3_5 reward_3",
           "index": 3,
-          "target": "SMG",
+          "target": "LMG",
           "type": "Skill",
           "value": "500"
         },
         {
           "id": "Scorpion_3_5 reward_4",
           "index": 4,
-          "target": "LMG",
+          "target": "Shotgun",
           "type": "Skill",
           "value": "500"
         },
         {
           "id": "Scorpion_3_5 reward_5",
           "index": 5,
-          "target": "Shotgun",
+          "target": "Sniper",
           "type": "Skill",
           "value": "500"
         },
         {
           "id": "Scorpion_3_5 reward_6",
           "index": 6,
-          "target": "Sniper",
+          "target": "DMR",
           "type": "Skill",
           "value": "500"
         },
         {
-          "id": "Scorpion_3_5 reward_7",
+          "findInRaid": true,
+          "id": "Scorpion_3_4 reward_7",
           "index": 7,
-          "target": "DMR",
-          "type": "Skill",
-          "value": "500"
+          "items": [
+            {
+              "_id": "662344feca75908fcd0f982c",
+              "_tpl": "5c0a840b86f7742ffa4f2482",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "662344feca75908fcd0f982c",
+          "type": "Item",
+          "value": "1"
         }
       ]
     },
