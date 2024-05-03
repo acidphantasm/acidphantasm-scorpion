@@ -2971,21 +2971,6 @@
           "counter": {
             "conditions": [
               {
-                "availableAfter": 0,
-                "conditionType": "Quest",
-                "dispersion": 0,
-                "dynamicLocale": false,
-                "globalQuestCounterId": "",
-                "id": "Scorpion_2_5 req_0",
-                "index": 0,
-                "parentId": "",
-                "status": [
-                  2
-                ],
-                "target": "Scorpion_2_5",
-                "visibilityConditions": []
-              },
-              {
                 "bodyPart": [],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -3032,6 +3017,21 @@
           "parentId": "",
           "type": "Elimination",
           "value": 15,
+          "visibilityConditions": []
+        },
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_2_5 req_0",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            2
+          ],
+          "target": "Scorpion_2_5",
           "visibilityConditions": []
         }
       ],
@@ -3345,21 +3345,6 @@
     "conditions": {
       "AvailableForFinish": [
         {
-          "availableAfter": 0,
-          "conditionType": "Quest",
-          "dispersion": 0,
-          "dynamicLocale": false,
-          "globalQuestCounterId": "",
-          "id": "Scorpion_2_6 req_0",
-          "index": 0,
-          "parentId": "",
-          "status": [
-            2
-          ],
-          "target": "Scorpion_2_6",
-          "visibilityConditions": []
-        },
-        {
           "completeInSeconds": 0,
           "conditionType": "CounterCreator",
           "counter": {
@@ -3411,6 +3396,21 @@
           "parentId": "",
           "type": "Elimination",
           "value": 15,
+          "visibilityConditions": []
+        },
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_2_6 req_0",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            2
+          ],
+          "target": "Scorpion_2_6",
           "visibilityConditions": []
         }
       ],
