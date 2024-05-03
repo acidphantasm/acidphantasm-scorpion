@@ -4,7 +4,6 @@ import { ITraderConfig, UpdateTime } from "@spt-aki/models/spt/config/ITraderCon
 import { IDatabaseTables } from "@spt-aki/models/spt/server/IDatabaseTables";
 import { ImageRouter } from "@spt-aki/routers/ImageRouter";
 import { JsonUtil } from "@spt-aki/utils/JsonUtil";
-import * as assortJson from "../db/assort.json"
 import { ITraderUnlockRequirement } from "@spt-aki/models/eft/hideout/IQteData";
 import * as questAssort         from "../db/questassort.json";
 
@@ -53,11 +52,11 @@ export class TraderHelper
      * @param jsonUtil json utility class
      */
     // rome-ignore lint/suspicious/noExplicitAny: traderDetailsToAdd comes from base.json, so no type
-    public addTraderToDb(traderDetailsToAdd: any, tables: IDatabaseTables, jsonUtil: JsonUtil): void
+    public addTraderToDb(traderDetailsToAdd: any, tables: IDatabaseTables, jsonUtil: JsonUtil, newAssort: any): void
     {
         // Add trader to trader table, key is the traders id
         tables.traders[traderDetailsToAdd._id] = {
-            assort: jsonUtil.deserialize(jsonUtil.serialize(assortJson)) as ITraderAssort, // assorts are the 'offers' trader sells, can be a single item (e.g. carton of milk) or multiple items as a collection (e.g. a gun)
+            assort: jsonUtil.deserialize(jsonUtil.serialize(newAssort)) as ITraderAssort, // assorts are the 'offers' trader sells, can be a single item (e.g. carton of milk) or multiple items as a collection (e.g. a gun)
             base: jsonUtil.deserialize(jsonUtil.serialize(traderDetailsToAdd)) as ITraderBase, // Deserialise/serialise creates a copy of the json and allows us to cast it as an ITraderBase
             questassort: jsonUtil.deserialize(jsonUtil.serialize(questAssort))  // questassort is empty as trader has no assorts unlocked by quests
         };

@@ -31,6 +31,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
     private fluentAssortCreator: FluentAssortCreator
     private static config: Config;
     private static configPath = path.resolve(__dirname, "../config/config.json");
+    private static assortPath = path.resolve(__dirname, "../db/assort.json");
 
     constructor() 
     {
@@ -64,13 +65,13 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         {
             minRefresh = 1800;
             maxRefresh = 3600;
-            this.logger.log(`[${this.mod}] [Config]  traderRefreshMin must be less than traderRefreshMax. Refresh timers have been reset to default.`, "red");
+            this.logger.error(`[${this.mod}] [Config]  traderRefreshMin must be less than traderRefreshMax. Refresh timers have been reset to default.`);
         }
         if (maxRefresh <= 2)
         {
             minRefresh = 1800;
             maxRefresh = 3600;
-            this.logger.log(`[${this.mod}] [Config]  You set traderRefreshMax too low. Refresh timers have been reset to default.`, "red");
+            this.logger.error(`[${this.mod}] [Config]  You set traderRefreshMax too low. Refresh timers have been reset to default.`);
         }
 
         // Create helper class and use it to register our traders image/icon + set its stock refresh time
@@ -105,6 +106,26 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         const logger = container.resolve<ILogger>("WinstonLogger");
         const databaseServer: DatabaseServer = container.resolve<DatabaseServer>("DatabaseServer");
         const jsonUtil: JsonUtil = container.resolve<JsonUtil>("JsonUtil");
+        const assortJson = JSON.parse(fs.readFileSync(Scorpion.assortPath, "utf-8"));
+
+        //Update Assort Pricing via config multiplier
+        if (Scorpion.config.priceMultiplier != 1)
+        {
+            const assortPriceTable = assortJson["barter_scheme"];
+            for (const key in assortPriceTable)
+            {
+                //this.logger.log(`assortPriceTable: [${key}]`, "cyan");
+                assortPriceTable[key].forEach(item => {
+                    const count = item[0].count;
+                    const newPrice = Math.round(count * Scorpion.config.priceMultiplier);
+                    item[0].count = newPrice
+                    //this.logger.log(`Old price: [${count}], new price: [${newPrice}]`, "cyan");
+                })
+            }   
+        }
+
+        // Set local variable for assort to pass to traderHelper regardless of priceMultiplier config
+        const newAssort = assortJson
 
         // Get a reference to the database tables
         const tables = databaseServer.getTables();
@@ -112,7 +133,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         // Add new trader to the trader dictionary in DatabaseServer       
         // Add quest assort
         // Add trader to locale file, ensures trader text shows properly on screen
-        this.traderHelper.addTraderToDb(baseJson, tables, jsonUtil);
+        this.traderHelper.addTraderToDb(baseJson, tables, jsonUtil, newAssort);
         tables.traders[baseJson._id].questassort = questAssort;
         this.traderHelper.addTraderToLocales(baseJson, tables, baseJson.name, "Scorpion", baseJson.nickname, baseJson.location, "I'm sellin', what are you buyin'?");
         
@@ -127,6 +148,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
 
 interface Config 
 {
+    priceMultiplier: number,
     traderRefreshMin: number,
     traderRefreshMax: number,
     addTraderToFlea: boolean,
