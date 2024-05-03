@@ -5635,8 +5635,8 @@
     },
     "secretQuest": false,
     "side": "Pmc",
-    "startedMessageText": "Scorpion_3_4 startedMessageText",
-    "successMessageText": "Scorpion_3_4 successMessageText",
+    "startedMessageText": "Scorpion_3_5 startedMessageText",
+    "successMessageText": "Scorpion_3_5 successMessageText",
     "traderId": "Scorpion",
     "type": "Completion"
   }
