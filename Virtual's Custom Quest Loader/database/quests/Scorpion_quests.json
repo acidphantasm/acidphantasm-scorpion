@@ -2971,6 +2971,21 @@
           "counter": {
             "conditions": [
               {
+                "availableAfter": 0,
+                "conditionType": "Quest",
+                "dispersion": 0,
+                "dynamicLocale": false,
+                "globalQuestCounterId": "",
+                "id": "Scorpion_2_5 req_0",
+                "index": 0,
+                "parentId": "",
+                "status": [
+                  2
+                ],
+                "target": "Scorpion_2_5",
+                "visibilityConditions": []
+              },
+              {
                 "bodyPart": [],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -2986,7 +3001,7 @@
                 "enemyEquipmentExclusive": [],
                 "enemyEquipmentInclusive": [],
                 "enemyHealthEffects": [],
-                "id": "Scorpion_2_5 req_0_0",
+                "id": "Scorpion_2_5 req_1_0",
                 "resetOnSessionEnd": false,
                 "savageRole": [],
                 "target": "Savage",
@@ -2999,20 +3014,20 @@
               {
                 "conditionType": "Location",
                 "dynamicLocale": false,
-                "id": "Scorpion_2_5 req_0_1",
+                "id": "Scorpion_2_5 req_1_1",
                 "target": [
                   "factory4_day",
                   "factory4_night"
                 ]
               }
             ],
-            "id": "Scorpion_2_5 req_0_2"
+            "id": "Scorpion_2_5 req_1_2"
           },
           "doNotResetIfCounterCompleted": false,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
-          "id": "Scorpion_2_5 req_0",
-          "index": 0,
+          "id": "Scorpion_2_5 req_1",
+          "index": 1,
           "oneSessionOnly": false,
           "parentId": "",
           "type": "Elimination",
@@ -3059,8 +3074,8 @@
                 "enemyEquipmentExclusive": [],
                 "enemyEquipmentInclusive": [],
                 "enemyHealthEffects": [],
-                "id": "Scorpion_2_5 req_1_0",
-                "resetOnSessionEnd": true,
+                "id": "Scorpion_2_5 req_2_0",
+                "resetOnSessionEnd": false,
                 "savageRole": [
                   "bossTagilla"
                 ],
@@ -3072,13 +3087,13 @@
                 "weaponModsInclusive": []
               }
             ],
-            "id": "Scorpion_2_5 req_1_1"
+            "id": "Scorpion_2_5 req_2_1"
           },
           "doNotResetIfCounterCompleted": false,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
-          "id": "Scorpion_2_5 req_1",
-          "index": 1,
+          "id": "Scorpion_2_5 req_2",
+          "index": 0,
           "oneSessionOnly": false,
           "parentId": "",
           "type": "Completion",
@@ -3096,7 +3111,7 @@
     "location": "55f2d3fd4bdc2d5f408b4567",
     "name": "Scorpion_2_5 name",
     "note": "Scorpion_2_5 note",
-    "restartable": false,
+    "restartable": true,
     "rewards": {
       "Fail": [],
       "Started": [],
@@ -3330,6 +3345,21 @@
     "conditions": {
       "AvailableForFinish": [
         {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_2_6 req_0",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            2
+          ],
+          "target": "Scorpion_2_6",
+          "visibilityConditions": []
+        },
+        {
           "completeInSeconds": 0,
           "conditionType": "CounterCreator",
           "counter": {
@@ -3350,7 +3380,7 @@
                 "enemyEquipmentExclusive": [],
                 "enemyEquipmentInclusive": [],
                 "enemyHealthEffects": [],
-                "id": "Scorpion_2_6 req_0_0",
+                "id": "Scorpion_2_6 req_1_0",
                 "resetOnSessionEnd": false,
                 "savageRole": [],
                 "target": "Savage",
@@ -3363,20 +3393,20 @@
               {
                 "conditionType": "Location",
                 "dynamicLocale": false,
-                "id": "Scorpion_2_6 req_0_1",
+                "id": "Scorpion_2_6 req_1_1",
                 "target": [
                   "factory4_day",
                   "factory4_night"
                 ]
               }
             ],
-            "id": "Scorpion_2_6 req_0_2"
+            "id": "Scorpion_2_6 req_1_2"
           },
           "doNotResetIfCounterCompleted": false,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
-          "id": "Scorpion_2_6 req_0",
-          "index": 0,
+          "id": "Scorpion_2_6 req_1",
+          "index": 1,
           "oneSessionOnly": false,
           "parentId": "",
           "type": "Elimination",
@@ -3423,8 +3453,8 @@
                 "enemyEquipmentExclusive": [],
                 "enemyEquipmentInclusive": [],
                 "enemyHealthEffects": [],
-                "id": "Scorpion_2_6 req_1_0",
-                "resetOnSessionEnd": true,
+                "id": "Scorpion_2_6 req_2_0",
+                "resetOnSessionEnd": false,
                 "savageRole": [
                   "bossTagilla"
                 ],
@@ -3436,13 +3466,13 @@
                 "weaponModsInclusive": []
               }
             ],
-            "id": "Scorpion_2_6 req_1_1"
+            "id": "Scorpion_2_6 req_2_1"
           },
           "doNotResetIfCounterCompleted": false,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
-          "id": "Scorpion_2_6 req_1",
-          "index": 1,
+          "id": "Scorpion_2_6 req_2",
+          "index": 0,
           "oneSessionOnly": false,
           "parentId": "",
           "type": "Completion",
@@ -3460,7 +3490,7 @@
     "location": "55f2d3fd4bdc2d5f408b4567",
     "name": "Scorpion_2_6 name",
     "note": "Scorpion_2_6 note",
-    "restartable": false,
+    "restartable": true,
     "rewards": {
       "Fail": [],
       "Started": [],
