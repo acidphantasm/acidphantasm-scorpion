@@ -3060,7 +3060,7 @@
                 "enemyEquipmentInclusive": [],
                 "enemyHealthEffects": [],
                 "id": "Scorpion_2_5 req_1_0",
-                "resetOnSessionEnd": false,
+                "resetOnSessionEnd": true,
                 "savageRole": [
                   "bossTagilla"
                 ],
@@ -3424,7 +3424,7 @@
                 "enemyEquipmentInclusive": [],
                 "enemyHealthEffects": [],
                 "id": "Scorpion_2_6 req_1_0",
-                "resetOnSessionEnd": false,
+                "resetOnSessionEnd": true,
                 "savageRole": [
                   "bossTagilla"
                 ],
