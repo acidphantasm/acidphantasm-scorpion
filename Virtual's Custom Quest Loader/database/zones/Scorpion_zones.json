@@ -6,19 +6,19 @@
     "ZoneType": "placeitem",
     "FlareType": "",
     "Position": {
-      "X": "80.05547",
+      "X": "80.30547",
       "Y": "24.07533",
-      "Z": "226.9641"
+      "Z": "226.7141"
     },
     "Rotation": {
       "X": "0",
       "Y": "0",
-      "Z": "-1.661429E-07"
+      "Z": "0"
     },
     "Scale": {
-      "X": "2.25",
+      "X": "3.25",
       "Y": "2",
-      "Z": "5.25"
+      "Z": "7.25"
     }
   },
   {
@@ -28,19 +28,41 @@
     "ZoneType": "placeitem",
     "FlareType": "",
     "Position": {
-      "X": "158.0843",
-      "Y": "23.8611",
+      "X": "63.45448",
+      "Y": "24.07728",
+      "Z": "89.75129"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "20.5",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "3.25",
+      "Y": "2",
+      "Z": "6"
+    }
+  },
+  {
+    "ZoneId": "scorpion_gz_ambulance_2_marker",
+    "ZoneName": "scorpion_gz_ambulance_2_marker",
+    "ZoneLocation": "Sandbox",
+    "ZoneType": "placeitem",
+    "FlareType": "",
+    "Position": {
+      "X": "158.3343",
+      "Y": "24.1111",
       "Z": "-88.77029"
     },
     "Rotation": {
       "X": "0",
-      "Y": "-0.09584575",
+      "Y": "168",
       "Z": "0"
     },
     "Scale": {
-      "X": "5",
-      "Y": "1.75",
-      "Z": "2.25"
+      "X": "6.25",
+      "Y": "2",
+      "Z": "3.25"
     }
   },
   {
