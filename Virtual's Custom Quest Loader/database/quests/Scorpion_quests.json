@@ -5768,7 +5768,7 @@
           "target": [
             "5449016a4bdc2d6f028b456f"
           ],
-          "value": 2500000,
+          "value": 2000000,
           "visibilityConditions": []
         }
       ],
@@ -5781,7 +5781,7 @@
           "id": "Scorpion_4_2 start_0",
           "index": 0,
           "parentId": "",
-          "value": 15,
+          "value": 10,
           "visibilityConditions": []
         },
         {
@@ -5855,7 +5855,7 @@
           "target": [
             "5449016a4bdc2d6f028b456f"
           ],
-          "value": 5000000,
+          "value": 3000000,
           "visibilityConditions": []
         }
       ],
@@ -5868,7 +5868,7 @@
           "id": "Scorpion_4_3 start_0",
           "index": 0,
           "parentId": "",
-          "value": 25,
+          "value": 15,
           "visibilityConditions": []
         },
         {
@@ -5942,43 +5942,7 @@
           "target": [
             "5449016a4bdc2d6f028b456f"
           ],
-          "value": 5000000,
-          "visibilityConditions": []
-        },
-        {
-          "conditionType": "HandoverItem",
-          "dogtagLevel": 0,
-          "dynamicLocale": false,
-          "globalQuestCounterId": "",
-          "id": "Scorpion_4_4 req_1",
-          "index": 1,
-          "isEncoded": false,
-          "maxDurability": 100,
-          "minDurability": 0,
-          "onlyFoundInRaid": false,
-          "parentId": "",
-          "target": [
-            "5449016a4bdc2d6f028b456f"
-          ],
-          "value": 5000000,
-          "visibilityConditions": []
-        },
-        {
-          "conditionType": "HandoverItem",
-          "dogtagLevel": 0,
-          "dynamicLocale": false,
-          "globalQuestCounterId": "",
-          "id": "Scorpion_4_4 req_2",
-          "index": 2,
-          "isEncoded": false,
-          "maxDurability": 100,
-          "minDurability": 0,
-          "onlyFoundInRaid": false,
-          "parentId": "",
-          "target": [
-            "5449016a4bdc2d6f028b456f"
-          ],
-          "value": 5000000,
+          "value": 4000000,
           "visibilityConditions": []
         }
       ],
@@ -5991,7 +5955,7 @@
           "id": "Scorpion_4_4 start_0",
           "index": 0,
           "parentId": "",
-          "value": 35,
+          "value": 20,
           "visibilityConditions": []
         },
         {
@@ -6067,78 +6031,6 @@
           ],
           "value": 5000000,
           "visibilityConditions": []
-        },
-        {
-          "conditionType": "HandoverItem",
-          "dogtagLevel": 0,
-          "dynamicLocale": false,
-          "globalQuestCounterId": "",
-          "id": "Scorpion_4_5 req_1",
-          "index": 1,
-          "isEncoded": false,
-          "maxDurability": 100,
-          "minDurability": 0,
-          "onlyFoundInRaid": false,
-          "parentId": "",
-          "target": [
-            "5449016a4bdc2d6f028b456f"
-          ],
-          "value": 5000000,
-          "visibilityConditions": []
-        },
-        {
-          "conditionType": "HandoverItem",
-          "dogtagLevel": 0,
-          "dynamicLocale": false,
-          "globalQuestCounterId": "",
-          "id": "Scorpion_4_5 req_2",
-          "index": 2,
-          "isEncoded": false,
-          "maxDurability": 100,
-          "minDurability": 0,
-          "onlyFoundInRaid": false,
-          "parentId": "",
-          "target": [
-            "5449016a4bdc2d6f028b456f"
-          ],
-          "value": 5000000,
-          "visibilityConditions": []
-        },
-        {
-          "conditionType": "HandoverItem",
-          "dogtagLevel": 0,
-          "dynamicLocale": false,
-          "globalQuestCounterId": "",
-          "id": "Scorpion_4_5 req_3",
-          "index": 3,
-          "isEncoded": false,
-          "maxDurability": 100,
-          "minDurability": 0,
-          "onlyFoundInRaid": false,
-          "parentId": "",
-          "target": [
-            "5449016a4bdc2d6f028b456f"
-          ],
-          "value": 5000000,
-          "visibilityConditions": []
-        },
-        {
-          "conditionType": "HandoverItem",
-          "dogtagLevel": 0,
-          "dynamicLocale": false,
-          "globalQuestCounterId": "",
-          "id": "Scorpion_4_5 req_4",
-          "index": 4,
-          "isEncoded": false,
-          "maxDurability": 100,
-          "minDurability": 0,
-          "onlyFoundInRaid": false,
-          "parentId": "",
-          "target": [
-            "5449016a4bdc2d6f028b456f"
-          ],
-          "value": 5000000,
-          "visibilityConditions": []
         }
       ],
       "AvailableForStart": [
@@ -6150,7 +6042,7 @@
           "id": "Scorpion_4_5 start_0",
           "index": 0,
           "parentId": "",
-          "value": 45,
+          "value": 25,
           "visibilityConditions": []
         },
         {
@@ -6197,6 +6089,585 @@
     "side": "Pmc",
     "startedMessageText": "Scorpion_4_5 startedMessageText",
     "successMessageText": "Scorpion_4_5 successMessageText",
+    "traderId": "Scorpion",
+    "type": "PickUp"
+  },
+  "Scorpion_4_6": {
+    "QuestName": "Grab That Cash, Make a Stash VI",
+    "_id": "Scorpion_4_6",
+    "acceptPlayerMessage": "Scorpion_4_6 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "Scorpion_4_6 changeQuestMessageText",
+    "completePlayerMessage": "Scorpion_4_6 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "conditionType": "HandoverItem",
+          "dogtagLevel": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_4_6 req_0",
+          "index": 0,
+          "isEncoded": false,
+          "maxDurability": 100,
+          "minDurability": 0,
+          "onlyFoundInRaid": false,
+          "parentId": "",
+          "target": [
+            "5449016a4bdc2d6f028b456f"
+          ],
+          "value": 7500000,
+          "visibilityConditions": []
+        },
+        {
+          "conditionType": "HandoverItem",
+          "dogtagLevel": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_4_6 req_1",
+          "index": 1,
+          "isEncoded": false,
+          "maxDurability": 100,
+          "minDurability": 0,
+          "onlyFoundInRaid": false,
+          "parentId": "",
+          "target": [
+            "5696686a4bdc2da3298b456a"
+          ],
+          "value": 10000,
+          "visibilityConditions": []
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "compareMethod": ">=",
+          "conditionType": "Level",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_4_6 start_0",
+          "index": 0,
+          "parentId": "",
+          "value": 30,
+          "visibilityConditions": []
+        },
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_4_6 start_1",
+          "index": 1,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_4_5",
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "declinePlayerMessage": "Scorpion_4_6 declinePlayerMessage",
+    "description": "Scorpion_4_6 description",
+    "failMessageText": "Scorpion_4_6 failMessageText",
+    "image": "/files/quest/icon/scorpion_questpic.png",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "any",
+    "name": "Scorpion_4_6 name",
+    "note": "Scorpion_4_6 note",
+    "restartable": false,
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": [
+        {
+          "id": "Scorpion_4_6 reward_0",
+          "index": 0,
+          "type": "StashRows",
+          "value": "2"
+        }
+      ]
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "Scorpion_4_6 startedMessageText",
+    "successMessageText": "Scorpion_4_6 successMessageText",
+    "traderId": "Scorpion",
+    "type": "PickUp"
+  },
+  "Scorpion_4_7": {
+    "QuestName": "Grab That Cash, Make a Stash VII",
+    "_id": "Scorpion_4_7",
+    "acceptPlayerMessage": "Scorpion_4_7 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "Scorpion_4_7 changeQuestMessageText",
+    "completePlayerMessage": "Scorpion_4_7 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "conditionType": "HandoverItem",
+          "dogtagLevel": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_4_7 req_0",
+          "index": 0,
+          "isEncoded": false,
+          "maxDurability": 100,
+          "minDurability": 0,
+          "onlyFoundInRaid": false,
+          "parentId": "",
+          "target": [
+            "5449016a4bdc2d6f028b456f"
+          ],
+          "value": 7500000,
+          "visibilityConditions": []
+        },
+        {
+          "conditionType": "HandoverItem",
+          "dogtagLevel": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_4_7 req_1",
+          "index": 1,
+          "isEncoded": false,
+          "maxDurability": 100,
+          "minDurability": 0,
+          "onlyFoundInRaid": false,
+          "parentId": "",
+          "target": [
+            "5696686a4bdc2da3298b456a"
+          ],
+          "value": 20000,
+          "visibilityConditions": []
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "compareMethod": ">=",
+          "conditionType": "Level",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_4_7 start_0",
+          "index": 0,
+          "parentId": "",
+          "value": 35,
+          "visibilityConditions": []
+        },
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_4_7 start_1",
+          "index": 1,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_4_6",
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "declinePlayerMessage": "Scorpion_4_7 declinePlayerMessage",
+    "description": "Scorpion_4_7 description",
+    "failMessageText": "Scorpion_4_7 failMessageText",
+    "image": "/files/quest/icon/scorpion_questpic.png",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "any",
+    "name": "Scorpion_4_7 name",
+    "note": "Scorpion_4_7 note",
+    "restartable": false,
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": [
+        {
+          "id": "Scorpion_4_7 reward_0",
+          "index": 0,
+          "type": "StashRows",
+          "value": "2"
+        }
+      ]
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "Scorpion_4_7 startedMessageText",
+    "successMessageText": "Scorpion_4_7 successMessageText",
+    "traderId": "Scorpion",
+    "type": "PickUp"
+  },
+  "Scorpion_4_8": {
+    "QuestName": "Grab That Cash, Make a Stash VIII",
+    "_id": "Scorpion_4_8",
+    "acceptPlayerMessage": "Scorpion_4_8 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "Scorpion_4_8 changeQuestMessageText",
+    "completePlayerMessage": "Scorpion_4_8 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "conditionType": "HandoverItem",
+          "dogtagLevel": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_4_8 req_0",
+          "index": 0,
+          "isEncoded": false,
+          "maxDurability": 100,
+          "minDurability": 0,
+          "onlyFoundInRaid": false,
+          "parentId": "",
+          "target": [
+            "5449016a4bdc2d6f028b456f"
+          ],
+          "value": 9500000,
+          "visibilityConditions": []
+        },
+        {
+          "conditionType": "HandoverItem",
+          "dogtagLevel": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_4_8 req_1",
+          "index": 1,
+          "isEncoded": false,
+          "maxDurability": 100,
+          "minDurability": 0,
+          "onlyFoundInRaid": false,
+          "parentId": "",
+          "target": [
+            "5696686a4bdc2da3298b456a"
+          ],
+          "value": 25000,
+          "visibilityConditions": []
+        },
+        {
+          "conditionType": "HandoverItem",
+          "dogtagLevel": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_4_8 req_2",
+          "index": 2,
+          "isEncoded": false,
+          "maxDurability": 100,
+          "minDurability": 0,
+          "onlyFoundInRaid": false,
+          "parentId": "",
+          "target": [
+            "569668774bdc2da2298b4568"
+          ],
+          "value": 25000,
+          "visibilityConditions": []
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "compareMethod": ">=",
+          "conditionType": "Level",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_4_8 start_0",
+          "index": 0,
+          "parentId": "",
+          "value": 40,
+          "visibilityConditions": []
+        },
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_4_8 start_1",
+          "index": 1,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_4_7",
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "declinePlayerMessage": "Scorpion_4_8 declinePlayerMessage",
+    "description": "Scorpion_4_8 description",
+    "failMessageText": "Scorpion_4_8 failMessageText",
+    "image": "/files/quest/icon/scorpion_questpic.png",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "any",
+    "name": "Scorpion_4_8 name",
+    "note": "Scorpion_4_8 note",
+    "restartable": false,
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": [
+        {
+          "id": "Scorpion_4_8 reward_0",
+          "index": 0,
+          "type": "StashRows",
+          "value": "2"
+        }
+      ]
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "Scorpion_4_8 startedMessageText",
+    "successMessageText": "Scorpion_4_8 successMessageText",
+    "traderId": "Scorpion",
+    "type": "PickUp"
+  },
+  "Scorpion_4_9": {
+    "QuestName": "Grab That Cash, Make a Stash IX",
+    "_id": "Scorpion_4_9",
+    "acceptPlayerMessage": "Scorpion_4_9 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "Scorpion_4_9 changeQuestMessageText",
+    "completePlayerMessage": "Scorpion_4_9 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "conditionType": "HandoverItem",
+          "dogtagLevel": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_4_9 req_0",
+          "index": 0,
+          "isEncoded": false,
+          "maxDurability": 100,
+          "minDurability": 0,
+          "onlyFoundInRaid": false,
+          "parentId": "",
+          "target": [
+            "5449016a4bdc2d6f028b456f"
+          ],
+          "value": 9500000,
+          "visibilityConditions": []
+        },
+        {
+          "conditionType": "HandoverItem",
+          "dogtagLevel": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_4_9 req_1",
+          "index": 1,
+          "isEncoded": false,
+          "maxDurability": 100,
+          "minDurability": 0,
+          "onlyFoundInRaid": false,
+          "parentId": "",
+          "target": [
+            "5696686a4bdc2da3298b456a"
+          ],
+          "value": 50000,
+          "visibilityConditions": []
+        },
+        {
+          "conditionType": "HandoverItem",
+          "dogtagLevel": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_4_9 req_2",
+          "index": 2,
+          "isEncoded": false,
+          "maxDurability": 100,
+          "minDurability": 0,
+          "onlyFoundInRaid": false,
+          "parentId": "",
+          "target": [
+            "569668774bdc2da2298b4568"
+          ],
+          "value": 50000,
+          "visibilityConditions": []
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "compareMethod": ">=",
+          "conditionType": "Level",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_4_9 start_0",
+          "index": 0,
+          "parentId": "",
+          "value": 45,
+          "visibilityConditions": []
+        },
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_4_9 start_1",
+          "index": 1,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_4_8",
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "declinePlayerMessage": "Scorpion_4_9 declinePlayerMessage",
+    "description": "Scorpion_4_9 description",
+    "failMessageText": "Scorpion_4_9 failMessageText",
+    "image": "/files/quest/icon/scorpion_questpic.png",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "any",
+    "name": "Scorpion_4_9 name",
+    "note": "Scorpion_4_9 note",
+    "restartable": false,
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": [
+        {
+          "id": "Scorpion_4_9 reward_0",
+          "index": 0,
+          "type": "StashRows",
+          "value": "2"
+        }
+      ]
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "Scorpion_4_9 startedMessageText",
+    "successMessageText": "Scorpion_4_9 successMessageText",
+    "traderId": "Scorpion",
+    "type": "PickUp"
+  },
+  "Scorpion_4_10": {
+    "QuestName": "Grab That Cash, Make a Stash X",
+    "_id": "Scorpion_4_10",
+    "acceptPlayerMessage": "Scorpion_4_10 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "Scorpion_4_10 changeQuestMessageText",
+    "completePlayerMessage": "Scorpion_4_10 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "conditionType": "HandoverItem",
+          "dogtagLevel": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_4_10 req_0",
+          "index": 0,
+          "isEncoded": false,
+          "maxDurability": 100,
+          "minDurability": 0,
+          "onlyFoundInRaid": false,
+          "parentId": "",
+          "target": [
+            "5449016a4bdc2d6f028b456f"
+          ],
+          "value": 9500000,
+          "visibilityConditions": []
+        },
+        {
+          "conditionType": "HandoverItem",
+          "dogtagLevel": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_4_10 req_1",
+          "index": 1,
+          "isEncoded": false,
+          "maxDurability": 100,
+          "minDurability": 0,
+          "onlyFoundInRaid": false,
+          "parentId": "",
+          "target": [
+            "5696686a4bdc2da3298b456a"
+          ],
+          "value": 100000,
+          "visibilityConditions": []
+        },
+        {
+          "conditionType": "HandoverItem",
+          "dogtagLevel": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_4_10 req_2",
+          "index": 2,
+          "isEncoded": false,
+          "maxDurability": 100,
+          "minDurability": 0,
+          "onlyFoundInRaid": false,
+          "parentId": "",
+          "target": [
+            "569668774bdc2da2298b4568"
+          ],
+          "value": 100000,
+          "visibilityConditions": []
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "compareMethod": ">=",
+          "conditionType": "Level",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_4_10 start_0",
+          "index": 0,
+          "parentId": "",
+          "value": 50,
+          "visibilityConditions": []
+        },
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_4_10 start_1",
+          "index": 1,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_4_9",
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "declinePlayerMessage": "Scorpion_4_10 declinePlayerMessage",
+    "description": "Scorpion_4_10 description",
+    "failMessageText": "Scorpion_4_10 failMessageText",
+    "image": "/files/quest/icon/scorpion_questpic.png",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "any",
+    "name": "Scorpion_4_10 name",
+    "note": "Scorpion_4_10 note",
+    "restartable": false,
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": [
+        {
+          "id": "Scorpion_4_10 reward_0",
+          "index": 0,
+          "type": "StashRows",
+          "value": "2"
+        }
+      ]
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "Scorpion_4_10 startedMessageText",
+    "successMessageText": "Scorpion_4_10 successMessageText",
     "traderId": "Scorpion",
     "type": "PickUp"
   },
