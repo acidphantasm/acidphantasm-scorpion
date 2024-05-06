@@ -144,7 +144,7 @@
           "items": [
             {
               "_id": "661f33776b5151c024011d02",
-              "_tpl": "5656d7c34bdc2d9d198b4587"
+              "_tpl": "64b7af5a8532cf95ee0a0dbd"
             }
           ],
           "loyaltyLevel": 1,
@@ -199,6 +199,20 @@
           "zoneId": "scorpion_gz_ambulance_1_marker"
         },
         {
+          "conditionType": "PlaceBeacon",
+          "dynamicLocale": false,
+          "id": "Scorpion_1_2 req_2",
+          "index": 2,
+          "parentId": "",
+          "plantTime": 25,
+          "target": [
+            "5991b51486f77447b112d44f"
+          ],
+          "value": 1,
+          "visibilityConditions": [],
+          "zoneId": "scorpion_gz_ambulance_2_marker"
+        },
+        {
           "completeInSeconds": 0,
           "conditionType": "CounterCreator",
           "counter": {
@@ -206,7 +220,7 @@
               {
                 "conditionType": "ExitStatus",
                 "dynamicLocale": false,
-                "id": "Scorpion_1_2 req_2_0",
+                "id": "Scorpion_1_2 req_3_0",
                 "status": [
                   "Survived",
                   "Runner"
@@ -215,19 +229,19 @@
               {
                 "conditionType": "Location",
                 "dynamicLocale": false,
-                "id": "Scorpion_1_2 req_2_1",
+                "id": "Scorpion_1_2 req_3_1",
                 "target": [
                   "Sandbox"
                 ]
               }
             ],
-            "id": "Scorpion_1_2 req_2_2"
+            "id": "Scorpion_1_2 req_3_2"
           },
           "doNotResetIfCounterCompleted": false,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
-          "id": "Scorpion_1_2 req_2",
-          "index": 2,
+          "id": "Scorpion_1_2 req_3",
+          "index": 3,
           "oneSessionOnly": false,
           "parentId": "",
           "type": "Completion",
@@ -235,13 +249,18 @@
           "visibilityConditions": [
             {
               "conditionType": "CompleteCondition",
-              "id": "Scorpion_1_2 req_0_0",
+              "id": "Scorpion_1_2 req_1_0",
               "target": "Scorpion_1_2 req_0"
             },
             {
               "conditionType": "CompleteCondition",
-              "id": "Scorpion_1_2 req_1_0",
+              "id": "Scorpion_1_2 req_1_1",
               "target": "Scorpion_1_2 req_1"
+            },
+            {
+              "conditionType": "CompleteCondition",
+              "id": "Scorpion_1_2 req_1_2",
+              "target": "Scorpion_1_2 req_2"
             }
           ]
         }
@@ -287,30 +306,13 @@
               "_id": "Scorpion_1_2 startreward_1_0",
               "_tpl": "5991b51486f77447b112d44f",
               "upd": {
-                "StackObjectsCount": 1
+                "StackObjectsCount": 3
               }
             }
           ],
           "target": "Scorpion_1_2 startreward_1_0",
           "type": "Item",
-          "value": "1"
-        },
-        {
-          "findInRaid": true,
-          "id": "Scorpion_1_2 startreward_2",
-          "index": 1,
-          "items": [
-            {
-              "_id": "Scorpion_1_2 startreward_2_0",
-              "_tpl": "5991b51486f77447b112d44f",
-              "upd": {
-                "StackObjectsCount": 1
-              }
-            }
-          ],
-          "target": "Scorpion_1_2 startreward_2_0",
-          "type": "Item",
-          "value": "1"
+          "value": "3"
         }
       ],
       "Success": [
@@ -353,13 +355,13 @@
               "_id": "Scorpion_1_2 reward_3_0",
               "_tpl": "544fb45d4bdc2dee738b4568",
               "upd": {
-                "StackObjectsCount": 1
+                "StackObjectsCount": 2
               }
             }
           ],
           "target": "Scorpion_1_2 reward_3_0",
           "type": "Item",
-          "value": "1"
+          "value": "2"
         },
         {
           "id": "Scorpion_1_2 reward_4",
