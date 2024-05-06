@@ -50,7 +50,7 @@
     },
     {
       "_id": "661f33776b5151c024011d06",
-      "_tpl": "58dd3ad986f77403051cba8f",
+      "_tpl": "5e023e6e34d52a55c3304f71",
       "parentId": "hideout",
       "slotId": "hideout",
       "upd": {
@@ -1599,7 +1599,7 @@
     "661f33776b5151c024011d06": [
       [
         {
-          "count": 420,
+          "count": 199,
           "_tpl": "5449016a4bdc2d6f028b456f"
         }
       ]
