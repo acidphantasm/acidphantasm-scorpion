@@ -957,6 +957,37 @@
           "target": "6492e44af4287b13040fc88a",
           "traderId": "Scorpion",
           "type": "AssortmentUnlock"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_1_5 start_reward_1",
+          "index": 1,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c545",
+              "_tpl": "5448ba0b4bdc2d02308b456c",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c545",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "id": "Scorpion_1_5 start_reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c545",
+              "_tpl": "5448ba0b4bdc2d02308b456c"
+            }
+          ],
+          "loyaltyLevel": 1,
+          "target": "6635a60afe3ddd40c508c545",
+          "traderId": "Scorpion",
+          "type": "AssortmentUnlock"
         }
       ],
       "Success": [
