@@ -31,7 +31,6 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
     private logger: ILogger
     private traderHelper: TraderHelper
     private fluentAssortCreator: FluentAssortCreator
-    private preAkiModLoader: PreAkiModLoader;
     private static config: Config;
     private static configPath = path.resolve(__dirname, "../config/config.json");
     private static assortPath = path.resolve(__dirname, "../db/assort.json");
@@ -118,13 +117,13 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         const assortItemTable = assortJson["items"];
 
         //Detect Realism (to ignore randomized settings)
-        const installedMods = preAkiModLoader.getImportedModsNames()
-        const realismDetected = installedMods.includes("SPT-Realism");
+        const realismDetected = preAkiModLoader.getImportedModsNames().includes("SPT-Realism");
         if (realismDetected && Scorpion.config.randomizeBuyRestriction || realismDetected && Scorpion.config.randomizeStockAvailable)
         {
             this.logger.log(`[${this.mod}] SPT-Realism detected, disabling randomizeBuyRestriction and/or randomizeStockAvailable:`, "magenta");
         }
         this.logger.log(`Realism: [${realismDetected}]`, "cyan");
+        this.logger.log(`ModsLoaded: [${preAkiModLoader.getImportedModsNames()}]`, "cyan");
 
 
         //Update Assort Pricing via config multiplier for server
