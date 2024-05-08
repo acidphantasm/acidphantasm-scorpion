@@ -12,6 +12,7 @@ import { ConfigTypes } from "@spt-aki/models/enums/ConfigTypes";
 import { ITraderConfig } from "@spt-aki/models/spt/config/ITraderConfig";
 import { IRagfairConfig } from "@spt-aki/models/spt/config/IRagfairConfig";
 import { JsonUtil } from "@spt-aki/utils/JsonUtil";
+import { RandomUtil } from "@spt-aki/utils/RandomUtil";
 import * as fs from "node:fs";
 import * as path from "node:path";
 
@@ -107,20 +108,74 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         const databaseServer: DatabaseServer = container.resolve<DatabaseServer>("DatabaseServer");
         const jsonUtil: JsonUtil = container.resolve<JsonUtil>("JsonUtil");
         const assortJson = JSON.parse(fs.readFileSync(Scorpion.assortPath, "utf-8"));
+        const randomUtil: RandomUtil = container.resolve<RandomUtil>("RandomUtil");
+        const assortPriceTable = assortJson["barter_scheme"];
+        const assortItemTable = assortJson["items"];
 
         //Update Assort Pricing via config multiplier
         if (Scorpion.config.priceMultiplier != 1)
         {
-            const assortPriceTable = assortJson["barter_scheme"];
-            for (const key in assortPriceTable)
+            for (const mongoID in assortPriceTable)
             {
                 //this.logger.log(`assortPriceTable: [${key}]`, "cyan");
-                assortPriceTable[key].forEach(item => {
+                assortPriceTable[mongoID].forEach(item => {
                     const count = item[0].count;
                     const newPrice = Math.round(count * Scorpion.config.priceMultiplier);
                     item[0].count = newPrice
                     //this.logger.log(`Old price: [${count}], new price: [${newPrice}]`, "cyan");
                 })
+            }   
+        }
+
+        // Randomize Assort Stock via config bool
+        if (Scorpion.config.randomizeStockAvailable)
+        {
+            for (const item in assortItemTable)
+            {
+                if (assortItemTable[item].upd?.StackObjectsCount == undefined)
+                {
+                    continue // Skip setting count, it's a weapon attachment or armour plate
+                }
+                else
+                {
+                    const itemID = assortItemTable[item]._id;
+                    const originalStock = assortItemTable[item].upd.StackObjectsCount;
+                    const newStock = randomUtil.randInt(1, originalStock);
+                    const outOfStockRoll = randomUtil.getChance100(Scorpion.config.outOfStockChance);
+                    this.logger.log(`item: [${itemID}] oldStock: [${originalStock}] newStock: [${newStock}] outOfStockRoll [${outOfStockRoll}]`, "cyan");
+                    if (outOfStockRoll)
+                    {
+                        assortItemTable[item].upd.StackObjectsCount = 0;
+                    } 
+                    else
+                    {
+                        assortItemTable[item].upd.StackObjectsCount = newStock;
+                    }
+                }
+                //assortItemTable[itemID].upd.StackObjectsCount = newCount
+                //this.logger.log(`Old price: [${count}], new price: [${newPrice}]`, "cyan");
+            }   
+        }
+
+        // Randomize Assort Availability via config bool
+        if (Scorpion.config.randomizeBuyRestriction)
+        {
+            for (const item in assortItemTable)
+            {
+                if (assortItemTable[item].upd?.BuyRestrictionMax == undefined)
+                {
+                    continue // Skip setting count, it's a weapon attachment or armour plate
+                }
+                else
+                {
+                    const itemID = assortItemTable[item]._id;
+                    const oldRestriction = assortItemTable[item].upd.BuyRestrictionMax;
+                    const newRestriction = Math.round(randomUtil.randInt((oldRestriction * 0.75), (oldRestriction * 1.25)));
+                    this.logger.log(`item: [${itemID}] oldRestriction: [${oldRestriction}] newRestriction: [${newRestriction}]`, "cyan");
+                    assortItemTable[item].upd.BuyRestrictionMax = newRestriction;
+                }
+                //assortItemTable[itemID].upd.StackObjectsCount = newCount
+                //this.logger.log(`Old price: [${count}], new price: [${newPrice}]`, "cyan");
             }   
         }
 
@@ -148,6 +203,9 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
 
 interface Config 
 {
+    randomizeStockAvailable: boolean,
+    outOfStockChance: number,
+    randomizeBuyRestriction: boolean,
     priceMultiplier: number,
     traderRefreshMin: number,
     traderRefreshMax: number,
