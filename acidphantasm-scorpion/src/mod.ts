@@ -122,9 +122,6 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         {
             this.logger.log(`[${this.mod}] SPT-Realism detected, disabling randomizeBuyRestriction and/or randomizeStockAvailable:`, "magenta");
         }
-        this.logger.log(`Realism: [${realismDetected}]`, "cyan");
-        this.logger.log(`ModsLoaded: [${preAkiModLoader.getImportedModsNames()}]`, "cyan");
-
 
         //Update Assort Pricing via config multiplier for server
         if (Scorpion.config.priceMultiplier != 1)
