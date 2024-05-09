@@ -197,8 +197,6 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         this.traderHelper.addTraderToDb(baseJson, tables, jsonUtil, newAssort);
         tables.traders[baseJson._id].questassort = questAssort;
         this.traderHelper.addTraderToLocales(baseJson, tables, baseJson.name, "Scorpion", baseJson.nickname, baseJson.location, "I'm sellin', what are you buyin'?");
-        
-
 
         this.logger.debug(`[${this.mod}] loaded... `);
 
