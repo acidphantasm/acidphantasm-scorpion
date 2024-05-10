@@ -14,7 +14,6 @@ import { IRagfairConfig } from "@spt-aki/models/spt/config/IRagfairConfig";
 import type {DynamicRouterModService} from "@spt-aki/services/mod/dynamicRouter/DynamicRouterModService";
 import { JsonUtil } from "@spt-aki/utils/JsonUtil";
 import { RandomUtil } from "@spt-aki/utils/RandomUtil";
-import { TimeUtil } from "@spt-aki/utils/TimeUtil";
 import * as fs from "node:fs";
 import * as path from "node:path";
 
@@ -56,7 +55,6 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         const imageRouter: ImageRouter = container.resolve<ImageRouter>("ImageRouter");
         const databaseServer: DatabaseServer = container.resolve<DatabaseServer>("DatabaseServer");
         const hashUtil: HashUtil = container.resolve<HashUtil>("HashUtil");
-        const timeUtil: TimeUtil = container.resolve<TimeUtil>("TimeUtil");
         const configServer = container.resolve<ConfigServer>("ConfigServer");
         const traderConfig: ITraderConfig = configServer.getConfig<ITraderConfig>(ConfigTypes.TRADER);
         const ragfairConfig = configServer.getConfig<IRagfairConfig>(ConfigTypes.RAGFAIR);
