@@ -1,12 +1,12 @@
 {
     "priceMultiplier": 1,
 
-    "traderRefreshMin": 10,
-    "traderRefreshMax": 60,
+    "traderRefreshMin": 1800,
+    "traderRefreshMax": 3600,
 
     "addTraderToFlea": true,
     
-    "randomizeBuyRestriction": true,
-    "randomizeStockAvailable": true,
-    "outOfStockChance": 10
+    "randomizeBuyRestriction": false,
+    "randomizeStockAvailable": false,
+    "outOfStockChance": 25
 }
