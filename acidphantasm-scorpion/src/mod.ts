@@ -11,9 +11,10 @@ import { ConfigServer } from "@spt-aki/servers/ConfigServer";
 import { ConfigTypes } from "@spt-aki/models/enums/ConfigTypes";
 import { ITraderConfig } from "@spt-aki/models/spt/config/ITraderConfig";
 import { IRagfairConfig } from "@spt-aki/models/spt/config/IRagfairConfig";
-import { TraderAssortHelper } from "@spt-aki/helpers/TraderAssortHelper";
+import type {DynamicRouterModService} from "@spt-aki/services/mod/dynamicRouter/DynamicRouterModService";
 import { JsonUtil } from "@spt-aki/utils/JsonUtil";
 import { RandomUtil } from "@spt-aki/utils/RandomUtil";
+import { TimeUtil } from "@spt-aki/utils/TimeUtil";
 import * as fs from "node:fs";
 import * as path from "node:path";
 
@@ -53,10 +54,15 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         // Get SPT code/data we need later
         const preAkiModLoader: PreAkiModLoader = container.resolve<PreAkiModLoader>("PreAkiModLoader");
         const imageRouter: ImageRouter = container.resolve<ImageRouter>("ImageRouter");
+        const databaseServer: DatabaseServer = container.resolve<DatabaseServer>("DatabaseServer");
         const hashUtil: HashUtil = container.resolve<HashUtil>("HashUtil");
+        const timeUtil: TimeUtil = container.resolve<TimeUtil>("TimeUtil");
         const configServer = container.resolve<ConfigServer>("ConfigServer");
         const traderConfig: ITraderConfig = configServer.getConfig<ITraderConfig>(ConfigTypes.TRADER);
         const ragfairConfig = configServer.getConfig<IRagfairConfig>(ConfigTypes.RAGFAIR);
+        const dynamicRouterModService = container.resolve<DynamicRouterModService>("DynamicRouterModService");
+        const trader = databaseServer.getTables().traders["Scorpion"];
+        const assortItems = trader.assort.items;
         
         //Load config file before accessing it
         Scorpion.config = JSON.parse(fs.readFileSync(Scorpion.configPath, "utf-8"));
@@ -95,7 +101,34 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         else
         {
             ragfairConfig.traders[baseJson._id] = false;
-        }        
+        }
+
+        dynamicRouterModService.registerDynamicRouter(
+            "ScorpionRefreshStock",
+            [
+                {
+                    url: "/client/items/prices/Scorpion",
+                    action: (url, info, sessionId, output) => 
+                    {
+                        if (!realismDetected)
+                        {
+                            if (Scorpion.config.randomizeBuyRestriction)
+                            {
+                                this.logger.info(`[${this.mod}] Refreshing Scorpion Stock with Randomized Buy Restrictions.`);
+                                this.randomizeBuyRestriction(assortItems);
+                            }
+                            if (Scorpion.config.randomizeStockAvailable)
+                            {
+                                this.logger.info(`[${this.mod}] Refreshing Scorpion Stock with Randomized Stock Availability.`);
+                                this.randomizeStockAvailable(assortItems);
+                            }
+                        }
+                        return output;
+                    }
+                }
+            ],
+            "aki"
+        );
     }
         
     /**
@@ -115,6 +148,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         //Get & Set Assort Information
         const assortJson = JSON.parse(fs.readFileSync(Scorpion.assortPath, "utf-8"));
         const assortPriceTable = assortJson["barter_scheme"];
+        const assortItemTable = assortJson["items"];
 
         //Detect Realism (to ignore randomized settings)
         const realismCheck = preAkiModLoader.getImportedModsNames().includes("SPT-Realism");
@@ -144,11 +178,11 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         }
         if (!realismDetected && Scorpion.config.randomizeBuyRestriction)
         {
-            this.randomizeBuyRestriction(assortJson);
+            this.randomizeBuyRestriction(assortItemTable);
         }
         if (!realismDetected && Scorpion.config.randomizeStockAvailable)
         {
-            this.randomizeStockAvailable(assortJson);
+            this.randomizeStockAvailable(assortItemTable);
         }
 
         // Set local variable for assort to pass to traderHelper regardless of priceMultiplier config
@@ -173,10 +207,9 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
     {
         realismDetected = i;
     }
-    private randomizeBuyRestriction(assortJson)
+    private randomizeBuyRestriction(assortItemTable)
     {
         const randomUtil: RandomUtil = container.resolve<RandomUtil>("RandomUtil");
-        const assortItemTable = assortJson["items"];
         // Randomize Assort Availability via config bool for server start
         for (const item in assortItemTable)
         {
@@ -194,10 +227,9 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
             }
         }
     }
-    private randomizeStockAvailable(assortJson)
+    private randomizeStockAvailable(assortItemTable)
     {
         const randomUtil: RandomUtil = container.resolve<RandomUtil>("RandomUtil");
-        const assortItemTable = assortJson["items"];
         for (const item in assortItemTable)
         {
             if (assortItemTable[item].upd?.StackObjectsCount == undefined)
