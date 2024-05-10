@@ -166,7 +166,8 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
             for (const mongoID in assortPriceTable)
             {
                 //this.logger.log(`assortPriceTable: [${key}]`, "cyan");
-                assortPriceTable[mongoID].forEach(item => {
+                assortPriceTable[mongoID].forEach(item => 
+                {
                     const count = item[0].count;
                     const newPrice = Math.round(count * Scorpion.config.priceMultiplier);
                     item[0].count = newPrice
@@ -217,7 +218,6 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
             }
             else
             {
-                const itemID = assortItemTable[item]._id;
                 const oldRestriction = assortItemTable[item].upd.BuyRestrictionMax;
                 const newRestriction = Math.round(randomUtil.randInt((oldRestriction * 0.75), (oldRestriction * 1.25)));
                 //this.logger.log(`item: [${itemID}] oldRestriction: [${oldRestriction}] newRestriction: [${newRestriction}]`, "cyan");
@@ -236,7 +236,6 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
             }
             else
             {
-                const itemID = assortItemTable[item]._id;
                 const originalStock = assortItemTable[item].upd.StackObjectsCount;
                 const newStock = randomUtil.randInt(2, originalStock);
                 const outOfStockRoll = randomUtil.getChance100(Scorpion.config.outOfStockChance);
