@@ -1,4 +1,4 @@
-import { DependencyContainer } from "tsyringe";
+import { DependencyContainer, container } from "tsyringe";
 
 // SPT types
 import { IPreAkiLoadMod } from "@spt-aki/models/external/IPreAkiLoadMod";
@@ -24,6 +24,8 @@ import { Traders } from "@spt-aki/models/enums/Traders";
 import { HashUtil } from "@spt-aki/utils/HashUtil";
 import * as baseJson            from "../db/base.json";
 import * as questAssort         from "../db/questassort.json";
+
+let realismDetected: boolean;
 
 class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
 {
@@ -93,9 +95,9 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         else
         {
             ragfairConfig.traders[baseJson._id] = false;
-        }
+        }        
     }
-    
+        
     /**
      * Majority of trader-related work occurs after the aki database has been loaded but prior to SPT code being run
      * @param container Dependency container
@@ -109,18 +111,21 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         const logger = container.resolve<ILogger>("WinstonLogger");
         const databaseServer: DatabaseServer = container.resolve<DatabaseServer>("DatabaseServer");
         const jsonUtil: JsonUtil = container.resolve<JsonUtil>("JsonUtil");
-        const randomUtil: RandomUtil = container.resolve<RandomUtil>("RandomUtil");
 
         //Get & Set Assort Information
         const assortJson = JSON.parse(fs.readFileSync(Scorpion.assortPath, "utf-8"));
         const assortPriceTable = assortJson["barter_scheme"];
-        const assortItemTable = assortJson["items"];
 
         //Detect Realism (to ignore randomized settings)
-        const realismDetected = preAkiModLoader.getImportedModsNames().includes("SPT-Realism");
-        if (realismDetected && Scorpion.config.randomizeBuyRestriction || realismDetected && Scorpion.config.randomizeStockAvailable)
+        const realismCheck = preAkiModLoader.getImportedModsNames().includes("SPT-Realism");
+        if (realismCheck && Scorpion.config.randomizeBuyRestriction || realismCheck && Scorpion.config.randomizeStockAvailable)
         {
-            this.logger.log(`[${this.mod}] SPT-Realism detected, disabling randomizeBuyRestriction and/or randomizeStockAvailable:`, "magenta");
+            this.setRealismDetection(true);
+            this.logger.log(`[${this.mod}] SPT-Realism detected, disabling randomizeBuyRestriction and/or randomizeStockAvailable:`, "green");
+        }
+        else
+        {
+            this.setRealismDetection(false);
         }
 
         //Update Assort Pricing via config multiplier for server
@@ -137,52 +142,13 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
                 })
             }   
         }
-        // Randomize Assort Stock via config bool for server start
-        if (Scorpion.config.randomizeStockAvailable && !realismDetected)
+        if (!realismDetected && Scorpion.config.randomizeBuyRestriction)
         {
-            for (const item in assortItemTable)
-            {
-                if (assortItemTable[item].upd?.StackObjectsCount == undefined)
-                {
-                    continue // Skip setting count, it's a weapon attachment or armour plate
-                }
-                else
-                {
-                    const itemID = assortItemTable[item]._id;
-                    const originalStock = assortItemTable[item].upd.StackObjectsCount;
-                    const newStock = randomUtil.randInt(1, originalStock);
-                    const outOfStockRoll = randomUtil.getChance100(Scorpion.config.outOfStockChance);
-                    //this.logger.log(`item: [${itemID}] oldStock: [${originalStock}] newStock: [${newStock}] outOfStockRoll [${outOfStockRoll}]`, "cyan");
-                    if (outOfStockRoll)
-                    {
-                        assortItemTable[item].upd.StackObjectsCount = 0;
-                    } 
-                    else
-                    {
-                        assortItemTable[item].upd.StackObjectsCount = newStock;
-                    }
-                }
-            }   
+            this.randomizeBuyRestriction(assortJson);
         }
-
-        // Randomize Assort Availability via config bool for server start
-        if (Scorpion.config.randomizeBuyRestriction && !realismDetected)
+        if (!realismDetected && Scorpion.config.randomizeStockAvailable)
         {
-            for (const item in assortItemTable)
-            {
-                if (assortItemTable[item].upd?.BuyRestrictionMax == undefined)
-                {
-                    continue // Skip setting count, it's a weapon attachment or armour plate
-                }
-                else
-                {
-                    const itemID = assortItemTable[item]._id;
-                    const oldRestriction = assortItemTable[item].upd.BuyRestrictionMax;
-                    const newRestriction = Math.round(randomUtil.randInt((oldRestriction * 0.75), (oldRestriction * 1.25)));
-                    //this.logger.log(`item: [${itemID}] oldRestriction: [${oldRestriction}] newRestriction: [${newRestriction}]`, "cyan");
-                    assortItemTable[item].upd.BuyRestrictionMax = newRestriction;
-                }
-            }   
+            this.randomizeStockAvailable(assortJson);
         }
 
         // Set local variable for assort to pass to traderHelper regardless of priceMultiplier config
@@ -202,6 +168,59 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
 
         const timeTaken = performance.now() - start;
         logger.log(`[${this.mod}] Trader load took ${timeTaken.toFixed(3)}ms.`, "green");
+    }
+    private setRealismDetection(i: boolean)
+    {
+        realismDetected = i;
+    }
+    private randomizeBuyRestriction(assortJson)
+    {
+        const randomUtil: RandomUtil = container.resolve<RandomUtil>("RandomUtil");
+        const assortItemTable = assortJson["items"];
+        // Randomize Assort Availability via config bool for server start
+        for (const item in assortItemTable)
+        {
+            if (assortItemTable[item].upd?.BuyRestrictionMax == undefined)
+            {
+                continue // Skip setting count, it's a weapon attachment or armour plate
+            }
+            else
+            {
+                const itemID = assortItemTable[item]._id;
+                const oldRestriction = assortItemTable[item].upd.BuyRestrictionMax;
+                const newRestriction = Math.round(randomUtil.randInt((oldRestriction * 0.75), (oldRestriction * 1.25)));
+                //this.logger.log(`item: [${itemID}] oldRestriction: [${oldRestriction}] newRestriction: [${newRestriction}]`, "cyan");
+                assortItemTable[item].upd.BuyRestrictionMax = newRestriction;
+            }
+        }
+    }
+    private randomizeStockAvailable(assortJson)
+    {
+        const randomUtil: RandomUtil = container.resolve<RandomUtil>("RandomUtil");
+        const assortItemTable = assortJson["items"];
+        for (const item in assortItemTable)
+        {
+            if (assortItemTable[item].upd?.StackObjectsCount == undefined)
+            {
+                continue // Skip setting count, it's a weapon attachment or armour plate
+            }
+            else
+            {
+                const itemID = assortItemTable[item]._id;
+                const originalStock = assortItemTable[item].upd.StackObjectsCount;
+                const newStock = randomUtil.randInt(2, originalStock);
+                const outOfStockRoll = randomUtil.getChance100(Scorpion.config.outOfStockChance);
+                //this.logger.log(`item: [${itemID}] oldStock: [${originalStock}] newStock: [${newStock}] outOfStockRoll [${outOfStockRoll}]`, "cyan");
+                if (outOfStockRoll)
+                {
+                    assortItemTable[item].upd.StackObjectsCount = 0;
+                } 
+                else
+                {
+                    assortItemTable[item].upd.StackObjectsCount = newStock;
+                }
+            }
+        }
     }
 }
 
