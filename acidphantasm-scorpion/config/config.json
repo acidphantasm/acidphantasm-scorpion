@@ -8,5 +8,7 @@
     
     "randomizeBuyRestriction": false,
     "randomizeStockAvailable": false,
-    "outOfStockChance": 25
+    "outOfStockChance": 25,
+
+    "debugLogging": false
 }
