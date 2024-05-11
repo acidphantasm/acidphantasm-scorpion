@@ -1660,7 +1660,7 @@
     },
     {
       "_id": "6635a60afe3ddd40c508c54e",
-      "_tpl": "56dff061d2720bb5668b4567",
+      "_tpl": "5cc80f53e4a949000e1ea4f8",
       "parentId": "hideout",
       "slotId": "hideout",
       "upd": {
@@ -1798,6 +1798,66 @@
       "upd": {
         "UnlimitedCount": false,
         "StackObjectsCount": 458,
+        "BuyRestrictionMax": 1,
+        "BuyRestrictionCurrent": 0
+      }
+    },
+    {
+      "_id": "6635a60afe3ddd40c508c560",
+      "_tpl": "5b057b4f5acfc4771e1bd3e9",
+      "parentId": "hideout",
+      "slotId": "hideout",
+      "upd": {
+        "UnlimitedCount": false,
+        "StackObjectsCount": 158,
+        "BuyRestrictionMax": 1,
+        "BuyRestrictionCurrent": 0
+      }
+    },
+    {
+      "_id": "6635a60afe3ddd40c508c561",
+      "_tpl": "618ba27d9008e4636a67f61d",
+      "parentId": "hideout",
+      "slotId": "hideout",
+      "upd": {
+        "UnlimitedCount": false,
+        "StackObjectsCount": 128,
+        "BuyRestrictionMax": 1,
+        "BuyRestrictionCurrent": 0
+      }
+    },
+    {
+      "_id": "6635a60afe3ddd40c508c562",
+      "_tpl": "5b3b99265acfc4704b4a1afb",
+      "parentId": "hideout",
+      "slotId": "hideout",
+      "upd": {
+        "UnlimitedCount": false,
+        "StackObjectsCount": 75,
+        "BuyRestrictionMax": 1,
+        "BuyRestrictionCurrent": 0
+      }
+    },
+    {
+      "_id": "6635a60afe3ddd40c508c563",
+      "_tpl": "5c0558060db834001b735271",
+      "parentId": "hideout",
+      "slotId": "hideout",
+      "upd": {
+        "UnlimitedCount": false,
+        "StackObjectsCount": 35,
+        "BuyRestrictionMax": 1,
+        "BuyRestrictionCurrent": 0
+      }
+    },
+    {
+      "_id": "6635a60afe3ddd40c508c564",
+      "_tpl": "5d1b5e94d7ad1a2b865a96b0",
+      "parentId": "hideout",
+      "slotId": "hideout",
+      "upd": {
+        "UnlimitedCount": false,
+        "StackObjectsCount": 17,
         "BuyRestrictionMax": 1,
         "BuyRestrictionCurrent": 0
       }
@@ -2391,7 +2451,7 @@
     "6635a60afe3ddd40c508c54e": [
       [
         {
-          "count": 588,
+          "count": 339,
           "_tpl": "5449016a4bdc2d6f028b456f"
         }
       ]
@@ -2399,7 +2459,7 @@
     "6635a60afe3ddd40c508c54f": [
       [
         {
-          "count": 339,
+          "count": 512,
           "_tpl": "5449016a4bdc2d6f028b456f"
         }
       ]
@@ -2415,7 +2475,7 @@
     "6635a60afe3ddd40c508c551": [
       [
         {
-          "count": 377,
+          "count": 335,
           "_tpl": "5449016a4bdc2d6f028b456f"
         }
       ]
@@ -2431,7 +2491,7 @@
     "6635a60afe3ddd40c508c553": [
       [
         {
-          "count": 19874,
+          "count": 21518,
           "_tpl": "5449016a4bdc2d6f028b456f"
         }
       ]
@@ -2439,7 +2499,7 @@
     "6635a60afe3ddd40c508c554": [
       [
         {
-          "count": 99181,
+          "count": 158810,
           "_tpl": "5449016a4bdc2d6f028b456f"
         }
       ]
@@ -2447,7 +2507,7 @@
     "6635a60afe3ddd40c508c555": [
       [
         {
-          "count": 14584,
+          "count": 24681,
           "_tpl": "5449016a4bdc2d6f028b456f"
         }
       ]
@@ -2455,7 +2515,7 @@
     "6635a60afe3ddd40c508c556": [
       [
         {
-          "count": 7981,
+          "count": 8268,
           "_tpl": "5449016a4bdc2d6f028b456f"
         }
       ]
@@ -2480,6 +2540,94 @@
       [
         {
           "count": 23781,
+          "_tpl": "5449016a4bdc2d6f028b456f"
+        }
+      ]
+    ],
+    "6635a60afe3ddd40c508c55a": [
+      [
+        {
+          "count": 39849,
+          "_tpl": "5449016a4bdc2d6f028b456f"
+        }
+      ]
+    ],
+    "6635a60afe3ddd40c508c55b": [
+      [
+        {
+          "count": 28948,
+          "_tpl": "5449016a4bdc2d6f028b456f"
+        }
+      ]
+    ],
+    "6635a60afe3ddd40c508c55c": [
+      [
+        {
+          "count": 24610,
+          "_tpl": "5449016a4bdc2d6f028b456f"
+        }
+      ]
+    ],
+    "6635a60afe3ddd40c508c55d": [
+      [
+        {
+          "count": 39997,
+          "_tpl": "5449016a4bdc2d6f028b456f"
+        }
+      ]
+    ],
+    "6635a60afe3ddd40c508c55e": [
+      [
+        {
+          "count": 18997,
+          "_tpl": "5449016a4bdc2d6f028b456f"
+        }
+      ]
+    ],
+    "6635a60afe3ddd40c508c55f": [
+      [
+        {
+          "count": 8971,
+          "_tpl": "5449016a4bdc2d6f028b456f"
+        }
+      ]
+    ],
+    "6635a60afe3ddd40c508c560": [
+      [
+        {
+          "count": 66184,
+          "_tpl": "5449016a4bdc2d6f028b456f"
+        }
+      ]
+    ],
+    "6635a60afe3ddd40c508c561": [
+      [
+        {
+          "count": 154810,
+          "_tpl": "5449016a4bdc2d6f028b456f"
+        }
+      ]
+    ],
+    "6635a60afe3ddd40c508c562": [
+      [
+        {
+          "count": 51849,
+          "_tpl": "5449016a4bdc2d6f028b456f"
+        }
+      ]
+    ],
+    "6635a60afe3ddd40c508c563": [
+      [
+        {
+          "count": 218475,
+          "_tpl": "5449016a4bdc2d6f028b456f"
+        }
+      ]
+    ],
+    "6635a60afe3ddd40c508c564": [
+      [
+        {
+          "count": 238497,
           "_tpl": "5449016a4bdc2d6f028b456f"
         }
       ]
@@ -2559,7 +2707,7 @@
     "6635a60afe3ddd40c508c54b": 2,
     "6635a60afe3ddd40c508c54c": 2,
     "6635a60afe3ddd40c508c54d": 2,
-    "6635a60afe3ddd40c508c54e": 3,
+    "6635a60afe3ddd40c508c54e": 2,
     "6635a60afe3ddd40c508c54f": 2,
     "6635a60afe3ddd40c508c550": 2,
     "6635a60afe3ddd40c508c551": 3,
@@ -2570,6 +2718,17 @@
     "6635a60afe3ddd40c508c556": 2,
     "6635a60afe3ddd40c508c557": 3,
     "6635a60afe3ddd40c508c558": 1,
-    "6635a60afe3ddd40c508c559": 2
+    "6635a60afe3ddd40c508c559": 2,
+    "6635a60afe3ddd40c508c55a": 2,
+    "6635a60afe3ddd40c508c55b": 3,
+    "6635a60afe3ddd40c508c55c": 2,
+    "6635a60afe3ddd40c508c55d": 3,
+    "6635a60afe3ddd40c508c55e": 3,
+    "6635a60afe3ddd40c508c55f": 2,
+    "6635a60afe3ddd40c508c560": 4,
+    "6635a60afe3ddd40c508c561": 4,
+    "6635a60afe3ddd40c508c562": 3,
+    "6635a60afe3ddd40c508c563": 4,
+    "6635a60afe3ddd40c508c564": 4
   }
 }
