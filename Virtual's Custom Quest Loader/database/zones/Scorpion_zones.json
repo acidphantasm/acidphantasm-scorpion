@@ -394,5 +394,94 @@
       "Y": "2.5",
       "Z": "2"
     }
+  },
+  {
+    "ZoneId": "scorpion_lighthouse_OR",
+    "ZoneName": "scorpion_lighthouse_OR",
+    "ZoneLocation": "Lighthouse",
+    "ZoneType": "visit",
+    "FlareType": "",
+    "Position": {
+      "X": "31.4798",
+      "Y": "5.906978",
+      "Z": "-638.7748"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "5",
+      "Y": "4",
+      "Z": "2"
+    }
+  },
+  {
+    "ZoneId": "scorpion_lighthouse_OR_cam",
+    "ZoneName": "scorpion_lighthouse_OR_cam",
+    "ZoneLocation": "Lighthouse",
+    "ZoneType": "placeitem",
+    "FlareType": "",
+    "Position": {
+      "X": "35.0042",
+      "Y": "5.906979",
+      "Z": "-642.8558"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "1.6",
+      "Y": "2",
+      "Z": "1.6"
+    }
+  },
+  {
+    "ZoneId": "scorpion_lighthouse_playground_visit",
+    "ZoneName": "scorpion_lighthouse_playground_visit",
+    "ZoneLocation": "Lighthouse",
+    "ZoneType": "visit",
+    "FlareType": "",
+    "Position": {
+      "X": "-88.39228",
+      "Y": "20.44197",
+      "Z": "-127.4627"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "30",
+      "Y": "6",
+      "Z": "25"
+    }
+  },
+  {
+    "ZoneId": "scorpion_lighthouse_playground_killzone",
+    "ZoneName": "scorpion_lighthouse_playground_killzone",
+    "ZoneLocation": "Lighthouse",
+    "ZoneType": "botkillzone",
+    "FlareType": "",
+    "Position": {
+      "X": "-98.19135",
+      "Y": "22.58971",
+      "Z": "-56.07046"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "66",
+      "Y": "11",
+      "Z": "116"
+    }
   }
+
 ]
