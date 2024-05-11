@@ -4,5 +4,11 @@
     "traderRefreshMin": 1800,
     "traderRefreshMax": 3600,
 
-    "addTraderToFlea": true
+    "addTraderToFlea": true,
+    
+    "randomizeBuyRestriction": false,
+    "randomizeStockAvailable": false,
+    "outOfStockChance": 25,
+
+    "debugLogging": false
 }
