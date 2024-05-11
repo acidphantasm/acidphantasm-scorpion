@@ -949,12 +949,12 @@
           "index": 0,
           "items": [
             {
-              "_id": "6492e44af4287b13040fc88a",
+              "_id": "661f33776b5151c024011d07",
               "_tpl": "5b4391a586f7745321235ab2"
             }
           ],
           "loyaltyLevel": 1,
-          "target": "6492e44af4287b13040fc88a",
+          "target": "661f33776b5151c024011d07",
           "traderId": "Scorpion",
           "type": "AssortmentUnlock"
         },
@@ -2208,14 +2208,14 @@
           "index": 2,
           "items": [
             {
-              "_id": "6635a60afe3ddd40c508c548",
+              "_id": "6635a60afe3ddd40c508c568",
               "_tpl": "5c0e534186f7747fa1419867",
               "upd": {
                 "StackObjectsCount": 2
               }
             }
           ],
-          "target": "6635a60afe3ddd40c508c548",
+          "target": "6635a60afe3ddd40c508c568",
           "type": "Item",
           "value": "2"
         },
@@ -2225,14 +2225,14 @@
           "index": 3,
           "items": [
             {
-              "_id": "6635a60afe3ddd40c508c549",
+              "_id": "6635a60afe3ddd40c508c569",
               "_tpl": "5ed51652f6c34d2cc26336a1",
               "upd": {
                 "StackObjectsCount": 2
               }
             }
           ],
-          "target": "6635a60afe3ddd40c508c549",
+          "target": "6635a60afe3ddd40c508c569",
           "type": "Item",
           "value": "2"
         }
@@ -2377,14 +2377,14 @@
           "index": 3,
           "items": [
             {
-              "_id": "6635a60afe3ddd40c508c548",
+              "_id": "6635a60afe3ddd40c508c566",
               "_tpl": "5c0e534186f7747fa1419867",
               "upd": {
                 "StackObjectsCount": 2
               }
             }
           ],
-          "target": "6635a60afe3ddd40c508c548",
+          "target": "6635a60afe3ddd40c508c566",
           "type": "Item",
           "value": "2"
         },
@@ -2498,21 +2498,6 @@
           ],
           "target": "Scorpion_1_10",
           "visibilityConditions": []
-        },
-        {
-          "availableAfter": 0,
-          "conditionType": "Quest",
-          "dispersion": 0,
-          "dynamicLocale": false,
-          "globalQuestCounterId": "",
-          "id": "Scorpion_1_11_1 start_1",
-          "index": 0,
-          "parentId": "",
-          "status": [
-            1,2
-          ],
-          "target": "Scorpion_1_11_0",
-          "visibilityConditions": []
         }
       ],
       "Fail": [
@@ -2620,20 +2605,37 @@
           "index": 3,
           "items": [
             {
-              "_id": "6635a60afe3ddd40c508c549",
+              "_id": "6635a60afe3ddd40c508c565",
               "_tpl": "5ed51652f6c34d2cc26336a1",
               "upd": {
                 "StackObjectsCount": 2
               }
             }
           ],
-          "target": "6635a60afe3ddd40c508c549",
+          "target": "6635a60afe3ddd40c508c565",
           "type": "Item",
           "value": "2"
         },
         {
+          "findInRaid": true,
           "id": "Scorpion_1_11_1 reward_4",
           "index": 4,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c56a",
+              "_tpl": "5c0e534186f7747fa1419867",
+              "upd": {
+                "StackObjectsCount": 2
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c56a",
+          "type": "Item",
+          "value": "2"
+        },
+        {
+          "id": "Scorpion_1_11_1 reward_5",
+          "index": 5,
           "items": [
             {
               "_id": "6635a60afe3ddd40c508c549",
@@ -2642,6 +2644,20 @@
           ],
           "loyaltyLevel": 3,
           "target": "6635a60afe3ddd40c508c549",
+          "traderId": "Scorpion",
+          "type": "AssortmentUnlock"
+        },
+        {
+          "id": "Scorpion_1_11_1 reward_6",
+          "index": 6,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c567",
+              "_tpl": "5c0e534186f7747fa1419867"
+            }
+          ],
+          "loyaltyLevel": 3,
+          "target": "6635a60afe3ddd40c508c567",
           "traderId": "Scorpion",
           "type": "AssortmentUnlock"
         }
@@ -2731,13 +2747,13 @@
       "Started": [],
       "Success": [
         {
-          "id": "Scorpion_1_2 reward_0",
+          "id": "Scorpion_2_1 reward_0",
           "index": 0,
           "type": "Experience",
           "value": 1800
         },
         {
-          "id": "Scorpion_1_2 reward_1",
+          "id": "Scorpion_2_1 reward_1",
           "index": 1,
           "target": "Scorpion",
           "type": "TraderStanding",
@@ -2745,23 +2761,23 @@
         },
         {
           "findInRaid": true,
-          "id": "Scorpion_1_2 reward_2",
+          "id": "Scorpion_2_1 reward_2",
           "index": 2,
           "items": [
             {
-              "_id": "Scorpion_1_2 reward_2_0",
+              "_id": "Scorpion_2_1 reward_2_0",
               "_tpl": "5449016a4bdc2d6f028b456f",
               "upd": {
                 "StackObjectsCount": 29840
               }
             }
           ],
-          "target": "Scorpion_1_2 reward_2_0",
+          "target": "Scorpion_2_1 reward_2_0",
           "type": "Item",
           "value": "29840"
         },
         {
-          "id": "Scorpion_1_2 reward_3",
+          "id": "Scorpion_2_1 reward_3",
           "index": 3,
           "items": [
             {
@@ -2776,7 +2792,7 @@
         },
         {
           "findInRaid": true,
-          "id": "Scorpion_1_2 reward_4",
+          "id": "Scorpion_2_1 reward_4",
           "index": 4,
           "items": [
             {
@@ -2872,18 +2888,18 @@
         },
         {
           "findInRaid": true,
-          "id": "Scorpion_1_2 reward_5",
+          "id": "Scorpion_2_1 reward_5",
           "index": 5,
           "items": [
             {
-              "_id": "Scorpion_1_2 reward_5_0",
+              "_id": "Scorpion_2_1 reward_5_0",
               "_tpl": "56dff3afd2720bba668b4567",
               "upd": {
                 "StackObjectsCount": 190
               }
             }
           ],
-          "target": "Scorpion_1_2 reward_5_0",
+          "target": "Scorpion_2_1 reward_5_0",
           "type": "Item",
           "unknown": true,
           "value": "190"
