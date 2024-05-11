@@ -2589,7 +2589,7 @@
     "location": "5704e554d2720bac5b8b456e",
     "name": "Scorpion_1_11_1 name",
     "note": "Scorpion_1_11_1 note",
-    "restartable": true,
+    "restartable": false,
     "rewards": {
       "Fail": [],
       "Started": [],
