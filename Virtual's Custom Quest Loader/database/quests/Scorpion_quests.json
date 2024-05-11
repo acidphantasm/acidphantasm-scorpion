@@ -1415,7 +1415,7 @@
     "type": "Completion"
   },
   "Scorpion_1_7": {
-    "QuestName": "Targetting Hopefulness",
+    "QuestName": "Targeting Hopefulness",
     "_id": "Scorpion_1_7",
     "acceptPlayerMessage": "Scorpion_1_7 acceptPlayerMessage",
     "canShowNotificationsInGame": true,
