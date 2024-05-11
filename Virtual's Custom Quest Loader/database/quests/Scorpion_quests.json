@@ -1913,6 +1913,659 @@
     "traderId": "Scorpion",
     "type": "Completion"
   },
+  "Scorpion_1_9": {
+    "QuestName": "Taking a Breather",
+    "_id": "Scorpion_1_9",
+    "acceptPlayerMessage": "Scorpion_1_9 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "Scorpion_1_9 changeQuestMessageText",
+    "completePlayerMessage": "Scorpion_1_9 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "bodyPart": [],
+                "compareMethod": ">=",
+                "conditionType": "Kills",
+                "daytime": {
+                  "from": 0,
+                  "to": 0
+                },
+                "distance": {
+                  "compareMethod": ">=",
+                  "value": 0
+                },
+                "dynamicLocale": false,
+                "enemyEquipmentExclusive": [],
+                "enemyEquipmentInclusive": [],
+                "enemyHealthEffects": [],
+                "id": "Scorpion_1_9 req_0_0",
+                "resetOnSessionEnd": false,
+                "savageRole": [],
+                "target": "Any",
+                "value": 1,
+                "weapon": [],
+                "weaponCaliber": [],
+                "weaponModsExclusive": [],
+                "weaponModsInclusive": []
+              },
+              {
+                "conditionType": "InZone",
+                "dynamicLocale": false,
+                "id": "Scorpion_1_9 req_0_1",
+                "zoneIds": [
+                  "scorpion_lighthouse_playground_killzone"
+                ]
+              },
+              {
+                "conditionType": "Location",
+                "dynamicLocale": false,
+                "id": "Scorpion_1_9 req_0_2",
+                "target": [
+                  "lighthouse"
+                ]
+              }
+            ],
+            "id": "Scorpion_1_9 req_0_3"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_1_9 req_0",
+          "index": 0,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Elimination",
+          "value": 5,
+          "visibilityConditions": []
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "VisitPlace",
+                "dynamicLocale": false,
+                "id": "Scorpion_1_9 req_1_0",
+                "target": "scorpion_lighthouse_playground_visit",
+                "value": 1
+              }
+            ],
+            "id": "Scorpion_1_9 req_1_1"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_1_9 req_1_1",
+          "index": 1,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Exploration",
+          "value": 1,
+          "visibilityConditions": []
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "compareMethod": ">=",
+          "conditionType": "Level",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_1_9 start_0",
+          "index": 0,
+          "parentId": "",
+          "value": 25,
+          "visibilityConditions": []
+        },
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_1_9 start_1",
+          "index": 1,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_1_8",
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "declinePlayerMessage": "Scorpion_1_9 declinePlayerMessage",
+    "description": "Scorpion_1_9 description",
+    "failMessageText": "Scorpion_1_9 failMessageText",
+    "image": "/files/quest/icon/scorpion_questpic.png",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "5704e4dad2720bb55b8b4567",
+    "name": "Scorpion_1_9 name",
+    "note": "Scorpion_1_9 note",
+    "restartable": false,
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": [
+        {
+          "id": "Scorpion_1_9 reward_0",
+          "index": 0,
+          "type": "Experience",
+          "value": 5750
+        },
+        {
+          "id": "Scorpion_1_9 reward_1",
+          "index": 1,
+          "target": "Scorpion",
+          "type": "TraderStanding",
+          "value": "0.02"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_1_9 reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c546",
+              "_tpl": "5c05300686f7746dce784e5d",
+              "upd": {
+                "StackObjectsCount": 2
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c546",
+          "type": "Item",
+          "value": "2"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_1_9 reward_3",
+          "index": 3,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c547",
+              "_tpl": "57513f07245977207e26a311",
+              "upd": {
+                "StackObjectsCount": 3
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c547",
+          "type": "Item",
+          "value": "3"
+        }
+      ]
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "Scorpion_1_9 startedMessageText",
+    "successMessageText": "Scorpion_1_9 successMessageText",
+    "traderId": "Scorpion",
+    "type": "Elimination"
+  },
+  "Scorpion_1_10": {
+    "QuestName": "On The Hunt",
+    "_id": "Scorpion_1_10",
+    "acceptPlayerMessage": "Scorpion_1_10 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "Scorpion_1_10 changeQuestMessageText",
+    "completePlayerMessage": "Scorpion_1_10 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "VisitPlace",
+                "dynamicLocale": false,
+                "id": "Scorpion_1_10 req_0_0",
+                "target": "scorpion_lighthouse_OR",
+                "value": 1
+              }
+            ],
+            "id": "Scorpion_1_10 req_0_1"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_1_10 req_0",
+          "index": 1,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Exploration",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "conditionType": "LeaveItemAtLocation",
+          "dogtagLevel": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_1_10 req_1",
+          "index": 0,
+          "isEncoded": false,
+          "maxDurability": 0,
+          "minDurability": 0,
+          "onlyFoundInRaid": false,
+          "parentId": "",
+          "plantTime": 25,
+          "target": [
+            "5b4391a586f7745321235ab2"
+          ],
+          "value": 1,
+          "visibilityConditions": [
+            {
+              "conditionType": "CompleteCondition",
+              "id": "Scorpion_1_10 req_0_2",
+              "target": "Scorpion_1_10 req_0"
+            }
+          ],
+          "zoneId": "scorpion_lighthouse_OR_cam"
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_1_10 start_0",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_1_9",
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "declinePlayerMessage": "Scorpion_1_10 declinePlayerMessage",
+    "description": "Scorpion_1_10 description",
+    "failMessageText": "Scorpion_1_10 failMessageText",
+    "image": "/files/quest/icon/scorpion_questpic.png",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "5704e4dad2720bb55b8b4567",
+    "name": "Scorpion_1_10 name",
+    "note": "Scorpion_1_10 note",
+    "restartable": false,
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": [
+        {
+          "id": "Scorpion_1_10 reward_0",
+          "index": 0,
+          "type": "Experience",
+          "value": 6000
+        },
+        {
+          "id": "Scorpion_1_10 reward_1",
+          "index": 1,
+          "target": "Scorpion",
+          "type": "TraderStanding",
+          "value": "0.02"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_1_10 reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c546",
+              "_tpl": "5c05300686f7746dce784e5d",
+              "upd": {
+                "StackObjectsCount": 2
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c546",
+          "type": "Item",
+          "value": "2"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_1_10 reward_3",
+          "index": 3,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c547",
+              "_tpl": "57513f07245977207e26a311",
+              "upd": {
+                "StackObjectsCount": 3
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c547",
+          "type": "Item",
+          "value": "3"
+        }
+      ]
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "Scorpion_1_10 startedMessageText",
+    "successMessageText": "Scorpion_1_10 successMessageText",
+    "traderId": "Scorpion",
+    "type": "Exploration"
+  },
+  "Scorpion_1_11_0": {
+    "QuestName": "Dish Served Cold",
+    "_id": "Scorpion_1_11_0",
+    "acceptPlayerMessage": "Scorpion_1_11_0 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "Scorpion_1_11_0 changeQuestMessageText",
+    "completePlayerMessage": "Scorpion_1_11_0 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "bodyPart": [],
+                "compareMethod": ">=",
+                "conditionType": "Kills",
+                "daytime": {
+                  "from": 0,
+                  "to": 0
+                },
+                "distance": {
+                  "compareMethod": ">=",
+                  "value": 0
+                },
+                "dynamicLocale": false,
+                "enemyEquipmentExclusive": [],
+                "enemyEquipmentInclusive": [],
+                "enemyHealthEffects": [],
+                "id": "Scorpion_1_11_0 req_0_0",
+                "resetOnSessionEnd": false,
+                "savageRole": [
+                  "bossSanitar"
+                ],
+                "target": "Savage",
+                "value": 1,
+                "weapon": [],
+                "weaponCaliber": [],
+                "weaponModsExclusive": [],
+                "weaponModsInclusive": []
+              }
+            ],
+            "id": "Scorpion_1_11_0 req_0_1"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_1_11_0 req_0",
+          "index": 0,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Elimination",
+          "value": 1,
+          "visibilityConditions": []
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_1_11_0 start_0",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_1_10",
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": [
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_1_11_0 fail_0",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_1_11_1",
+          "visibilityConditions": []
+        }
+      ]
+    },
+    "declinePlayerMessage": "Scorpion_1_11_0 declinePlayerMessage",
+    "description": "Scorpion_1_11_0 description",
+    "failMessageText": "Scorpion_1_11_0 failMessageText",
+    "image": "/files/quest/icon/scorpion_questpic.png",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "5704e554d2720bac5b8b456e",
+    "name": "Scorpion_1_11_0 name",
+    "note": "Scorpion_1_11_0 note",
+    "restartable": false,
+    "rewards": {
+      "Fail": [
+        {
+          "id": "Scorpion_1_11_0 failreward_0",
+          "index": 0,
+          "target": "Scorpion",
+          "type": "TraderStanding",
+          "value": "-0.25"
+        },
+        {
+          "id": "Scorpion_1_11_0 failreward_1",
+          "index": 1,
+          "target": "54cb57776803fa99248b456e",
+          "type": "TraderStanding",
+          "value": "-0.1"
+        }
+      ],
+      "Started": [],
+      "Success": []
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "Scorpion_1_11_0 startedMessageText",
+    "successMessageText": "Scorpion_1_11_0 successMessageText",
+    "traderId": "Scorpion",
+    "type": "Elimination"
+  },
+  "Scorpion_1_11_1": {
+    "QuestName": "Crestfallen",
+    "_id": "Scorpion_1_11_1",
+    "acceptPlayerMessage": "Scorpion_1_11_1 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "Scorpion_1_11_1 changeQuestMessageText",
+    "completePlayerMessage": "Scorpion_1_11_1 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "bodyPart": [],
+                "compareMethod": ">=",
+                "conditionType": "Kills",
+                "daytime": {
+                  "from": 0,
+                  "to": 0
+                },
+                "distance": {
+                  "compareMethod": ">=",
+                  "value": 0
+                },
+                "dynamicLocale": false,
+                "enemyEquipmentExclusive": [],
+                "enemyEquipmentInclusive": [],
+                "enemyHealthEffects": [],
+                "id": "Scorpion_1_11_1 req_0_0",
+                "resetOnSessionEnd": false,
+                "savageRole": [
+                  "followerSanitar"
+                ],
+                "target": "Savage",
+                "value": 1,
+                "weapon": [],
+                "weaponCaliber": [],
+                "weaponModsExclusive": [],
+                "weaponModsInclusive": []
+              }
+            ],
+            "id": "Scorpion_1_11_1 req_0_1"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_1_11_1 req_0",
+          "index": 0,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Elimination",
+          "value": 2,
+          "visibilityConditions": []
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_1_11_1 start_0",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_1_10",
+          "visibilityConditions": []
+        },
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_1_11_1 start_1",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            1,2
+          ],
+          "target": "Scorpion_1_11_0",
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": [
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_1_11_1 fail_0",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_1_11_0",
+          "visibilityConditions": []
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "bodyPart": [],
+                "compareMethod": ">=",
+                "conditionType": "Kills",
+                "daytime": {
+                  "from": 0,
+                  "to": 0
+                },
+                "distance": {
+                  "compareMethod": ">=",
+                  "value": 0
+                },
+                "dynamicLocale": false,
+                "enemyEquipmentExclusive": [],
+                "enemyEquipmentInclusive": [],
+                "enemyHealthEffects": [],
+                "id": "Scorpion_1_11_1 req_1_0",
+                "resetOnSessionEnd": false,
+                "savageRole": [
+                  "bossTagilla"
+                ],
+                "target": "Savage",
+                "value": 1,
+                "weapon": [],
+                "weaponCaliber": [],
+                "weaponModsExclusive": [],
+                "weaponModsInclusive": []
+              }
+            ],
+            "id": "Scorpion_1_11_1 req_1_1"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_1_11_1 req_1",
+          "index": 1,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Completion",
+          "value": 1,
+          "visibilityConditions": []
+        }
+      ]
+    },
+    "declinePlayerMessage": "Scorpion_1_11_1 declinePlayerMessage",
+    "description": "Scorpion_1_11_1 description",
+    "failMessageText": "Scorpion_1_11_1 failMessageText",
+    "image": "/files/quest/icon/scorpion_questpic.png",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "5704e554d2720bac5b8b456e",
+    "name": "Scorpion_1_11_1 name",
+    "note": "Scorpion_1_11_1 note",
+    "restartable": true,
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": []
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "Scorpion_1_11_1 startedMessageText",
+    "successMessageText": "Scorpion_1_11_1 successMessageText",
+    "traderId": "Scorpion",
+    "type": "Elimination"
+  },
   "Scorpion_2_1": {
     "QuestName": "Mysterious Hotline",
     "_id": "Scorpion_2_1",
@@ -4286,7 +4939,7 @@
           "dynamicLocale": false,
           "globalQuestCounterId": "",
           "id": "Scorpion_3_2 start_1",
-          "index": 0,
+          "index": 1,
           "parentId": "",
           "status": [
             4
