@@ -1461,17 +1461,9 @@
                 "zoneIds": [
                   "huntsman_020"
                 ]
-              },
-              {
-                "conditionType": "Location",
-                "dynamicLocale": false,
-                "id": "Scorpion_1_7 req_0_2",
-                "target": [
-                  "bigmap"
-                ]
               }
             ],
-            "id": "Scorpion_1_7 req_0_3"
+            "id": "Scorpion_1_7 req_0_2"
           },
           "doNotResetIfCounterCompleted": false,
           "dynamicLocale": false,
@@ -1522,7 +1514,7 @@
           "id": "Scorpion_1_7 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": 5500
+          "value": 5250
         },
         {
           "id": "Scorpion_1_7 reward_1",
@@ -1605,7 +1597,7 @@
     "startedMessageText": "Scorpion_1_7 startedMessageText",
     "successMessageText": "Scorpion_1_7 successMessageText",
     "traderId": "Scorpion",
-    "type": "Completion"
+    "type": "Elimination"
   },
   "Scorpion_1_8": {
     "QuestName": "The Next Source",
@@ -1739,7 +1731,7 @@
     "image": "/files/quest/icon/scorpion_questpic.png",
     "instantComplete": false,
     "isKey": false,
-    "location": "any",
+    "location": "5704e4dad2720bb55b8b4567",
     "name": "Scorpion_1_8 name",
     "note": "Scorpion_1_8 note",
     "restartable": false,
@@ -1751,7 +1743,7 @@
           "id": "Scorpion_1_8 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": 5750
+          "value": 5500
         },
         {
           "id": "Scorpion_1_8 reward_1",
@@ -1911,7 +1903,7 @@
     "startedMessageText": "Scorpion_1_8 startedMessageText",
     "successMessageText": "Scorpion_1_8 successMessageText",
     "traderId": "Scorpion",
-    "type": "Completion"
+    "type": "Elimination"
   },
   "Scorpion_1_9": {
     "QuestName": "Taking a Breather",
@@ -1960,17 +1952,9 @@
                 "zoneIds": [
                   "scorpion_lighthouse_playground_killzone"
                 ]
-              },
-              {
-                "conditionType": "Location",
-                "dynamicLocale": false,
-                "id": "Scorpion_1_9 req_0_2",
-                "target": [
-                  "lighthouse"
-                ]
               }
             ],
-            "id": "Scorpion_1_9 req_0_3"
+            "id": "Scorpion_1_9 req_0_2"
           },
           "doNotResetIfCounterCompleted": false,
           "dynamicLocale": false,
@@ -2001,7 +1985,7 @@
           "doNotResetIfCounterCompleted": false,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
-          "id": "Scorpion_1_9 req_1_1",
+          "id": "Scorpion_1_9 req_1",
           "index": 1,
           "oneSessionOnly": false,
           "parentId": "",
@@ -2224,14 +2208,14 @@
           "index": 2,
           "items": [
             {
-              "_id": "6635a60afe3ddd40c508c546",
-              "_tpl": "5c05300686f7746dce784e5d",
+              "_id": "6635a60afe3ddd40c508c548",
+              "_tpl": "5c0e534186f7747fa1419867",
               "upd": {
                 "StackObjectsCount": 2
               }
             }
           ],
-          "target": "6635a60afe3ddd40c508c546",
+          "target": "6635a60afe3ddd40c508c548",
           "type": "Item",
           "value": "2"
         },
@@ -2241,16 +2225,16 @@
           "index": 3,
           "items": [
             {
-              "_id": "6635a60afe3ddd40c508c547",
-              "_tpl": "57513f07245977207e26a311",
+              "_id": "6635a60afe3ddd40c508c549",
+              "_tpl": "5ed51652f6c34d2cc26336a1",
               "upd": {
-                "StackObjectsCount": 3
+                "StackObjectsCount": 2
               }
             }
           ],
-          "target": "6635a60afe3ddd40c508c547",
+          "target": "6635a60afe3ddd40c508c549",
           "type": "Item",
-          "value": "3"
+          "value": "2"
         }
       ]
     },
@@ -2364,24 +2348,61 @@
     "note": "Scorpion_1_11_0 note",
     "restartable": false,
     "rewards": {
-      "Fail": [
+      "Fail": [],
+      "Started": [],
+      "Success": [
         {
-          "id": "Scorpion_1_11_0 failreward_0",
+          "id": "Scorpion_1_11_0 reward_0",
           "index": 0,
-          "target": "Scorpion",
-          "type": "TraderStanding",
-          "value": "-0.25"
+          "type": "Experience",
+          "value": 6250
         },
         {
-          "id": "Scorpion_1_11_0 failreward_1",
+          "id": "Scorpion_1_11_0 reward_1",
           "index": 1,
+          "target": "Scorpion",
+          "type": "TraderStanding",
+          "value": "0.02"
+        },
+        {
+          "id": "Scorpion_1_11_0 reward_2",
+          "index": 2,
           "target": "54cb57776803fa99248b456e",
           "type": "TraderStanding",
           "value": "-0.1"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_1_11_0 reward_3",
+          "index": 3,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c548",
+              "_tpl": "5c0e534186f7747fa1419867",
+              "upd": {
+                "StackObjectsCount": 2
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c548",
+          "type": "Item",
+          "value": "2"
+        },
+        {
+          "id": "Scorpion_1_11_0 reward_4",
+          "index": 4,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c548",
+              "_tpl": "5c0e534186f7747fa1419867"
+            }
+          ],
+          "loyaltyLevel": 3,
+          "target": "6635a60afe3ddd40c508c548",
+          "traderId": "Scorpion",
+          "type": "AssortmentUnlock"
         }
-      ],
-      "Started": [],
-      "Success": []
+      ]
     },
     "secretQuest": false,
     "side": "Pmc",
@@ -2444,6 +2465,21 @@
           "parentId": "",
           "type": "Elimination",
           "value": 2,
+          "visibilityConditions": []
+        },
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_1_11_1 req_1",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            2
+          ],
+          "target": "Scorpion_1_11_1",
           "visibilityConditions": []
         }
       ],
@@ -2516,10 +2552,10 @@
                 "enemyEquipmentExclusive": [],
                 "enemyEquipmentInclusive": [],
                 "enemyHealthEffects": [],
-                "id": "Scorpion_1_11_1 req_1_0",
+                "id": "Scorpion_1_11_1 fail_1_0",
                 "resetOnSessionEnd": false,
                 "savageRole": [
-                  "bossTagilla"
+                  "bossSanitar"
                 ],
                 "target": "Savage",
                 "value": 1,
@@ -2529,12 +2565,12 @@
                 "weaponModsInclusive": []
               }
             ],
-            "id": "Scorpion_1_11_1 req_1_1"
+            "id": "Scorpion_1_11_1 fail_1_1"
           },
           "doNotResetIfCounterCompleted": false,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
-          "id": "Scorpion_1_11_1 req_1",
+          "id": "Scorpion_1_11_1 fail_1",
           "index": 1,
           "oneSessionOnly": false,
           "parentId": "",
@@ -2557,7 +2593,59 @@
     "rewards": {
       "Fail": [],
       "Started": [],
-      "Success": []
+      "Success": [
+        {
+          "id": "Scorpion_1_11_1 reward_0",
+          "index": 0,
+          "type": "Experience",
+          "value": 6250
+        },
+        {
+          "id": "Scorpion_1_11_1 reward_1",
+          "index": 1,
+          "target": "Scorpion",
+          "type": "TraderStanding",
+          "value": "0.02"
+        },
+        {
+          "id": "Scorpion_1_11_1 reward_2",
+          "index": 2,
+          "target": "54cb57776803fa99248b456e",
+          "type": "TraderStanding",
+          "value": "0.1"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_1_11_1 reward_3",
+          "index": 3,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c549",
+              "_tpl": "5ed51652f6c34d2cc26336a1",
+              "upd": {
+                "StackObjectsCount": 2
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c549",
+          "type": "Item",
+          "value": "2"
+        },
+        {
+          "id": "Scorpion_1_11_1 reward_4",
+          "index": 4,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c549",
+              "_tpl": "5ed51652f6c34d2cc26336a1"
+            }
+          ],
+          "loyaltyLevel": 3,
+          "target": "6635a60afe3ddd40c508c549",
+          "traderId": "Scorpion",
+          "type": "AssortmentUnlock"
+        }
+      ]
     },
     "secretQuest": false,
     "side": "Pmc",
