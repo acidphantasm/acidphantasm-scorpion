@@ -10187,7 +10187,25 @@
     "restartable": false,
     "rewards": {
       "Fail": [],
-      "Started": [],
+      "Started": [
+        {
+          "findInRaid": true,
+          "id": "Scorpion_5_2 start_reward_0",
+          "index": 0,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c577",
+              "_tpl": "637b60c3b7afa97bfc3d7001",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c577",
+          "type": "Item",
+          "value": "1"
+        }
+      ],
       "Success": [
         {
           "id": "Scorpion_5_2 reward_0",
