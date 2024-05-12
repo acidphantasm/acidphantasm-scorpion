@@ -10208,15 +10208,15 @@
       "Started": [],
       "Success": [
         {
-          "id": "649afdcd8e4e24533878bd06",
+          "id": "Scorpion_5_2 reward_0",
           "index": 0,
-          "target": "58330581ace78e27b8b10cee",
+          "target": "Scorpion",
           "type": "TraderStanding",
-          "value": "0.15"
+          "value": "0.01"
         },
         {
           "findInRaid": true,
-          "id": "649b18426b19d3043743ddd7",
+          "id": "Scorpion_5_2 reward_1",
           "index": 1,
           "items": [
             {
@@ -10344,45 +10344,17 @@
           "value": "1"
         },
         {
-          "id": "649b182a49f5fa538c64e4fb",
+          "id": "Scorpion_5_2 reward_2",
           "index": 2,
           "items": [
             {
-              "_id": "64a8578f0e9876295f0f83ed",
-              "_tpl": "5b2388675acfc4771e1be0be"
-            }
-          ],
-          "loyaltyLevel": 1,
-          "target": "64a8578f0e9876295f0f83ed",
-          "traderId": "58330581ace78e27b8b10cee",
-          "type": "AssortmentUnlock"
-        },
-        {
-          "id": "649b18300329282a376bda05",
-          "index": 3,
-          "items": [
-            {
-              "_id": "64a8578f0e9876295f0f83ee",
+              "_id": "6635a60afe3ddd40c508c572",
               "_tpl": "618ba27d9008e4636a67f61d"
             }
           ],
-          "loyaltyLevel": 1,
-          "target": "64a8578f0e9876295f0f83ee",
-          "traderId": "58330581ace78e27b8b10cee",
-          "type": "AssortmentUnlock"
-        },
-        {
-          "id": "649b1836fb67e3338f540ce5",
-          "index": 4,
-          "items": [
-            {
-              "_id": "64a8578f0e9876295f0f83ef",
-              "_tpl": "5b3b99475acfc432ff4dcbee"
-            }
-          ],
-          "loyaltyLevel": 1,
-          "target": "64a8578f0e9876295f0f83ef",
-          "traderId": "58330581ace78e27b8b10cee",
+          "loyaltyLevel": 3,
+          "target": "6635a60afe3ddd40c508c572",
+          "traderId": "Scorpion",
           "type": "AssortmentUnlock"
         }
       ]
