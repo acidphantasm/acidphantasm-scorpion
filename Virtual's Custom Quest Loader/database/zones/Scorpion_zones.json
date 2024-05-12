@@ -374,15 +374,15 @@
     }
   },
   {
-    "ZoneId": "scorpion_interchange_techlight",
-    "ZoneName": "scorpion_interchange_techlight",
+    "ZoneId": "scorpion_interchange_techlight_camera",
+    "ZoneName": "scorpion_interchange_techlight_camera",
     "ZoneLocation": "Interchange",
     "ZoneType": "placeitem",
     "FlareType": "",
     "Position": {
-      "X": "97.22383",
+      "X": "88.22383",
       "Y": "37.06973",
-      "Z": "65.86802"
+      "Z": "56.86802"
     },
     "Rotation": {
       "X": "0",
@@ -393,6 +393,94 @@
       "X": "1.5",
       "Y": "2.5",
       "Z": "2"
+    }
+  },
+  {
+    "ZoneId": "scorpion_interchange_stim_drop",
+    "ZoneName": "scorpion_interchange_stim_drop",
+    "ZoneLocation": "Interchange",
+    "ZoneType": "placeitem",
+    "FlareType": "",
+    "Position": {
+      "X": "65.59298",
+      "Y": "37.58001",
+      "Z": "39.37956"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "1.25",
+      "Y": "2",
+      "Z": "2.75"
+    }
+  },
+  {
+    "ZoneId": "scorpion_interchange_power",
+    "ZoneName": "scorpion_interchange_power",
+    "ZoneLocation": "Interchange",
+    "ZoneType": "visit",
+    "FlareType": "",
+    "Position": {
+      "X": "-201.5742",
+      "Y": "22.3331",
+      "Z": "-357.6798"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "1.75",
+      "Y": "2.25",
+      "Z": "2.25"
+    }
+  },
+  {
+    "ZoneId": "scorpion_interchange_medroom_visit",
+    "ZoneName": "scorpion_interchange_medroom_visit",
+    "ZoneLocation": "Interchange",
+    "ZoneType": "visit",
+    "FlareType": "",
+    "Position": {
+      "X": "21.82902",
+      "Y": "28.28647",
+      "Z": "-107.7125"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "20",
+      "Y": "2.5",
+      "Z": "6"
+    }
+  },
+  {
+    "ZoneId": "scorpion_interchange_techlight_visit",
+    "ZoneName": "scorpion_interchange_techlight_visit",
+    "ZoneLocation": "Interchange",
+    "ZoneType": "visit",
+    "FlareType": "",
+    "Position": {
+      "X": "87.13938",
+      "Y": "38.56973",
+      "Z": "55.52451"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "4.5",
+      "Y": "4",
+      "Z": "6"
     }
   },
   {
