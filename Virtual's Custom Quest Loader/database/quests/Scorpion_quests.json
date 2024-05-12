@@ -8694,7 +8694,7 @@
           "oneSessionOnly": false,
           "parentId": "",
           "type": "Elimination",
-          "value": "20",
+          "value": "15",
           "visibilityConditions": []
         }
       ],
@@ -8730,7 +8730,86 @@
     "rewards": {
       "Fail": [],
       "Started": [],
-      "Success": []
+      "Success": [
+        {
+          "id": "Scorpion_3_7 reward_0",
+          "index": 0,
+          "type": "Experience",
+          "value": "15000"
+        },
+        {
+          "id": "Scorpion_3_7 reward_1",
+          "index": 1,
+          "target": "Health",
+          "type": "Skill",
+          "value": "500"
+        },
+        {
+          "id": "Scorpion_3_7 reward_2",
+          "index": 2,
+          "target": "Vitality",
+          "type": "Skill",
+          "value": "500"
+        },
+        {
+          "id": "Scorpion_3_7 reward_3",
+          "index": 3,
+          "target": "CovertMovement",
+          "type": "Skill",
+          "value": "500"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_3_7 reward_4",
+          "index": 4,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c56c",
+              "_tpl": "5d235bb686f77443f4331278",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c56c",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_3_7 reward_5",
+          "index": 5,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c56d",
+              "_tpl": "619cbf9e0a7c3a1a2731940a",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c56d",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_3_7 reward_6",
+          "index": 6,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c56e",
+              "_tpl": "62a5c333ec21e50cad3b5dc6",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c56e",
+          "type": "Item",
+          "value": "1"
+        }
+      ]
     },
     "secretQuest": false,
     "side": "Pmc",
