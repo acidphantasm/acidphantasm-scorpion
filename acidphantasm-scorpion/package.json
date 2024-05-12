@@ -1,10 +1,10 @@
 {
     "name": "Scorpion",
-    "version": "0.5.0",
+    "version": "0.5.1",
     "main": "src/mod.js",
     "license": "MIT",
     "author": "acidphantasm",
-    "akiVersion": "3.8.1",
+    "akiVersion": "3.8.2",
     "loadBefore": [],
     "loadAfter": [],
     "incompatibilities": [],
