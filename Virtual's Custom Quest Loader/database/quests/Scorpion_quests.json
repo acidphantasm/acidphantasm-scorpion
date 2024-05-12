@@ -8662,6 +8662,67 @@
     "traderId": "Scorpion",
     "type": "Elimination"
   },
+  "Scorpion_3_7": {
+    "QuestName": "The Bet IV",
+    "_id": "Scorpion_3_7",
+    "acceptPlayerMessage": "Scorpion_3_7 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "Scorpion_3_7 changeQuestMessageText",
+    "completePlayerMessage": "Scorpion_3_7 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "Kills",
+                "id": "Scorpion_3_7 req_0_0",
+                "savageRole": [
+                  "arenaFighterEvent"
+                ],
+                "target": "Savage"
+              }
+            ],
+            "id": "Scorpion_3_7 req_0_1"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_3_7 req_0",
+          "index": 0,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Elimination",
+          "value": "20",
+          "visibilityConditions": []
+        }
+      ],
+      "AvailableForStart": [],
+      "Fail": []
+    },
+    "declinePlayerMessage": "Scorpion_3_7 declinePlayerMessage",
+    "description": "Scorpion_3_7 description",
+    "failMessageText": "Scorpion_3_7 failMessageText",
+    "image": "/files/quest/icon/scorpion_questpic.png",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "any",
+    "name": "Scorpion_3_7 name",
+    "note": "Scorpion_3_7 note",
+    "restartable": true,
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": []
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "Scorpion_3_7 startedMessageText",
+    "successMessageText": "Scorpion_3_7 successMessageText",
+    "traderId": "Scorpion",
+    "type": "Elimination"
+  },
   "Scorpion_4_1": {
     "QuestName": "Grab That Cash, Make a Stash",
     "_id": "Scorpion_4_1",
