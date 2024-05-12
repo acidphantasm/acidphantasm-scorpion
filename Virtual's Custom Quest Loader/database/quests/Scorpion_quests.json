@@ -10173,34 +10173,7 @@
           "visibilityConditions": []
         }
       ],
-      "Fail": [
-        {
-          "conditionType": "CounterCreator",
-          "counter": {
-            "conditions": [
-              {
-                "conditionType": "ExitStatus",
-                "id": "Scorpion_5_2 fail_0_0",
-                "status": [
-                  "Killed",
-                  "MissingInAction",
-                  "Left"
-                ]
-              }
-            ],
-            "id": "Scorpion_5_2 fail_0_1"
-          },
-          "doNotResetIfCounterCompleted": false,
-          "dynamicLocale": false,
-          "id": "Scorpion_5_2 fail_0",
-          "index": 0,
-          "oneSessionOnly": false,
-          "parentId": "",
-          "type": "Completion",
-          "value": "1",
-          "visibilityConditions": []
-        }
-      ]
+      "Fail": []
     },
     "declinePlayerMessage": "Scorpion_5_2 declinePlayerMessage",
     "description": "Scorpion_5_2 description",
@@ -10211,7 +10184,7 @@
     "location": "any",
     "name": "Scorpion_5_2 name",
     "note": "Scorpion_5_2 note",
-    "restartable": true,
+    "restartable": false,
     "rewards": {
       "Fail": [],
       "Started": [],
