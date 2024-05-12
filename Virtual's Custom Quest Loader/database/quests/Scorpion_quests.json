@@ -10147,7 +10147,23 @@
           ]
         }
       ],
-      "AvailableForStart": [],
+      "AvailableForStart": [
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_5_2 start_0",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_5_1",
+          "visibilityConditions": []
+        }
+      ],
       "Fail": [
         {
           "conditionType": "CounterCreator",
