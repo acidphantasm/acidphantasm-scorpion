@@ -5547,7 +5547,7 @@
                 "dynamicLocale": false,
                 "id": "Scorpion_3_4 req_7_0",
                 "target": [
-                  "lighthouse"
+                  "Lighthouse"
                 ]
               },
               {
@@ -5617,7 +5617,7 @@
                 "dynamicLocale": false,
                 "id": "Scorpion_3_4 req_9_0",
                 "target": [
-                  "sandbox"
+                  "Sandbox"
                 ]
               },
               {
@@ -5732,7 +5732,7 @@
                   "Woods",
                   "RezervBase",
                   "TarkovStreets",
-                  "sandbox"
+                  "Sandbox"
                 ]
               }
             ],
@@ -5779,7 +5779,7 @@
                   "Woods",
                   "RezervBase",
                   "TarkovStreets",
-                  "sandbox"
+                  "Sandbox"
                 ]
               }
             ],
@@ -6367,7 +6367,7 @@
                   "Woods",
                   "RezervBase",
                   "TarkovStreets",
-                  "sandbox"
+                  "Sandbox"
                 ]
               }
             ],
@@ -8520,7 +8520,7 @@
           "status": [
             4
           ],
-          "target": "Scorpion_3_4",
+          "target": "Scorpion_3_5",
           "visibilityConditions": []
         }
       ],
@@ -8555,7 +8555,7 @@
                   "Woods",
                   "RezervBase",
                   "TarkovStreets",
-                  "sandbox"
+                  "Sandbox"
                 ]
               }
             ],
@@ -8698,7 +8698,23 @@
           "visibilityConditions": []
         }
       ],
-      "AvailableForStart": [],
+      "AvailableForStart": [
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_3_7 start_0",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_3_6",
+          "visibilityConditions": []
+        }
+      ],
       "Fail": []
     },
     "declinePlayerMessage": "Scorpion_3_7 declinePlayerMessage",
