@@ -1097,7 +1097,7 @@
     "startedMessageText": "Scorpion_1_5 startedMessageText",
     "successMessageText": "Scorpion_1_5 successMessageText",
     "traderId": "Scorpion",
-    "type": "Completion"
+    "type": "PickUp"
   },
   "Scorpion_1_6": {
     "QuestName": "Monitoring II",
@@ -1412,7 +1412,7 @@
     "startedMessageText": "Scorpion_1_6 startedMessageText",
     "successMessageText": "Scorpion_1_6 successMessageText",
     "traderId": "Scorpion",
-    "type": "Completion"
+    "type": "PickUp"
   },
   "Scorpion_1_7": {
     "QuestName": "Targeting Hopefulness",
