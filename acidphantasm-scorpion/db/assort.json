@@ -1885,6 +1885,54 @@
         "BuyRestrictionMax": 2,
         "BuyRestrictionCurrent": 0
       }
+    },
+    {
+      "_id": "6635a60afe3ddd40c508c586",
+      "_tpl": "628e4e576d783146b124c64d",
+      "parentId": "hideout",
+      "slotId": "hideout",
+      "upd": {
+        "UnlimitedCount": false,
+        "StackObjectsCount": 87,
+        "BuyRestrictionMax": 1,
+        "BuyRestrictionCurrent": 0
+      }
+    },
+    {
+      "_id": "6635a60afe3ddd40c508c587",
+      "_tpl": "5c066e3a0db834001b7353f0",
+      "parentId": "hideout",
+      "slotId": "hideout",
+      "upd": {
+        "UnlimitedCount": false,
+        "StackObjectsCount": 367,
+        "BuyRestrictionMax": 2,
+        "BuyRestrictionCurrent": 0
+      }
+    },
+    {
+      "_id": "6635a60afe3ddd40c508c588",
+      "_tpl": "5a154d5cfcdbcb001a3b00da",
+      "parentId": "hideout",
+      "slotId": "hideout",
+      "upd": {
+        "UnlimitedCount": false,
+        "StackObjectsCount": 102,
+        "BuyRestrictionMax": 1,
+        "BuyRestrictionCurrent": 0
+      }
+    },
+    {
+      "_id": "6635a60afe3ddd40c508c589",
+      "_tpl": "5a16b7e1fcdbcb00165aa6c9",
+      "parentId": "hideout",
+      "slotId": "hideout",
+      "upd": {
+        "UnlimitedCount": false,
+        "StackObjectsCount": 66,
+        "BuyRestrictionMax": 1,
+        "BuyRestrictionCurrent": 0
+      }
     }
   ],
   "barter_scheme": {
@@ -2672,10 +2720,34 @@
         }
       ]
     ],
-    "6635a60afe3ddd40c508c56b": [
+    "6635a60afe3ddd40c508c586": [
       [
         {
-          "count": 69420,
+          "count": 127840,
+          "_tpl": "5449016a4bdc2d6f028b456f"
+        }
+      ]
+    ],
+    "6635a60afe3ddd40c508c587": [
+      [
+        {
+          "count": 71580,
+          "_tpl": "5449016a4bdc2d6f028b456f"
+        }
+      ]
+    ],
+    "6635a60afe3ddd40c508c588": [
+      [
+        {
+          "count": 79850,
+          "_tpl": "5449016a4bdc2d6f028b456f"
+        }
+      ]
+    ],
+    "6635a60afe3ddd40c508c589": [
+      [
+        {
+          "count": 46500,
           "_tpl": "5449016a4bdc2d6f028b456f"
         }
       ]
@@ -2779,6 +2851,10 @@
     "6635a60afe3ddd40c508c563": 4,
     "6635a60afe3ddd40c508c564": 4,
     "6635a60afe3ddd40c508c56b": 4,
-    "6635a60afe3ddd40c508c572": 3
+    "6635a60afe3ddd40c508c572": 3,
+    "6635a60afe3ddd40c508c586": 3,
+    "6635a60afe3ddd40c508c587": 3,
+    "6635a60afe3ddd40c508c588": 3,
+    "6635a60afe3ddd40c508c589": 3
   }
 }
