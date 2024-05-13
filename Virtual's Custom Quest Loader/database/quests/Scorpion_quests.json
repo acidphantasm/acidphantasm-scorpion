@@ -1205,7 +1205,7 @@
     "image": "/files/quest/icon/scorpion_questpic.png",
     "instantComplete": false,
     "isKey": false,
-    "location": "any",
+    "location": "56f40101d2720b2a4d8b45d6",
     "name": "Scorpion_1_6 name",
     "note": "Scorpion_1_6 note",
     "restartable": false,
