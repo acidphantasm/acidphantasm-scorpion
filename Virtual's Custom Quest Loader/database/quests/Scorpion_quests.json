@@ -9993,13 +9993,13 @@
               "_id": "Scorpion_5_1 reward_1_0",
               "_tpl": "5449016a4bdc2d6f028b456f",
               "upd": {
-                "StackObjectsCount": 125000
+                "StackObjectsCount": 100000
               }
             }
           ],
           "target": "Scorpion_5_1 reward_1_0",
           "type": "Item",
-          "value": "125000"
+          "value": "100000"
         },
         {
           "findInRaid": true,
@@ -10542,7 +10542,7 @@
           "id": "Scorpion_5_3 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": "9500"
+          "value": "8000"
         },
         {
           "findInRaid": true,
@@ -10567,16 +10567,16 @@
           "index": 2,
           "items": [
             {
-              "_id": "6492e44af4287b13040fc692",
-              "_tpl": "60b52e5bc7d8103275739d67",
+              "_id": "6635a60afe3ddd40c508c57a",
+              "_tpl": "5648a69d4bdc2ded0b8b457b",
               "upd": {
-                "StackObjectsCount": 2
+                "StackObjectsCount": 1
               }
             }
           ],
-          "target": "6492e44af4287b13040fc692",
+          "target": "6635a60afe3ddd40c508c57a",
           "type": "Item",
-          "value": "2"
+          "value": "1"
         },
         {
           "findInRaid": true,
@@ -10584,33 +10584,16 @@
           "index": 3,
           "items": [
             {
-              "_id": "6492e44af4287b13040fc693",
-              "_tpl": "618aef6d0a5a59657e5f55ee",
+              "_id": "6635a60afe3ddd40c508c57b",
+              "_tpl": "5c0fa877d174af02a012e1cf",
               "upd": {
-                "StackObjectsCount": 2
+                "StackObjectsCount": 1
               }
             }
           ],
-          "target": "6492e44af4287b13040fc693",
+          "target": "6635a60afe3ddd40c508c57b",
           "type": "Item",
-          "value": "2"
-        },
-        {
-          "findInRaid": true,
-          "id": "Scorpion_5_3 reward_4",
-          "index": 4,
-          "items": [
-            {
-              "_id": "6492e44af4287b13040fc694",
-              "_tpl": "5d96141523f0ea1b7f2aacab",
-              "upd": {
-                "StackObjectsCount": 2
-              }
-            }
-          ],
-          "target": "6492e44af4287b13040fc694",
-          "type": "Item",
-          "value": "2"
+          "value": "1"
         }
       ]
     },
@@ -10788,7 +10771,76 @@
     "restartable": false,
     "rewards": {
       "Fail": [],
-      "Started": [],
+      "Started": [
+        {
+          "findInRaid": true,
+          "id": "Scorpion_5_4 start_reward_0",
+          "index": 0,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c57c",
+              "_tpl": "5ed51652f6c34d2cc26336a1",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c57c",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_5_4 start_reward_1",
+          "index": 1,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c57d",
+              "_tpl": "5ed515f6915ec335206e4152",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c57d",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_5_4 start_reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c57e",
+              "_tpl": "637b620db7afa97bfc3d7009",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c57e",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_5_4 start_reward_3",
+          "index": 3,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c57f",
+              "_tpl": "5ed515ece452db0eb56fc028",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c57f",
+          "type": "Item",
+          "value": "1"
+        }
+      ],
       "Success": [
         {
           "id": "Scorpion_5_4 reward_0",
