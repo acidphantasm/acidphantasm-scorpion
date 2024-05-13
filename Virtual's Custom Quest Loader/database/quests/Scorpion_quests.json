@@ -10701,7 +10701,7 @@
           "minDurability": 0,
           "onlyFoundInRaid": false,
           "parentId": "",
-          "plantTime": 5,
+          "plantTime": 1,
           "target": [
             "5ed51652f6c34d2cc26336a1"
           ],
@@ -10721,7 +10721,7 @@
           "minDurability": 0,
           "onlyFoundInRaid": false,
           "parentId": "",
-          "plantTime": 5,
+          "plantTime": 1,
           "target": [
             "5ed515f6915ec335206e4152"
           ],
@@ -10741,7 +10741,7 @@
           "minDurability": 0,
           "onlyFoundInRaid": false,
           "parentId": "",
-          "plantTime": 5,
+          "plantTime": 1,
           "target": [
             "637b620db7afa97bfc3d7009"
           ],
@@ -10761,7 +10761,7 @@
           "minDurability": 0,
           "onlyFoundInRaid": false,
           "parentId": "",
-          "plantTime": 5,
+          "plantTime": 1,
           "target": [
             "5ed515ece452db0eb56fc028"
           ],
