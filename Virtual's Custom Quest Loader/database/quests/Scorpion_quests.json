@@ -13482,42 +13482,42 @@
       "Started": [],
       "Success": [
         {
-        "id": "Scorpion_10_1_2 reward_0",
-        "index": 0,
-        "type": "Experience",
-        "value": "10000"
+          "id": "Scorpion_10_1_2 reward_0",
+          "index": 0,
+          "type": "Experience",
+          "value": "10000"
         },
         {
-        "findInRaid": true,
-        "id": "Scorpion_10_1_2 reward_1",
-        "index": 1,
-        "items": [
-          {
-            "_id": "662344feca75908fcd0f983d",
-            "_tpl": "59fb023c86f7746d0d4b423c",
-            "upd": {
-              "StackObjectsCount": 1
+          "findInRaid": true,
+          "id": "Scorpion_10_1_2 reward_1",
+          "index": 1,
+          "items": [
+            {
+              "_id": "662344feca75908fcd0f983d",
+              "_tpl": "59fb023c86f7746d0d4b423c",
+              "upd": {
+                "StackObjectsCount": 1
+              }
             }
-          }
-        ],
-        "target": "662344feca75908fcd0f983d",
-        "type": "Item",
-        "value": "1"
-      },
-      {
-        "id": "Scorpion_10_1_2 reward_2",
-        "index": 2,
-        "items": [
-          {
-            "_id": "662344feca75908fcd0f985c",
-            "_tpl": "6529302b8c26af6326029fb7"
-          }
-        ],
-        "loyaltyLevel": 3,
-        "target": "662344feca75908fcd0f985c",
-        "traderId": "Scorpion",
-        "type": "AssortmentUnlock"
-      }
+          ],
+          "target": "662344feca75908fcd0f983d",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "id": "Scorpion_10_1_2 reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "662344feca75908fcd0f985c",
+              "_tpl": "6529302b8c26af6326029fb7"
+            }
+          ],
+          "loyaltyLevel": 3,
+          "target": "662344feca75908fcd0f985c",
+          "traderId": "Scorpion",
+          "type": "AssortmentUnlock"
+        }
       ]
     },
     "secretQuest": false,
@@ -14345,42 +14345,42 @@
       "Started": [],
       "Success": [
         {
-        "id": "Scorpion_10_1_3 reward_0",
-        "index": 0,
-        "type": "Experience",
-        "value": "60000"
+          "id": "Scorpion_10_1_3 reward_0",
+          "index": 0,
+          "type": "Experience",
+          "value": "60000"
         },
         {
-        "findInRaid": true,
-        "id": "Scorpion_10_1_3 reward_1",
-        "index": 1,
-        "items": [
-          {
-            "_id": "662344feca75908fcd0f983d",
-            "_tpl": "59fb023c86f7746d0d4b423c",
-            "upd": {
-              "StackObjectsCount": 1
+          "findInRaid": true,
+          "id": "Scorpion_10_1_3 reward_1",
+          "index": 1,
+          "items": [
+            {
+              "_id": "662344feca75908fcd0f983d",
+              "_tpl": "59fb023c86f7746d0d4b423c",
+              "upd": {
+                "StackObjectsCount": 1
+              }
             }
-          }
-        ],
-        "target": "662344feca75908fcd0f983d",
-        "type": "Item",
-        "value": "1"
-      },
-      {
-        "id": "Scorpion_10_1_3 reward_2",
-        "index": 2,
-        "items": [
-          {
-            "_id": "662344feca75908fcd0f985c",
-            "_tpl": "6529302b8c26af6326029fb7"
-          }
-        ],
-        "loyaltyLevel": 3,
-        "target": "662344feca75908fcd0f985c",
-        "traderId": "Scorpion",
-        "type": "AssortmentUnlock"
-      }
+          ],
+          "target": "662344feca75908fcd0f983d",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "id": "Scorpion_10_1_3 reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "662344feca75908fcd0f985c",
+              "_tpl": "6529302b8c26af6326029fb7"
+            }
+          ],
+          "loyaltyLevel": 3,
+          "target": "662344feca75908fcd0f985c",
+          "traderId": "Scorpion",
+          "type": "AssortmentUnlock"
+        }
       ]
     },
     "secretQuest": false,
@@ -15494,42 +15494,42 @@
       "Started": [],
       "Success": [
         {
-        "id": "Scorpion_10_2_2 reward_0",
-        "index": 0,
-        "type": "Experience",
-        "value": "10000"
+          "id": "Scorpion_10_2_2 reward_0",
+          "index": 0,
+          "type": "Experience",
+          "value": "10000"
         },
         {
-        "findInRaid": true,
-        "id": "Scorpion_10_2_2 reward_1",
-        "index": 1,
-        "items": [
-          {
-            "_id": "662344feca75908fcd0f983d",
-            "_tpl": "59fb023c86f7746d0d4b423c",
-            "upd": {
-              "StackObjectsCount": 1
+          "findInRaid": true,
+          "id": "Scorpion_10_2_2 reward_1",
+          "index": 1,
+          "items": [
+            {
+              "_id": "662344feca75908fcd0f983d",
+              "_tpl": "59fb023c86f7746d0d4b423c",
+              "upd": {
+                "StackObjectsCount": 1
+              }
             }
-          }
-        ],
-        "target": "662344feca75908fcd0f983d",
-        "type": "Item",
-        "value": "1"
-      },
-      {
-        "id": "Scorpion_10_2_2 reward_2",
-        "index": 2,
-        "items": [
-          {
-            "_id": "6635a60afe3ddd40c508c53b",
-            "_tpl": "5efb0da7a29a85116f6ea05f"
-          }
-        ],
-        "loyaltyLevel": 3,
-        "target": "6635a60afe3ddd40c508c53b",
-        "traderId": "Scorpion",
-        "type": "AssortmentUnlock"
-      }
+          ],
+          "target": "662344feca75908fcd0f983d",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "id": "Scorpion_10_2_2 reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c53b",
+              "_tpl": "5efb0da7a29a85116f6ea05f"
+            }
+          ],
+          "loyaltyLevel": 3,
+          "target": "6635a60afe3ddd40c508c53b",
+          "traderId": "Scorpion",
+          "type": "AssortmentUnlock"
+        }
       ]
     },
     "secretQuest": false,
@@ -16213,42 +16213,42 @@
       "Started": [],
       "Success": [
         {
-        "id": "Scorpion_10_2_3 reward_0",
-        "index": 0,
-        "type": "Experience",
-        "value": "60000"
+          "id": "Scorpion_10_2_3 reward_0",
+          "index": 0,
+          "type": "Experience",
+          "value": "60000"
         },
         {
-        "findInRaid": true,
-        "id": "Scorpion_10_2_3 reward_1",
-        "index": 1,
-        "items": [
-          {
-            "_id": "662344feca75908fcd0f983d",
-            "_tpl": "59fb023c86f7746d0d4b423c",
-            "upd": {
-              "StackObjectsCount": 1
+          "findInRaid": true,
+          "id": "Scorpion_10_2_3 reward_1",
+          "index": 1,
+          "items": [
+            {
+              "_id": "662344feca75908fcd0f983d",
+              "_tpl": "59fb023c86f7746d0d4b423c",
+              "upd": {
+                "StackObjectsCount": 1
+              }
             }
-          }
-        ],
-        "target": "662344feca75908fcd0f983d",
-        "type": "Item",
-        "value": "1"
-      },
-      {
-        "id": "Scorpion_10_2_3 reward_2",
-        "index": 2,
-        "items": [
-          {
-            "_id": "662344feca75908fcd0f985c",
-            "_tpl": "6529302b8c26af6326029fb7"
-          }
-        ],
-        "loyaltyLevel": 3,
-        "target": "662344feca75908fcd0f985c",
-        "traderId": "Scorpion",
-        "type": "AssortmentUnlock"
-      }
+          ],
+          "target": "662344feca75908fcd0f983d",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "id": "Scorpion_10_2_3 reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "662344feca75908fcd0f985c",
+              "_tpl": "6529302b8c26af6326029fb7"
+            }
+          ],
+          "loyaltyLevel": 3,
+          "target": "662344feca75908fcd0f985c",
+          "traderId": "Scorpion",
+          "type": "AssortmentUnlock"
+        }
       ]
     },
     "secretQuest": false,
@@ -17395,42 +17395,42 @@
       "Started": [],
       "Success": [
         {
-        "id": "Scorpion_10_3_2 reward_0",
-        "index": 0,
-        "type": "Experience",
-        "value": "10000"
+          "id": "Scorpion_10_3_2 reward_0",
+          "index": 0,
+          "type": "Experience",
+          "value": "10000"
         },
         {
-        "findInRaid": true,
-        "id": "Scorpion_10_3_2 reward_1",
-        "index": 1,
-        "items": [
-          {
-            "_id": "662344feca75908fcd0f983d",
-            "_tpl": "59fb023c86f7746d0d4b423c",
-            "upd": {
-              "StackObjectsCount": 1
+          "findInRaid": true,
+          "id": "Scorpion_10_3_2 reward_1",
+          "index": 1,
+          "items": [
+            {
+              "_id": "662344feca75908fcd0f983d",
+              "_tpl": "59fb023c86f7746d0d4b423c",
+              "upd": {
+                "StackObjectsCount": 1
+              }
             }
-          }
-        ],
-        "target": "662344feca75908fcd0f983d",
-        "type": "Item",
-        "value": "1"
-      },
-      {
-        "id": "Scorpion_10_3_2 reward_2",
-        "index": 2,
-        "items": [
-          {
-            "_id": "6635a60afe3ddd40c508c4d0",
-            "_tpl": "5a6086ea4f39f99cd479502f"
-          }
-        ],
-        "loyaltyLevel": 3,
-        "target": "6635a60afe3ddd40c508c4d0",
-        "traderId": "Scorpion",
-        "type": "AssortmentUnlock"
-      }
+          ],
+          "target": "662344feca75908fcd0f983d",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "id": "Scorpion_10_3_2 reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c4d0",
+              "_tpl": "5a6086ea4f39f99cd479502f"
+            }
+          ],
+          "loyaltyLevel": 3,
+          "target": "6635a60afe3ddd40c508c4d0",
+          "traderId": "Scorpion",
+          "type": "AssortmentUnlock"
+        }
       ]
     },
     "secretQuest": false,
@@ -18024,42 +18024,42 @@
       "Started": [],
       "Success": [
         {
-        "id": "Scorpion_10_3_3 reward_0",
-        "index": 0,
-        "type": "Experience",
-        "value": "60000"
+          "id": "Scorpion_10_3_3 reward_0",
+          "index": 0,
+          "type": "Experience",
+          "value": "60000"
         },
         {
-        "findInRaid": true,
-        "id": "Scorpion_10_3_3 reward_1",
-        "index": 1,
-        "items": [
-          {
-            "_id": "662344feca75908fcd0f983d",
-            "_tpl": "59fb023c86f7746d0d4b423c",
-            "upd": {
-              "StackObjectsCount": 1
+          "findInRaid": true,
+          "id": "Scorpion_10_3_3 reward_1",
+          "index": 1,
+          "items": [
+            {
+              "_id": "662344feca75908fcd0f983d",
+              "_tpl": "59fb023c86f7746d0d4b423c",
+              "upd": {
+                "StackObjectsCount": 1
+              }
             }
-          }
-        ],
-        "target": "662344feca75908fcd0f983d",
-        "type": "Item",
-        "value": "1"
-      },
-      {
-        "id": "Scorpion_10_3_3 reward_2",
-        "index": 2,
-        "items": [
-          {
-            "_id": "662344feca75908fcd0f985c",
-            "_tpl": "6529302b8c26af6326029fb7"
-          }
-        ],
-        "loyaltyLevel": 3,
-        "target": "662344feca75908fcd0f985c",
-        "traderId": "Scorpion",
-        "type": "AssortmentUnlock"
-      }
+          ],
+          "target": "662344feca75908fcd0f983d",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "id": "Scorpion_10_3_3 reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "662344feca75908fcd0f985c",
+              "_tpl": "6529302b8c26af6326029fb7"
+            }
+          ],
+          "loyaltyLevel": 3,
+          "target": "662344feca75908fcd0f985c",
+          "traderId": "Scorpion",
+          "type": "AssortmentUnlock"
+        }
       ]
     },
     "secretQuest": false,
@@ -19197,42 +19197,42 @@
       "Started": [],
       "Success": [
         {
-        "id": "Scorpion_10_4_2 reward_0",
-        "index": 0,
-        "type": "Experience",
-        "value": "10000"
+          "id": "Scorpion_10_4_2 reward_0",
+          "index": 0,
+          "type": "Experience",
+          "value": "10000"
         },
         {
-        "findInRaid": true,
-        "id": "Scorpion_10_4_2 reward_1",
-        "index": 1,
-        "items": [
-          {
-            "_id": "662344feca75908fcd0f983d",
-            "_tpl": "59fb023c86f7746d0d4b423c",
-            "upd": {
-              "StackObjectsCount": 1
+          "findInRaid": true,
+          "id": "Scorpion_10_4_2 reward_1",
+          "index": 1,
+          "items": [
+            {
+              "_id": "662344feca75908fcd0f983d",
+              "_tpl": "59fb023c86f7746d0d4b423c",
+              "upd": {
+                "StackObjectsCount": 1
+              }
             }
-          }
-        ],
-        "target": "662344feca75908fcd0f983d",
-        "type": "Item",
-        "value": "1"
-      },
-      {
-        "id": "Scorpion_10_4_2 reward_2",
-        "index": 2,
-        "items": [
-          {
-            "_id": "6635a60afe3ddd40c508c4f2",
-            "_tpl": "5fc275cf85fd526b824a571a"
-          }
-        ],
-        "loyaltyLevel": 3,
-        "target": "6635a60afe3ddd40c508c4f2",
-        "traderId": "Scorpion",
-        "type": "AssortmentUnlock"
-      }
+          ],
+          "target": "662344feca75908fcd0f983d",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "id": "Scorpion_10_4_2 reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c4f2",
+              "_tpl": "5fc275cf85fd526b824a571a"
+            }
+          ],
+          "loyaltyLevel": 3,
+          "target": "6635a60afe3ddd40c508c4f2",
+          "traderId": "Scorpion",
+          "type": "AssortmentUnlock"
+        }
       ]
     },
     "secretQuest": false,
@@ -19817,42 +19817,42 @@
       "Started": [],
       "Success": [
         {
-        "id": "Scorpion_10_4_3 reward_0",
-        "index": 0,
-        "type": "Experience",
-        "value": "60000"
+          "id": "Scorpion_10_4_3 reward_0",
+          "index": 0,
+          "type": "Experience",
+          "value": "60000"
         },
         {
-        "findInRaid": true,
-        "id": "Scorpion_10_4_3 reward_1",
-        "index": 1,
-        "items": [
-          {
-            "_id": "662344feca75908fcd0f983d",
-            "_tpl": "59fb023c86f7746d0d4b423c",
-            "upd": {
-              "StackObjectsCount": 1
+          "findInRaid": true,
+          "id": "Scorpion_10_4_3 reward_1",
+          "index": 1,
+          "items": [
+            {
+              "_id": "662344feca75908fcd0f983d",
+              "_tpl": "59fb023c86f7746d0d4b423c",
+              "upd": {
+                "StackObjectsCount": 1
+              }
             }
-          }
-        ],
-        "target": "662344feca75908fcd0f983d",
-        "type": "Item",
-        "value": "1"
-      },
-      {
-        "id": "Scorpion_10_4_3 reward_2",
-        "index": 2,
-        "items": [
-          {
-            "_id": "662344feca75908fcd0f985c",
-            "_tpl": "6529302b8c26af6326029fb7"
-          }
-        ],
-        "loyaltyLevel": 3,
-        "target": "662344feca75908fcd0f985c",
-        "traderId": "Scorpion",
-        "type": "AssortmentUnlock"
-      }
+          ],
+          "target": "662344feca75908fcd0f983d",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "id": "Scorpion_10_4_3 reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "662344feca75908fcd0f985c",
+              "_tpl": "6529302b8c26af6326029fb7"
+            }
+          ],
+          "loyaltyLevel": 3,
+          "target": "662344feca75908fcd0f985c",
+          "traderId": "Scorpion",
+          "type": "AssortmentUnlock"
+        }
       ]
     },
     "secretQuest": false,
@@ -20900,42 +20900,42 @@
       "Started": [],
       "Success": [
         {
-        "id": "Scorpion_10_5_2 reward_0",
-        "index": 0,
-        "type": "Experience",
-        "value": "10000"
+          "id": "Scorpion_10_5_2 reward_0",
+          "index": 0,
+          "type": "Experience",
+          "value": "10000"
         },
         {
-        "findInRaid": true,
-        "id": "Scorpion_10_5_2 reward_1",
-        "index": 1,
-        "items": [
-          {
-            "_id": "662344feca75908fcd0f983d",
-            "_tpl": "59fb023c86f7746d0d4b423c",
-            "upd": {
-              "StackObjectsCount": 1
+          "findInRaid": true,
+          "id": "Scorpion_10_5_2 reward_1",
+          "index": 1,
+          "items": [
+            {
+              "_id": "662344feca75908fcd0f983d",
+              "_tpl": "59fb023c86f7746d0d4b423c",
+              "upd": {
+                "StackObjectsCount": 1
+              }
             }
-          }
-        ],
-        "target": "662344feca75908fcd0f983d",
-        "type": "Item",
-        "value": "1"
-      },
-      {
-        "id": "Scorpion_10_5_2 reward_2",
-        "index": 2,
-        "items": [
-          {
-            "_id": "6635a60afe3ddd40c508c53c",
-            "_tpl": "5d6e68a8a4b9360b6c0d54e2"
-          }
-        ],
-        "loyaltyLevel": 3,
-        "target": "6635a60afe3ddd40c508c53c",
-        "traderId": "Scorpion",
-        "type": "AssortmentUnlock"
-      }
+          ],
+          "target": "662344feca75908fcd0f983d",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "id": "Scorpion_10_5_2 reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c53c",
+              "_tpl": "5d6e68a8a4b9360b6c0d54e2"
+            }
+          ],
+          "loyaltyLevel": 3,
+          "target": "6635a60afe3ddd40c508c53c",
+          "traderId": "Scorpion",
+          "type": "AssortmentUnlock"
+        }
       ]
     },
     "secretQuest": false,
@@ -21565,42 +21565,42 @@
       "Started": [],
       "Success": [
         {
-        "id": "Scorpion_10_5_3 reward_0",
-        "index": 0,
-        "type": "Experience",
-        "value": "60000"
+          "id": "Scorpion_10_5_3 reward_0",
+          "index": 0,
+          "type": "Experience",
+          "value": "60000"
         },
         {
-        "findInRaid": true,
-        "id": "Scorpion_10_5_3 reward_1",
-        "index": 1,
-        "items": [
-          {
-            "_id": "662344feca75908fcd0f983d",
-            "_tpl": "59fb023c86f7746d0d4b423c",
-            "upd": {
-              "StackObjectsCount": 1
+          "findInRaid": true,
+          "id": "Scorpion_10_5_3 reward_1",
+          "index": 1,
+          "items": [
+            {
+              "_id": "662344feca75908fcd0f983d",
+              "_tpl": "59fb023c86f7746d0d4b423c",
+              "upd": {
+                "StackObjectsCount": 1
+              }
             }
-          }
-        ],
-        "target": "662344feca75908fcd0f983d",
-        "type": "Item",
-        "value": "1"
-      },
-      {
-        "id": "Scorpion_10_5_3 reward_2",
-        "index": 2,
-        "items": [
-          {
-            "_id": "662344feca75908fcd0f985c",
-            "_tpl": "6529302b8c26af6326029fb7"
-          }
-        ],
-        "loyaltyLevel": 3,
-        "target": "662344feca75908fcd0f985c",
-        "traderId": "Scorpion",
-        "type": "AssortmentUnlock"
-      }
+          ],
+          "target": "662344feca75908fcd0f983d",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "id": "Scorpion_10_5_3 reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "662344feca75908fcd0f985c",
+              "_tpl": "6529302b8c26af6326029fb7"
+            }
+          ],
+          "loyaltyLevel": 3,
+          "target": "662344feca75908fcd0f985c",
+          "traderId": "Scorpion",
+          "type": "AssortmentUnlock"
+        }
       ]
     },
     "secretQuest": false,
@@ -22739,42 +22739,42 @@
       "Started": [],
       "Success": [
         {
-        "id": "Scorpion_10_6_2 reward_0",
-        "index": 0,
-        "type": "Experience",
-        "value": "10000"
+          "id": "Scorpion_10_6_2 reward_0",
+          "index": 0,
+          "type": "Experience",
+          "value": "10000"
         },
         {
-        "findInRaid": true,
-        "id": "Scorpion_10_6_2 reward_1",
-        "index": 1,
-        "items": [
-          {
-            "_id": "662344feca75908fcd0f983d",
-            "_tpl": "59fb023c86f7746d0d4b423c",
-            "upd": {
-              "StackObjectsCount": 1
+          "findInRaid": true,
+          "id": "Scorpion_10_6_2 reward_1",
+          "index": 1,
+          "items": [
+            {
+              "_id": "662344feca75908fcd0f983d",
+              "_tpl": "59fb023c86f7746d0d4b423c",
+              "upd": {
+                "StackObjectsCount": 1
+              }
             }
-          }
-        ],
-        "target": "662344feca75908fcd0f983d",
-        "type": "Item",
-        "value": "1"
-      },
-      {
-        "id": "Scorpion_10_6_2 reward_2",
-        "index": 2,
-        "items": [
-          {
-            "_id": "6635a60afe3ddd40c508c53d",
-            "_tpl": "5cc80f38e4a949001152b560"
-          }
-        ],
-        "loyaltyLevel": 3,
-        "target": "6635a60afe3ddd40c508c53d",
-        "traderId": "Scorpion",
-        "type": "AssortmentUnlock"
-      }
+          ],
+          "target": "662344feca75908fcd0f983d",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "id": "Scorpion_10_6_2 reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c53d",
+              "_tpl": "5cc80f38e4a949001152b560"
+            }
+          ],
+          "loyaltyLevel": 3,
+          "target": "6635a60afe3ddd40c508c53d",
+          "traderId": "Scorpion",
+          "type": "AssortmentUnlock"
+        }
       ]
     },
     "secretQuest": false,
@@ -23467,42 +23467,42 @@
       "Started": [],
       "Success": [
         {
-        "id": "Scorpion_10_6_3 reward_0",
-        "index": 0,
-        "type": "Experience",
-        "value": "60000"
+          "id": "Scorpion_10_6_3 reward_0",
+          "index": 0,
+          "type": "Experience",
+          "value": "60000"
         },
         {
-        "findInRaid": true,
-        "id": "Scorpion_10_6_3 reward_1",
-        "index": 1,
-        "items": [
-          {
-            "_id": "662344feca75908fcd0f983d",
-            "_tpl": "59fb023c86f7746d0d4b423c",
-            "upd": {
-              "StackObjectsCount": 1
+          "findInRaid": true,
+          "id": "Scorpion_10_6_3 reward_1",
+          "index": 1,
+          "items": [
+            {
+              "_id": "662344feca75908fcd0f983d",
+              "_tpl": "59fb023c86f7746d0d4b423c",
+              "upd": {
+                "StackObjectsCount": 1
+              }
             }
-          }
-        ],
-        "target": "662344feca75908fcd0f983d",
-        "type": "Item",
-        "value": "1"
-      },
-      {
-        "id": "Scorpion_10_6_3 reward_2",
-        "index": 2,
-        "items": [
-          {
-            "_id": "662344feca75908fcd0f985c",
-            "_tpl": "6529302b8c26af6326029fb7"
-          }
-        ],
-        "loyaltyLevel": 3,
-        "target": "662344feca75908fcd0f985c",
-        "traderId": "Scorpion",
-        "type": "AssortmentUnlock"
-      }
+          ],
+          "target": "662344feca75908fcd0f983d",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "id": "Scorpion_10_6_3 reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "662344feca75908fcd0f985c",
+              "_tpl": "6529302b8c26af6326029fb7"
+            }
+          ],
+          "loyaltyLevel": 3,
+          "target": "662344feca75908fcd0f985c",
+          "traderId": "Scorpion",
+          "type": "AssortmentUnlock"
+        }
       ]
     },
     "secretQuest": false,
@@ -24503,42 +24503,42 @@
       "Started": [],
       "Success": [
         {
-        "id": "Scorpion_10_7_2 reward_0",
-        "index": 0,
-        "type": "Experience",
-        "value": "10000"
+          "id": "Scorpion_10_7_2 reward_0",
+          "index": 0,
+          "type": "Experience",
+          "value": "10000"
         },
         {
-        "findInRaid": true,
-        "id": "Scorpion_10_7_2 reward_1",
-        "index": 1,
-        "items": [
-          {
-            "_id": "662344feca75908fcd0f983d",
-            "_tpl": "59fb023c86f7746d0d4b423c",
-            "upd": {
-              "StackObjectsCount": 1
+          "findInRaid": true,
+          "id": "Scorpion_10_7_2 reward_1",
+          "index": 1,
+          "items": [
+            {
+              "_id": "662344feca75908fcd0f983d",
+              "_tpl": "59fb023c86f7746d0d4b423c",
+              "upd": {
+                "StackObjectsCount": 1
+              }
             }
-          }
-        ],
-        "target": "662344feca75908fcd0f983d",
-        "type": "Item",
-        "value": "1"
-      },
-      {
-        "id": "Scorpion_10_7_2 reward_2",
-        "index": 2,
-        "items": [
-          {
-            "_id": "6635a60afe3ddd40c508c53e",
-            "_tpl": "59e0d99486f7744a32234762"
-          }
-        ],
-        "loyaltyLevel": 3,
-        "target": "6635a60afe3ddd40c508c53e",
-        "traderId": "Scorpion",
-        "type": "AssortmentUnlock"
-      }
+          ],
+          "target": "662344feca75908fcd0f983d",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "id": "Scorpion_10_7_2 reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c53e",
+              "_tpl": "59e0d99486f7744a32234762"
+            }
+          ],
+          "loyaltyLevel": 3,
+          "target": "6635a60afe3ddd40c508c53e",
+          "traderId": "Scorpion",
+          "type": "AssortmentUnlock"
+        }
       ]
     },
     "secretQuest": false,
@@ -25105,42 +25105,42 @@
       "Started": [],
       "Success": [
         {
-        "id": "Scorpion_10_7_3 reward_0",
-        "index": 0,
-        "type": "Experience",
-        "value": "60000"
+          "id": "Scorpion_10_7_3 reward_0",
+          "index": 0,
+          "type": "Experience",
+          "value": "60000"
         },
         {
-        "findInRaid": true,
-        "id": "Scorpion_10_7_3 reward_1",
-        "index": 1,
-        "items": [
-          {
-            "_id": "662344feca75908fcd0f983d",
-            "_tpl": "59fb023c86f7746d0d4b423c",
-            "upd": {
-              "StackObjectsCount": 1
+          "findInRaid": true,
+          "id": "Scorpion_10_7_3 reward_1",
+          "index": 1,
+          "items": [
+            {
+              "_id": "662344feca75908fcd0f983d",
+              "_tpl": "59fb023c86f7746d0d4b423c",
+              "upd": {
+                "StackObjectsCount": 1
+              }
             }
-          }
-        ],
-        "target": "662344feca75908fcd0f983d",
-        "type": "Item",
-        "value": "1"
-      },
-      {
-        "id": "Scorpion_10_7_3 reward_2",
-        "index": 2,
-        "items": [
-          {
-            "_id": "662344feca75908fcd0f985c",
-            "_tpl": "6529302b8c26af6326029fb7"
-          }
-        ],
-        "loyaltyLevel": 3,
-        "target": "662344feca75908fcd0f985c",
-        "traderId": "Scorpion",
-        "type": "AssortmentUnlock"
-      }
+          ],
+          "target": "662344feca75908fcd0f983d",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "id": "Scorpion_10_7_3 reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "662344feca75908fcd0f985c",
+              "_tpl": "6529302b8c26af6326029fb7"
+            }
+          ],
+          "loyaltyLevel": 3,
+          "target": "662344feca75908fcd0f985c",
+          "traderId": "Scorpion",
+          "type": "AssortmentUnlock"
+        }
       ]
     },
     "secretQuest": false,
@@ -26326,42 +26326,42 @@
       "Started": [],
       "Success": [
         {
-        "id": "Scorpion_10_8_2 reward_0",
-        "index": 0,
-        "type": "Experience",
-        "value": "10000"
+          "id": "Scorpion_10_8_2 reward_0",
+          "index": 0,
+          "type": "Experience",
+          "value": "10000"
         },
         {
-        "findInRaid": true,
-        "id": "Scorpion_10_8_2 reward_1",
-        "index": 1,
-        "items": [
-          {
-            "_id": "662344feca75908fcd0f983d",
-            "_tpl": "59fb023c86f7746d0d4b423c",
-            "upd": {
-              "StackObjectsCount": 1
+          "findInRaid": true,
+          "id": "Scorpion_10_8_2 reward_1",
+          "index": 1,
+          "items": [
+            {
+              "_id": "662344feca75908fcd0f983d",
+              "_tpl": "59fb023c86f7746d0d4b423c",
+              "upd": {
+                "StackObjectsCount": 1
+              }
             }
-          }
-        ],
-        "target": "662344feca75908fcd0f983d",
-        "type": "Item",
-        "value": "1"
-      },
-      {
-        "id": "Scorpion_10_8_2 reward_2",
-        "index": 2,
-        "items": [
-          {
-            "_id": "6635a60afe3ddd40c508c53f",
-            "_tpl": "54527ac44bdc2d36668b4567"
-          }
-        ],
-        "loyaltyLevel": 3,
-        "target": "6635a60afe3ddd40c508c53f",
-        "traderId": "Scorpion",
-        "type": "AssortmentUnlock"
-      }
+          ],
+          "target": "662344feca75908fcd0f983d",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "id": "Scorpion_10_8_2 reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c53f",
+              "_tpl": "54527ac44bdc2d36668b4567"
+            }
+          ],
+          "loyaltyLevel": 3,
+          "target": "6635a60afe3ddd40c508c53f",
+          "traderId": "Scorpion",
+          "type": "AssortmentUnlock"
+        }
       ]
     },
     "secretQuest": false,
@@ -27009,42 +27009,42 @@
       "Started": [],
       "Success": [
         {
-        "id": "Scorpion_10_8_3 reward_0",
-        "index": 0,
-        "type": "Experience",
-        "value": "60000"
+          "id": "Scorpion_10_8_3 reward_0",
+          "index": 0,
+          "type": "Experience",
+          "value": "60000"
         },
         {
-        "findInRaid": true,
-        "id": "Scorpion_10_8_3 reward_1",
-        "index": 1,
-        "items": [
-          {
-            "_id": "662344feca75908fcd0f983d",
-            "_tpl": "59fb023c86f7746d0d4b423c",
-            "upd": {
-              "StackObjectsCount": 1
+          "findInRaid": true,
+          "id": "Scorpion_10_8_3 reward_1",
+          "index": 1,
+          "items": [
+            {
+              "_id": "662344feca75908fcd0f983d",
+              "_tpl": "59fb023c86f7746d0d4b423c",
+              "upd": {
+                "StackObjectsCount": 1
+              }
             }
-          }
-        ],
-        "target": "662344feca75908fcd0f983d",
-        "type": "Item",
-        "value": "1"
-      },
-      {
-        "id": "Scorpion_10_8_3 reward_2",
-        "index": 2,
-        "items": [
-          {
-            "_id": "662344feca75908fcd0f985c",
-            "_tpl": "6529302b8c26af6326029fb7"
-          }
-        ],
-        "loyaltyLevel": 3,
-        "target": "662344feca75908fcd0f985c",
-        "traderId": "Scorpion",
-        "type": "AssortmentUnlock"
-      }
+          ],
+          "target": "662344feca75908fcd0f983d",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "id": "Scorpion_10_8_3 reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "662344feca75908fcd0f985c",
+              "_tpl": "6529302b8c26af6326029fb7"
+            }
+          ],
+          "loyaltyLevel": 3,
+          "target": "662344feca75908fcd0f985c",
+          "traderId": "Scorpion",
+          "type": "AssortmentUnlock"
+        }
       ]
     },
     "secretQuest": false,
