@@ -9214,6 +9214,21 @@
           ],
           "target": "Scorpion_4_4",
           "visibilityConditions": []
+        },
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_4_5 start_2",
+          "index": 2,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_3_4",
+          "visibilityConditions": []
         }
       ],
       "Fail": []
