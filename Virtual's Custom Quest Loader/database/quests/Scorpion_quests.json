@@ -5060,7 +5060,7 @@
     "image": "/files/quest/icon/scorpion_questpic.png",
     "instantComplete": false,
     "isKey": false,
-    "location": "any",
+    "location": "5714dbc024597771384a510d",
     "name": "Scorpion_3_2 name",
     "note": "Scorpion_3_2 note",
     "restartable": false,
