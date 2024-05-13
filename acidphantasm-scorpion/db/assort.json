@@ -1923,6 +1923,18 @@
       }
     },
     {
+      "_id": "6635a60afe3ddd40c508c58a",
+      "_tpl": "657f8ec5f4c82973640b234c",
+      "parentId": "6635a60afe3ddd40c508c588",
+      "slotId": "Helmet_top"
+    },
+    {
+      "_id": "6635a60afe3ddd40c508c58b",
+      "_tpl": "657f8f10f4c82973640b2350",
+      "parentId": "6635a60afe3ddd40c508c588",
+      "slotId": "Helmet_back"
+    },
+    {
       "_id": "6635a60afe3ddd40c508c589",
       "_tpl": "5a16b7e1fcdbcb00165aa6c9",
       "parentId": "hideout",
