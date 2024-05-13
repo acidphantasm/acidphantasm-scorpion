@@ -11412,6 +11412,20 @@
           "index": 1,
           "type": "Experience",
           "value": 15000
+        },
+        {
+          "id": "Scorpion_6_1 reward_1",
+          "index": 1,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c586",
+              "_tpl": "628e4e576d783146b124c64d"
+            }
+          ],
+          "loyaltyLevel": 3,
+          "target": "6635a60afe3ddd40c508c586",
+          "traderId": "Scorpion",
+          "type": "AssortmentUnlock"
         }
       ]
     },
@@ -11557,17 +11571,31 @@
       ],
       "Success": [
         {
-          "id": "63a5d4c7b7f4570d3a29279e",
+          "id": "Scorpion_6_2 reward_0",
           "index": 0,
           "type": "Experience",
           "value": 25000
         },
         {
-          "id": "63a5d4cf08f1f305635502f0",
+          "id": "Scorpion_6_2 reward_1",
           "index": 1,
-          "target": "5a7c2eca46aef81a7ca2145d",
+          "target": "Scorpion",
           "type": "TraderStanding",
           "value": "0.01"
+        },
+        {
+          "id": "Scorpion_6_2 reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c587",
+              "_tpl": "5c066e3a0db834001b7353f0"
+            }
+          ],
+          "loyaltyLevel": 3,
+          "target": "6635a60afe3ddd40c508c587",
+          "traderId": "Scorpion",
+          "type": "AssortmentUnlock"
         }
       ]
     },
@@ -11727,7 +11755,21 @@
           "index": 1,
           "target": "Scorpion",
           "type": "TraderStanding",
-          "value": "0.04"
+          "value": "0.01"
+        },
+        {
+          "id": "Scorpion_6_3 reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c588",
+              "_tpl": "5a154d5cfcdbcb001a3b00da"
+            }
+          ],
+          "loyaltyLevel": 3,
+          "target": "6635a60afe3ddd40c508c588",
+          "traderId": "Scorpion",
+          "type": "AssortmentUnlock"
         }
       ]
     },
@@ -11883,7 +11925,21 @@
           "index": 1,
           "target": "Scorpion",
           "type": "TraderStanding",
-          "value": "0.04"
+          "value": "0.01"
+        },
+        {
+          "id": "Scorpion_6_4 reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c589",
+              "_tpl": "5a16b7e1fcdbcb00165aa6c9"
+            }
+          ],
+          "loyaltyLevel": 3,
+          "target": "6635a60afe3ddd40c508c589",
+          "traderId": "Scorpion",
+          "type": "AssortmentUnlock"
         }
       ]
     },
