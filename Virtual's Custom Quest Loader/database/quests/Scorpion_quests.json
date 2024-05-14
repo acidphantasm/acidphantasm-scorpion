@@ -11821,7 +11821,7 @@
                   "compareMethod": ">=",
                   "value": 0
                 },
-                "id": "5d25c8ed86f7740a21220d15",
+                "id": "Scorpion_6_4 req_0_0",
                 "time": {
                   "compareMethod": ">=",
                   "value": 0
@@ -11846,7 +11846,7 @@
                 "enemyEquipmentExclusive": [],
                 "enemyEquipmentInclusive": [],
                 "enemyHealthEffects": [],
-                "id": "Scorpion_6_4 req_0_0",
+                "id": "Scorpion_6_4 req_0_1",
                 "resetOnSessionEnd": false,
                 "savageRole": [
                   "pmcBot"
@@ -11861,13 +11861,13 @@
               {
                 "conditionType": "Location",
                 "dynamicLocale": false,
-                "id": "Scorpion_6_4 req_0_1",
+                "id": "Scorpion_6_4 req_0_2",
                 "target": [
                   "laboratory"
                 ]
               }
             ],
-            "id": "Scorpion_6_4 req_0_2"
+            "id": "Scorpion_6_4 req_0_3"
           },
           "doNotResetIfCounterCompleted": false,
           "dynamicLocale": false,
@@ -11894,7 +11894,7 @@
           "status": [
             4
           ],
-          "target": "Scorpion_6_4",
+          "target": "Scorpion_6_3",
           "visibilityConditions": []
         }
       ],
