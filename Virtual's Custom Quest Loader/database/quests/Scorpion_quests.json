@@ -13543,7 +13543,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -13627,7 +13627,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -13711,7 +13711,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -13795,7 +13795,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -13879,7 +13879,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -13963,7 +13963,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -14047,7 +14047,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -14131,7 +14131,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -14215,7 +14215,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -15538,7 +15538,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -15606,7 +15606,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -15674,7 +15674,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -15742,7 +15742,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -15810,7 +15810,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -15878,7 +15878,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -15946,7 +15946,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -16014,7 +16014,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -16082,7 +16082,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -17422,7 +17422,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -17480,7 +17480,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -17538,7 +17538,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -17596,7 +17596,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -17654,7 +17654,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -17712,7 +17712,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -17770,7 +17770,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -17828,7 +17828,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -17886,7 +17886,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -19207,7 +19207,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -19264,7 +19264,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -19321,7 +19321,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -19378,7 +19378,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -19435,7 +19435,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -19492,7 +19492,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -19549,7 +19549,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -19606,7 +19606,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -19663,7 +19663,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -20910,7 +20910,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -20972,7 +20972,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -21034,7 +21034,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -21096,7 +21096,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -21158,7 +21158,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -21220,7 +21220,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -21282,7 +21282,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -21344,7 +21344,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -21406,7 +21406,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -22732,7 +22732,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -22801,7 +22801,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -22870,7 +22870,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -22939,7 +22939,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -23008,7 +23008,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -23077,7 +23077,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -23146,7 +23146,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -23215,7 +23215,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -23284,7 +23284,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -24479,7 +24479,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -24534,7 +24534,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -24589,7 +24589,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -24644,7 +24644,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -24699,7 +24699,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -24754,7 +24754,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -24809,7 +24809,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -24864,7 +24864,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -24919,7 +24919,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -26285,7 +26285,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -26349,7 +26349,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -26413,7 +26413,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -26477,7 +26477,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -26541,7 +26541,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -26605,7 +26605,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -26669,7 +26669,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -26733,7 +26733,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
@@ -26797,7 +26797,7 @@
             "conditions": [
               {
                 "bodyPart": [
-                  "head"
+                  "Head"
                 ],
                 "compareMethod": ">=",
                 "conditionType": "Kills",
