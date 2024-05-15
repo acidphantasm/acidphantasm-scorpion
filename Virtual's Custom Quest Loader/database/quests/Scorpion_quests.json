@@ -6404,7 +6404,7 @@
           "id": "Scorpion_3_5 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": "20000"
+          "value": "45000"
         },
         {
           "id": "Scorpion_3_5 reward_1",
@@ -8592,7 +8592,7 @@
           "id": "Scorpion_3_6 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": "40000"
+          "value": "75000"
         },
         {
           "findInRaid": true,
@@ -8744,7 +8744,7 @@
           "id": "Scorpion_3_7 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": "50000"
+          "value": "100000"
         },
         {
           "id": "Scorpion_3_7 reward_1",
