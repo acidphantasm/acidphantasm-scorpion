@@ -496,12 +496,6 @@
       "slotId": "mod_charge"
     },
     {
-      "_id": "662344f0ca75908fcd0f97a6",
-      "_tpl": "59e6906286f7746c9f75e847",
-      "parentId": "662344f0ca75908fcd0f97a0",
-      "slotId": "patron_in_weapon"
-    },
-    {
       "_id": "662344f0ca75908fcd0f97a7",
       "_tpl": "5d2dc3e548f035404a1a4798",
       "parentId": "662344f0ca75908fcd0f97a3",
