@@ -497,7 +497,7 @@
           "id": "Scorpion_1_3 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": 2750
+          "value": 3500
         },
         {
           "id": "Scorpion_1_3 reward_1",
@@ -752,7 +752,7 @@
           "id": "Scorpion_1_4 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": 3300
+          "value": 3800
         },
         {
           "id": "Scorpion_1_4 reward_1",
@@ -1514,7 +1514,7 @@
           "id": "Scorpion_1_7 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": 5250
+          "value": 7500
         },
         {
           "id": "Scorpion_1_7 reward_1",
@@ -1743,7 +1743,7 @@
           "id": "Scorpion_1_8 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": 5500
+          "value": 8500
         },
         {
           "id": "Scorpion_1_8 reward_1",
@@ -2042,7 +2042,7 @@
           "id": "Scorpion_1_9 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": 5750
+          "value": 8500
         },
         {
           "id": "Scorpion_1_9 reward_1",
@@ -2193,7 +2193,7 @@
           "id": "Scorpion_1__10 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": 6000
+          "value": 9000
         },
         {
           "id": "Scorpion_1__10 reward_1",
@@ -2355,7 +2355,7 @@
           "id": "Scorpion_1__11 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": 6250
+          "value": 13000
         },
         {
           "id": "Scorpion_1__11 reward_1",
@@ -2583,7 +2583,7 @@
           "id": "Scorpion_1__12 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": 6250
+          "value": 15000
         },
         {
           "id": "Scorpion_1__12 reward_1",
@@ -3924,7 +3924,7 @@
           "id": "Scorpion_2_5 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": 5500
+          "value": 7500
         },
         {
           "id": "Scorpion_2_5 reward_1",
@@ -4303,7 +4303,7 @@
           "id": "Scorpion_2_6 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": 5950
+          "value": 8500
         },
         {
           "id": "Scorpion_2_6 reward_1",
@@ -4681,7 +4681,7 @@
           "id": "Scorpion_2_7 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": 7000
+          "value": 10000
         },
         {
           "id": "Scorpion_2_7 reward_1",
@@ -5236,7 +5236,7 @@
           "id": "Scorpion_3_3 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": 5000
+          "value": 6000
         },
         {
           "id": "Scorpion_3_3 reward_1",
@@ -6404,7 +6404,7 @@
           "id": "Scorpion_3_5 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": "15000"
+          "value": "20000"
         },
         {
           "id": "Scorpion_3_5 reward_1",
@@ -8592,7 +8592,7 @@
           "id": "Scorpion_3_6 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": "15000"
+          "value": "40000"
         },
         {
           "findInRaid": true,
@@ -8744,7 +8744,7 @@
           "id": "Scorpion_3_7 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": "15000"
+          "value": "50000"
         },
         {
           "id": "Scorpion_3_7 reward_1",
@@ -10012,7 +10012,7 @@
           "id": "Scorpion_5_1 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": 7500
+          "value": 12500
         },
         {
           "findInRaid": true,
@@ -10572,7 +10572,7 @@
           "id": "Scorpion_5_3 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": "8000"
+          "value": "13000"
         },
         {
           "findInRaid": true,
@@ -10876,7 +10876,7 @@
           "id": "Scorpion_5_4 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": "10000"
+          "value": "15000"
         },
         {
           "findInRaid": true,
@@ -11056,7 +11056,7 @@
           "id": "Scorpion_5_5 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": "10000"
+          "value": "17000"
         },
         {
           "findInRaid": true,
@@ -11237,7 +11237,7 @@
           "id": "Scorpion_5_6 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": 12500
+          "value": 19000
         },
         {
           "findInRaid": true,
@@ -11411,7 +11411,7 @@
           "id": "Scorpion_6_1 reward_0",
           "index": 1,
           "type": "Experience",
-          "value": 15000
+          "value": 17500
         },
         {
           "id": "Scorpion_6_1 reward_1",
