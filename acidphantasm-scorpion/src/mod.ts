@@ -67,19 +67,13 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         let minRefresh = Scorpion.config.traderRefreshMin;
         let maxRefresh = Scorpion.config.traderRefreshMax;
         const addToFlea = Scorpion.config.addTraderToFlea;
-        if (minRefresh >= maxRefresh)
+        if (minRefresh >= maxRefresh || maxRefresh <= 2)
         {
             minRefresh = 1800;
             maxRefresh = 3600;
-            this.logger.error(`[${this.mod}] [Config Issue]  traderRefreshMin must be less than traderRefreshMax. Refresh timers have been reset to default.`);
+            this.logger.error(`[${this.mod}] [Config Issue] Refresh timers have been reset to default.`);
         }
-        if (maxRefresh <= 2)
-        {
-            minRefresh = 1800;
-            maxRefresh = 3600;
-            this.logger.error(`[${this.mod}] [Config Issue]  You set traderRefreshMax too low. Refresh timers have been reset to default.`);
-        }
-
+        
         // Create helper class and use it to register our traders image/icon + set its stock refresh time
         this.traderHelper = new TraderHelper();
         this.fluentAssortCreator = new FluentAssortCreator(hashUtil, this.logger);
@@ -148,7 +142,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         const assortPriceTable = assortJson["barter_scheme"];
         const assortItemTable = assortJson["items"];
 
-        //Mod Detection
+        //Mod Detection Steps
         const vcqlCheck = preAkiModLoader.getImportedModsNames().includes("Virtual's Custom Quest Loader");
         const realismCheck = preAkiModLoader.getImportedModsNames().includes("SPT-Realism");
         const vcqlDllPath = path.resolve(__dirname, "../../../../BepInEx/plugins/VCQLQuestZones.dll");
