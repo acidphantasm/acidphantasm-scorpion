@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/brace-style */
 import { DependencyContainer, container } from "tsyringe";
 
 // SPT types
@@ -51,14 +52,14 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         this.logger = container.resolve<ILogger>("WinstonLogger");
 
         // Get SPT code/data we need later
-        const preAkiModLoader: PreAkiModLoader = container.resolve<PreAkiModLoader>("PreAkiModLoader");
-        const imageRouter: ImageRouter = container.resolve<ImageRouter>("ImageRouter");
+        const dynamicRouterModService = container.resolve<DynamicRouterModService>("DynamicRouterModService");     
+        const preAkiModLoader: PreAkiModLoader = container.resolve<PreAkiModLoader>("PreAkiModLoader");   
         const databaseServer: DatabaseServer = container.resolve<DatabaseServer>("DatabaseServer");
-        const hashUtil: HashUtil = container.resolve<HashUtil>("HashUtil");
+        const imageRouter: ImageRouter = container.resolve<ImageRouter>("ImageRouter");
         const configServer = container.resolve<ConfigServer>("ConfigServer");
+        const hashUtil: HashUtil = container.resolve<HashUtil>("HashUtil");
         const traderConfig: ITraderConfig = configServer.getConfig<ITraderConfig>(ConfigTypes.TRADER);
         const ragfairConfig = configServer.getConfig<IRagfairConfig>(ConfigTypes.RAGFAIR);
-        const dynamicRouterModService = container.resolve<DynamicRouterModService>("DynamicRouterModService");
         
         //Load config file before accessing it
         Scorpion.config = JSON.parse(fs.readFileSync(Scorpion.configPath, "utf-8"));
@@ -132,43 +133,17 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         const start = performance.now();
 
         // Resolve SPT classes we'll use
-        const preAkiModLoader: PreAkiModLoader = container.resolve<PreAkiModLoader>("PreAkiModLoader");
-        const logger = container.resolve<ILogger>("WinstonLogger");
         const databaseServer: DatabaseServer = container.resolve<DatabaseServer>("DatabaseServer");
         const jsonUtil: JsonUtil = container.resolve<JsonUtil>("JsonUtil");
+        const logger = container.resolve<ILogger>("WinstonLogger");
 
         //Get & Set Assort Information
         const assortJson = JSON.parse(fs.readFileSync(Scorpion.assortPath, "utf-8"));
         const assortPriceTable = assortJson.barter_scheme;
         const assortItemTable = assortJson.items;
 
-        //Mod Compatibility & Base Detection Steps
-        const vcqlCheck = preAkiModLoader.getImportedModsNames().includes("Virtual's Custom Quest Loader");
-        const realismCheck = preAkiModLoader.getImportedModsNames().includes("SPT-Realism");
-        const vcqlDllPath = path.resolve(__dirname, "../../../../BepInEx/plugins/VCQLQuestZones.dll");
-        const heliCrashDllPath1 = path.resolve(__dirname, "../../../../BepInEx/plugins/SamSWAT.HeliCrash/SamSWAT.HeliCrash.dll");
-        const heliCrashDllPath2 = path.resolve(__dirname, "../../../../BepInEx/plugins/SamSWAT.HeliCrash.TyrianReboot/SamSWAT.HeliCrash.TyrianReboot.dll");
-        const heliCrashDllPath3 = path.resolve(__dirname, "../../../../BepInEx/plugins/SamSWAT.HeliCrash.ArysReloaded/SamSWAT.HeliCrash.ArysReloaded.dll");
-        if (!fs.existsSync(vcqlDllPath)) 
-        {
-            this.logger.error(`[${this.mod}] [ERROR] VCQL Zones DLL missing. For Zones to work, install [VCQL].`);
-        }
-        if (fs.existsSync(heliCrashDllPath1) || fs.existsSync(heliCrashDllPath2) || fs.existsSync(heliCrashDllPath3)) 
-        {
-            this.logger.error(`[${this.mod}] [ERROR] HeliCrash Mod Detected. You may have issues with Custom Trader quest zones. Remove HeliCrash if you experience issues.`);
-        }
-        if (!vcqlCheck)
-        {
-            this.logger.error(`[${this.mod}] [ERROR] VCQL missing. For Quests to work, install [VCQL] and then reinstall [${this.mod}].`);
-        }
-        if (Scorpion.config.randomizeBuyRestriction || Scorpion.config.randomizeStockAvailable)
-        {
-            this.setRealismDetection(realismCheck);
-        }
-        else
-        {
-            this.setRealismDetection(realismCheck);
-        }
+        //Check Mod Compatibility
+        this.modDetection();
 
         //Update Assort Pricing via config multiplier for server
         if (Scorpion.config.priceMultiplier !== 1)
@@ -274,6 +249,43 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
 
                 if (Scorpion.config.debugLogging) {this.logger.log(`[${this.mod}] Item: [${itemID}] Stock Count changed to: [${newStock}]`, "cyan");}
             }
+        }
+    }
+    private modDetection()
+    {
+        // Get SPT classes
+        const preAkiModLoader: PreAkiModLoader = container.resolve<PreAkiModLoader>("PreAkiModLoader");
+
+        //Mod Compatibility & Base Detection Variable Resolution
+        const vcqlCheck = preAkiModLoader.getImportedModsNames().includes("Virtual's Custom Quest Loader");
+        const realismCheck = preAkiModLoader.getImportedModsNames().includes("SPT-Realism");
+        const vcqlDllPath = path.resolve(__dirname, "../../../../BepInEx/plugins/VCQLQuestZones.dll");
+        const heliCrashDllPath1 = path.resolve(__dirname, "../../../../BepInEx/plugins/SamSWAT.HeliCrash/SamSWAT.HeliCrash.dll");
+        const heliCrashDllPath2 = path.resolve(__dirname, "../../../../BepInEx/plugins/SamSWAT.HeliCrash.TyrianReboot/SamSWAT.HeliCrash.TyrianReboot.dll");
+        const heliCrashDllPath3 = path.resolve(__dirname, "../../../../BepInEx/plugins/SamSWAT.HeliCrash.ArysReloaded/SamSWAT.HeliCrash.ArysReloaded.dll");
+        // VCQL Zones DLL is missing
+        if (!fs.existsSync(vcqlDllPath))
+        {
+            this.logger.error(`[${this.mod}] [ERROR] VCQL Zones DLL missing. For Zones to work, install [VCQL].`);
+        }
+        // HeliCrash is installed
+        if (fs.existsSync(heliCrashDllPath1) || fs.existsSync(heliCrashDllPath2) || fs.existsSync(heliCrashDllPath3))
+        {
+            this.logger.error(`[${this.mod}] [ERROR] HeliCrash Mod Detected. You may have issues with Custom Trader quest zones. Remove HeliCrash if you experience issues.`);
+        }
+        // VCQL package.json is missing
+        if (!vcqlCheck)
+        {
+            this.logger.error(`[${this.mod}] [ERROR] VCQL missing. For Quests to work, install [VCQL] and then reinstall [${this.mod}].`);
+        }
+        // If we need to check for Realism
+        if (Scorpion.config.randomizeBuyRestriction || Scorpion.config.randomizeStockAvailable)
+        {
+            this.setRealismDetection(realismCheck);
+        }
+        else
+        {
+            this.setRealismDetection(realismCheck);
         }
     }
 }
