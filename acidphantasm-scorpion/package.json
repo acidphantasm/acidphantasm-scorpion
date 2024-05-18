@@ -1,11 +1,13 @@
 {
     "name": "Scorpion",
-    "version": "0.6.0",
+    "version": "0.6.1",
     "main": "src/mod.js",
     "license": "MIT",
     "author": "acidphantasm",
     "akiVersion": "~3.8",
-    "loadBefore": [],
+    "loadBefore": [
+        "Virtual's Custom Quest Loader"
+    ],
     "loadAfter": [],
     "incompatibilities": [],
     "contributors": [],
