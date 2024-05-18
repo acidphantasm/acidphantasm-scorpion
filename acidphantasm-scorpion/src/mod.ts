@@ -148,8 +148,17 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         const assortPriceTable = assortJson["barter_scheme"];
         const assortItemTable = assortJson["items"];
 
-        //Detect Realism (to ignore randomized settings)
+        //Mod Detection
+        const vcqlCheck = preAkiModLoader.getImportedModsNames().includes("Virtual's Custom Quest Loader");
         const realismCheck = preAkiModLoader.getImportedModsNames().includes("SPT-Realism");
+        const vcqlDllPath = path.resolve(__dirname, "../../../../BepInEx/plugins/VCQLQuestZones.dll");
+        if (!fs.existsSync(vcqlDllPath)) {
+            this.logger.error(`[${this.mod}] [ERROR] VCQL Zones DLL missing. For Zones to work, install [VCQL].`);
+        }
+        if (!vcqlCheck)
+        {
+            this.logger.error(`[${this.mod}] [ERROR] VCQL missing. For Quests to work, install [VCQL] and then reinstall [${this.mod}].`);
+        }
         if (Scorpion.config.randomizeBuyRestriction || Scorpion.config.randomizeStockAvailable)
         {
             this.setRealismDetection(realismCheck);
