@@ -8,5 +8,8 @@
 		"recommendations": [
 			"dbaeumer.vscode-eslint"
 		]
+	},
+	"settings": {
+		"biome.enabled": false
 	}
 }
