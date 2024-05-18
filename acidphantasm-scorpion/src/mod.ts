@@ -100,7 +100,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
                     url: "/client/items/prices/Scorpion",
                     action: (url, info, sessionId, output) => 
                     {
-                        const trader = databaseServer.getTables().traders["Scorpion"];
+                        const trader = databaseServer.getTables().traders.Scorpion;
                         const assortItems = trader.assort.items;
                         if (!realismDetected)
                         {
@@ -139,8 +139,8 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
 
         //Get & Set Assort Information
         const assortJson = JSON.parse(fs.readFileSync(Scorpion.assortPath, "utf-8"));
-        const assortPriceTable = assortJson["barter_scheme"];
-        const assortItemTable = assortJson["items"];
+        const assortPriceTable = assortJson.barter_scheme;
+        const assortItemTable = assortJson.items;
 
         //Mod Detection Steps
         const vcqlCheck = preAkiModLoader.getImportedModsNames().includes("Virtual's Custom Quest Loader");
@@ -163,7 +163,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         }
 
         //Update Assort Pricing via config multiplier for server
-        if (Scorpion.config.priceMultiplier != 1)
+        if (Scorpion.config.priceMultiplier !== 1)
         {
             this.setPriceMultiplier(assortPriceTable);
         }
@@ -206,13 +206,18 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
     {
         for (const itemID in assortPriceTable)
         {
-            assortPriceTable[itemID].forEach(item => 
+            for (const item of assortPriceTable[itemID])
             {
+                if (item[0].count <= 15)
+                {
+                    if (Scorpion.config.debugLogging) {this.logger.log(`[${this.mod}] itemID: [${itemID}] No price change, it's a barter trade.`, "cyan");}
+                    continue;
+                }
                 const count = item[0].count;
                 const newPrice = Math.round(count * Scorpion.config.priceMultiplier);
                 item[0].count = newPrice
                 if (Scorpion.config.debugLogging) {this.logger.log(`[${this.mod}] itemID: [${itemID}] Price Changed to: [${newPrice}]`, "cyan");}
-            })
+            }
         } 
     }
     private randomizeBuyRestriction(assortItemTable)
@@ -221,20 +226,17 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         // Randomize Assort Availability via config bool for server start
         for (const item in assortItemTable)
         {
-            if (assortItemTable[item].upd?.BuyRestrictionMax == undefined)
+            if (assortItemTable[item].upd?.BuyRestrictionMax === undefined)
             {
                 continue // Skip setting count, it's a weapon attachment or armour plate
             }
-            else
-            {
-                const itemID = assortItemTable[item]._id;
-                const oldRestriction = assortItemTable[item].upd.BuyRestrictionMax;
-                const newRestriction = Math.round(randomUtil.randInt((oldRestriction * 0.5), (oldRestriction)));
-                
-                assortItemTable[item].upd.BuyRestrictionMax = newRestriction;
+            const itemID = assortItemTable[item]._id;
+            const oldRestriction = assortItemTable[item].upd.BuyRestrictionMax;
+            const newRestriction = Math.round(randomUtil.randInt((oldRestriction * 0.5), (oldRestriction)));
+            
+            assortItemTable[item].upd.BuyRestrictionMax = newRestriction;
 
-                if (Scorpion.config.debugLogging) {this.logger.log(`[${this.mod}] Item: [${itemID}] Buy Restriction Changed to: [${newRestriction}]`, "cyan");}
-            }
+            if (Scorpion.config.debugLogging) {this.logger.log(`[${this.mod}] Item: [${itemID}] Buy Restriction Changed to: [${newRestriction}]`, "cyan");}
         }
     }
     private randomizeStockAvailable(assortItemTable)
@@ -242,32 +244,27 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         const randomUtil: RandomUtil = container.resolve<RandomUtil>("RandomUtil");
         for (const item in assortItemTable)
         {
-            if (assortItemTable[item].upd?.StackObjectsCount == undefined)
+            if (assortItemTable[item].upd?.StackObjectsCount === undefined)
             {
                 continue // Skip setting count, it's a weapon attachment or armour plate
             }
+            const outOfStockRoll = randomUtil.getChance100(Scorpion.config.outOfStockChance);
+            
+            if (outOfStockRoll)
+            {
+                const itemID = assortItemTable[item]._id;
+                assortItemTable[item].upd.StackObjectsCount = 0;
+
+                if (Scorpion.config.debugLogging) {this.logger.log(`[${this.mod}] Item: [${itemID}] Marked out of stock`, "cyan");}
+            } 
             else
             {
-                const outOfStockRoll = randomUtil.getChance100(Scorpion.config.outOfStockChance);
-                
-                if (outOfStockRoll)
-                {
-                    const itemID = assortItemTable[item]._id;
-                    assortItemTable[item].upd.StackObjectsCount = 0;
+                const itemID = assortItemTable[item]._id;
+                const originalStock = assortItemTable[item].upd.StackObjectsCount;
+                const newStock = randomUtil.randInt(2, (originalStock*0.5));
+                assortItemTable[item].upd.StackObjectsCount = newStock;
 
-                    if (Scorpion.config.debugLogging) {this.logger.log(`[${this.mod}] Item: [${itemID}] Marked out of stock`, "cyan");}
-                } 
-                else
-                {
-                    const itemID = assortItemTable[item]._id;
-                    const originalStock = assortItemTable[item].upd.StackObjectsCount;
-                    const newStock = randomUtil.randInt(2, (originalStock*0.5));
-                    assortItemTable[item].upd.StackObjectsCount = newStock;
-
-                    if (Scorpion.config.debugLogging) {this.logger.log(`[${this.mod}] Item: [${itemID}] Stock Count changed to: [${newStock}]`, "cyan");}
-                }
-
-                
+                if (Scorpion.config.debugLogging) {this.logger.log(`[${this.mod}] Item: [${itemID}] Stock Count changed to: [${newStock}]`, "cyan");}
             }
         }
     }
