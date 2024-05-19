@@ -11965,9 +11965,7 @@
             "value": 0
           },
           "conditionType": "WeaponAssembly",
-          "containsItems": [
-            "57ffa9f4245977728561e844"
-          ],
+          "containsItems": [],
           "durability": {
             "compareMethod": ">=",
             "value": 60
@@ -12077,9 +12075,7 @@
             "value": 0
           },
           "conditionType": "WeaponAssembly",
-          "containsItems": [
-            "57ffa9f4245977728561e844"
-          ],
+          "containsItems": [],
           "durability": {
             "compareMethod": ">=",
             "value": 60
@@ -12215,9 +12211,7 @@
             "value": 0
           },
           "conditionType": "WeaponAssembly",
-          "containsItems": [
-            "57ffa9f4245977728561e844"
-          ],
+          "containsItems": [],
           "durability": {
             "compareMethod": ">=",
             "value": 60
@@ -12236,7 +12230,9 @@
             "value": 58
           },
           "globalQuestCounterId": "",
-          "hasItemFromCategory": [],
+          "hasItemFromCategory": [
+            "550aa4cd4bdc2dd8348b456c"
+          ],
           "height": {
             "compareMethod": "<=",
             "value": 2
@@ -12353,9 +12349,7 @@
             "value": 0
           },
           "conditionType": "WeaponAssembly",
-          "containsItems": [
-            "57ffa9f4245977728561e844"
-          ],
+          "containsItems": [],
           "durability": {
             "compareMethod": ">=",
             "value": 60
@@ -12491,9 +12485,7 @@
             "value": 0
           },
           "conditionType": "WeaponAssembly",
-          "containsItems": [
-            "57ffa9f4245977728561e844"
-          ],
+          "containsItems": [],
           "durability": {
             "compareMethod": ">=",
             "value": 60
@@ -12663,9 +12655,9 @@
           "parentId": "",
           "plantTime": 15,
           "target": [
-            "55801eed4bdc2d89578b4588"
+            "5648a7494bdc2d9d488b4583"
           ],
-          "value": 1,
+          "value": 2,
           "visibilityConditions": [],
           "zoneId": "place_peacemaker_001"
         },
@@ -12687,7 +12679,8 @@
                 "dynamicLocale": false,
                 "id": "Scorpion_8_1 req_2_1",
                 "target": [
-                  "Shoreline"
+                  "factory4_day",
+                  "factory4_night"
                 ]
               }
             ],
@@ -12710,7 +12703,7 @@
             },
             {
               "conditionType": "CompleteCondition",
-              "id": "Scorpion_8_1 req_3_1",
+              "id": "Scorpion_8_1 req_2_4",
               "target": "Scorpion_8_1 req_1"
             }
           ]
@@ -12741,7 +12734,7 @@
     "image": "/files/quest/icon/scorpion_questpic.png",
     "instantComplete": false,
     "isKey": false,
-    "location": "5704e554d2720bac5b8b456e",
+    "location": "55f2d3fd4bdc2d5f408b4567",
     "name": "Scorpion_8_1 name",
     "note": "Scorpion_8_1 note",
     "restartable": false,
@@ -12806,9 +12799,9 @@
           "parentId": "",
           "plantTime": 15,
           "target": [
-            "55801eed4bdc2d89578b4588"
+            "5ab8e4ed86f7742d8e50c7fa"
           ],
-          "value": 1,
+          "value": 2,
           "visibilityConditions": [],
           "zoneId": "place_peacemaker_001"
         },
@@ -12853,7 +12846,7 @@
             },
             {
               "conditionType": "CompleteCondition",
-              "id": "Scorpion_8_2 req_3_1",
+              "id": "Scorpion_8_2 req_2_4",
               "target": "Scorpion_8_2 req_1"
             }
           ]
@@ -12975,9 +12968,9 @@
           "parentId": "",
           "plantTime": 15,
           "target": [
-            "55801eed4bdc2d89578b4588"
+            "5b44d22286f774172b0c9de8"
           ],
-          "value": 1,
+          "value": 2,
           "visibilityConditions": [],
           "zoneId": "place_peacemaker_001"
         },
@@ -12999,7 +12992,7 @@
                 "dynamicLocale": false,
                 "id": "Scorpion_8_3 req_2_1",
                 "target": [
-                  "Shoreline"
+                  "Interchange"
                 ]
               }
             ],
@@ -13022,7 +13015,7 @@
             },
             {
               "conditionType": "CompleteCondition",
-              "id": "Scorpion_8_3 req_3_1",
+              "id": "Scorpion_8_3 req_2_4",
               "target": "Scorpion_8_3 req_1"
             }
           ]
@@ -13079,7 +13072,7 @@
     "image": "/files/quest/icon/scorpion_questpic.png",
     "instantComplete": false,
     "isKey": false,
-    "location": "5704e554d2720bac5b8b456e",
+    "location": "5714dbc024597771384a510d",
     "name": "Scorpion_8_3 name",
     "note": "Scorpion_8_3 note",
     "restartable": false,
@@ -13144,7 +13137,27 @@
           "parentId": "",
           "plantTime": 15,
           "target": [
-            "55801eed4bdc2d89578b4588"
+            "60a283193cb70855c43a381d"
+          ],
+          "value": 1,
+          "visibilityConditions": [],
+          "zoneId": "place_peacemaker_001"
+        },
+        {
+          "conditionType": "LeaveItemAtLocation",
+          "dogtagLevel": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_8_4 req_2",
+          "index": 2,
+          "isEncoded": false,
+          "maxDurability": 100,
+          "minDurability": 90,
+          "onlyFoundInRaid": false,
+          "parentId": "",
+          "plantTime": 15,
+          "target": [
+            "5ca21c6986f77479963115a7"
           ],
           "value": 1,
           "visibilityConditions": [],
@@ -13158,7 +13171,7 @@
               {
                 "conditionType": "ExitStatus",
                 "dynamicLocale": false,
-                "id": "Scorpion_8_4 req_2_0",
+                "id": "Scorpion_8_4 req_3_0",
                 "status": [
                   "Survived"
                 ]
@@ -13166,18 +13179,18 @@
               {
                 "conditionType": "Location",
                 "dynamicLocale": false,
-                "id": "Scorpion_8_4 req_2_1",
+                "id": "Scorpion_8_4 req_3_1",
                 "target": [
-                  "Shoreline"
+                  "Interchange"
                 ]
               }
             ],
-            "id": "Scorpion_8_4 req_2_2"
+            "id": "Scorpion_8_4 req_3_2"
           },
           "doNotResetIfCounterCompleted": false,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
-          "id": "Scorpion_8_4 req_2",
+          "id": "Scorpion_8_4 req_3",
           "index": 2,
           "oneSessionOnly": false,
           "parentId": "",
@@ -13186,13 +13199,18 @@
           "visibilityConditions": [
             {
               "conditionType": "CompleteCondition",
-              "id": "Scorpion_8_4 req_2_3",
+              "id": "Scorpion_8_4 req_3_3",
               "target": "Scorpion_8_4 req_0"
             },
             {
               "conditionType": "CompleteCondition",
-              "id": "Scorpion_8_4 req_3_1",
+              "id": "Scorpion_8_4 req_3_4",
               "target": "Scorpion_8_4 req_1"
+            },
+            {
+              "conditionType": "CompleteCondition",
+              "id": "Scorpion_8_4 req_3_5",
+              "target": "Scorpion_8_4 req_2"
             }
           ]
         }
@@ -13248,7 +13266,7 @@
     "image": "/files/quest/icon/scorpion_questpic.png",
     "instantComplete": false,
     "isKey": false,
-    "location": "5704e554d2720bac5b8b456e",
+    "location": "5714dbc024597771384a510d",
     "name": "Scorpion_8_4 name",
     "note": "Scorpion_8_4 note",
     "restartable": false,
@@ -13313,7 +13331,47 @@
           "parentId": "",
           "plantTime": 15,
           "target": [
-            "55801eed4bdc2d89578b4588"
+            "545cdb794bdc2d3a198b456a"
+          ],
+          "value": 1,
+          "visibilityConditions": [],
+          "zoneId": "place_peacemaker_001"
+        },
+        {
+          "conditionType": "LeaveItemAtLocation",
+          "dogtagLevel": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_8_5 req_2",
+          "index": 2,
+          "isEncoded": false,
+          "maxDurability": 100,
+          "minDurability": 90,
+          "onlyFoundInRaid": false,
+          "parentId": "",
+          "plantTime": 15,
+          "target": [
+            "60a3c70cde5f453f634816a3"
+          ],
+          "value": 1,
+          "visibilityConditions": [],
+          "zoneId": "place_peacemaker_001"
+        },
+        {
+          "conditionType": "LeaveItemAtLocation",
+          "dogtagLevel": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_8_5 req_3",
+          "index": 3,
+          "isEncoded": false,
+          "maxDurability": 100,
+          "minDurability": 90,
+          "onlyFoundInRaid": false,
+          "parentId": "",
+          "plantTime": 15,
+          "target": [
+            "544a5caa4bdc2d1a388b4568"
           ],
           "value": 1,
           "visibilityConditions": [],
@@ -13327,7 +13385,7 @@
               {
                 "conditionType": "ExitStatus",
                 "dynamicLocale": false,
-                "id": "Scorpion_8_5 req_2_0",
+                "id": "Scorpion_8_5 req_4_0",
                 "status": [
                   "Survived"
                 ]
@@ -13335,19 +13393,19 @@
               {
                 "conditionType": "Location",
                 "dynamicLocale": false,
-                "id": "Scorpion_8_5 req_2_1",
+                "id": "Scorpion_8_5 req_4_1",
                 "target": [
                   "Shoreline"
                 ]
               }
             ],
-            "id": "Scorpion_8_5 req_2_2"
+            "id": "Scorpion_8_5 req_4_2"
           },
           "doNotResetIfCounterCompleted": false,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
-          "id": "Scorpion_8_5 req_2",
-          "index": 2,
+          "id": "Scorpion_8_5 req_4",
+          "index": 4,
           "oneSessionOnly": false,
           "parentId": "",
           "type": "Discover",
@@ -13355,13 +13413,23 @@
           "visibilityConditions": [
             {
               "conditionType": "CompleteCondition",
-              "id": "Scorpion_8_5 req_2_3",
+              "id": "Scorpion_8_5 req_4_3",
               "target": "Scorpion_8_5 req_0"
             },
             {
               "conditionType": "CompleteCondition",
-              "id": "Scorpion_8_5 req_3_1",
+              "id": "Scorpion_8_5 req_4_4",
               "target": "Scorpion_8_5 req_1"
+            },
+            {
+              "conditionType": "CompleteCondition",
+              "id": "Scorpion_8_5 req_4_5",
+              "target": "Scorpion_8_5 req_2"
+            },
+            {
+              "conditionType": "CompleteCondition",
+              "id": "Scorpion_8_5 req_4_6",
+              "target": "Scorpion_8_5 req_3"
             }
           ]
         }
