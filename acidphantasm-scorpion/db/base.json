@@ -26,7 +26,10 @@
     },
     "items_buy_prohibited": {
         "category": [],
-        "id_list": []
+        "id_list": [
+        "62e910aaf957f2915e0a5e36",
+        "64d0b40fbe2eed70e254e2d4"
+        ]
     },
     "customization_seller": false,
     "name": "Scorpion",
