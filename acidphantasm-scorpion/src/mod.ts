@@ -260,23 +260,28 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         const vcqlCheck = preAkiModLoader.getImportedModsNames().includes("Virtual's Custom Quest Loader");
         const realismCheck = preAkiModLoader.getImportedModsNames().includes("SPT-Realism");
         const vcqlDllPath = path.resolve(__dirname, "../../../../BepInEx/plugins/VCQLQuestZones.dll");
-        const heliCrashDllPath1 = path.resolve(__dirname, "../../../../BepInEx/plugins/SamSWAT.HeliCrash/SamSWAT.HeliCrash.dll");
-        const heliCrashDllPath2 = path.resolve(__dirname, "../../../../BepInEx/plugins/SamSWAT.HeliCrash.TyrianReboot/SamSWAT.HeliCrash.TyrianReboot.dll");
-        const heliCrashDllPath3 = path.resolve(__dirname, "../../../../BepInEx/plugins/SamSWAT.HeliCrash.ArysReloaded/SamSWAT.HeliCrash.ArysReloaded.dll");
+        const heliCrashSamSWAT = path.resolve(__dirname, "../../../../BepInEx/plugins/SamSWAT.HeliCrash/SamSWAT.HeliCrash.dll");
+        const heliCrashTyrian = path.resolve(__dirname, "../../../../BepInEx/plugins/SamSWAT.HeliCrash.TyrianReboot/SamSWAT.HeliCrash.TyrianReboot.dll");
+        const heliCrashArys = path.resolve(__dirname, "../../../../BepInEx/plugins/SamSWAT.HeliCrash.ArysReloaded/SamSWAT.HeliCrash.ArysReloaded.dll");
         // VCQL Zones DLL is missing
         if (!fs.existsSync(vcqlDllPath))
         {
-            this.logger.error(`[${this.mod}] [ERROR] VCQL Zones DLL missing. For Zones to work, install [VCQL].`);
+            this.logger.error(`[${this.mod}] VCQL Zones DLL missing. Custom Trader quests may not work properly.`);
         }
-        // HeliCrash is installed
-        if (fs.existsSync(heliCrashDllPath1) || fs.existsSync(heliCrashDllPath2) || fs.existsSync(heliCrashDllPath3))
+        // Outdated HeliCrash is installed
+        if (fs.existsSync(heliCrashSamSWAT) || fs.existsSync(heliCrashTyrian))
         {
-            this.logger.error(`[${this.mod}] [ERROR] HeliCrash Mod Detected. You may have issues with Custom Trader quest zones. Remove HeliCrash if you experience issues.`);
+            this.logger.error(`[${this.mod}] Outdated HeliCrash Mod Detected. You will experience issues with Custom Trader quest zones.`);
+        }
+        // Arys HeliCrash is installed
+        if (fs.existsSync(heliCrashArys))
+        {
+            this.logger.warning(`[${this.mod}] HeliCrash Mod Detected. You may experience issues with Custom Trader quest zones.`);
         }
         // VCQL package.json is missing
         if (!vcqlCheck)
         {
-            this.logger.error(`[${this.mod}] [ERROR] VCQL missing. For Quests to work, install [VCQL] and then reinstall [${this.mod}].`);
+            this.logger.error(`[${this.mod}] VCQL not detected. Install VCQL and re-install ${this.mod}.`);
         }
         // If we need to check for Realism
         if (Scorpion.config.randomizeBuyRestriction || Scorpion.config.randomizeStockAvailable)
