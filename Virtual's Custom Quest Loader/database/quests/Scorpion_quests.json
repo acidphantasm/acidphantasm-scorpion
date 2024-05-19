@@ -11950,6 +11950,1489 @@
     "traderId": "Scorpion",
     "type": "Elimination"
   },
+  "Scorpion_7_1": {
+    "QuestName": "Weapon Acquisition",
+    "_id": "Scorpion_7_1",
+    "acceptPlayerMessage": "Scorpion_7_1 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "Scorpion_7_1 changeQuestMessageText",
+    "completePlayerMessage": "Scorpion_7_1 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "baseAccuracy": {
+            "compareMethod": ">=",
+            "value": 0
+          },
+          "conditionType": "WeaponAssembly",
+          "containsItems": [
+            "57ffa9f4245977728561e844"
+          ],
+          "durability": {
+            "compareMethod": ">=",
+            "value": 60
+          },
+          "dynamicLocale": false,
+          "effectiveDistance": {
+            "compareMethod": ">=",
+            "value": 100
+          },
+          "emptyTacticalSlot": {
+            "compareMethod": ">=",
+            "value": 0
+          },
+          "ergonomics": {
+            "compareMethod": ">=",
+            "value": 58
+          },
+          "globalQuestCounterId": "",
+          "hasItemFromCategory": [],
+          "height": {
+            "compareMethod": "<=",
+            "value": 2
+          },
+          "id": "Scorpion_7_1 req_0",
+          "index": 0,
+          "magazineCapacity": {
+            "compareMethod": ">=",
+            "value": 60
+          },
+          "muzzleVelocity": {
+            "compareMethod": ">=",
+            "value": 0
+          },
+          "parentId": "",
+          "recoil": {
+            "compareMethod": "<=",
+            "value": 550
+          },
+          "target": [
+            "57dc2fa62459775949412633"
+          ],
+          "value": 1,
+          "visibilityConditions": [],
+          "weight": {
+            "compareMethod": "<=",
+            "value": 3.5
+          },
+          "width": {
+            "compareMethod": "<=",
+            "value": 3
+          }
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_7_1 start_0",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_1_5",
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "declinePlayerMessage": "Scorpion_7_1 declinePlayerMessage",
+    "description": "Scorpion_7_1 description",
+    "failMessageText": "Scorpion_7_1 failMessageText",
+    "image": "/files/quest/icon/scorpion_questpic.png",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "any",
+    "name": "Scorpion_7_1 name",
+    "note": "Scorpion_7_1 note",
+    "restartable": false,
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": []
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "Scorpion_7_1 startedMessageText",
+    "successMessageText": "Scorpion_7_1 successMessageText",
+    "traderId": "Scorpion",
+    "type": "WeaponAssembly"
+  },
+  "Scorpion_7_2": {
+    "QuestName": "Weapon Acquisition II",
+    "_id": "Scorpion_7_2",
+    "acceptPlayerMessage": "Scorpion_7_2 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "Scorpion_7_2 changeQuestMessageText",
+    "completePlayerMessage": "Scorpion_7_2 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "baseAccuracy": {
+            "compareMethod": ">=",
+            "value": 0
+          },
+          "conditionType": "WeaponAssembly",
+          "containsItems": [
+            "57ffa9f4245977728561e844"
+          ],
+          "durability": {
+            "compareMethod": ">=",
+            "value": 60
+          },
+          "dynamicLocale": false,
+          "effectiveDistance": {
+            "compareMethod": ">=",
+            "value": 100
+          },
+          "emptyTacticalSlot": {
+            "compareMethod": ">=",
+            "value": 0
+          },
+          "ergonomics": {
+            "compareMethod": ">=",
+            "value": 58
+          },
+          "globalQuestCounterId": "",
+          "hasItemFromCategory": [],
+          "height": {
+            "compareMethod": "<=",
+            "value": 2
+          },
+          "id": "Scorpion_7_2 req_0",
+          "index": 0,
+          "magazineCapacity": {
+            "compareMethod": ">=",
+            "value": 60
+          },
+          "muzzleVelocity": {
+            "compareMethod": ">=",
+            "value": 0
+          },
+          "parentId": "",
+          "recoil": {
+            "compareMethod": "<=",
+            "value": 550
+          },
+          "target": [
+            "57dc2fa62459775949412633"
+          ],
+          "value": 1,
+          "visibilityConditions": [],
+          "weight": {
+            "compareMethod": "<=",
+            "value": 3.5
+          },
+          "width": {
+            "compareMethod": "<=",
+            "value": 3
+          }
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_7_2 start_0",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_7_1",
+          "visibilityConditions": []
+        },
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_7_2 start_1",
+          "index": 1,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_8_1",
+          "visibilityConditions": []
+        },      
+        {
+          "compareMethod": ">=",
+          "conditionType": "Level",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_7_2 start_2",
+          "index": 2,
+          "parentId": "",
+          "value": 15,
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "declinePlayerMessage": "Scorpion_7_2 declinePlayerMessage",
+    "description": "Scorpion_7_2 description",
+    "failMessageText": "Scorpion_7_2 failMessageText",
+    "image": "/files/quest/icon/scorpion_questpic.png",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "any",
+    "name": "Scorpion_7_2 name",
+    "note": "Scorpion_7_2 note",
+    "restartable": false,
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": []
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "Scorpion_7_2 startedMessageText",
+    "successMessageText": "Scorpion_7_2 successMessageText",
+    "traderId": "Scorpion",
+    "type": "WeaponAssembly"
+  },
+  "Scorpion_7_3": {
+    "QuestName": "Weapon Acquisition III",
+    "_id": "Scorpion_7_3",
+    "acceptPlayerMessage": "Scorpion_7_3 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "Scorpion_7_3 changeQuestMessageText",
+    "completePlayerMessage": "Scorpion_7_3 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "baseAccuracy": {
+            "compareMethod": ">=",
+            "value": 0
+          },
+          "conditionType": "WeaponAssembly",
+          "containsItems": [
+            "57ffa9f4245977728561e844"
+          ],
+          "durability": {
+            "compareMethod": ">=",
+            "value": 60
+          },
+          "dynamicLocale": false,
+          "effectiveDistance": {
+            "compareMethod": ">=",
+            "value": 100
+          },
+          "emptyTacticalSlot": {
+            "compareMethod": ">=",
+            "value": 0
+          },
+          "ergonomics": {
+            "compareMethod": ">=",
+            "value": 58
+          },
+          "globalQuestCounterId": "",
+          "hasItemFromCategory": [],
+          "height": {
+            "compareMethod": "<=",
+            "value": 2
+          },
+          "id": "Scorpion_7_3 req_0",
+          "index": 0,
+          "magazineCapacity": {
+            "compareMethod": ">=",
+            "value": 60
+          },
+          "muzzleVelocity": {
+            "compareMethod": ">=",
+            "value": 0
+          },
+          "parentId": "",
+          "recoil": {
+            "compareMethod": "<=",
+            "value": 550
+          },
+          "target": [
+            "57dc2fa62459775949412633"
+          ],
+          "value": 1,
+          "visibilityConditions": [],
+          "weight": {
+            "compareMethod": "<=",
+            "value": 3.5
+          },
+          "width": {
+            "compareMethod": "<=",
+            "value": 3
+          }
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_7_3 start_0",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_7_2",
+          "visibilityConditions": []
+        },
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_7_3 start_1",
+          "index": 1,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_8_2",
+          "visibilityConditions": []
+        },      
+        {
+          "compareMethod": ">=",
+          "conditionType": "Level",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_7_3 start_2",
+          "index": 2,
+          "parentId": "",
+          "value": 25,
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "declinePlayerMessage": "Scorpion_7_3 declinePlayerMessage",
+    "description": "Scorpion_7_3 description",
+    "failMessageText": "Scorpion_7_3 failMessageText",
+    "image": "/files/quest/icon/scorpion_questpic.png",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "any",
+    "name": "Scorpion_7_3 name",
+    "note": "Scorpion_7_3 note",
+    "restartable": false,
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": []
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "Scorpion_7_3 startedMessageText",
+    "successMessageText": "Scorpion_7_3 successMessageText",
+    "traderId": "Scorpion",
+    "type": "WeaponAssembly"
+  },
+  "Scorpion_7_4": {
+    "QuestName": "Weapon Acquisition IV",
+    "_id": "Scorpion_7_4",
+    "acceptPlayerMessage": "Scorpion_7_4 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "Scorpion_7_4 changeQuestMessageText",
+    "completePlayerMessage": "Scorpion_7_4 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "baseAccuracy": {
+            "compareMethod": ">=",
+            "value": 0
+          },
+          "conditionType": "WeaponAssembly",
+          "containsItems": [
+            "57ffa9f4245977728561e844"
+          ],
+          "durability": {
+            "compareMethod": ">=",
+            "value": 60
+          },
+          "dynamicLocale": false,
+          "effectiveDistance": {
+            "compareMethod": ">=",
+            "value": 100
+          },
+          "emptyTacticalSlot": {
+            "compareMethod": ">=",
+            "value": 0
+          },
+          "ergonomics": {
+            "compareMethod": ">=",
+            "value": 58
+          },
+          "globalQuestCounterId": "",
+          "hasItemFromCategory": [],
+          "height": {
+            "compareMethod": "<=",
+            "value": 2
+          },
+          "id": "Scorpion_7_4 req_0",
+          "index": 0,
+          "magazineCapacity": {
+            "compareMethod": ">=",
+            "value": 60
+          },
+          "muzzleVelocity": {
+            "compareMethod": ">=",
+            "value": 0
+          },
+          "parentId": "",
+          "recoil": {
+            "compareMethod": "<=",
+            "value": 550
+          },
+          "target": [
+            "57dc2fa62459775949412633"
+          ],
+          "value": 1,
+          "visibilityConditions": [],
+          "weight": {
+            "compareMethod": "<=",
+            "value": 3.5
+          },
+          "width": {
+            "compareMethod": "<=",
+            "value": 3
+          }
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_7_4 start_0",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_7_3",
+          "visibilityConditions": []
+        },
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_7_4 start_1",
+          "index": 1,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_8_3",
+          "visibilityConditions": []
+        },      
+        {
+          "compareMethod": ">=",
+          "conditionType": "Level",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_7_4 start_2",
+          "index": 2,
+          "parentId": "",
+          "value": 35,
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "declinePlayerMessage": "Scorpion_7_4 declinePlayerMessage",
+    "description": "Scorpion_7_4 description",
+    "failMessageText": "Scorpion_7_4 failMessageText",
+    "image": "/files/quest/icon/scorpion_questpic.png",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "any",
+    "name": "Scorpion_7_4 name",
+    "note": "Scorpion_7_4 note",
+    "restartable": false,
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": []
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "Scorpion_7_4 startedMessageText",
+    "successMessageText": "Scorpion_7_4 successMessageText",
+    "traderId": "Scorpion",
+    "type": "WeaponAssembly"
+  },
+  "Scorpion_7_5": {
+    "QuestName": "Weapon Acquisition V",
+    "_id": "Scorpion_7_5",
+    "acceptPlayerMessage": "Scorpion_7_5 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "Scorpion_7_5 changeQuestMessageText",
+    "completePlayerMessage": "Scorpion_7_5 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "baseAccuracy": {
+            "compareMethod": ">=",
+            "value": 0
+          },
+          "conditionType": "WeaponAssembly",
+          "containsItems": [
+            "57ffa9f4245977728561e844"
+          ],
+          "durability": {
+            "compareMethod": ">=",
+            "value": 60
+          },
+          "dynamicLocale": false,
+          "effectiveDistance": {
+            "compareMethod": ">=",
+            "value": 100
+          },
+          "emptyTacticalSlot": {
+            "compareMethod": ">=",
+            "value": 0
+          },
+          "ergonomics": {
+            "compareMethod": ">=",
+            "value": 58
+          },
+          "globalQuestCounterId": "",
+          "hasItemFromCategory": [],
+          "height": {
+            "compareMethod": "<=",
+            "value": 2
+          },
+          "id": "Scorpion_7_5 req_0",
+          "index": 0,
+          "magazineCapacity": {
+            "compareMethod": ">=",
+            "value": 60
+          },
+          "muzzleVelocity": {
+            "compareMethod": ">=",
+            "value": 0
+          },
+          "parentId": "",
+          "recoil": {
+            "compareMethod": "<=",
+            "value": 550
+          },
+          "target": [
+            "57dc2fa62459775949412633"
+          ],
+          "value": 1,
+          "visibilityConditions": [],
+          "weight": {
+            "compareMethod": "<=",
+            "value": 3.5
+          },
+          "width": {
+            "compareMethod": "<=",
+            "value": 3
+          }
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_7_5 start_0",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_7_4",
+          "visibilityConditions": []
+        },
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_7_5 start_1",
+          "index": 1,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_8_4",
+          "visibilityConditions": []
+        },      
+        {
+          "compareMethod": ">=",
+          "conditionType": "Level",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_7_5 start_1",
+          "index": 0,
+          "parentId": "",
+          "value": 45,
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "declinePlayerMessage": "Scorpion_7_5 declinePlayerMessage",
+    "description": "Scorpion_7_5 description",
+    "failMessageText": "Scorpion_7_5 failMessageText",
+    "image": "/files/quest/icon/scorpion_questpic.png",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "any",
+    "name": "Scorpion_7_5 name",
+    "note": "Scorpion_7_5 note",
+    "restartable": false,
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": []
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "Scorpion_7_5 startedMessageText",
+    "successMessageText": "Scorpion_7_5 successMessageText",
+    "traderId": "Scorpion",
+    "type": "WeaponAssembly"
+  },
+  "Scorpion_8_1": {
+    "QuestName": "Armour Delivery",
+    "_id": "Scorpion_8_1",
+    "acceptPlayerMessage": "Scorpion_8_1 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "Scorpion_8_1 changeQuestMessageText",
+    "completePlayerMessage": "Scorpion_8_1 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "VisitPlace",
+                "dynamicLocale": false,
+                "id": "Scorpion_8_1 req_0_0",
+                "target": "place_peacemaker_001",
+                "value": 1
+              }
+            ],
+            "id": "Scorpion_8_1 req_0_1"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_8_1 req_0",
+          "index": 0,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Exploration",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "conditionType": "LeaveItemAtLocation",
+          "dogtagLevel": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_8_1 req_1",
+          "index": 1,
+          "isEncoded": false,
+          "maxDurability": 100,
+          "minDurability": 90,
+          "onlyFoundInRaid": false,
+          "parentId": "",
+          "plantTime": 15,
+          "target": [
+            "55801eed4bdc2d89578b4588"
+          ],
+          "value": 1,
+          "visibilityConditions": [],
+          "zoneId": "place_peacemaker_001"
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "ExitStatus",
+                "dynamicLocale": false,
+                "id": "Scorpion_8_1 req_2_0",
+                "status": [
+                  "Survived"
+                ]
+              },
+              {
+                "conditionType": "Location",
+                "dynamicLocale": false,
+                "id": "Scorpion_8_1 req_2_1",
+                "target": [
+                  "Shoreline"
+                ]
+              }
+            ],
+            "id": "Scorpion_8_1 req_2_2"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_8_1 req_2",
+          "index": 2,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Discover",
+          "value": 1,
+          "visibilityConditions": [
+            {
+              "conditionType": "CompleteCondition",
+              "id": "Scorpion_8_1 req_2_3",
+              "target": "Scorpion_8_1 req_0"
+            },
+            {
+              "conditionType": "CompleteCondition",
+              "id": "Scorpion_8_1 req_3_1",
+              "target": "Scorpion_8_1 req_1"
+            }
+          ]
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_8_1 start_0",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_1_5",
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "declinePlayerMessage": "Scorpion_8_1 declinePlayerMessage",
+    "description": "Scorpion_8_1 description",
+    "failMessageText": "Scorpion_8_1 failMessageText",
+    "image": "/files/quest/icon/scorpion_questpic.png",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "5704e554d2720bac5b8b456e",
+    "name": "Scorpion_8_1 name",
+    "note": "Scorpion_8_1 note",
+    "restartable": false,
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": []
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "Scorpion_8_1 startedMessageText",
+    "successMessageText": "Scorpion_8_1 successMessageText",
+    "traderId": "Scorpion",
+    "type": "Completion"
+  },
+  "Scorpion_8_2": {
+    "QuestName": "Armour Delivery II",
+    "_id": "Scorpion_8_2",
+    "acceptPlayerMessage": "Scorpion_8_2 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "Scorpion_8_2 changeQuestMessageText",
+    "completePlayerMessage": "Scorpion_8_2 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "VisitPlace",
+                "dynamicLocale": false,
+                "id": "Scorpion_8_2 req_0_0",
+                "target": "place_peacemaker_001",
+                "value": 1
+              }
+            ],
+            "id": "Scorpion_8_2 req_0_1"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_8_2 req_0",
+          "index": 0,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Exploration",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "conditionType": "LeaveItemAtLocation",
+          "dogtagLevel": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_8_2 req_1",
+          "index": 1,
+          "isEncoded": false,
+          "maxDurability": 100,
+          "minDurability": 90,
+          "onlyFoundInRaid": false,
+          "parentId": "",
+          "plantTime": 15,
+          "target": [
+            "55801eed4bdc2d89578b4588"
+          ],
+          "value": 1,
+          "visibilityConditions": [],
+          "zoneId": "place_peacemaker_001"
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "ExitStatus",
+                "dynamicLocale": false,
+                "id": "Scorpion_8_2 req_2_0",
+                "status": [
+                  "Survived"
+                ]
+              },
+              {
+                "conditionType": "Location",
+                "dynamicLocale": false,
+                "id": "Scorpion_8_2 req_2_1",
+                "target": [
+                  "Shoreline"
+                ]
+              }
+            ],
+            "id": "Scorpion_8_2 req_2_2"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_8_2 req_2",
+          "index": 2,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Discover",
+          "value": 1,
+          "visibilityConditions": [
+            {
+              "conditionType": "CompleteCondition",
+              "id": "Scorpion_8_2 req_2_3",
+              "target": "Scorpion_8_2 req_0"
+            },
+            {
+              "conditionType": "CompleteCondition",
+              "id": "Scorpion_8_2 req_3_1",
+              "target": "Scorpion_8_2 req_1"
+            }
+          ]
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_8_2 start_0",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_8_1",
+          "visibilityConditions": []
+        },
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_8_2 start_1",
+          "index": 1,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_7_1",
+          "visibilityConditions": []
+        },
+        {
+          "compareMethod": ">=",
+          "conditionType": "Level",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_8_2 start_2",
+          "index": 2,
+          "parentId": "",
+          "value": 15,
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "declinePlayerMessage": "Scorpion_8_2 declinePlayerMessage",
+    "description": "Scorpion_8_2 description",
+    "failMessageText": "Scorpion_8_2 failMessageText",
+    "image": "/files/quest/icon/scorpion_questpic.png",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "5704e554d2720bac5b8b456e",
+    "name": "Scorpion_8_2 name",
+    "note": "Scorpion_8_2 note",
+    "restartable": false,
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": []
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "Scorpion_8_2 startedMessageText",
+    "successMessageText": "Scorpion_8_2 successMessageText",
+    "traderId": "Scorpion",
+    "type": "Completion"
+  },
+  "Scorpion_8_3": {
+    "QuestName": "Armour Delivery III",
+    "_id": "Scorpion_8_3",
+    "acceptPlayerMessage": "Scorpion_8_3 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "Scorpion_8_3 changeQuestMessageText",
+    "completePlayerMessage": "Scorpion_8_3 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "VisitPlace",
+                "dynamicLocale": false,
+                "id": "Scorpion_8_3 req_0_0",
+                "target": "place_peacemaker_001",
+                "value": 1
+              }
+            ],
+            "id": "Scorpion_8_3 req_0_1"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_8_3 req_0",
+          "index": 0,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Exploration",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "conditionType": "LeaveItemAtLocation",
+          "dogtagLevel": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_8_3 req_1",
+          "index": 1,
+          "isEncoded": false,
+          "maxDurability": 100,
+          "minDurability": 90,
+          "onlyFoundInRaid": false,
+          "parentId": "",
+          "plantTime": 15,
+          "target": [
+            "55801eed4bdc2d89578b4588"
+          ],
+          "value": 1,
+          "visibilityConditions": [],
+          "zoneId": "place_peacemaker_001"
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "ExitStatus",
+                "dynamicLocale": false,
+                "id": "Scorpion_8_3 req_2_0",
+                "status": [
+                  "Survived"
+                ]
+              },
+              {
+                "conditionType": "Location",
+                "dynamicLocale": false,
+                "id": "Scorpion_8_3 req_2_1",
+                "target": [
+                  "Shoreline"
+                ]
+              }
+            ],
+            "id": "Scorpion_8_3 req_2_2"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_8_3 req_2",
+          "index": 2,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Discover",
+          "value": 1,
+          "visibilityConditions": [
+            {
+              "conditionType": "CompleteCondition",
+              "id": "Scorpion_8_3 req_2_3",
+              "target": "Scorpion_8_3 req_0"
+            },
+            {
+              "conditionType": "CompleteCondition",
+              "id": "Scorpion_8_3 req_3_1",
+              "target": "Scorpion_8_3 req_1"
+            }
+          ]
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_8_3 start_0",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_8_2",
+          "visibilityConditions": []
+        },
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_8_3 start_1",
+          "index": 1,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_7_2",
+          "visibilityConditions": []
+        },      
+        {
+          "compareMethod": ">=",
+          "conditionType": "Level",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_8_3 start_2",
+          "index": 2,
+          "parentId": "",
+          "value": 25,
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "declinePlayerMessage": "Scorpion_8_3 declinePlayerMessage",
+    "description": "Scorpion_8_3 description",
+    "failMessageText": "Scorpion_8_3 failMessageText",
+    "image": "/files/quest/icon/scorpion_questpic.png",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "5704e554d2720bac5b8b456e",
+    "name": "Scorpion_8_3 name",
+    "note": "Scorpion_8_3 note",
+    "restartable": false,
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": []
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "Scorpion_8_3 startedMessageText",
+    "successMessageText": "Scorpion_8_3 successMessageText",
+    "traderId": "Scorpion",
+    "type": "Completion"
+  },
+  "Scorpion_8_4": {
+    "QuestName": "Armour Delivery IV",
+    "_id": "Scorpion_8_4",
+    "acceptPlayerMessage": "Scorpion_8_4 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "Scorpion_8_4 changeQuestMessageText",
+    "completePlayerMessage": "Scorpion_8_4 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "VisitPlace",
+                "dynamicLocale": false,
+                "id": "Scorpion_8_4 req_0_0",
+                "target": "place_peacemaker_001",
+                "value": 1
+              }
+            ],
+            "id": "Scorpion_8_4 req_0_1"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_8_4 req_0",
+          "index": 0,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Exploration",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "conditionType": "LeaveItemAtLocation",
+          "dogtagLevel": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_8_4 req_1",
+          "index": 1,
+          "isEncoded": false,
+          "maxDurability": 100,
+          "minDurability": 90,
+          "onlyFoundInRaid": false,
+          "parentId": "",
+          "plantTime": 15,
+          "target": [
+            "55801eed4bdc2d89578b4588"
+          ],
+          "value": 1,
+          "visibilityConditions": [],
+          "zoneId": "place_peacemaker_001"
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "ExitStatus",
+                "dynamicLocale": false,
+                "id": "Scorpion_8_4 req_2_0",
+                "status": [
+                  "Survived"
+                ]
+              },
+              {
+                "conditionType": "Location",
+                "dynamicLocale": false,
+                "id": "Scorpion_8_4 req_2_1",
+                "target": [
+                  "Shoreline"
+                ]
+              }
+            ],
+            "id": "Scorpion_8_4 req_2_2"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_8_4 req_2",
+          "index": 2,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Discover",
+          "value": 1,
+          "visibilityConditions": [
+            {
+              "conditionType": "CompleteCondition",
+              "id": "Scorpion_8_4 req_2_3",
+              "target": "Scorpion_8_4 req_0"
+            },
+            {
+              "conditionType": "CompleteCondition",
+              "id": "Scorpion_8_4 req_3_1",
+              "target": "Scorpion_8_4 req_1"
+            }
+          ]
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_8_4 start_0",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_8_3",
+          "visibilityConditions": []
+        },
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_8_4 start_1",
+          "index": 1,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_7_3",
+          "visibilityConditions": []
+        },      
+        {
+          "compareMethod": ">=",
+          "conditionType": "Level",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_8_4 start_2",
+          "index": 2,
+          "parentId": "",
+          "value": 35,
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "declinePlayerMessage": "Scorpion_8_4 declinePlayerMessage",
+    "description": "Scorpion_8_4 description",
+    "failMessageText": "Scorpion_8_4 failMessageText",
+    "image": "/files/quest/icon/scorpion_questpic.png",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "5704e554d2720bac5b8b456e",
+    "name": "Scorpion_8_4 name",
+    "note": "Scorpion_8_4 note",
+    "restartable": false,
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": []
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "Scorpion_8_4 startedMessageText",
+    "successMessageText": "Scorpion_8_4 successMessageText",
+    "traderId": "Scorpion",
+    "type": "Completion"
+  },
+  "Scorpion_8_5": {
+    "QuestName": "Armour Delivery V",
+    "_id": "Scorpion_8_5",
+    "acceptPlayerMessage": "Scorpion_8_5 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "Scorpion_8_5 changeQuestMessageText",
+    "completePlayerMessage": "Scorpion_8_5 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "VisitPlace",
+                "dynamicLocale": false,
+                "id": "Scorpion_8_5 req_0_0",
+                "target": "place_peacemaker_001",
+                "value": 1
+              }
+            ],
+            "id": "Scorpion_8_5 req_0_1"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_8_5 req_0",
+          "index": 0,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Exploration",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "conditionType": "LeaveItemAtLocation",
+          "dogtagLevel": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_8_5 req_1",
+          "index": 1,
+          "isEncoded": false,
+          "maxDurability": 100,
+          "minDurability": 90,
+          "onlyFoundInRaid": false,
+          "parentId": "",
+          "plantTime": 15,
+          "target": [
+            "55801eed4bdc2d89578b4588"
+          ],
+          "value": 1,
+          "visibilityConditions": [],
+          "zoneId": "place_peacemaker_001"
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "ExitStatus",
+                "dynamicLocale": false,
+                "id": "Scorpion_8_5 req_2_0",
+                "status": [
+                  "Survived"
+                ]
+              },
+              {
+                "conditionType": "Location",
+                "dynamicLocale": false,
+                "id": "Scorpion_8_5 req_2_1",
+                "target": [
+                  "Shoreline"
+                ]
+              }
+            ],
+            "id": "Scorpion_8_5 req_2_2"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_8_5 req_2",
+          "index": 2,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Discover",
+          "value": 1,
+          "visibilityConditions": [
+            {
+              "conditionType": "CompleteCondition",
+              "id": "Scorpion_8_5 req_2_3",
+              "target": "Scorpion_8_5 req_0"
+            },
+            {
+              "conditionType": "CompleteCondition",
+              "id": "Scorpion_8_5 req_3_1",
+              "target": "Scorpion_8_5 req_1"
+            }
+          ]
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_8_5 start_0",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_8_4",
+          "visibilityConditions": []
+        },
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_8_5 start_1",
+          "index": 1,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_7_4",
+          "visibilityConditions": []
+        },      
+        {
+          "compareMethod": ">=",
+          "conditionType": "Level",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_8_5 start_2",
+          "index": 2,
+          "parentId": "",
+          "value": 45,
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "declinePlayerMessage": "Scorpion_8_5 declinePlayerMessage",
+    "description": "Scorpion_8_5 description",
+    "failMessageText": "Scorpion_8_5 failMessageText",
+    "image": "/files/quest/icon/scorpion_questpic.png",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "5704e554d2720bac5b8b456e",
+    "name": "Scorpion_8_5 name",
+    "note": "Scorpion_8_5 note",
+    "restartable": false,
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": []
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "Scorpion_8_5 startedMessageText",
+    "successMessageText": "Scorpion_8_5 successMessageText",
+    "traderId": "Scorpion",
+    "type": "Completion"
+  },
   "Scorpion_10_1": {
     "QuestName": "You Think You Know Weapons?",
     "_id": "Scorpion_10_1",
