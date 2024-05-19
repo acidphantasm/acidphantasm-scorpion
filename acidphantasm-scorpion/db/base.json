@@ -42,13 +42,17 @@
     "currency": "RUB",
     "nextResupply": 1615141448,
     "repair": {
-        "availability": false,
-        "quality": "1",
+        "availability": true,
+        "quality": "0.35",
         "excluded_id_list": [],
-        "excluded_category": [],
+        "excluded_category": [
+            "5448e54d4bdc2dcc718b4568",
+            "57bef4c42459772e8d35a53b",
+            "543be5f84bdc2dd4348b456a"
+        ],
         "currency": "5449016a4bdc2d6f028b456f",
         "currency_coefficient": 1,
-        "price_rate": 10
+        "price_rate": 0
     },
     "insurance": {
         "availability": false,
@@ -63,8 +67,8 @@
             "minLevel": 1,
             "minSalesSum": 0,
             "minStanding": 0.00,
-            "buy_price_coef": 48,
-            "repair_price_coef": 1,
+            "buy_price_coef": 54,
+            "repair_price_coef": 500,
             "insurance_price_coef": 1,
             "exchange_price_coef": 0,
             "heal_price_coef": 0
@@ -73,8 +77,8 @@
             "minLevel": 15,
             "minSalesSum": 500000,
             "minStanding": 0.30,
-            "buy_price_coef": 46,
-            "repair_price_coef": 1,
+            "buy_price_coef": 50,
+            "repair_price_coef": 480,
             "insurance_price_coef": 1,
             "exchange_price_coef": 0,
             "heal_price_coef": 0
@@ -82,9 +86,9 @@
         {
             "minLevel": 27,
             "minSalesSum": 1500000,
-            "minStanding": 0.45,
-            "buy_price_coef": 44,
-            "repair_price_coef": 1,
+            "minStanding": 0.50,
+            "buy_price_coef": 45,
+            "repair_price_coef": 430,
             "insurance_price_coef": 1,
             "exchange_price_coef": 0,
             "heal_price_coef": 0
@@ -92,9 +96,9 @@
         {
             "minLevel": 40,
             "minSalesSum": 3000000,
-            "minStanding": 0.75,
-            "buy_price_coef": 42,
-            "repair_price_coef": 1,
+            "minStanding": 0.90,
+            "buy_price_coef": 39,
+            "repair_price_coef": 400,
             "insurance_price_coef": 1,
             "exchange_price_coef": 0,
             "heal_price_coef": 0
