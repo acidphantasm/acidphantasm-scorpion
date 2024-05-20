@@ -11986,8 +11986,8 @@
           "globalQuestCounterId": "",
           "hasItemFromCategory": [],
           "height": {
-            "compareMethod": "<=",
-            "value": 2
+            "compareMethod": ">=",
+            "value": 0
           },
           "id": "Scorpion_7_1 req_0",
           "index": 0,
@@ -12146,8 +12146,8 @@
           "globalQuestCounterId": "",
           "hasItemFromCategory": [],
           "height": {
-            "compareMethod": "<=",
-            "value": 2
+            "compareMethod": ">=",
+            "value": 0
           },
           "id": "Scorpion_7_2 req_0",
           "index": 0,
@@ -12174,7 +12174,7 @@
             "value": 5
           },
           "width": {
-            "compareMethod": "<=",
+            "compareMethod": ">=",
             "value": 0
           }
         }
@@ -12336,8 +12336,8 @@
             "550aa4cd4bdc2dd8348b456c"
           ],
           "height": {
-            "compareMethod": "<=",
-            "value": 2
+            "compareMethod": ">=",
+            "value": 0
           },
           "id": "Scorpion_7_3 req_0",
           "index": 0,
@@ -12364,7 +12364,7 @@
             "value": 6
           },
           "width": {
-            "compareMethod": "<=",
+            "compareMethod": ">=",
             "value": 0
           }
         }
@@ -12538,8 +12538,8 @@
             "550aa4cd4bdc2dd8348b456c"
           ],
           "height": {
-            "compareMethod": "<=",
-            "value": 2
+            "compareMethod": ">=",
+            "value": 0
           },
           "id": "Scorpion_7_4 req_0",
           "index": 0,
@@ -12566,7 +12566,7 @@
             "value": 3.6
           },
           "width": {
-            "compareMethod": "<=",
+            "compareMethod": ">=",
             "value": 0
           }
         }
@@ -12760,8 +12760,8 @@
             "550aa4cd4bdc2dd8348b456c"
           ],
           "height": {
-            "compareMethod": "<=",
-            "value": 2
+            "compareMethod": ">=",
+            "value": 0
           },
           "id": "Scorpion_7_5 req_0",
           "index": 0,
@@ -12788,7 +12788,7 @@
             "value": 4
           },
           "width": {
-            "compareMethod": "<=",
+            "compareMethod": ">=",
             "value": 0
           }
         }
