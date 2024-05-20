@@ -12360,7 +12360,7 @@
           ],
           "durability": {
             "compareMethod": ">=",
-            "value": 90
+            "value": 100
           },
           "dynamicLocale": false,
           "effectiveDistance": {
@@ -13285,7 +13285,42 @@
     "restartable": false,
     "rewards": {
       "Fail": [],
-      "Started": [],
+      "Started": [
+        {
+          "findInRaid": true,
+          "id": "Scorpion_8_4 start_reward_0",
+          "index": 0,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c5ae",
+              "_tpl": "60a283193cb70855c43a381d",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c5ae",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_8_4 start_reward_1",
+          "index": 1,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c5af",
+              "_tpl": "5ca21c6986f77479963115a7",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c5af",
+          "type": "Item",
+          "value": "1"
+        }
+      ],
       "Success": []
     },
     "secretQuest": false,
@@ -13504,7 +13539,59 @@
     "restartable": false,
     "rewards": {
       "Fail": [],
-      "Started": [],
+      "Started": [
+        {
+          "findInRaid": true,
+          "id": "Scorpion_8_5 start_reward_0",
+          "index": 0,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c5ab",
+              "_tpl": "545cdb794bdc2d3a198b456a",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c5ab",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_8_5 start_reward_1",
+          "index": 1,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c5ac",
+              "_tpl": "60a3c70cde5f453f634816a3",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c5ac",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_8_5 start_reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c5ad",
+              "_tpl": "544a5caa4bdc2d1a388b4568",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c5ad",
+          "type": "Item",
+          "value": "1"
+        }
+      ],
       "Success": []
     },
     "secretQuest": false,
