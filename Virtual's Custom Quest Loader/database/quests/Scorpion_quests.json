@@ -12051,7 +12051,55 @@
     "rewards": {
       "Fail": [],
       "Started": [],
-      "Success": []
+      "Success": [
+        {
+          "id": "Scorpion_7_1 reward_0",
+          "index": 0,
+          "type": "Experience",
+          "value": 6000
+        },
+        {
+          "id": "Scorpion_7_1 reward_1",
+          "index": 1,
+          "target": "Scorpion",
+          "type": "TraderStanding",
+          "value": "0.01"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_7_1 reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "Scorpion_7_1 reward_2_0",
+              "_tpl": "5449016a4bdc2d6f028b456f",
+              "upd": {
+                "StackObjectsCount": 84500
+              }
+            }
+          ],
+          "target": "Scorpion_7_1 reward_2_0",
+          "type": "Item",
+          "value": "84500"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_7_1 reward_3",
+          "index": 3,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c5b0",
+              "_tpl": "59e0d99486f7744a32234762",
+              "upd": {
+                "StackObjectsCount": 60
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c5b0",
+          "type": "Item",
+          "value": "60"
+        }
+      ]
     },
     "secretQuest": false,
     "side": "Pmc",
@@ -12189,7 +12237,55 @@
     "rewards": {
       "Fail": [],
       "Started": [],
-      "Success": []
+      "Success": [
+        {
+          "id": "Scorpion_7_2 reward_0",
+          "index": 0,
+          "type": "Experience",
+          "value": 8000
+        },
+        {
+          "id": "Scorpion_7_2 reward_1",
+          "index": 1,
+          "target": "Scorpion",
+          "type": "TraderStanding",
+          "value": "0.01"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_7_2 reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "Scorpion_7_2 reward_2_0",
+              "_tpl": "5449016a4bdc2d6f028b456f",
+              "upd": {
+                "StackObjectsCount": 101000
+              }
+            }
+          ],
+          "target": "Scorpion_7_2 reward_2_0",
+          "type": "Item",
+          "value": "101000"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_7_2 reward_3",
+          "index": 3,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c5b1",
+              "_tpl": "60194943740c5d77f6705eea",
+              "upd": {
+                "StackObjectsCount": 120
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c5b1",
+          "type": "Item",
+          "value": "120"
+        }
+      ]
     },
     "secretQuest": false,
     "side": "Pmc",
@@ -12331,7 +12427,55 @@
     "rewards": {
       "Fail": [],
       "Started": [],
-      "Success": []
+      "Success": [
+        {
+          "id": "Scorpion_7_3 reward_0",
+          "index": 0,
+          "type": "Experience",
+          "value": 15600
+        },
+        {
+          "id": "Scorpion_7_3 reward_1",
+          "index": 1,
+          "target": "Scorpion",
+          "type": "TraderStanding",
+          "value": "0.01"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_7_3 reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "Scorpion_7_3 reward_2_0",
+              "_tpl": "5449016a4bdc2d6f028b456f",
+              "upd": {
+                "StackObjectsCount": 125000
+              }
+            }
+          ],
+          "target": "Scorpion_7_3 reward_2_0",
+          "type": "Item",
+          "value": "125000"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_7_3 reward_3",
+          "index": 3,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c5b2",
+              "_tpl": "5aafbde786f774389d0cbc0f",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c5b2",
+          "type": "Item",
+          "value": "1"
+        }
+      ]
     },
     "secretQuest": false,
     "side": "Pmc",
@@ -12471,7 +12615,89 @@
     "rewards": {
       "Fail": [],
       "Started": [],
-      "Success": []
+      "Success": [
+        {
+          "id": "Scorpion_7_4 reward_0",
+          "index": 0,
+          "type": "Experience",
+          "value": 22000
+        },
+        {
+          "id": "Scorpion_7_4 reward_1",
+          "index": 1,
+          "target": "Scorpion",
+          "type": "TraderStanding",
+          "value": "0.01"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_7_4 reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "Scorpion_7_4 reward_2_0",
+              "_tpl": "5449016a4bdc2d6f028b456f",
+              "upd": {
+                "StackObjectsCount": 250000
+              }
+            }
+          ],
+          "target": "Scorpion_7_4 reward_2_0",
+          "type": "Item",
+          "value": "250000"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_7_4 reward_3",
+          "index": 3,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c5b3",
+              "_tpl": "59fb023c86f7746d0d4b423c",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c5b3",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_7_4 reward_4",
+          "index": 4,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c5b4",
+              "_tpl": "618ba27d9008e4636a67f61d",
+              "upd": {
+                "StackObjectsCount": 2
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c5b4",
+          "type": "Item",
+          "value": "2"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_7_4 reward_5",
+          "index": 5,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c5b5",
+              "_tpl": "5b3b99265acfc4704b4a1afb",
+              "upd": {
+                "StackObjectsCount": 2
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c5b5",
+          "type": "Item",
+          "value": "2"
+        }
+      ]
     },
     "secretQuest": false,
     "side": "Pmc",
@@ -12611,7 +12837,89 @@
     "rewards": {
       "Fail": [],
       "Started": [],
-      "Success": []
+      "Success": [
+        {
+          "id": "Scorpion_7_4 reward_0",
+          "index": 0,
+          "type": "Experience",
+          "value": 40000
+        },
+        {
+          "id": "Scorpion_7_4 reward_1",
+          "index": 1,
+          "target": "Scorpion",
+          "type": "TraderStanding",
+          "value": "0.01"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_7_4 reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "Scorpion_7_4 reward_2_0",
+              "_tpl": "569668774bdc2da2298b4568",
+              "upd": {
+                "StackObjectsCount": 3000
+              }
+            }
+          ],
+          "target": "Scorpion_7_4 reward_2_0",
+          "type": "Item",
+          "value": "3000"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_7_4 reward_3",
+          "index": 3,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c5b3",
+              "_tpl": "59fb023c86f7746d0d4b423c",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c5b3",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_7_4 reward_4",
+          "index": 4,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c5b6",
+              "_tpl": "59faff1d86f7746c51718c9c",
+              "upd": {
+                "StackObjectsCount": 3
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c5b6",
+          "type": "Item",
+          "value": "3"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_7_4 reward_5",
+          "index": 5,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c5b7",
+              "_tpl": "5d235bb686f77443f4331278",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c5b7",
+          "type": "Item",
+          "value": "1"
+        }
+      ]
     },
     "secretQuest": false,
     "side": "Pmc",
