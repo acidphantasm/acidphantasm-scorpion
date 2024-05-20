@@ -702,6 +702,225 @@
       "Y": "2",
       "Z": "2"
     }
+  },
+  {
+    "ZoneId": "scorpion_factory_pumping_visit",
+    "ZoneName": "scorpion_factory_pumping_visit",
+    "ZoneLocation": "factory4_night",
+    "ZoneType": "visit",
+    "FlareType": "",
+    "Position": {
+      "X": "39.53815",
+      "Y": "0.8799998",
+      "Z": "-14.68336"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "1.5",
+      "Y": "1.5",
+      "Z": "1.25"
+    }
+  },
+  {
+    "ZoneId": "scorpion_factory_pumping_place",
+    "ZoneName": "scorpion_factory_pumping_place",
+    "ZoneLocation": "factory4_night",
+    "ZoneType": "placeitem",
+    "FlareType": "",
+    "Position": {
+      "X": "39.53815",
+      "Y": "0.8799998",
+      "Z": "-14.68336"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "1.5",
+      "Y": "1.5",
+      "Z": "1.25"
+    }
+  },
+  {
+    "ZoneId": "scorpion_shoreline_pier_visit",
+    "ZoneName": "scorpion_shoreline_pier_visit",
+    "ZoneLocation": "Shoreline",
+    "ZoneType": "visit",
+    "FlareType": "",
+    "Position": {
+      "X": "-345.5976",
+      "Y": "-63.82037",
+      "Z": "542.6403"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "41",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "3.25",
+      "Y": "1.5",
+      "Z": "2.75"
+    }
+  },
+  {
+    "ZoneId": "scorpion_shoreline_pier_place",
+    "ZoneName": "scorpion_shoreline_pier_place",
+    "ZoneLocation": "Shoreline",
+    "ZoneType": "placeitem",
+    "FlareType": "",
+    "Position": {
+      "X": "-345.5976",
+      "Y": "-63.82037",
+      "Z": "542.6403"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "41",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "3.25",
+      "Y": "1.5",
+      "Z": "2.75"
+    }
+  },
+  {
+    "ZoneId": "scorpion_interchange_mantis_visit",
+    "ZoneName": "scorpion_interchange_mantis_visit",
+    "ZoneLocation": "Interchange",
+    "ZoneType": "visit",
+    "FlareType": "",
+    "Position": {
+      "X": "7.044386",
+      "Y": "27.83648",
+      "Z": "-66.1673"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "1.5",
+      "Y": "1.5",
+      "Z": "1.5"
+    }
+  },
+  {
+    "ZoneId": "scorpion_interchange_mantis_place",
+    "ZoneName": "scorpion_interchange_mantis_place",
+    "ZoneLocation": "Interchange",
+    "ZoneType": "placeitem",
+    "FlareType": "",
+    "Position": {
+      "X": "7.044386",
+      "Y": "27.83648",
+      "Z": "-66.1673"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "1.5",
+      "Y": "1.5",
+      "Z": "1.5"
+    }
+  },
+  {
+    "ZoneId": "scorpion_interchange_kiba_visit",
+    "ZoneName": "scorpion_interchange_kiba_visit",
+    "ZoneLocation": "Interchange",
+    "ZoneType": "visit",
+    "FlareType": "",
+    "Position": {
+      "X": "-16.95666",
+      "Y": "27.83647",
+      "Z": "-22.0147"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "1.25",
+      "Y": "1.5",
+      "Z": "1.25"
+    }
+  },
+  {
+    "ZoneId": "scorpion_interchange_kiba_place",
+    "ZoneName": "scorpion_interchange_kiba_place",
+    "ZoneLocation": "Interchange",
+    "ZoneType": "placeitem",
+    "FlareType": "",
+    "Position": {
+      "X": "-16.95666",
+      "Y": "27.83647",
+      "Z": "-22.0147"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "1.25",
+      "Y": "1.5",
+      "Z": "1.25"
+    }
+  },
+  {
+    "ZoneId": "scorpion_labs_hanger_visit",
+    "ZoneName": "scorpion_labs_hanger_visit",
+    "ZoneLocation": "laboratory",
+    "ZoneType": "visit",
+    "FlareType": "",
+    "Position": {
+      "X": "-169.9131",
+      "Y": "1.669171",
+      "Z": "-238.7509"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "0.75",
+      "Y": "2",
+      "Z": "1.25"
+    }
+  },
+  {
+    "ZoneId": "scorpion_labs_hanger_place",
+    "ZoneName": "scorpion_labs_hanger_place",
+    "ZoneLocation": "laboratory",
+    "ZoneType": "placeitem",
+    "FlareType": "",
+    "Position": {
+      "X": "-169.9131",
+      "Y": "1.669171",
+      "Z": "-238.7509"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "0.75",
+      "Y": "2",
+      "Z": "1.25"
+    }
   }
-
 ]
