@@ -12015,7 +12015,7 @@
           },
           "width": {
             "compareMethod": ">=",
-            "value": 5
+            "value": 0
           }
         }
       ],
@@ -12175,7 +12175,7 @@
           },
           "width": {
             "compareMethod": "<=",
-            "value": 5
+            "value": 0
           }
         }
       ],
@@ -12365,7 +12365,7 @@
           },
           "width": {
             "compareMethod": "<=",
-            "value": 6
+            "value": 0
           }
         }
       ],
@@ -12567,7 +12567,7 @@
           },
           "width": {
             "compareMethod": "<=",
-            "value": 5
+            "value": 0
           }
         }
       ],
@@ -12789,7 +12789,7 @@
           },
           "width": {
             "compareMethod": "<=",
-            "value": 6
+            "value": 0
           }
         }
       ],
