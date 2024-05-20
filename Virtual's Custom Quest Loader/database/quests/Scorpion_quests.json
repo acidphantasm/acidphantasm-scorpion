@@ -12474,6 +12474,20 @@
           "target": "6635a60afe3ddd40c508c5b2",
           "type": "Item",
           "value": "1"
+        },
+        {
+          "id": "Scorpion_7_3 reward_4",
+          "index": 4,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c5b8",
+              "_tpl": "5df8ce05b11454561e39243b"
+            }
+          ],
+          "loyaltyLevel": 3,
+          "target": "6635a60afe3ddd40c508c5b8",
+          "traderId": "Scorpion",
+          "type": "AssortmentUnlock"
         }
       ]
     },
