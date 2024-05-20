@@ -180,7 +180,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
     private setRealismDetection(i: boolean)
     {
         realismDetected = i;
-        if (realismDetected)
+        if (realismDetected && Scorpion.config.randomizeBuyRestriction || realismDetected && Scorpion.config.randomizeStockAvailable)
         {
             this.logger.log(`[${this.mod}] SPT-Realism detected, disabling randomizeBuyRestriction and/or randomizeStockAvailable:`, "yellow");
         }
