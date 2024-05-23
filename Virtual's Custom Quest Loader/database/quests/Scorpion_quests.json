@@ -12408,7 +12408,7 @@
           "id": "Scorpion_7_3 start_2",
           "index": 2,
           "parentId": "",
-          "value": 25,
+          "value": 20,
           "visibilityConditions": []
         }
       ],
@@ -12610,7 +12610,7 @@
           "id": "Scorpion_7_4 start_2",
           "index": 2,
           "parentId": "",
-          "value": 35,
+          "value": 25,
           "visibilityConditions": []
         }
       ],
@@ -12832,7 +12832,7 @@
           "id": "Scorpion_7_5 start_1",
           "index": 0,
           "parentId": "",
-          "value": 45,
+          "value": 30,
           "visibilityConditions": []
         }
       ],
@@ -13542,7 +13542,7 @@
           "id": "Scorpion_8_3 start_2",
           "index": 2,
           "parentId": "",
-          "value": 25,
+          "value": 20,
           "visibilityConditions": []
         }
       ],
@@ -13798,7 +13798,7 @@
           "id": "Scorpion_8_4 start_2",
           "index": 2,
           "parentId": "",
-          "value": 35,
+          "value": 25,
           "visibilityConditions": []
         }
       ],
@@ -14083,7 +14083,7 @@
           "id": "Scorpion_8_5 start_2",
           "index": 2,
           "parentId": "",
-          "value": 45,
+          "value": 30,
           "visibilityConditions": []
         }
       ],
@@ -14278,7 +14278,7 @@
           "id": "Scorpion_8_6 start_2",
           "index": 2,
           "parentId": "",
-          "value": 55,
+          "value": 35,
           "visibilityConditions": []
         }
       ],
