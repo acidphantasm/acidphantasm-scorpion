@@ -12949,7 +12949,7 @@
           },
           "dynamicLocale": false,
           "effectiveDistance": {
-            "compareMethod": "<=",
+            "compareMethod": ">=",
             "value": 200
           },
           "emptyTacticalSlot": {
@@ -13125,6 +13125,209 @@
     "side": "Pmc",
     "startedMessageText": "Scorpion_7_6 startedMessageText",
     "successMessageText": "Scorpion_7_6 successMessageText",
+    "traderId": "Scorpion",
+    "type": "WeaponAssembly"
+  },
+  "Scorpion_7_7": {
+    "QuestName": "Weapon Acquisition VII",
+    "_id": "Scorpion_7_7",
+    "acceptPlayerMessage": "Scorpion_7_7 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "Scorpion_7_7 changeQuestMessageText",
+    "completePlayerMessage": "Scorpion_7_7 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "baseAccuracy": {
+            "compareMethod": ">=",
+            "value": 0
+          },
+          "conditionType": "WeaponAssembly",
+          "containsItems": [],
+          "durability": {
+            "compareMethod": ">=",
+            "value": 90
+          },
+          "dynamicLocale": false,
+          "effectiveDistance": {
+            "compareMethod": ">=",
+            "value": 400
+          },
+          "emptyTacticalSlot": {
+            "compareMethod": ">=",
+            "value": 0
+          },
+          "ergonomics": {
+            "compareMethod": ">=",
+            "value": 62
+          },
+          "globalQuestCounterId": "",
+          "hasItemFromCategory": [
+            "55818b164bdc2ddc698b456c"
+          ],
+          "height": {
+            "compareMethod": ">=",
+            "value": 0
+          },
+          "id": "Scorpion_7_7 req_0",
+          "index": 0,
+          "magazineCapacity": {
+            "compareMethod": ">=",
+            "value": 20
+          },
+          "muzzleVelocity": {
+            "compareMethod": ">=",
+            "value": 0
+          },
+          "parentId": "",
+          "recoil": {
+            "compareMethod": "<=",
+            "value": 250
+          },
+          "target": [
+            "5447a9cd4bdc2dbd208b4567"
+          ],
+          "value": 1,
+          "visibilityConditions": [],
+          "weight": {
+            "compareMethod": "<=",
+            "value": 3.75
+          },
+          "width": {
+            "compareMethod": ">=",
+            "value": 0
+          }
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_7_7 start_0",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_7_6",
+          "visibilityConditions": []
+        },
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_7_7 start_1",
+          "index": 1,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_8_6",
+          "visibilityConditions": []
+        },      
+        {
+          "compareMethod": ">=",
+          "conditionType": "Level",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_7_7 start_1",
+          "index": 0,
+          "parentId": "",
+          "value": 40,
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "declinePlayerMessage": "Scorpion_7_7 declinePlayerMessage",
+    "description": "Scorpion_7_7 description",
+    "failMessageText": "Scorpion_7_7 failMessageText",
+    "image": "/files/quest/icon/scorpion_questpic.png",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "any",
+    "name": "Scorpion_7_7 name",
+    "note": "Scorpion_7_7 note",
+    "restartable": false,
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": [
+        {
+          "id": "Scorpion_7_7 reward_0",
+          "index": 0,
+          "type": "Experience",
+          "value": 50000
+        },
+        {
+          "id": "Scorpion_7_7 reward_1",
+          "index": 1,
+          "target": "Scorpion",
+          "type": "TraderStanding",
+          "value": "0.01"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_7_7 reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "Scorpion_7_7 reward_2_0",
+              "_tpl": "569668774bdc2da2298b4568",
+              "upd": {
+                "StackObjectsCount": 3000
+              }
+            }
+          ],
+          "target": "Scorpion_7_7 reward_2_0",
+          "type": "Item",
+          "value": "3000"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_7_7 reward_3",
+          "index": 3,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c5b3",
+              "_tpl": "59fb023c86f7746d0d4b423c",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c5b3",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_7_7 reward_4",
+          "index": 4,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c5b6",
+              "_tpl": "59faff1d86f7746c51718c9c",
+              "upd": {
+                "StackObjectsCount": 3
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c5b6",
+          "type": "Item",
+          "value": "3"
+        }
+      ]
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "Scorpion_7_7 startedMessageText",
+    "successMessageText": "Scorpion_7_7 successMessageText",
     "traderId": "Scorpion",
     "type": "WeaponAssembly"
   },
