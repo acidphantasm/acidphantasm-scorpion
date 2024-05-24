@@ -12908,7 +12908,7 @@
           ],
           "target": "Scorpion_8_1",
           "visibilityConditions": []
-        },      
+        },
         {
           "compareMethod": ">=",
           "conditionType": "Level",
@@ -13098,7 +13098,7 @@
           ],
           "target": "Scorpion_8_2",
           "visibilityConditions": []
-        },      
+        },
         {
           "compareMethod": ">=",
           "conditionType": "Level",
@@ -13435,7 +13435,7 @@
           ],
           "target": "Scorpion_8_3",
           "visibilityConditions": []
-        },      
+        },
         {
           "compareMethod": ">=",
           "conditionType": "Level",
@@ -13657,7 +13657,7 @@
           ],
           "target": "Scorpion_8_4",
           "visibilityConditions": []
-        },      
+        },
         {
           "compareMethod": ">=",
           "conditionType": "Level",
@@ -13843,7 +13843,7 @@
           ],
           "target": "Scorpion_8_5",
           "visibilityConditions": []
-        },      
+        },
         {
           "compareMethod": ">=",
           "conditionType": "Level",
@@ -14081,7 +14081,7 @@
           ],
           "target": "Scorpion_8_6",
           "visibilityConditions": []
-        },      
+        },
         {
           "compareMethod": ">=",
           "conditionType": "Level",
@@ -14896,7 +14896,7 @@
           ],
           "target": "Scorpion_7_2",
           "visibilityConditions": []
-        },      
+        },
         {
           "compareMethod": ">=",
           "conditionType": "Level",
@@ -15152,7 +15152,7 @@
           ],
           "target": "Scorpion_7_3",
           "visibilityConditions": []
-        },      
+        },
         {
           "compareMethod": ">=",
           "conditionType": "Level",
@@ -15437,7 +15437,7 @@
           ],
           "target": "Scorpion_7_4",
           "visibilityConditions": []
-        },      
+        },
         {
           "compareMethod": ">=",
           "conditionType": "Level",
@@ -15584,24 +15584,24 @@
     "conditions": {
       "AvailableForFinish": [
         {
-        "conditionType": "HandoverItem",
-        "dogtagLevel": 0,
-        "dynamicLocale": false,
-        "globalQuestCounterId": "",
-        "id": "Scorpion_8_6 req_0",
-        "index": 0,
-        "isEncoded": false,
-        "maxDurability": 100,
-        "minDurability": 90,
-        "onlyFoundInRaid": true,
-        "parentId": "",
-        "target": [
-          "5c0e541586f7747fa54205c9"
-        ],
-        "value": 2,
-        "visibilityConditions": []
-      }
-    ],
+          "conditionType": "HandoverItem",
+          "dogtagLevel": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_8_6 req_0",
+          "index": 0,
+          "isEncoded": false,
+          "maxDurability": 100,
+          "minDurability": 90,
+          "onlyFoundInRaid": true,
+          "parentId": "",
+          "target": [
+            "5c0e541586f7747fa54205c9"
+          ],
+          "value": 2,
+          "visibilityConditions": []
+        }
+      ],
       "AvailableForStart": [
         {
           "availableAfter": 0,
@@ -15632,7 +15632,7 @@
           ],
           "target": "Scorpion_7_5",
           "visibilityConditions": []
-        },      
+        },
         {
           "compareMethod": ">=",
           "conditionType": "Level",
@@ -31068,5 +31068,353 @@
     "successMessageText": "Scorpion_10_10_0 successMessageText",
     "traderId": "Scorpion",
     "type": "Elimination"
+  },
+  "Scorpion_10__11_0": {
+    "QuestName": "Golden God",
+    "_id": "Scorpion_10__11_0",
+    "acceptPlayerMessage": "Scorpion_10__11_0 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "Scorpion_10__11_0 changeQuestMessageText",
+    "completePlayerMessage": "Scorpion_10__11_0 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "compareMethod": ">=",
+          "conditionType": "Skill",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_10__11_0 req_0",
+          "index": 0,
+          "parentId": "",
+          "target": "Assault",
+          "value": 10,
+          "visibilityConditions": []
+        },
+        {
+          "compareMethod": ">=",
+          "conditionType": "Skill",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_10__11_0 req_1",
+          "index": 1,
+          "parentId": "",
+          "target": "SMG",
+          "value": 10,
+          "visibilityConditions": []
+        },
+        {
+          "compareMethod": ">=",
+          "conditionType": "Skill",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_10__11_0 req_2",
+          "index": 2,
+          "parentId": "",
+          "target": "Sniper",
+          "value": 10,
+          "visibilityConditions": []
+        },
+        {
+          "compareMethod": ">=",
+          "conditionType": "Skill",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_10__11_0 req_3",
+          "index": 3,
+          "parentId": "",
+          "target": "DMR",
+          "value": 10,
+          "visibilityConditions": []
+        },
+        {
+          "compareMethod": ">=",
+          "conditionType": "Skill",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_10__11_0 req_4",
+          "index": 4,
+          "parentId": "",
+          "target": "Shotgun",
+          "value": 10,
+          "visibilityConditions": []
+        },
+        {
+          "compareMethod": ">=",
+          "conditionType": "Skill",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_10__11_0 req_5",
+          "index": 5,
+          "parentId": "",
+          "target": "Pistol",
+          "value": 10,
+          "visibilityConditions": []
+        },
+        {
+          "compareMethod": ">=",
+          "conditionType": "Skill",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_10__11_0 req_6",
+          "index": 6,
+          "parentId": "",
+          "target": "LMG",
+          "value": 10,
+          "visibilityConditions": []
+        },
+        {
+          "compareMethod": ">=",
+          "conditionType": "Skill",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_10__11_0 req_7",
+          "index": 7,
+          "parentId": "",
+          "target": "MagDrills",
+          "value": 10,
+          "visibilityConditions": []
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_10__11_0 start_0",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_10_1_3",
+          "visibilityConditions": []
+        },
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_10__11_0 start_1",
+          "index": 1,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_10_2_3",
+          "visibilityConditions": []
+        },
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_10__11_0 start_2",
+          "index": 2,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_10_3_3",
+          "visibilityConditions": []
+        },
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_10__11_0 start_3",
+          "index": 3,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_10_4_3",
+          "visibilityConditions": []
+        },
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_10__11_0 start_4",
+          "index": 4,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_10_5_3",
+          "visibilityConditions": []
+        },
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_10__11_0 start_5",
+          "index": 5,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_10_6_3",
+          "visibilityConditions": []
+        },
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_10__11_0 start_6",
+          "index": 6,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_10_7_3",
+          "visibilityConditions": []
+        },
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_10__11_0 start_7",
+          "index": 7,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_10_8_3",
+          "visibilityConditions": []
+        },
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_10__11_0 start_8",
+          "index": 8,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_10_9_0",
+          "visibilityConditions": []
+        },
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_10__11_0 start_9",
+          "index": 9,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_10_10_0",
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "declinePlayerMessage": "Scorpion_10__11_0 declinePlayerMessage",
+    "description": "Scorpion_10__11_0 description",
+    "failMessageText": "Scorpion_10__11_0 failMessageText",
+    "image": "/files/quest/icon/scorpion_questpic.png",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "any",
+    "name": "Scorpion_10__11_0 name",
+    "note": "Scorpion_10__11_0 note",
+    "restartable": false,
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": [
+        {
+          "id": "Scorpion_10__11_0 reward_0",
+          "index": 0,
+          "type": "Experience",
+          "value": "500000"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_10__11_0 reward_1",
+          "index": 1,
+          "items": [
+            {
+              "_id": "Scorpion_10__11_0 reward_1_0",
+              "_tpl": "5449016a4bdc2d6f028b456f",
+              "upd": {
+                "StackObjectsCount": 9999999
+              }
+            }
+          ],
+          "target": "Scorpion_10__11_0 reward_1_0",
+          "type": "Item",
+          "value": "9999999"
+        },
+        {
+          "id": "Scorpion_10__11_0 reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c5f7",
+              "_tpl": "5b6d9ce188a4501afc1b2b25"
+            }
+          ],
+          "loyaltyLevel": 4,
+          "target": "6635a60afe3ddd40c508c5f7",
+          "traderId": "Scorpion",
+          "type": "AssortmentUnlock"
+        },
+        {
+          "id": "Scorpion_10__11_0 reward_3",
+          "index": 3,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c5f8",
+              "_tpl": "5c0a840b86f7742ffa4f2482"
+            }
+          ],
+          "loyaltyLevel": 4,
+          "target": "6635a60afe3ddd40c508c5f8",
+          "traderId": "Scorpion",
+          "type": "AssortmentUnlock"
+        },
+        {
+          "id": "Scorpion_10__11_0 reward_4",
+          "index": 4,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c5f9",
+              "_tpl": "59fb042886f7746c5005a7b2"
+            }
+          ],
+          "loyaltyLevel": 4,
+          "target": "6635a60afe3ddd40c508c5f9",
+          "traderId": "Scorpion",
+          "type": "AssortmentUnlock"
+        }
+      ]
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "Scorpion_10__11_0 startedMessageText",
+    "successMessageText": "Scorpion_10__11_0 successMessageText",
+    "traderId": "Scorpion",
+    "type": "Skill"
   }
 }
