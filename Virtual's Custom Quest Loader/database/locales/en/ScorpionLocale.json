@@ -725,5 +725,17 @@
     "Scorpion_10_10_0 name": "Weapon Proficiency - Explosives",
     "Scorpion_10_10_0 description": "We're going to test your proficiency with Explosives. Boom. Go take out a group of PMCs and report back. You'd think this one would be the easiest challenge. Afterall explosives are kind of explosive. Close only counts in horseshoes and you got that right, hand grendaes. Just toss em and laugh.",
     "Scorpion_10_10_0 startedMessageText": "You'll have to source your explosives yourself. If you really want to cheat - use a grenade launcher.",
-    "Scorpion_10_10_0 successMessagetext": "I'd say good job, but it's fuckin' explosives, man. Easy peasy."
+    "Scorpion_10_10_0 successMessagetext": "I'd say good job, but it's fuckin' explosives, man. Easy peasy.",
+    "Scorpion_10__11_0 req_0": "Reach level 10 in Assault Rifles",
+    "Scorpion_10__11_0 req_1": "Reach level 10 in Submachine Guns",
+    "Scorpion_10__11_0 req_2": "Reach level 10 in Snipers",
+    "Scorpion_10__11_0 req_3": "Reach level 10 in Marksman Rifles (DMR)",
+    "Scorpion_10__11_0 req_4": "Reach level 10 in Shotguns",
+    "Scorpion_10__11_0 req_5": "Reach level 10 in Pistols",
+    "Scorpion_10__11_0 req_6": "Reach level 10 in Large Machine Guns",
+    "Scorpion_10__11_0 req_7": "Reach level 10 in Magazine Drills",
+    "Scorpion_10__11_0 name": "Golden God",
+    "Scorpion_10__11_0 description": "Alright you've proved that you know how to handle firearms, explosives, and subjectively - melee skills. By now you should have gotten your personal feel for all of these weapon types. If you haven't, you'll need to keep practicing. When you have, come back for a nice little reward.",
+    "Scorpion_10__11_0 startedMessageText": "This isn't a starter task, this is a finisher task! A task of gods!",
+    "Scorpion_10__11_0 successMessagetext": "YOU ARE THE GOLDEN GOD - Your vengeance will echo within these walls like the gust of a thousand winds!"
 }
