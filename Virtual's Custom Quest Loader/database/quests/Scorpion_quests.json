@@ -12344,7 +12344,7 @@
     "type": "Elimination"
   },
   "Scorpion_7_1": {
-    "QuestName": "Weapon Acquisition",
+    "QuestName": "Weapon Acquisition (Gunsmith)",
     "_id": "Scorpion_7_1",
     "acceptPlayerMessage": "Scorpion_7_1 acceptPlayerMessage",
     "canShowNotificationsInGame": true,
@@ -12502,7 +12502,7 @@
     "type": "WeaponAssembly"
   },
   "Scorpion_7_2": {
-    "QuestName": "Weapon Acquisition II",
+    "QuestName": "Weapon Acquisition II (Gunsmith)",
     "_id": "Scorpion_7_2",
     "acceptPlayerMessage": "Scorpion_7_2 acceptPlayerMessage",
     "canShowNotificationsInGame": true,
@@ -12688,7 +12688,7 @@
     "type": "WeaponAssembly"
   },
   "Scorpion_7_3": {
-    "QuestName": "Weapon Acquisition III",
+    "QuestName": "Weapon Acquisition III (Gunsmith)",
     "_id": "Scorpion_7_3",
     "acceptPlayerMessage": "Scorpion_7_3 acceptPlayerMessage",
     "canShowNotificationsInGame": true,
@@ -12892,7 +12892,7 @@
     "type": "WeaponAssembly"
   },
   "Scorpion_7_4": {
-    "QuestName": "Weapon Acquisition IV",
+    "QuestName": "Weapon Acquisition IV (Gunsmith)",
     "_id": "Scorpion_7_4",
     "acceptPlayerMessage": "Scorpion_7_4 acceptPlayerMessage",
     "canShowNotificationsInGame": true,
@@ -13114,7 +13114,7 @@
     "type": "WeaponAssembly"
   },
   "Scorpion_7_5": {
-    "QuestName": "Weapon Acquisition V",
+    "QuestName": "Weapon Acquisition V (Gunsmith)",
     "_id": "Scorpion_7_5",
     "acceptPlayerMessage": "Scorpion_7_5 acceptPlayerMessage",
     "canShowNotificationsInGame": true,
@@ -13319,7 +13319,7 @@
     "type": "WeaponAssembly"
   },
   "Scorpion_7_6": {
-    "QuestName": "Weapon Acquisition VI",
+    "QuestName": "Weapon Acquisition VI (Gunsmith)",
     "_id": "Scorpion_7_6",
     "acceptPlayerMessage": "Scorpion_7_6 acceptPlayerMessage",
     "canShowNotificationsInGame": true,
@@ -13522,7 +13522,7 @@
     "type": "WeaponAssembly"
   },
   "Scorpion_7_7": {
-    "QuestName": "Weapon Acquisition VII",
+    "QuestName": "Weapon Acquisition VII (Gunsmith)",
     "_id": "Scorpion_7_7",
     "acceptPlayerMessage": "Scorpion_7_7 acceptPlayerMessage",
     "canShowNotificationsInGame": true,
