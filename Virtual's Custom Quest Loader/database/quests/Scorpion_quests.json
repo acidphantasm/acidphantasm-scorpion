@@ -12148,18 +12148,38 @@
           "value": "0.01"
         },
         {
+          "findInRaid": true,
           "id": "Scorpion_6_5 reward_2",
           "index": 2,
           "items": [
             {
-              "_id": "6635a60afe3ddd40c508c589",
-              "_tpl": "5a16b7e1fcdbcb00165aa6c9"
+              "_id": "6635a60afe3ddd40c508c5f3",
+              "_tpl": "5c94bbff86f7747ee735c08f",
+              "upd": {
+                "StackObjectsCount": 2
+              }
             }
           ],
-          "loyaltyLevel": 3,
-          "target": "6635a60afe3ddd40c508c589",
-          "traderId": "Scorpion",
-          "type": "AssortmentUnlock"
+          "target": "6635a60afe3ddd40c508c5f3",
+          "type": "Item",
+          "value": "2"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_6_5 reward_3",
+          "index": 3,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c5f4",
+              "_tpl": "5c127c4486f7745625356c13",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c5f4",
+          "type": "Item",
+          "value": "1"
         }
       ]
     },
@@ -12311,7 +12331,7 @@
           "id": "Scorpion_6_6 reward_0",
           "index": 0,
           "type": "Experience",
-          "value": 50000
+          "value": 55000
         },
         {
           "id": "Scorpion_6_6 reward_1",
@@ -12321,18 +12341,38 @@
           "value": "0.01"
         },
         {
+          "findInRaid": true,
           "id": "Scorpion_6_6 reward_2",
           "index": 2,
           "items": [
             {
-              "_id": "6635a60afe3ddd40c508c589",
-              "_tpl": "5a16b7e1fcdbcb00165aa6c9"
+              "_id": "6635a60afe3ddd40c508c5f5",
+              "_tpl": "5e54f79686f7744022011103",
+              "upd": {
+                "StackObjectsCount": 3
+              }
             }
           ],
-          "loyaltyLevel": 3,
-          "target": "6635a60afe3ddd40c508c589",
-          "traderId": "Scorpion",
-          "type": "AssortmentUnlock"
+          "target": "6635a60afe3ddd40c508c5f5",
+          "type": "Item",
+          "value": "3"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_6_6 reward_3",
+          "index": 3,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c5f6",
+              "_tpl": "5bffe7930db834001b734a39",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c5f6",
+          "type": "Item",
+          "value": "1"
         }
       ]
     },
