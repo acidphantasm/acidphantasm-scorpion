@@ -13955,6 +13955,23 @@
           "target": "6635a60afe3ddd40c508c5e4",
           "type": "Item",
           "value": "1"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_7_7 reward_6",
+          "index": 6,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c5b6",
+              "_tpl": "59faff1d86f7746c51718c9c",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c5b6",
+          "type": "Item",
+          "value": "1"
         }
       ]
     },
