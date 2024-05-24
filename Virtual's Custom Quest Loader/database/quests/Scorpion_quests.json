@@ -12925,6 +12925,209 @@
     "traderId": "Scorpion",
     "type": "WeaponAssembly"
   },
+  "Scorpion_7_6": {
+    "QuestName": "Weapon Acquisition VI",
+    "_id": "Scorpion_7_6",
+    "acceptPlayerMessage": "Scorpion_7_6 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "Scorpion_7_6 changeQuestMessageText",
+    "completePlayerMessage": "Scorpion_7_6 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "baseAccuracy": {
+            "compareMethod": ">=",
+            "value": 0
+          },
+          "conditionType": "WeaponAssembly",
+          "containsItems": [
+            "5cf8f3b0d7f00c00217872ef"
+          ],
+          "durability": {
+            "compareMethod": ">=",
+            "value": 90
+          },
+          "dynamicLocale": false,
+          "effectiveDistance": {
+            "compareMethod": "<=",
+            "value": 200
+          },
+          "emptyTacticalSlot": {
+            "compareMethod": ">=",
+            "value": 0
+          },
+          "ergonomics": {
+            "compareMethod": ">=",
+            "value": 42
+          },
+          "globalQuestCounterId": "",
+          "hasItemFromCategory": [],
+          "height": {
+            "compareMethod": ">=",
+            "value": 0
+          },
+          "id": "Scorpion_7_6 req_0",
+          "index": 0,
+          "magazineCapacity": {
+            "compareMethod": ">=",
+            "value": 20
+          },
+          "muzzleVelocity": {
+            "compareMethod": ">=",
+            "value": 0
+          },
+          "parentId": "",
+          "recoil": {
+            "compareMethod": "<=",
+            "value": 595
+          },
+          "target": [
+            "576165642459773c7a400233"
+          ],
+          "value": 1,
+          "visibilityConditions": [],
+          "weight": {
+            "compareMethod": "<=",
+            "value": 5
+          },
+          "width": {
+            "compareMethod": ">=",
+            "value": 0
+          }
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_7_6 start_0",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_7_5",
+          "visibilityConditions": []
+        },
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_7_6 start_1",
+          "index": 1,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_8_5",
+          "visibilityConditions": []
+        },      
+        {
+          "compareMethod": ">=",
+          "conditionType": "Level",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_7_6 start_1",
+          "index": 0,
+          "parentId": "",
+          "value": 30,
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "declinePlayerMessage": "Scorpion_7_6 declinePlayerMessage",
+    "description": "Scorpion_7_6 description",
+    "failMessageText": "Scorpion_7_6 failMessageText",
+    "image": "/files/quest/icon/scorpion_questpic.png",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "any",
+    "name": "Scorpion_7_6 name",
+    "note": "Scorpion_7_6 note",
+    "restartable": false,
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": [
+        {
+          "id": "Scorpion_7_6 reward_0",
+          "index": 0,
+          "type": "Experience",
+          "value": 50000
+        },
+        {
+          "id": "Scorpion_7_6 reward_1",
+          "index": 1,
+          "target": "Scorpion",
+          "type": "TraderStanding",
+          "value": "0.01"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_7_6 reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "Scorpion_7_6 reward_2_0",
+              "_tpl": "569668774bdc2da2298b4568",
+              "upd": {
+                "StackObjectsCount": 3000
+              }
+            }
+          ],
+          "target": "Scorpion_7_6 reward_2_0",
+          "type": "Item",
+          "value": "3000"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_7_6 reward_3",
+          "index": 3,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c5b3",
+              "_tpl": "59fb023c86f7746d0d4b423c",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c5b3",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_7_6 reward_4",
+          "index": 4,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c5b6",
+              "_tpl": "59faff1d86f7746c51718c9c",
+              "upd": {
+                "StackObjectsCount": 3
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c5b6",
+          "type": "Item",
+          "value": "3"
+        }
+      ]
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "Scorpion_7_6 startedMessageText",
+    "successMessageText": "Scorpion_7_6 successMessageText",
+    "traderId": "Scorpion",
+    "type": "WeaponAssembly"
+  },
   "Scorpion_8_1": {
     "QuestName": "Armour Delivery",
     "_id": "Scorpion_8_1",
