@@ -24,7 +24,8 @@ import { FluentAssortConstructor as FluentAssortCreator } from "./fluentTraderAs
 import { Traders } from "@spt-aki/models/enums/Traders";
 import { HashUtil } from "@spt-aki/utils/HashUtil";
 import baseJson = require("../db/base.json");
-import questAssort = require("../db/questassort.json");
+import questJson = require("../db/questassort.json");
+import assortJson = require("../db/assort.json");
 
 let realismDetected: boolean;
 
@@ -34,9 +35,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
     private logger: ILogger
     private traderHelper: TraderHelper
     private fluentAssortCreator: FluentAssortCreator
-    private static config: Config;
-    private static configPath = path.resolve(__dirname, "../config/config.json");
-    private static assortPath = path.resolve(__dirname, "../db/assort.json");
+    private static config: Config = require("../config/config.json");
 
     constructor() 
     {
@@ -61,8 +60,6 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         const traderConfig: ITraderConfig = configServer.getConfig<ITraderConfig>(ConfigTypes.TRADER);
         const ragfairConfig = configServer.getConfig<IRagfairConfig>(ConfigTypes.RAGFAIR);
         
-        //Load config file before accessing it
-        Scorpion.config = JSON.parse(fs.readFileSync(Scorpion.configPath, "utf-8"));
 
         // Set config values to local variables for validation & use
         let minRefresh = Scorpion.config.traderRefreshMin;
@@ -138,7 +135,6 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         const logger = container.resolve<ILogger>("WinstonLogger");
 
         //Get & Set Assort Information
-        const assortJson = JSON.parse(fs.readFileSync(Scorpion.assortPath, "utf-8"));
         const assortPriceTable = assortJson.barter_scheme;
         const assortItemTable = assortJson.items;
 
@@ -169,7 +165,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         // Add quest assort
         // Add trader to locale file, ensures trader text shows properly on screen
         this.traderHelper.addTraderToDb(baseJson, tables, jsonUtil, newAssort);
-        tables.traders[baseJson._id].questassort = questAssort;
+        tables.traders[baseJson._id].questassort = questJson;
         this.traderHelper.addTraderToLocales(baseJson, tables, baseJson.name, "Scorpion", baseJson.nickname, baseJson.location, "I'm sellin', what are you buyin'?");
 
         this.logger.debug(`[${this.mod}] loaded... `);
