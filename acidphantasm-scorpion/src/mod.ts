@@ -23,8 +23,8 @@ import { TraderHelper } from "./traderHelpers";
 import { FluentAssortConstructor as FluentAssortCreator } from "./fluentTraderAssortCreator";
 import { Traders } from "@spt-aki/models/enums/Traders";
 import { HashUtil } from "@spt-aki/utils/HashUtil";
-import * as baseJson            from "../db/base.json";
-import * as questAssort         from "../db/questassort.json";
+import baseJson = require("../db/base.json");
+import questAssort = require("../db/questassort.json");
 
 let realismDetected: boolean;
 
