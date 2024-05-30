@@ -2614,6 +2614,59 @@
         "BuyRestrictionMax": 2,
         "BuyRestrictionCurrent": 0
       }
+    },
+    {
+      "_id": "6635a60afe3ddd40c508c5fe",
+      "_tpl": "5b44d22286f774172b0c9de8",
+      "parentId": "hideout",
+      "slotId": "hideout",
+      "upd": {
+        "StackObjectsCount": 4159,
+        "BuyRestrictionMax": 3,
+        "BuyRestrictionCurrent": 0
+      }
+    },
+    {
+      "_id": "6635a60afe3ddd40c508c5ff",
+      "_tpl": "65704de13e7bba58ea0285c8",
+      "parentId": "6635a60afe3ddd40c508c5fe",
+      "slotId": "Soft_armor_front"
+    },
+    {
+      "_id": "6635a60afe3ddd40c508c600",
+      "_tpl": "65705c3c14f2ed6d7d0b7738",
+      "parentId": "6635a60afe3ddd40c508c5fe",
+      "slotId": "Soft_armor_back"
+    },
+    {
+      "_id": "6635a60afe3ddd40c508c601",
+      "_tpl": "65705c777260e1139e091408",
+      "parentId": "6635a60afe3ddd40c508c5fe",
+      "slotId": "Soft_armor_left"
+    },
+    {
+      "_id": "6635a60afe3ddd40c508c602",
+      "_tpl": "65705cb314f2ed6d7d0b773c",
+      "parentId": "6635a60afe3ddd40c508c5fe",
+      "slotId": "soft_armor_right"
+    },
+    {
+      "_id": "6635a60afe3ddd40c508c603",
+      "_tpl": "65705cea4916448ae1050897",
+      "parentId": "6635a60afe3ddd40c508c5fe",
+      "slotId": "Collar"
+    },
+    {
+      "_id": "6635a60afe3ddd40c508c604",
+      "_tpl": "656f9d5900d62bcd2e02407c",
+      "parentId": "6635a60afe3ddd40c508c5fe",
+      "slotId": "Front_plate"
+    },
+    {
+      "_id": "6635a60afe3ddd40c508c605",
+      "_tpl": "656f9d5900d62bcd2e02407c",
+      "parentId": "6635a60afe3ddd40c508c5fe",
+      "slotId": "Back_plate"
     }
   ],
   "barter_scheme": {
@@ -3704,6 +3757,14 @@
           "_tpl": "5449016a4bdc2d6f028b456f"
         }
       ]
+    ],
+    "6635a60afe3ddd40c508c5fe": [
+      [
+        {
+          "count": 51234,
+          "_tpl": "5449016a4bdc2d6f028b456f"
+        }
+      ]
     ]
   },
   "loyal_level_items": {
@@ -3841,6 +3902,7 @@
     "6635a60afe3ddd40c508c5f9": 4,
     "6635a60afe3ddd40c508c5fb": 4,
     "6635a60afe3ddd40c508c5fc": 4,
-    "6635a60afe3ddd40c508c5fd": 4
+    "6635a60afe3ddd40c508c5fd": 4,
+    "6635a60afe3ddd40c508c5fe": 1
   }
 }
