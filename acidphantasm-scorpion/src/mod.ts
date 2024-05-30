@@ -60,7 +60,6 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         const traderConfig: ITraderConfig = configServer.getConfig<ITraderConfig>(ConfigTypes.TRADER);
         const ragfairConfig = configServer.getConfig<IRagfairConfig>(ConfigTypes.RAGFAIR);
         
-
         // Set config values to local variables for validation & use
         let minRefresh = Scorpion.config.traderRefreshMin;
         let maxRefresh = Scorpion.config.traderRefreshMax;
@@ -141,7 +140,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         //Check Mod Compatibility
         this.modDetection();
 
-        //Update Assort Pricing via config multiplier for server
+        //Update Assort
         if (Scorpion.config.priceMultiplier !== 1)
         {
             this.setPriceMultiplier(assortPriceTable);
@@ -153,6 +152,14 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         if (!realismDetected && Scorpion.config.randomizeStockAvailable)
         {
             this.randomizeStockAvailable(assortItemTable);
+        }
+        if (Scorpion.config.unlimitedStock)
+        {
+            this.setUnlimitedStock(assortItemTable);
+        }
+        if (Scorpion.config.unlimitedBuyRestriction)
+        {
+            this.setUnlimitedBuyRestriction(assortItemTable);
         }
 
         // Set local variable for assort to pass to traderHelper regardless of priceMultiplier config
@@ -205,13 +212,13 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         // Randomize Assort Availability via config bool for server start
         for (const item in assortItemTable)
         {
-            if (assortItemTable[item].upd?.BuyRestrictionMax === undefined)
+            if (assortItemTable[item].parentId !== "hideout")
             {
                 continue // Skip setting count, it's a weapon attachment or armour plate
             }
             const itemID = assortItemTable[item]._id;
             const oldRestriction = assortItemTable[item].upd.BuyRestrictionMax;
-            const newRestriction = Math.round(randomUtil.randInt((oldRestriction * 0.5), (oldRestriction)));
+            const newRestriction = Math.round(randomUtil.randInt((oldRestriction * 0.5), oldRestriction));
             
             assortItemTable[item].upd.BuyRestrictionMax = newRestriction;
 
@@ -223,7 +230,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         const randomUtil: RandomUtil = container.resolve<RandomUtil>("RandomUtil");
         for (const item in assortItemTable)
         {
-            if (assortItemTable[item].upd?.StackObjectsCount === undefined)
+            if (assortItemTable[item].parentId !== "hideout")
             {
                 continue // Skip setting count, it's a weapon attachment or armour plate
             }
@@ -246,6 +253,32 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
                 if (Scorpion.config.debugLogging) {this.logger.log(`[${this.mod}] Item: [${itemID}] Stock Count changed to: [${newStock}]`, "cyan");}
             }
         }
+    }
+    private setUnlimitedStock(assortItemTable)
+    {
+        for (const item in assortItemTable)
+        {
+            if (assortItemTable[item].parentId !== "hideout")
+            {
+                continue // Skip setting count, it's a weapon attachment or armour plate
+            }
+            assortItemTable[item].upd.StackObjectsCount = 9999999;
+            assortItemTable[item].upd.UnlimitedCount = true;
+        }
+        if (Scorpion.config.debugLogging) {this.logger.log(`[${this.mod}] Item stock counts are now unlimited`, "cyan");}
+    }
+    private setUnlimitedBuyRestriction(assortItemTable)
+    {
+        for (const item in assortItemTable)
+        {
+            if (assortItemTable[item].parentId !== "hideout")
+            {
+                continue // Skip setting count, it's a weapon attachment or armour plate
+            }
+            delete assortItemTable[item].upd.BuyRestrictionMax;
+            delete assortItemTable[item].upd.BuyRestrictionCurrent;
+        }
+        if (Scorpion.config.debugLogging) {this.logger.log(`[${this.mod}] Item buy restrictions are now unlimited`, "cyan");}
     }
     private modDetection()
     {
@@ -297,6 +330,8 @@ interface Config
     outOfStockChance: number,
     randomizeBuyRestriction: boolean,
     priceMultiplier: number,
+    unlimitedStock: boolean,
+    unlimitedBuyRestriction: boolean,
     traderRefreshMin: number,
     traderRefreshMax: number,
     addTraderToFlea: boolean,
