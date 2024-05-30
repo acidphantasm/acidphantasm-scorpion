@@ -6,6 +6,9 @@
 
     "addTraderToFlea": true,
     
+    "unlimitedStock": false,
+    "unlimitedBuyRestriction": false,
+    
     "randomizeBuyRestriction": false,
     "randomizeStockAvailable": false,
     "outOfStockChance": 25,
