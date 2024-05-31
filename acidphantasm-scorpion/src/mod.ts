@@ -152,6 +152,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         if (Scorpion.config.randomizeStockAvailable){this.randomizeStockAvailable(assortItemTable);}
         if (Scorpion.config.unlimitedStock){this.setUnlimitedStock(assortItemTable);}
         if (Scorpion.config.unlimitedBuyRestriction){this.setUnlimitedBuyRestriction(assortItemTable);}
+        if (Scorpion.config.removeLoyaltyRestriction){this.disableLoyaltyRestrictions(assortLoyaltyTable);}
 
         // Set local variable for assort to pass to traderHelper regardless of priceMultiplier config
         const newAssort = assortJson
@@ -281,6 +282,14 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
             delete assortItemTable[item].upd.BuyRestrictionCurrent;
         }
         if (Scorpion.config.debugLogging) {this.logger.log(`[${this.mod}] Item buy restrictions are now unlimited`, "cyan");}
+    }
+    private disableLoyaltyRestrictions(assortLoyaltyTable)
+    {
+        for (const item in assortLoyaltyTable)
+        {
+            delete assortLoyaltyTable[item];
+        }
+        if (Scorpion.config.debugLogging) {this.logger.log(`[${this.mod}] All Loyalty Level requirements are removed`, "cyan");}
     }
     private modDetection()
     {
