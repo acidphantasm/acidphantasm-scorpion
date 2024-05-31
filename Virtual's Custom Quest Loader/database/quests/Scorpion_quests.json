@@ -32064,7 +32064,7 @@
     "endDay": "21"
   },
   "Scorpion_Event_June_3": {
-    "QuestName": "EVENT: Suitable Sights",
+    "QuestName": "EVENT: Suitable Site",
     "_id": "Scorpion_Event_June_3",
     "acceptPlayerMessage": "Scorpion_Event_June_3 acceptPlayerMessage",
     "canShowNotificationsInGame": true,
