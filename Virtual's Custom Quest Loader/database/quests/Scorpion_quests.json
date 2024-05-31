@@ -1390,8 +1390,8 @@
         },
         {
           "findInRaid": true,
-          "id": "Scorpion_1_6 reward_5",
-          "index": 4,
+          "id": "Scorpion_1_6 reward_6",
+          "index": 6,
           "items": [
             {
               "_id": "661f33776b5151c024011d31",
@@ -31590,5 +31590,1190 @@
     "successMessageText": "Scorpion_10__11_0 successMessageText",
     "traderId": "Scorpion",
     "type": "Skill"
+  },
+  "Scorpion_Event_June_0": {
+    "QuestName": "EVENT: Party Supplies",
+    "_id": "Scorpion_Event_June_0",
+    "acceptPlayerMessage": "Scorpion_Event_June_0 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "Scorpion_Event_June_0 changeQuestMessageText",
+    "completePlayerMessage": "Scorpion_Event_June_0 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "conditionType": "HandoverItem",
+          "dogtagLevel": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_Event_June_0 req_0",
+          "index": 0,
+          "isEncoded": false,
+          "maxDurability": 100,
+          "minDurability": 0,
+          "onlyFoundInRaid": false,
+          "parentId": "",
+          "target": [
+            "5d1b376e86f774252519444e"
+          ],
+          "value": 3,
+          "visibilityConditions": []
+        },
+        {
+          "conditionType": "HandoverItem",
+          "dogtagLevel": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_Event_June_0 req_1",
+          "index": 1,
+          "isEncoded": false,
+          "maxDurability": 100,
+          "minDurability": 0,
+          "onlyFoundInRaid": false,
+          "parentId": "",
+          "target": [
+            "5d40407c86f774318526545a"
+          ],
+          "value": 5,
+          "visibilityConditions": []
+        },
+        {
+          "conditionType": "HandoverItem",
+          "dogtagLevel": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_Event_June_0 req_2",
+          "index": 2,
+          "isEncoded": false,
+          "maxDurability": 100,
+          "minDurability": 0,
+          "onlyFoundInRaid": false,
+          "parentId": "",
+          "target": [
+            "5d403f9186f7743cac3f229b"
+          ],
+          "value": 5,
+          "visibilityConditions": []
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "compareMethod": ">=",
+          "conditionType": "Level",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_Event_June_0 start_0",
+          "index": 0,
+          "parentId": "",
+          "value": 1,
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "declinePlayerMessage": "Scorpion_Event_June_0 declinePlayerMessage",
+    "description": "Scorpion_Event_June_0 description",
+    "failMessageText": "Scorpion_Event_June_0 failMessageText",
+    "image": "/files/quest/icon/scorpion_questpic.png",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "any",
+    "name": "Scorpion_Event_June_0 name",
+    "note": "Scorpion_Event_June_0 note",
+    "restartable": false,
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": [
+        {
+          "findInRaid": true,
+          "id": "Scorpion_Event_June_0 reward_0",
+          "index": 0,
+          "items": [
+            {
+              "_id": "Scorpion_Event_June_0 reward_0_0",
+              "_tpl": "5449016a4bdc2d6f028b456f",
+              "upd": {
+                "StackObjectsCount": 29840
+              }
+            }
+          ],
+          "target": "Scorpion_Event_June_0 reward_0_0",
+          "type": "Item",
+          "value": "29840"
+        },
+        {
+        "findInRaid": true,
+        "id": "Scorpion_Event_June_0 reward_1",
+        "index": 1,
+        "items": [
+        {
+          "_id": "052a85a8961b3264b823d835",
+          "_tpl": "574d967124597745970e7c94",
+          "upd": {
+            "Repairable": {
+              "Durability": 100,
+              "MaxDurability": 100
+            },
+            "StackObjectsCount": 1
+          }
+        },
+        {
+          "_id": "1ae0ceedc44943a6c7ff59c8",
+          "_tpl": "653ecef836fae5a82f02b869",
+          "parentId": "052a85a8961b3264b823d835",
+          "slotId": "mod_stock"
+        },
+        {
+          "_id": "2e588dd87dc8bb82bcf6a274",
+          "_tpl": "634f02331f9f536910079b51",
+          "parentId": "052a85a8961b3264b823d835",
+          "slotId": "mod_barrel"
+        },
+        {
+          "_id": "13819d4f1b805a050b3ceea1",
+          "_tpl": "587df583245977373c4f1129",
+          "parentId": "052a85a8961b3264b823d835",
+          "slotId": "mod_magazine"
+        },
+        {
+          "_id": "be34137857260a24637dbc59",
+          "_tpl": "6415c694da439c6a97048b56",
+          "parentId": "052a85a8961b3264b823d835",
+          "slotId": "mod_reciever"
+        },
+        {
+          "_id": "3a15b5c5f8a58f66008fd07a",
+          "_tpl": "634f05a21f9f536910079b56",
+          "parentId": "2e588dd87dc8bb82bcf6a274",
+          "slotId": "mod_mount_000"
+        },
+        {
+          "_id": "0a54dafeb54af31367a82f72",
+          "_tpl": "593d1fa786f7746da62d61ac",
+          "parentId": "2e588dd87dc8bb82bcf6a274",
+          "slotId": "mod_mount_001"
+        },
+        {
+          "_id": "1f4e970c6f38aabe28288243",
+          "_tpl": "5cf67cadd7f00c065a5abab7",
+          "parentId": "2e588dd87dc8bb82bcf6a274",
+          "slotId": "mod_muzzle"
+        },
+        {
+          "_id": "35fc201e04e9972ea6ca4e53",
+          "_tpl": "57ac965c24597706be5f975c",
+          "parentId": "be34137857260a24637dbc59",
+          "slotId": "mod_scope",
+          "upd": {
+            "Sight": {
+              "ScopesCurrentCalibPointIndexes": [
+                0,
+                0
+              ],
+              "ScopesSelectedModes": [
+                0,
+                0
+              ],
+              "SelectedScope": 0
+            }
+          }
+        },
+        {
+          "_id": "943458ed0c7e4aa52633530c",
+          "_tpl": "634f036a517ccc8a960fc746",
+          "parentId": "3a15b5c5f8a58f66008fd07a",
+          "slotId": "mod_gas_block"
+        },
+        {
+          "_id": "88afcd161a5a82c7c80d8a9b",
+          "_tpl": "57fd23e32459772d0805bcf1",
+          "parentId": "0a54dafeb54af31367a82f72",
+          "slotId": "mod_tactical_003",
+          "upd": {
+            "Light": {
+              "IsActive": false,
+              "SelectedMode": 0
+            }
+          }
+        },
+        {
+          "_id": "d57cdeac0db5c73e63857b22",
+          "_tpl": "5649ab884bdc2ded0b8b457f",
+          "parentId": "1f4e970c6f38aabe28288243",
+          "slotId": "mod_muzzle"
+        },
+        {
+          "_id": "3464ee296c6b98e83a3eb8b0",
+          "_tpl": "653ecc425a1690d9d90491e4",
+          "parentId": "943458ed0c7e4aa52633530c",
+          "slotId": "mod_mount_000"
+        }
+      ],
+      "target": "052a85a8961b3264b823d835",
+      "type": "Item",
+      "unknown": false,
+      "value": "1"
+      },
+      {
+        "findInRaid": true,
+        "id": "Scorpion_Event_June_0 reward_2",
+        "index": 2,
+        "items": [
+          {
+            "_id": "6635a60afe3ddd40c508c606",
+            "_tpl": "59e0d99486f7744a32234762",
+            "upd": {
+              "StackObjectsCount": 80
+            }
+          }
+        ],
+        "target": "6635a60afe3ddd40c508c606",
+        "type": "Item",
+        "unknown": false,
+        "value": "80"
+      },
+      {
+        "findInRaid": true,
+        "id": "Scorpion_Event_June_0 reward_3",
+        "index": 3,
+        "items": [
+          {
+            "_id": "6635a60afe3ddd40c508c607",
+            "_tpl": "587df583245977373c4f1129",
+            "upd": {
+              "StackObjectsCount": 3
+            }
+          }
+        ],
+        "target": "6635a60afe3ddd40c508c607",
+        "type": "Item",
+        "unknown": false,
+        "value": "3"
+      }
+    ]
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "Scorpion_Event_June_0 startedMessageText",
+    "successMessageText": "Scorpion_Event_June_0 successMessageText",
+    "traderId": "Scorpion",
+    "type": "PickUp",
+    "startMonth": "6",
+    "startDay": "1",
+    "endMonth": "6",
+    "endDay": "21"
+  },
+  "Scorpion_Event_June_1": {
+    "QuestName": "EVENT: Buzzkill",
+    "_id": "Scorpion_Event_June_1",
+    "acceptPlayerMessage": "Scorpion_Event_June_1 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "Scorpion_Event_June_1 changeQuestMessageText",
+    "completePlayerMessage": "Scorpion_Event_June_1 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "bodyPart": [],
+                "compareMethod": ">=",
+                "conditionType": "Kills",
+                "daytime": {
+                  "from": 0,
+                  "to": 0
+                },
+                "distance": {
+                  "compareMethod": ">=",
+                  "value": 0
+                },
+                "dynamicLocale": false,
+                "enemyEquipmentExclusive": [],
+                "enemyEquipmentInclusive": [],
+                "enemyHealthEffects": [
+                  {
+                    "bodyParts": [
+                      "Head",
+                      "Chest",
+                      "Stomach",
+                      "LeftArm",
+                      "RightArm",
+                      "LeftLeg",
+                      "RightLeg"
+                    ],
+                    "effects": [
+                      "Stun"
+                    ]
+                  }
+                ],
+                "id": "Scorpion_Event_June_1 req_0_1",
+                "resetOnSessionEnd": false,
+                "savageRole": [],
+                "target": "Any",
+                "value": 1,
+                "weapon": [],
+                "weaponCaliber": [],
+                "weaponModsExclusive": [],
+                "weaponModsInclusive": []
+              }
+            ],
+            "id": "Scorpion_Event_June_1 req_0_2"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_Event_June_1 req_0",
+          "index": 0,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Elimination",
+          "value": 3,
+          "visibilityConditions": []
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "compareMethod": ">=",
+          "conditionType": "Level",
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_Event_June_1 start_0",
+          "index": 0,
+          "parentId": "",
+          "value": 1,
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "declinePlayerMessage": "Scorpion_Event_June_1 declinePlayerMessage",
+    "description": "Scorpion_Event_June_1 description",
+    "failMessageText": "Scorpion_Event_June_1 failMessageText",
+    "image": "/files/quest/icon/scorpion_questpic.png",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "any",
+    "name": "Scorpion_Event_June_1 name",
+    "note": "Scorpion_Event_June_1 note",
+    "restartable": false,
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": [
+      {
+        "findInRaid": true,
+        "id": "Scorpion_Event_June_1 reward_0",
+        "index": 0,
+        "items": [
+          {
+            "_id": "Scorpion_Event_June_1 reward_0_0",
+            "_tpl": "5449016a4bdc2d6f028b456f",
+            "upd": {
+              "StackObjectsCount": 29840
+            }
+          }
+        ],
+        "target": "Scorpion_Event_June_1 reward_0_0",
+        "type": "Item",
+        "value": "29840"
+      },
+      {
+      "findInRaid": true,
+      "id": "Scorpion_Event_June_1 reward_1",
+      "index": 1,
+      "items": [
+      {
+        "_id": "430b6092964d91894d7ced69",
+        "_tpl": "5e848cc2988a8701445df1e8",
+          "upd": {
+            "Repairable": {
+              "MaxDurability": 100,
+              "Durability": 100
+            },
+            "FireMode": {
+              "FireMode": "single"
+            },
+            "StackObjectsCount": 1
+        }
+      },
+      {
+        "_id": "f9de435600e853f3f6bf6209",
+        "_tpl": "5e848d1c264f7c180b5e35a9",
+        "parentId": "430b6092964d91894d7ced69",
+        "slotId": "mod_barrel"
+      },
+      {
+        "_id": "79c4ff5b9d4917e1919751e3",
+        "_tpl": "5e848d51e4dbc5266a4ec63b",
+        "parentId": "430b6092964d91894d7ced69",
+        "slotId": "mod_handguard"
+      },
+      {
+        "_id": "a2f45ce5a48a4ae58e066556",
+        "_tpl": "5f647d9f8499b57dc40ddb93",
+        "parentId": "430b6092964d91894d7ced69",
+        "slotId": "mod_magazine"
+      },
+      {
+        "_id": "475d5e287931908dad0e6927",
+        "_tpl": "5e848d99865c0f329958c83b",
+        "parentId": "430b6092964d91894d7ced69",
+        "slotId": "mod_stock"
+      }
+      ],
+      "target": "430b6092964d91894d7ced69",
+      "type": "Item",
+      "unknown": false,
+      "value": "1"
+      },
+      {
+        "findInRaid": true,
+        "id": "Scorpion_Event_June_1 reward_2",
+        "index": 2,
+        "items": [
+          {
+            "_id": "6635a60afe3ddd40c508c608",
+            "_tpl": "5e85a9f4add9fe03027d9bf1",
+            "upd": {
+              "StackObjectsCount": 40
+            }
+          }
+        ],
+        "target": "6635a60afe3ddd40c508c608",
+        "type": "Item",
+        "unknown": false,
+        "value": "40"
+      }
+    ]
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "Scorpion_Event_June_1 startedMessageText",
+    "successMessageText": "Scorpion_Event_June_1 successMessageText",
+    "traderId": "Scorpion",
+    "type": "Elimination",
+    "startMonth": "6",
+    "startDay": "1",
+    "endMonth": "6",
+    "endDay": "21"
+  },
+  "Scorpion_Event_June_2": {
+    "QuestName": "EVENT: Suitable Sights",
+    "_id": "Scorpion_Event_June_2",
+    "acceptPlayerMessage": "Scorpion_Event_June_2 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "Scorpion_Event_June_2 changeQuestMessageText",
+    "completePlayerMessage": "Scorpion_Event_June_2 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "VisitPlace",
+                "dynamicLocale": false,
+                "id": "Scorpion_Event_June_2 req_0_0",
+                "target": "ter_013_area_3",
+                "value": 1
+              }
+            ],
+            "id": "Scorpion_Event_June_2 req_0_1"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_Event_June_2 req_0",
+          "index": 0,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Exploration",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "VisitPlace",
+                "dynamicLocale": false,
+                "id": "Scorpion_Event_June_2 req_1_0",
+                "target": "ter_013_area_3",
+                "value": 1
+              }
+            ],
+            "id": "Scorpion_Event_June_2 req_1_1"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_Event_June_2 req_1",
+          "index": 1,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Exploration",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "VisitPlace",
+                "dynamicLocale": false,
+                "id": "Scorpion_Event_June_2 req_2_0",
+                "target": "ter_013_area_3",
+                "value": 1
+              }
+            ],
+            "id": "Scorpion_Event_June_2 req_2_1"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_Event_June_2 req_2",
+          "index": 2,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Exploration",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "VisitPlace",
+                "dynamicLocale": false,
+                "id": "Scorpion_Event_June_2 req_3_0",
+                "target": "ter_013_area_3",
+                "value": 1
+              }
+            ],
+            "id": "Scorpion_Event_June_2 req_3_1"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_Event_June_2 req_3",
+          "index": 3,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Exploration",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "VisitPlace",
+                "dynamicLocale": false,
+                "id": "Scorpion_Event_June_2 req_4_0",
+                "target": "ter_013_area_3",
+                "value": 1
+              }
+            ],
+            "id": "Scorpion_Event_June_2 req_4_1"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_Event_June_2 req_4",
+          "index": 4,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Exploration",
+          "value": 1,
+          "visibilityConditions": []
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_Event_June_2 start_0",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_Event_June_1",
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "declinePlayerMessage": "Scorpion_Event_June_2 declinePlayerMessage",
+    "description": "Scorpion_Event_June_2 description",
+    "failMessageText": "Scorpion_Event_June_2 failMessageText",
+    "image": "/files/quest/icon/scorpion_questpic.png",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "Any",
+    "name": "Scorpion_Event_June_2 name",
+    "note": "Scorpion_Event_June_2 note",
+    "restartable": false,
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": [
+        {
+          "findInRaid": true,
+          "id": "Scorpion_Event_June_2 reward_0",
+          "index": 0,
+          "items": [
+            {
+              "_id": "Scorpion_Event_June_2 reward_0_0",
+              "_tpl": "5449016a4bdc2d6f028b456f",
+              "upd": {
+                "StackObjectsCount": 29840
+              }
+            }
+          ],
+          "target": "Scorpion_Event_June_2 reward_0_0",
+          "type": "Item",
+          "value": "29840"
+        },
+        {
+        "findInRaid": true,
+        "id": "Scorpion_Event_June_2 reward_1",
+        "index": 1,
+        "items": [
+        {
+          "_id": "4c0a52f1760ac6de3769d721",
+          "_tpl": "57dc2fa62459775949412633",
+          "upd": {
+          "Repairable": {
+            "MaxDurability": 100,
+            "Durability": 100
+          },
+          "Foldable": {
+            "Folded": false
+          },
+          "StackObjectsCount": 1
+          }
+        },
+        {
+          "_id": "266fb2e4efef85fde497f527",
+          "_tpl": "628a664bccaab13006640e47",
+          "parentId": "4c0a52f1760ac6de3769d721",
+          "slotId": "mod_pistol_grip"
+        },
+        {
+          "_id": "ab83e486b8832914a543a596",
+          "_tpl": "59ecc28286f7746d7a68aa8c",
+          "parentId": "4c0a52f1760ac6de3769d721",
+          "slotId": "mod_stock"
+        },
+        {
+          "_id": "a94672cf9806fcaeec193d8c",
+          "_tpl": "5648ac824bdc2ded0b8b457d",
+          "parentId": "4c0a52f1760ac6de3769d721",
+          "slotId": "mod_charge"
+        },
+        {
+          "_id": "b6ef70ac2f6f1c7a371c186b",
+          "_tpl": "564ca99c4bdc2d16268b4589",
+          "parentId": "4c0a52f1760ac6de3769d721",
+          "slotId": "mod_magazine"
+        },
+        {
+          "_id": "35942db998438dfd5f49c473",
+          "_tpl": "615d8f5dd92c473c770212ef",
+          "parentId": "4c0a52f1760ac6de3769d721",
+          "slotId": "mod_muzzle"
+        },
+        {
+          "_id": "2b4fa33ac333e1e1333f452f",
+          "_tpl": "57dc334d245977597164366f",
+          "parentId": "4c0a52f1760ac6de3769d721",
+          "slotId": "mod_reciever"
+        },
+        {
+          "_id": "c1f958acd065aa4b77e63273",
+          "_tpl": "59d36a0086f7747e673f3946",
+          "parentId": "4c0a52f1760ac6de3769d721",
+          "slotId": "mod_gas_block"
+        },
+        {
+          "_id": "c48501f0dfddacfe7fffaea1",
+          "_tpl": "5b222d405acfc400153af4fe",
+          "parentId": "ab83e486b8832914a543a596",
+          "slotId": "mod_stock"
+        },
+        {
+          "_id": "6257513d12fb36ec6d7177bc",
+          "_tpl": "615d8f8567085e45ef1409ca",
+          "parentId": "35942db998438dfd5f49c473",
+          "slotId": "mod_muzzle"
+        },
+        {
+          "_id": "e66c92b78ff0cc265d52af19",
+          "_tpl": "5a957c3fa2750c00137fa5f7",
+          "parentId": "c1f958acd065aa4b77e63273",
+          "slotId": "mod_handguard"
+        },
+        {
+          "_id": "6290d34c39b5a386027eb11f",
+          "_tpl": "5c1cd46f2e22164bef5cfedb",
+          "parentId": "e66c92b78ff0cc265d52af19",
+          "slotId": "mod_foregrip"
+        },
+        {
+          "_id": "fad931c015d951e341b278e1",
+          "_tpl": "570fd721d2720bc5458b4596",
+          "parentId": "e66c92b78ff0cc265d52af19",
+          "slotId": "mod_scope",
+          "upd": {
+            "Sight": {
+              "ScopesCurrentCalibPointIndexes": [
+                0
+              ],
+              "ScopesSelectedModes": [
+                0
+              ],
+              "SelectedScope": 0
+            }
+          }
+        },
+        {
+          "_id": "060d7108ea19a9438d465045",
+          "_tpl": "5cc9c20cd7f00c001336c65d",
+          "parentId": "e66c92b78ff0cc265d52af19",
+          "slotId": "mod_tactical_000",
+          "upd": {
+            "Light": {
+              "IsActive": false,
+              "SelectedMode": 0
+            }
+          }
+        }
+      ],
+      "target": "4c0a52f1760ac6de3769d721",
+      "type": "Item",
+      "unknown": false,
+      "value": "1"
+      },
+      {
+        "findInRaid": true,
+        "id": "Scorpion_Event_June_2 reward_2",
+        "index": 2,
+        "items": [
+          {
+            "_id": "6635a60afe3ddd40c508c609",
+            "_tpl": "56dfef82d2720bbd668b4567",
+            "upd": {
+              "StackObjectsCount": 180
+            }
+          }
+        ],
+        "target": "6635a60afe3ddd40c508c609",
+        "type": "Item",
+        "unknown": false,
+        "value": "180"
+      },
+      {
+        "findInRaid": true,
+        "id": "Scorpion_Event_June_2 reward_3",
+        "index": 3,
+        "items": [
+          {
+            "_id": "6635a60afe3ddd40c508c60a",
+            "_tpl": "564ca99c4bdc2d16268b4589",
+            "upd": {
+              "StackObjectsCount": 4
+            }
+          }
+        ],
+        "target": "6635a60afe3ddd40c508c60a",
+        "type": "Item",
+        "unknown": false,
+        "value": "4"
+      }
+    ]
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "Scorpion_Event_June_2 startedMessageText",
+    "successMessageText": "Scorpion_Event_June_2 successMessageText",
+    "traderId": "Scorpion",
+    "type": "Exploration",
+    "startMonth": "6",
+    "startDay": "1",
+    "endMonth": "6",
+    "endDay": "21"
+  },
+  "Scorpion_Event_June_3": {
+    "QuestName": "EVENT: Unwelcome Guests",
+    "_id": "Scorpion_Event_June_3",
+    "acceptPlayerMessage": "Scorpion_Event_June_3 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "Scorpion_Event_June_3 changeQuestMessageText",
+    "completePlayerMessage": "Scorpion_Event_June_3 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "VisitPlace",
+                "dynamicLocale": false,
+                "id": "Scorpion_Event_June_3 req_0_0",
+                "target": "ter_013_area_3",
+                "value": 1
+              }
+            ],
+            "id": "Scorpion_Event_June_3 req_0_1"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_Event_June_3 req_0",
+          "index": 0,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Exploration",
+          "value": 1,
+          "visibilityConditions": []
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "bodyPart": [],
+                "compareMethod": ">=",
+                "conditionType": "Kills",
+                "daytime": {
+                  "from": 0,
+                  "to": 0
+                },
+                "distance": {
+                  "compareMethod": ">=",
+                  "value": 0
+                },
+                "dynamicLocale": false,
+                "enemyEquipmentExclusive": [],
+                "enemyEquipmentInclusive": [],
+                "enemyHealthEffects": [],
+                "id": "Scorpion_Event_June_3 req_1_0",
+                "resetOnSessionEnd": false,
+                "savageRole": [],
+                "target": "Any",
+                "value": 1,
+                "weapon": [],
+                "weaponCaliber": [],
+                "weaponModsExclusive": [],
+                "weaponModsInclusive": []
+              },
+              {
+                "conditionType": "InZone",
+                "dynamicLocale": false,
+                "id": "Scorpion_Event_June_3 req_1_1",
+                "zoneIds": [
+                  "scorpion_shoreline_sanitorium_killzone"
+                ]
+              }
+            ],
+            "id": "Scorpion_Event_June_3 req_1_2"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_Event_June_3 req_1",
+          "index": 1,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Elimination",
+          "value": 5,
+          "visibilityConditions": [
+            {
+              "conditionType": "CompleteCondition",
+              "id": "Scorpion_Event_June_3 req_1_3",
+              "target": "Scorpion_Event_June_3 req_0"
+            }
+          ]
+        },
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "conditionType": "ExitStatus",
+                "dynamicLocale": false,
+                "id": "Scorpion_Event_June_3 req_2_0",
+                "status": [
+                  "Survived"
+                ]
+              },
+              {
+                "conditionType": "Location",
+                "dynamicLocale": false,
+                "id": "Scorpion_Event_June_3 req_2_1",
+                "target": [
+                  "Lighthouse"
+                ]
+              }
+            ],
+            "id": "Scorpion_Event_June_3 req_2_2"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_Event_June_3 req_2",
+          "index": 2,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Completion",
+          "value": 1,
+          "visibilityConditions": [
+            {
+              "conditionType": "CompleteCondition",
+              "id": "Scorpion_Event_June_3 req_0_2",
+              "target": "Scorpion_Event_June_3 req_0"
+            },
+            {
+              "conditionType": "CompleteCondition",
+              "id": "Scorpion_Event_June_3 req_1_3",
+              "target": "Scorpion_Event_June_3 req_1"
+            }
+          ]
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_Event_June_3 start_0",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_Event_June_2",
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "declinePlayerMessage": "Scorpion_Event_June_3 declinePlayerMessage",
+    "description": "Scorpion_Event_June_3 description",
+    "failMessageText": "Scorpion_Event_June_3 failMessageText",
+    "image": "/files/quest/icon/scorpion_questpic.png",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "5704e4dad2720bb55b8b4567",
+    "name": "Scorpion_Event_June_3 name",
+    "note": "Scorpion_Event_June_3 note",
+    "restartable": false,
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": [
+        {
+          "findInRaid": true,
+          "id": "Scorpion_Event_June_2 reward_0",
+          "index": 0,
+          "items": [
+            {
+              "_id": "Scorpion_Event_June_2 reward_0_0",
+              "_tpl": "5449016a4bdc2d6f028b456f",
+              "upd": {
+                "StackObjectsCount": 29840
+              }
+            }
+          ],
+          "target": "Scorpion_Event_June_2 reward_0_0",
+          "type": "Item",
+          "value": "29840"
+        },
+        {
+        "findInRaid": true,
+        "id": "Scorpion_Event_June_2 reward_1",
+        "index": 1,
+        "items": [
+        {
+          "_id": "3cf26f2404fdfc428e67602b",
+          "_tpl": "5ae08f0a5acfc408fb1398a1",
+          "upd": {
+            "Repairable": {
+              "MaxDurability": 100,
+              "Durability": 100
+            },
+            "FireMode": {
+              "FireMode": "single"
+            }
+          },
+          "StackObjectsCount": 1
+        },
+        {
+          "_id": "80268a098f91e2c600a4b547",
+          "_tpl": "5ae0973a5acfc4001562206c",
+          "parentId": "3cf26f2404fdfc428e67602b",
+          "slotId": "mod_magazine"
+        },
+        {
+          "_id": "fef02d574aff00a1ac7dfa97",
+          "_tpl": "5bbdb870d4351e00367fb67d",
+          "parentId": "3cf26f2404fdfc428e67602b",
+          "slotId": "mod_stock"
+        },
+        {
+          "_id": "90698c1d66e54b6385486015",
+          "_tpl": "5ae09bff5acfc4001562219d",
+          "parentId": "3cf26f2404fdfc428e67602b",
+          "slotId": "mod_barrel"
+        },
+        {
+          "_id": "ef14c8007988b97dfeda7573",
+          "_tpl": "5b3f7bf05acfc433000ecf6b",
+          "parentId": "3cf26f2404fdfc428e67602b",
+          "slotId": "mod_mount"
+        },
+        {
+          "_id": "4f67f405c25a2cf7d26c7972",
+          "_tpl": "5ae099875acfc4001714e593",
+          "parentId": "90698c1d66e54b6385486015",
+          "slotId": "mod_sight_front",
+          "upd": {
+            "Sight": {
+              "ScopesCurrentCalibPointIndexes": [
+                0
+              ],
+              "ScopesSelectedModes": [
+                0
+              ],
+              "SelectedScope": 0
+            }
+          }
+        },
+        {
+          "_id": "d6b9bf132b0f10b8c9672447",
+          "_tpl": "5ae099925acfc4001a5fc7b3",
+          "parentId": "90698c1d66e54b6385486015",
+          "slotId": "mod_sight_rear",
+          "upd": {
+            "Sight": {
+              "ScopesCurrentCalibPointIndexes": [
+                0
+              ],
+              "ScopesSelectedModes": [
+                0
+              ],
+              "SelectedScope": 0
+            }
+          }
+        },
+        {
+          "_id": "87d5b3f5c16de70e487fd6e7",
+          "_tpl": "5b86a0e586f7745b600ccb23",
+          "parentId": "90698c1d66e54b6385486015",
+          "slotId": "mod_muzzle"
+        },
+        {
+          "_id": "409abe8a3dfde9734c2195dd",
+          "_tpl": "5d024f5cd7ad1a04a067e91a",
+          "parentId": "ef14c8007988b97dfeda7573",
+          "slotId": "mod_mount"
+        },
+        {
+          "_id": "17f25dea2db9721556c12edf",
+          "_tpl": "57c69dd424597774c03b7bbc",
+          "parentId": "409abe8a3dfde9734c2195dd",
+          "slotId": "mod_scope"
+        },
+        {
+          "_id": "a9fbe450d16b642a9527c82d",
+          "_tpl": "5a37cb10c4a282329a73b4e7",
+          "parentId": "17f25dea2db9721556c12edf",
+          "slotId": "mod_scope",
+          "upd": {
+            "Sight": {
+              "ScopesCurrentCalibPointIndexes": [
+                0
+              ],
+              "ScopesSelectedModes": [
+                0
+              ],
+              "SelectedScope": 0
+            }
+          }
+        }
+      ],
+      "target": "3cf26f2404fdfc428e67602b",
+      "type": "Item",
+      "unknown": false,
+      "value": "1"
+      },
+      {
+        "findInRaid": true,
+        "id": "Scorpion_Event_June_2 reward_2",
+        "index": 2,
+        "items": [
+          {
+            "_id": "6635a60afe3ddd40c508c60b",
+            "_tpl": "560d61e84bdc2da74d8b4571",
+            "upd": {
+              "StackObjectsCount": 80
+            }
+          }
+        ],
+        "target": "6635a60afe3ddd40c508c60b",
+        "type": "Item",
+        "unknown": false,
+        "value": "80"
+      },
+      {
+        "findInRaid": true,
+        "id": "Scorpion_Event_June_2 reward_3",
+        "index": 3,
+        "items": [
+          {
+            "_id": "6635a60afe3ddd40c508c60c",
+            "_tpl": "5ae0973a5acfc4001562206c",
+            "upd": {
+              "StackObjectsCount": 3
+            }
+          }
+        ],
+        "target": "6635a60afe3ddd40c508c60c",
+        "type": "Item",
+        "unknown": false,
+        "value": "3"
+      }
+    ]
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "Scorpion_Event_June_3 startedMessageText",
+    "successMessageText": "Scorpion_Event_June_3 successMessageText",
+    "traderId": "Scorpion",
+    "type": "Elimination",
+    "startMonth": "6",
+    "startDay": "1",
+    "endMonth": "6",
+    "endDay": "21"
   }
 }
