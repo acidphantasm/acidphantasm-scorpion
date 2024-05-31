@@ -1183,7 +1183,7 @@
       "slotId": "hideout",
       "upd": {
         "FireMode": {
-          "FireMode": "single"
+          "FireMode": "fullauto"
         },
         "UnlimitedCount": false,
         "StackObjectsCount": 197,
@@ -1330,10 +1330,10 @@
       "_id": "662344feca75908fcd0f982d",
       "_tpl": "65290f395ae2ae97b80fdf2d",
       "parentId": "hideout",
-      "slotId":"hideout",
+      "slotId": "hideout",
       "upd": {
         "FireMode": {
-          "FireMode": "single"
+          "FireMode": "fullauto"
         },
         "UnlimitedCount": false,
         "StackObjectsCount": 199,
@@ -1446,7 +1446,7 @@
       "_id": "662344feca75908fcd0f981c",
       "_tpl": "5644bd2b4bdc2d3b4c8b4572",
       "parentId": "hideout",
-      "slotId":"hideout",
+      "slotId": "hideout",
       "upd": {
         "FireMode": {
           "FireMode": "fullauto"
