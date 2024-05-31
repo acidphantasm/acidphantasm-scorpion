@@ -922,5 +922,203 @@
       "Y": "2",
       "Z": "1.25"
     }
+  },
+  {
+    "ZoneId": "scorpion_event_lh_chalet_visit",
+    "ZoneName": "scorpion_event_lh_chalet_visit",
+    "ZoneLocation": "Lighthouse",
+    "ZoneType": "visit",
+    "FlareType": "",
+    "Position": {
+      "X": "-120.5953",
+      "Y": "39.87241",
+      "Z": "95.82349"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "10",
+      "Y": "14.61",
+      "Z": "23"
+    }
+  },
+  {
+    "ZoneId": "scorpion_event_lh_resort_visit",
+    "ZoneName": "scorpion_event_lh_resort_visit",
+    "ZoneLocation": "Lighthouse",
+    "ZoneType": "visit",
+    "FlareType": "",
+    "Position": {
+      "X": "-82.8912",
+      "Y": "22.28478",
+      "Z": "-74.49087"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "13",
+      "Y": "10",
+      "Z": "35"
+    }
+  },
+  {
+    "ZoneId": "scorpion_event_lh_brokenhouse_visit",
+    "ZoneName": "scorpion_event_lh_brokenhouse_visit",
+    "ZoneLocation": "Lighthouse",
+    "ZoneType": "visit",
+    "FlareType": "",
+    "Position": {
+      "X": "131.3334",
+      "Y": "5.083568",
+      "Z": "285.8788"
+    },
+    "Rotation": {
+      "X": "5",
+      "Y": "-4",
+      "Z": "-7.7"
+    },
+    "Scale": {
+      "X": "9.999996",
+      "Y": "6",
+      "Z": "26"
+    }
+  },
+  {
+    "ZoneId": "scorpion_event_lh_dockhouse1_visit",
+    "ZoneName": "scorpion_event_lh_dockhouse1_visit",
+    "ZoneLocation": "Lighthouse",
+    "ZoneType": "visit",
+    "FlareType": "",
+    "Position": {
+      "X": "141.9404",
+      "Y": "1.320041",
+      "Z": "-133.6863"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "7.5",
+      "Y": "8",
+      "Z": "8"
+    }
+  },
+  {
+    "ZoneId": "scorpion_event_lh_dockhouse2_visit",
+    "ZoneName": "scorpion_event_lh_dockhouse2_visit",
+    "ZoneLocation": "Lighthouse",
+    "ZoneType": "visit",
+    "FlareType": "",
+    "Position": {
+      "X": "134.9017",
+      "Y": "2.820041",
+      "Z": "-190.6996"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "6",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "6.5",
+      "Y": "6.5",
+      "Z": "8"
+    }
+  },
+  {
+    "ZoneId": "scorpion_event_lh_shore_kz",
+    "ZoneName": "scorpion_event_lh_shore_kz",
+    "ZoneLocation": "Lighthouse",
+    "ZoneType": "botkillzone",
+    "FlareType": "",
+    "Position": {
+      "X": "83.85823",
+      "Y": "12.50017",
+      "Z": "311.3037"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "-3",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "186",
+      "Y": "27",
+      "Z": "369"
+    }
+  },
+  {
+    "ZoneId": "scorpion_event_lh_bar_visit",
+    "ZoneName": "scorpion_event_lh_bar_visit",
+    "ZoneLocation": "Lighthouse",
+    "ZoneType": "visit",
+    "FlareType": "",
+    "Position": {
+      "X": "127.082",
+      "Y": "3.006925",
+      "Z": "291.8284"
+    },
+    "Rotation": {
+      "X": "5",
+      "Y": "-1",
+      "Z": "-7.5"
+    },
+    "Scale": {
+      "X": "2",
+      "Y": "2",
+      "Z": "2"
+    }
+  },
+  {
+    "ZoneId": "scorpion_event_lh_bar_place",
+    "ZoneName": "scorpion_event_lh_bar_place",
+    "ZoneLocation": "Lighthouse",
+    "ZoneType": "placeitem",
+    "FlareType": "",
+    "Position": {
+      "X": "127.082",
+      "Y": "3.006925",
+      "Z": "291.8284"
+    },
+    "Rotation": {
+      "X": "5",
+      "Y": "-1",
+      "Z": "-7.5"
+    },
+    "Scale": {
+      "X": "2",
+      "Y": "2",
+      "Z": "2"
+    }
+  },
+  {
+    "ZoneId": "scorpion_event_lh_rock_flare",
+    "ZoneName": "scorpion_event_lh_rock_flare",
+    "ZoneLocation": "Lighthouse",
+    "ZoneType": "flarezone",
+    "FlareType": "Quest",
+    "Position": {
+      "X": "87.80654",
+      "Y": "25.39453",
+      "Z": "182.065"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "12",
+      "Y": "6",
+      "Z": "14"
+    }
   }
 ]
