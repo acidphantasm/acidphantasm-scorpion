@@ -2344,7 +2344,23 @@
           "visibilityConditions": []
         }
       ],
-      "AvailableForStart": [],
+      "AvailableForStart": [
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_Event_June_8 start_0",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_Event_June_7",
+          "visibilityConditions": []
+        }
+      ],
       "Fail": []
     },
     "declinePlayerMessage": "Scorpion_Event_June_8 declinePlayerMessage",
