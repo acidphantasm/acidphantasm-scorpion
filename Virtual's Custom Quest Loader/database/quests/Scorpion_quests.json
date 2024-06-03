@@ -18,7 +18,7 @@
           "isEncoded": false,
           "maxDurability": 100,
           "minDurability": 0,
-          "onlyFoundInRaid": true,
+          "onlyFoundInRaid": false,
           "parentId": "",
           "target": [
             "5d1b376e86f774252519444e"
@@ -36,7 +36,7 @@
           "isEncoded": false,
           "maxDurability": 100,
           "minDurability": 0,
-          "onlyFoundInRaid": true,
+          "onlyFoundInRaid": false,
           "parentId": "",
           "target": [
             "5d40407c86f774318526545a"
@@ -54,7 +54,7 @@
           "isEncoded": false,
           "maxDurability": 100,
           "minDurability": 0,
-          "onlyFoundInRaid": true,
+          "onlyFoundInRaid": false,
           "parentId": "",
           "target": [
             "5d403f9186f7743cac3f229b"
