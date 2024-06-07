@@ -1120,5 +1120,27 @@
       "Y": "6",
       "Z": "14"
     }
+  },
+  {
+    "ZoneId": "scorpion_labs_black",
+    "ZoneName": "scorpion_labs_black",
+    "ZoneLocation": "laboratory",
+    "ZoneType": "visit",
+    "FlareType": "",
+    "Position": {
+      "X": "-131.4124",
+      "Y": "1.548",
+      "Z": "-356.9755"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "16.5",
+      "Y": "3",
+      "Z": "8.5"
+    }
   }
 ]
