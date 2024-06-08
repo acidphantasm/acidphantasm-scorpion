@@ -301,7 +301,7 @@
     "Scorpion_4_10 successMessagetext": "Shut up and take my stash space!",
     "Scorpion_5-6_Branch req_0": "Choose to continue working with Apollo or Maximus",
     "Scorpion_5-6_Branch req_1": "Handover specified amount of Roubles",
-    "Scorpion_5-6_Branch": "Ultimatum",
+    "Scorpion_5-6_Branch name": "Ultimatum",
     "Scorpion_5-6_Branch description": "Okay, you're making this difficult for me now. I'm friends with both Apollo and Maximus. They're not happy with you, and I'm not happy with you forcing me into this position. You should have been more discrete when completing your tasks and we wouldn't have gotten to this point. They wouldn't have found out that you're working for the other one. You'll need to pay me so I can split the cash between them in order to recover some goodwill with them. At this point though, it's up to you for who you want to continue working with. They're both great but they aren't friends.",
     "Scorpion_5-6_Branch startedMessageText": "Let me know when you've decided by handing over the cash",
     "Scorpion_5-6_Branch successMessagetext": "I'll give you one task for each of them. Whichever you choose to take will be the one you will work with.",
