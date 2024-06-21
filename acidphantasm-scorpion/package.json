@@ -5,10 +5,10 @@
     "license": "MIT",
     "author": "acidphantasm",
     "akiVersion": "~3.8",
-    "loadBefore": [
+    "loadBefore": [],
+    "loadAfter": [
         "Virtual's Custom Quest Loader"
     ],
-    "loadAfter": [],
     "incompatibilities": [],
     "contributors": [],
     "scripts": {
