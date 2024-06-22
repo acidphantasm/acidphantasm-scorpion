@@ -1,5 +1,19 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 /* eslint-disable @typescript-eslint/brace-style */
+
+/*
+* If you are reading this, I hope you are enjoying Scorpion
+* 
+* 
+* I have worked on this mod for several months and have tried my best to make it as easy to read and clean as possible
+* I may not always do things in the best way, but I do try!
+* If you have any questions please reach out to me in the SPT Discord - do not DM me
+* 
+* 
+* All functions are below this comment
+* 
+*/
+
 import { DependencyContainer, container } from "tsyringe";
 
 // SPT types
@@ -81,12 +95,12 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         this.mod = "acidphantasm-scorpion"; 
     }
 
-    /**
+    /*
      * Some work needs to be done prior to SPT code being loaded
      * 
      * TLDR:
      * Resolve SPT Types
-     * Set trader refresh, config, image, flea
+     * Set trader refresh, config, image, flea settings
      * Register Dynamic Router for Randomization Config
      * 
      */
@@ -164,7 +178,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
             "aki"
         );
     }
-    /**
+    /*
      * Some work needs to be done after loading SPT code
      * 
      * TLDR:
@@ -221,20 +235,15 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         const timeTaken = performance.now() - start;
         if (Scorpion.config.debugLogging) {logger.log(`[${this.mod}] Trader load took ${timeTaken.toFixed(3)}ms.`, "cyan");}
 
-        logger.log(`[${this.mod}] ${this.loadLol()}`, "cyan");
+        logger.log(`[${this.mod}] ${this.getRandomLoadMessage()}`, "cyan");
     }
 
 
     /*
-     * If you are reading this, I hope you are enjoying Scorpion
-     * 
-     * If you have any questions please reach out to me in the SPT Discord - do not DM me
-     * 
-     * 
-     * 
-     * 
      * 
      * All functions are below this comment
+     * 
+     * Most of these functions should be self explanatory
      * 
      */
     private setRealismDetection(i: boolean)
@@ -245,6 +254,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
             this.logger.log(`[${this.mod}] SPT-Realism detected, disabling randomizeBuyRestriction and/or randomizeStockAvailable:`, "cyan");
         }
     }
+
     private setPriceMultiplier (assortPriceTable)
     {
         let priceMultiplier = Scorpion.config.priceMultiplier;
@@ -269,6 +279,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
             }
         } 
     }
+
     private randomizeBuyRestriction(assortItemTable)
     {
         const randomUtil: RandomUtil = container.resolve<RandomUtil>("RandomUtil");
@@ -290,6 +301,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
             }
         }
     }
+
     private randomizeStockAvailable(assortItemTable)
     {
         const randomUtil: RandomUtil = container.resolve<RandomUtil>("RandomUtil");
@@ -322,6 +334,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
             }
         }
     }
+
     private setUnlimitedStock(assortItemTable)
     {
         for (const item in assortItemTable)
@@ -335,6 +348,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         }
         if (Scorpion.config.debugLogging) {this.logger.log(`[${this.mod}] Item stock counts are now unlimited`, "cyan");}
     }
+
     private setUnlimitedBuyRestriction(assortItemTable)
     {
         for (const item in assortItemTable)
@@ -348,6 +362,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         }
         if (Scorpion.config.debugLogging) {this.logger.log(`[${this.mod}] Item buy restrictions are now unlimited`, "cyan");}
     }
+
     private disableLoyaltyRestrictions(assortLoyaltyTable)
     {
         for (const item in assortLoyaltyTable)
@@ -356,39 +371,42 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         }
         if (Scorpion.config.debugLogging) {this.logger.log(`[${this.mod}] All Loyalty Level requirements are removed`, "cyan");}
     }
+
     private modDetection()
     {
-        // Get SPT classes
         const preAkiModLoader: PreAkiModLoader = container.resolve<PreAkiModLoader>("PreAkiModLoader");
-
-        //Mod Compatibility & Base Detection Variable Resolution
         const vcqlCheck = preAkiModLoader.getImportedModsNames().includes("Virtual's Custom Quest Loader");
         const realismCheck = preAkiModLoader.getImportedModsNames().includes("SPT-Realism");
         const vcqlDllPath = path.resolve(__dirname, "../../../../BepInEx/plugins/VCQLQuestZones.dll");
         const heliCrashSamSWAT = path.resolve(__dirname, "../../../../BepInEx/plugins/SamSWAT.HeliCrash/SamSWAT.HeliCrash.dll");
         const heliCrashTyrian = path.resolve(__dirname, "../../../../BepInEx/plugins/SamSWAT.HeliCrash.TyrianReboot/SamSWAT.HeliCrash.TyrianReboot.dll");
         const heliCrashArys = path.resolve(__dirname, "../../../../BepInEx/plugins/SamSWAT.HeliCrash.ArysReloaded/SamSWAT.HeliCrash.ArysReloaded.dll");
+        
         // VCQL Zones DLL is missing
         if (!fs.existsSync(vcqlDllPath))
         {
             this.logger.error(`[${this.mod}] VCQL Zones DLL missing. Custom Trader quests may not work properly.`);
         }
+
         // Outdated HeliCrash is installed
         if (fs.existsSync(heliCrashSamSWAT) || fs.existsSync(heliCrashTyrian))
         {
             this.logger.error(`[${this.mod}] Outdated HeliCrash Mod Detected. You will experience issues with Custom Trader quest zones.`);
         }
+
         // Arys HeliCrash is installed
         if (fs.existsSync(heliCrashArys))
         {
             this.logger.warning(`[${this.mod}] HeliCrash Mod Detected. You may experience issues with Custom Trader quest zones.`);
         }
+
         // VCQL package.json is missing
         if (!vcqlCheck)
         {
             this.logger.error(`[${this.mod}] VCQL not detected. Install VCQL and re-install ${this.mod}.`);
         }
-        // If we need to check for Realism
+
+        // This is completely unneccessary and I'll fix it, eventually - probably
         if (Scorpion.config.randomizeBuyRestriction || Scorpion.config.randomizeStockAvailable)
         {
             this.setRealismDetection(realismCheck);
@@ -398,6 +416,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
             this.setRealismDetection(realismCheck);
         }
     }
+
     private moddedWeaponCompatibility()
     {
         const databaseServer: DatabaseServer = container.resolve<DatabaseServer>("DatabaseServer");
@@ -480,6 +499,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         }
         if (wasAdded) { this.logger.log(`[${this.mod}] Custom Weapons added to proficiency quests. Enjoy!`, "cyan"); }
     }
+    
     private moddedWeaponPushToArray(questType, weaponType)
     {        
         for (const quest in questType)
@@ -498,13 +518,18 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         }
     }
 
-    private loadLol()
+    private getRandomLoadMessage()
     {
         const value = loadMessage[Math.floor(Math.random() * Object.keys(loadMessage).length)];
         return value;
     }
 }
 
+/*
+* 
+* This is the interface for the config to validate the values
+* 
+*/
 interface Config 
 {
     randomizeStockAvailable: boolean,
