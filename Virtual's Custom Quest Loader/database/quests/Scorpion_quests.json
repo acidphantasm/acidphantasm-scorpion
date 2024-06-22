@@ -1920,7 +1920,11 @@
     "startedMessageText": "Scorpion_Event_June_6 startedMessageText",
     "successMessageText": "Scorpion_Event_June_6 successMessageText",
     "traderId": "Scorpion",
-    "type": "Elimination"
+    "type": "Elimination",
+    "startMonth": "5",
+    "startDay": "31",
+    "endMonth": "6",
+    "endDay": "21"
   },
   "Scorpion_Event_June_7": {
     "QuestName": "EVENT: Fireworks",
