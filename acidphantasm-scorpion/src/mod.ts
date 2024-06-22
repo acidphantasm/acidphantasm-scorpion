@@ -38,14 +38,23 @@ let realismDetected: boolean;
 const loadMessage = {
     0: "Scorpion has brought his crew into Tarkov",
     1: "One of us..one of us..one of us",
-    2: "Welcome to the team, you're one of us meow",
+    2: "Welcome to the team, you're one of us meow ♡",
     3: "Call Kenny Loggins because you're in the danger zone",
     4: "Can I offer you a nice egg in this trying time?",
     5: "Good news everyone! We have over 100 quests!",
     6: "Never half-ass two things. Whole-ass one thing.",
     7: "Thanks for signing up for Cat Facts! You will now receive fun daily facts about CATS!",
     8: "Thanks for signing up for Dog Facts! You will now receive fun daily facts about DOGS!",
-    9: "A big ball of wibbly wobbly, timey wimey stuff"
+    9: "A big ball of wibbly wobbly, timey wimey stuff",
+    10: "(╯°□°)╯︵ ┻━┻ ",
+    11: "┬─┬ノ( º _ ºノ)",
+    12: "Treat others how you want to be treated",
+    13: "No act of kindness, no matter how small, is ever wasted",
+    14: "",
+    15: "",
+    16: "",
+    17: "",
+    18: "",
 }
 
 class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
