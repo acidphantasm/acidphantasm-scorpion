@@ -73,7 +73,9 @@ const loadMessage = {
     23: "I spent the last few years building up an immunity to iocane powder.",
     24: "Rodents Of Unusual Size? I don't think they exist.",
     25: "Always try to be nice, but never fail to be kind",
-    26: "Never be cruel, never be cowardly"
+    26: "Never be cruel, never be cowardly",
+    27: "Who do I need to ban? (◣_◢)",
+    28: "This loading message is sponsored by Raid: Shadow Legends"
 }
 
 class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
