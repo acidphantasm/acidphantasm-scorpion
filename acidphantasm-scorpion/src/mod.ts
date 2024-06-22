@@ -50,11 +50,19 @@ const loadMessage = {
     11: "┬─┬ノ( º _ ºノ)",
     12: "Treat others how you want to be treated",
     13: "No act of kindness, no matter how small, is ever wasted",
-    14: "",
-    15: "",
-    16: "",
-    17: "",
-    18: "",
+    14: "Reticulating Splines...",
+    15: "Unfolding Foldy Chairs...",
+    16: "Pressurizing Fruit Punch Barrel Hydraulics...",
+    17: "Fabricating Imaginary Infrastructure...",
+    18: "We apologize again for the fault in the subtitles. Those responsible for sacking the people who have just been sacked, have been sacked.",
+    19: "Are you suggesting coconuts migrate?",
+    20: "We are now the knights who say ekki-ekki-ekki-pitang-zoom-boing!",
+    21: "Knight jumps queen! Bishop jumps queen! Pawns jump queen!",
+    22: "Hello. My name is Inigo Montoya. You killed my father. Prepare to die.",
+    23: "I spent the last few years building up an immunity to iocane powder.",
+    24: "Rodents Of Unusual Size? I don't think they exist.",
+    25: "Always try to be nice, but never fail to be kind",
+    26: "Never be cruel, never be cowardly"
 }
 
 class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
