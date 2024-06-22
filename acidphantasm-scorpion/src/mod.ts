@@ -460,7 +460,10 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
             {
                 for (const item in questType[quest].conditions.AvailableForFinish[condition].counter.conditions)
                 {
-                    questType[quest].conditions.AvailableForFinish[condition].counter.conditions[item].weapon.push(weaponType);
+                    for (const id of weaponType)
+                    {
+                        questType[quest].conditions.AvailableForFinish[condition].counter.conditions[item].weapon.push(id);
+                    }
                 }
             }
             if (Scorpion.config.debugLogging) { this.logger.log(`[${this.mod}] ${questType[quest].QuestName} --- Added ${weaponType}`, "cyan"); }
