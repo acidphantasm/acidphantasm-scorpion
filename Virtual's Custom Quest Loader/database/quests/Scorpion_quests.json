@@ -2660,7 +2660,11 @@
     "startedMessageText": "Scorpion_Event_June_8 startedMessageText",
     "successMessageText": "Scorpion_Event_June_8 successMessageText",
     "traderId": "Scorpion",
-    "type": "PickUp"
+    "type": "PickUp",
+    "startMonth": "5",
+    "startDay": "31",
+    "endMonth": "6",
+    "endDay": "21"
   },
   "Scorpion_1_1": {
     "QuestName": "Prove Yourself",
