@@ -1,9 +1,9 @@
 {
     "ThisIsAnExample": [
-        "Replace_This_With_Modded_WeaponID",
-        "Comma_Separate_Each_Weapon_ID",
-        "MODDED_WEAPON_ID_EXAMPLE",
-        "MODDED_WEAPON_ID_EXAMPLE2"
+        "Replace_This_With_Modded_Weapon_TPL_ID",
+        "Comma_Separate_Each_Weapon__TPL_ID",
+        "MODDED_WEAPON_ID_EXAMPLE_TPL",
+        "MODDED_WEAPON_ID_EXAMPLE_TPL2"
     ],
     "AssaultRifles" : [],
     "SubmachineGuns" : [],
