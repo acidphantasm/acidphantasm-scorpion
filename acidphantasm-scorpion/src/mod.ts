@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 /* eslint-disable @typescript-eslint/brace-style */
 import { DependencyContainer, container } from "tsyringe";
 
@@ -13,17 +14,17 @@ import { ConfigTypes } from "@spt-aki/models/enums/ConfigTypes";
 import { ITraderConfig } from "@spt-aki/models/spt/config/ITraderConfig";
 import { IRagfairConfig } from "@spt-aki/models/spt/config/IRagfairConfig";
 import type {DynamicRouterModService} from "@spt-aki/services/mod/dynamicRouter/DynamicRouterModService";
-import { JsonUtil } from "@spt-aki/utils/JsonUtil";
 import { RandomUtil } from "@spt-aki/utils/RandomUtil";
-import { VFS } from "@spt-aki/utils/VFS";
 
+// JSON Imports
+import { JsonUtil } from "@spt-aki/utils/JsonUtil";
+import { VFS } from "@spt-aki/utils/VFS";
 import { jsonc } from "jsonc";
 import fs from "node:fs";
 import path from "node:path";
 
-import weaponCompatibility = require("../config/ModdedWeaponCompatibility.json");
 
-// New trader settings
+// Custom Imports
 import { TraderHelper } from "./traderHelpers";
 import { FluentAssortConstructor as FluentAssortCreator } from "./fluentTraderAssortCreator";
 import { Traders } from "@spt-aki/models/enums/Traders";
@@ -31,9 +32,9 @@ import { HashUtil } from "@spt-aki/utils/HashUtil";
 import baseJson = require("../db/base.json");
 import questJson = require("../db/questassort.json");
 import assortJson = require("../db/assort.json");
+import weaponCompatibility = require("../config/ModdedWeaponCompatibility.json");
 
 let realismDetected: boolean;
-
 const loadMessage = {
     0: "Scorpion has brought his crew into Tarkov",
     1: "One of us..one of us..one of us",
@@ -74,13 +75,20 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
     private static vfs = container.resolve<VFS>("VFS");    
     private static config: Config = jsonc.parse(Scorpion.vfs.readFile(path.resolve(__dirname, "../config/config.jsonc")));
 
+    // Set the name of mod for logging purposes
     constructor() 
     {
-        this.mod = "acidphantasm-scorpion"; // Set name of mod so we can log it to console later
+        this.mod = "acidphantasm-scorpion"; 
     }
+
     /**
-     * Some work needs to be done prior to SPT code being loaded, registering the profile image + setting trader update time inside the trader config json
-     * @param container Dependency container
+     * Some work needs to be done prior to SPT code being loaded
+     * 
+     * TLDR:
+     * Resolve SPT Types
+     * Set trader refresh, config, image, flea
+     * Register Dynamic Router for Randomization Config
+     * 
      */
     public preAkiLoad(container: DependencyContainer): void
     {
@@ -156,10 +164,16 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
             "aki"
         );
     }
-        
     /**
-     * Majority of trader-related work occurs after the aki database has been loaded but prior to SPT code being run
-     * @param container Dependency container
+     * Some work needs to be done after loading SPT code
+     * 
+     * TLDR:
+     * Resolve SPT Types
+     * Add Modded Weapons to Quests
+     * Mod Detection to enable/disable Assort Configuration options
+     * Apply Assort Configurations
+     * Add trader to dictionary, locales, and assort
+     * 
      */
     public postDBLoad(container: DependencyContainer): void
     {
@@ -174,12 +188,12 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         const assortPriceTable = assortJson.barter_scheme;
         const assortItemTable = assortJson.items;
         const assortLoyaltyTable = assortJson.loyal_level_items;
+        
+        //Run Modded Weapon Compatibility
+        this.moddedWeaponCompatibility();
 
         //Check Mod Compatibility
         this.modDetection();
-
-        //Run Modded Weapon Compatibility
-        this.moddedWeaponCompatibility();
 
         //Update Assort
         if (Scorpion.config.priceMultiplier !== 1){this.setPriceMultiplier(assortPriceTable);}
@@ -209,6 +223,20 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
 
         logger.log(`[${this.mod}] ${this.loadLol()}`, "cyan");
     }
+
+
+    /*
+     * If you are reading this, I hope you are enjoying Scorpion
+     * 
+     * If you have any questions please reach out to me in the SPT Discord - do not DM me
+     * 
+     * 
+     * 
+     * 
+     * 
+     * All functions are below this comment
+     * 
+     */
     private setRealismDetection(i: boolean)
     {
         realismDetected = i;
