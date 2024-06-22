@@ -21,6 +21,8 @@ import { jsonc } from "jsonc";
 import fs from "node:fs";
 import path from "node:path";
 
+import weaponCompatibility = require("../config/ModdedWeaponCompatibility.json");
+
 // New trader settings
 import { TraderHelper } from "./traderHelpers";
 import { FluentAssortConstructor as FluentAssortCreator } from "./fluentTraderAssortCreator";
@@ -29,8 +31,22 @@ import { HashUtil } from "@spt-aki/utils/HashUtil";
 import baseJson = require("../db/base.json");
 import questJson = require("../db/questassort.json");
 import assortJson = require("../db/assort.json");
+import { IQuest } from "@spt-aki/models/eft/common/tables/IQuest";
 
 let realismDetected: boolean;
+
+const loadMessage = {
+    0: "Scorpion has brought his crew into Tarkov",
+    1: "One of us..one of us..one of us",
+    2: "Welcome to the team, you're one of us meow",
+    3: "Call Kenny Loggins because you're in the danger zone",
+    4: "Can I offer you a nice egg in this trying time?",
+    5: "Good news everyone! We have over 100 quests!",
+    6: "Never half-ass two things. Whole-ass one thing.",
+    7: "Thanks for signing up for Cat Facts! You will now receive fun daily facts about CATS!",
+    8: "Thanks for signing up for Dog Facts! You will now receive fun daily facts about DOGS!",
+    9: "A big ball of wibbly wobbly, timey wimey stuff"
+}
 
 class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
 {
@@ -146,6 +162,9 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         //Check Mod Compatibility
         this.modDetection();
 
+        //Run Modded Weapon Compatibility
+        this.moddedWeaponCompatibility();
+
         //Update Assort
         if (Scorpion.config.priceMultiplier !== 1){this.setPriceMultiplier(assortPriceTable);}
         if (Scorpion.config.randomizeBuyRestriction){this.randomizeBuyRestriction(assortItemTable);}
@@ -170,14 +189,16 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         this.logger.debug(`[${this.mod}] loaded... `);
 
         const timeTaken = performance.now() - start;
-        if (Scorpion.config.debugLogging) {logger.log(`[${this.mod}] Trader load took ${timeTaken.toFixed(3)}ms.`, "green");}
+        if (Scorpion.config.debugLogging) {logger.log(`[${this.mod}] Trader load took ${timeTaken.toFixed(3)}ms.`, "cyan");}
+
+        logger.log(`[${this.mod}] ${this.loadLol()}`, "cyan");
     }
     private setRealismDetection(i: boolean)
     {
         realismDetected = i;
         if (realismDetected && Scorpion.config.randomizeBuyRestriction || realismDetected && Scorpion.config.randomizeStockAvailable)
         {
-            this.logger.log(`[${this.mod}] SPT-Realism detected, disabling randomizeBuyRestriction and/or randomizeStockAvailable:`, "yellow");
+            this.logger.log(`[${this.mod}] SPT-Realism detected, disabling randomizeBuyRestriction and/or randomizeStockAvailable:`, "cyan");
         }
     }
     private setPriceMultiplier (assortPriceTable)
@@ -332,6 +353,108 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         {
             this.setRealismDetection(realismCheck);
         }
+    }
+    private moddedWeaponCompatibility()
+    {
+        const databaseServer: DatabaseServer = container.resolve<DatabaseServer>("DatabaseServer");
+        const questTable = databaseServer.getTables().templates.quests;
+        const quests = Object.values(questTable);
+
+        let questType;
+        let weaponType;
+        let wasAdded:boolean;
+
+        if (weaponCompatibility.AssaultRifles.length >= 1)
+        {
+            weaponType = weaponCompatibility.AssaultRifles;
+            questType = quests.filter(x => x._id.includes("Scorpion_10_1_"));
+            wasAdded = true;
+            this.moddedWeaponPushToArray(questType, weaponType);
+        }
+        if (weaponCompatibility.SubmachineGuns.length >= 1)
+        {
+            weaponType = weaponCompatibility.SubmachineGuns;
+            questType = quests.filter(x => x._id.includes("Scorpion_10_2_"));
+            wasAdded = true;
+            this.moddedWeaponPushToArray(questType, weaponType);
+        }
+        if (weaponCompatibility.Snipers.length >= 1)
+        {
+            weaponType = weaponCompatibility.Snipers;
+            questType = quests.filter(x => x._id.includes("Scorpion_10_3_"));
+            wasAdded = true;
+            this.moddedWeaponPushToArray(questType, weaponType);
+        }
+        if (weaponCompatibility.Marksman.length >= 1)
+        {
+            weaponType = weaponCompatibility.Marksman;
+            questType = quests.filter(x => x._id.includes("Scorpion_10_4_"));
+            wasAdded = true;
+            this.moddedWeaponPushToArray(questType, weaponType);
+        }
+        if (weaponCompatibility.Shotguns.length >= 1)
+        {
+            weaponType = weaponCompatibility.Shotguns;
+            questType = quests.filter(x => x._id.includes("Scorpion_10_5_"));
+            wasAdded = true;
+            this.moddedWeaponPushToArray(questType, weaponType);
+        }
+        if (weaponCompatibility.Pistols.length >= 1)
+        {
+            weaponType = weaponCompatibility.Pistols;
+            questType = quests.filter(x => x._id.includes("Scorpion_10_6_"));
+            wasAdded = true;
+            this.moddedWeaponPushToArray(questType, weaponType);
+        }
+        if (weaponCompatibility.LargeMachineGuns.length >= 1)
+        {
+            weaponType = weaponCompatibility.LargeMachineGuns;
+            questType = quests.filter(x => x._id.includes("Scorpion_10_7_"));
+            wasAdded = true;
+            this.moddedWeaponPushToArray(questType, weaponType);
+        }
+        if (weaponCompatibility.Carbines.length >= 1)
+        {
+            weaponType = weaponCompatibility.Carbines;
+            questType = quests.filter(x => x._id.includes("Scorpion_10_8_"));
+            wasAdded = true;
+            this.moddedWeaponPushToArray(questType, weaponType);
+        }
+        if (weaponCompatibility.Melee.length >= 1)
+        {
+            weaponType = weaponCompatibility.Melee;
+            questType = quests.filter(x => x._id.includes("Scorpion_10_9_"));
+            wasAdded = true;
+            this.moddedWeaponPushToArray(questType, weaponType);
+        }
+        if (weaponCompatibility.Explosives.length >= 1)
+        {
+            weaponType = weaponCompatibility.Explosives;
+            questType = quests.filter(x => x._id.includes("Scorpion_10_10_"));
+            wasAdded = true;
+            this.moddedWeaponPushToArray(questType, weaponType);
+        }
+        if (wasAdded) { this.logger.log(`[${this.mod}] Custom Weapons added to proficiency quests. Enjoy!`, "cyan"); }
+    }
+    private moddedWeaponPushToArray(questType, weaponType)
+    {        
+        for (const quest in questType)
+        {
+            for (const condition in questType[quest].conditions.AvailableForFinish)
+            {
+                for (const item in questType[quest].conditions.AvailableForFinish[condition].counter.conditions)
+                {
+                    questType[quest].conditions.AvailableForFinish[condition].counter.conditions[item].weapon.push(weaponType);
+                }
+            }
+            if (Scorpion.config.debugLogging) { this.logger.log(`[${this.mod}] ${questType[quest].QuestName} --- Added ${weaponType}`, "cyan"); }
+        }
+    }
+
+    private loadLol()
+    {
+        const value = loadMessage[Math.floor(Math.random() * Object.keys(loadMessage).length)];
+        return value;
     }
 }
 
