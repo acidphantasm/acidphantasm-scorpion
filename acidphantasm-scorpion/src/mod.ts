@@ -31,7 +31,6 @@ import { HashUtil } from "@spt-aki/utils/HashUtil";
 import baseJson = require("../db/base.json");
 import questJson = require("../db/questassort.json");
 import assortJson = require("../db/assort.json");
-import { IQuest } from "@spt-aki/models/eft/common/tables/IQuest";
 
 let realismDetected: boolean;
 
