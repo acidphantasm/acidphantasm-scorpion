@@ -8,10 +8,7 @@
 * I have worked on this mod for several months and have tried my best to make it as easy to read and clean as possible
 * I may not always do things in the best way, but I do try!
 * If you have any questions please reach out to me in the SPT Discord - do not DM me
-* 
-* 
-* All functions are below this comment
-* 
+*  
 */
 
 import { DependencyContainer, container } from "tsyringe";
@@ -246,7 +243,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
      * Most of these functions should be self explanatory
      * 
      */
-    private setRealismDetection(i: boolean)
+    private setRealismDetection(i: boolean) // Except this one. This is dumb. I'll fix it eventually.
     {
         realismDetected = i;
         if (realismDetected && Scorpion.config.randomizeBuyRestriction || realismDetected && Scorpion.config.randomizeStockAvailable)
