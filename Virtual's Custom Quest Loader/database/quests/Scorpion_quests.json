@@ -2823,7 +2823,11 @@
     "startedMessageText": "Scorpion_Event_July_1 startedMessageText",
     "successMessageText": "Scorpion_Event_July_1 successMessageText",
     "traderId": "Scorpion",
-    "type": "PickUp"
+    "type": "PickUp",
+    "startMonth": "6",
+    "startDay": "30",
+    "endMonth": "7",
+    "endDay": "14"
   },
   "Scorpion_Event_July_2": {
     "QuestName": "EVENT: That's Hot",
@@ -3255,7 +3259,11 @@
     "startedMessageText": "Scorpion_Event_July_2 startedMessageText",
     "successMessageText": "Scorpion_Event_July_2 successMessageText",
     "traderId": "Scorpion",
-    "type": "Elimination"
+    "type": "Elimination",
+    "startMonth": "6",
+    "startDay": "30",
+    "endMonth": "7",
+    "endDay": "14"
   },
   "Scorpion_Event_July_3": {
     "QuestName": "EVENT: Burning Up",
@@ -3501,7 +3509,11 @@
     "startedMessageText": "Scorpion_Event_July_3 startedMessageText",
     "successMessageText": "Scorpion_Event_July_3 successMessageText",
     "traderId": "Scorpion",
-    "type": "Exploration"
+    "type": "Exploration",
+    "startMonth": "6",
+    "startDay": "30",
+    "endMonth": "7",
+    "endDay": "14"
   },
   "Scorpion_Event_July_4": {
     "QuestName": "EVENT: Cooling Down",
@@ -3869,7 +3881,11 @@
     "startedMessageText": "Scorpion_Event_July_4 startedMessageText",
     "successMessageText": "Scorpion_Event_July_4 successMessageText",
     "traderId": "Scorpion",
-    "type": "Exploration"
+    "type": "Exploration",
+    "startMonth": "6",
+    "startDay": "30",
+    "endMonth": "7",
+    "endDay": "14"
   },
   "Scorpion_Event_July_5": {
     "QuestName": "EVENT: Riptide",
@@ -4052,7 +4068,11 @@
     "startedMessageText": "Scorpion_Event_July_5 startedMessageText",
     "successMessageText": "Scorpion_Event_July_5 successMessageText",
     "traderId": "Scorpion",
-    "type": "Elimination"
+    "type": "Elimination",
+    "startMonth": "6",
+    "startDay": "30",
+    "endMonth": "7",
+    "endDay": "14"
   },
   "Scorpion_1_1": {
     "QuestName": "Prove Yourself",
