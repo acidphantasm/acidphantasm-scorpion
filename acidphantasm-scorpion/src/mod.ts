@@ -43,6 +43,7 @@ import { HashUtil } from "@spt-aki/utils/HashUtil";
 import baseJson = require("../db/base.json");
 import questJson = require("../db/questassort.json");
 import assortJson = require("../db/assort.json");
+import productionJson = require("../db/production.json");
 import weaponCompatibility = require("../config/ModdedWeaponCompatibility.json");
 
 let realismDetected: boolean;
@@ -208,6 +209,9 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         //Check Mod Compatibility
         this.modDetection();
 
+        //Push Production Schemes
+        this.pushProductionUnlocks();
+
         //Update Assort
         if (Scorpion.config.priceMultiplier !== 1){this.setPriceMultiplier(assortPriceTable);}
         if (Scorpion.config.randomizeBuyRestriction){this.randomizeBuyRestriction(assortItemTable);}
@@ -236,7 +240,6 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
 
         logger.log(`[${this.mod}] ${this.getRandomLoadMessage()}`, "cyan");
     }
-
 
     /*
      * 
@@ -514,6 +517,16 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
                 }
             }
             if (Scorpion.config.debugLogging) { this.logger.log(`[${this.mod}] ${questType[quest].QuestName} --- Added ${weaponType}`, "cyan"); }
+        }
+    }
+
+    private pushProductionUnlocks() {
+        const databaseServer: DatabaseServer = container.resolve<DatabaseServer>("DatabaseServer");
+        const productionTable = databaseServer.getTables().hideout.production;
+
+        for (const item of productionJson)
+        {
+            productionTable.push(item);
         }
     }
 
