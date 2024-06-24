@@ -20497,9 +20497,22 @@
       "Started": [],
       "Success": [
         {
-          "findInRaid": true,
           "id": "Scorpion_9_1 reward_0",
           "index": 0,
+          "type": "Experience",
+          "value": "10000"
+        },
+        {
+          "id": "Scorpion_9_1 reward_1",
+          "index": 1,
+          "target": "Scorpion",
+          "type": "TraderStanding",
+          "value": "0.02"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_9_1 reward_2",
+          "index": 2,
           "items": [
             {
               "_id": "6635a60afe3ddd40c508c624",
@@ -20516,8 +20529,8 @@
         },
         {
           "findInRaid": true,
-          "id": "Scorpion_9_1 reward_1",
-          "index": 1,
+          "id": "Scorpion_9_1 reward_3",
+          "index": 3,
           "items": [
             {
               "_id": "6635a60afe3ddd40c508c625",
@@ -20534,8 +20547,8 @@
         },
         {
           "findInRaid": true,
-          "id": "Scorpion_9_1 reward_2",
-          "index": 2,
+          "id": "Scorpion_9_1 reward_4",
+          "index": 4,
           "items": [
             {
               "_id": "6635a60afe3ddd40c508c626",
@@ -20711,9 +20724,22 @@
       "Started": [],
       "Success": [
         {
-          "findInRaid": true,
           "id": "Scorpion_9_2 reward_0",
           "index": 0,
+          "type": "Experience",
+          "value": "12500"
+        },
+        {
+          "id": "Scorpion_9_2 reward_1",
+          "index": 1,
+          "target": "Scorpion",
+          "type": "TraderStanding",
+          "value": "0.02"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_9_2 reward_2",
+          "index": 2,
           "items": [
             {
               "_id": "6635a60afe3ddd40c508c628",
@@ -20730,8 +20756,8 @@
         },
         {
           "findInRaid": true,
-          "id": "Scorpion_9_2 reward_1",
-          "index": 1,
+          "id": "Scorpion_9_2 reward_3",
+          "index": 3,
           "items": [
             {
               "_id": "6635a60afe3ddd40c508c629",
@@ -20748,8 +20774,8 @@
         },
         {
           "findInRaid": true,
-          "id": "Scorpion_9_2 reward_2",
-          "index": 2,
+          "id": "Scorpion_9_2 reward_4",
+          "index": 4,
           "items": [
             {
               "_id": "6635a60afe3ddd40c508c62a",
@@ -20943,9 +20969,22 @@
       "Started": [],
       "Success": [
         {
-          "findInRaid": true,
           "id": "Scorpion_9_3 reward_0",
           "index": 0,
+          "type": "Experience",
+          "value": "15000"
+        },
+        {
+          "id": "Scorpion_9_3 reward_1",
+          "index": 1,
+          "target": "Scorpion",
+          "type": "TraderStanding",
+          "value": "0.03"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_9_3 reward_2",
+          "index": 2,
           "items": [
             {
               "_id": "6635a60afe3ddd40c508c623",
@@ -21121,19 +21160,86 @@
       "Started": [],
       "Success": [
         {
-          "findInRaid": true,
           "id": "Scorpion_9_4 reward_0",
           "index": 0,
+          "type": "Experience",
+          "value": "17500"
+        },
+        {
+          "id": "Scorpion_9_4 reward_1",
+          "index": 1,
+          "target": "Scorpion",
+          "type": "TraderStanding",
+          "value": "0.03"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_9_4 reward_2",
+          "index": 2,
           "items": [
             {
-              "_id": "6635a60afe3ddd40c508c622",
-              "_tpl": "5c093ca986f7740a1867ab12",
+              "_id": "6635a60afe3ddd40c508c64d",
+              "_tpl": "5c94bbff86f7747ee735c08f",
+              "upd": {
+                "StackObjectsCount": 4
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c64d",
+          "type": "Item",
+          "unknown": true,
+          "value": "4"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_9_4 reward_3",
+          "index": 3,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c64e",
+              "_tpl": "5c1e2d1f86f77431e9280bee",
               "upd": {
                 "StackObjectsCount": 1
               }
             }
           ],
-          "target": "6635a60afe3ddd40c508c622",
+          "target": "6635a60afe3ddd40c508c64e",
+          "type": "Item",
+          "unknown": true,
+          "value": "1"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_9_4 reward_4",
+          "index": 4,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c64f",
+              "_tpl": "5c1f79a086f7746ed066fb8f",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c64f",
+          "type": "Item",
+          "unknown": true,
+          "value": "1"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_9_4 reward_5",
+          "index": 5,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c650",
+              "_tpl": "5c1e2a1e86f77431ea0ea84c",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c650",
           "type": "Item",
           "unknown": true,
           "value": "1"
@@ -21255,7 +21361,177 @@
     "rewards": {
       "Fail": [],
       "Started": [],
-      "Success": []
+      "Success": [
+        {
+          "id": "Scorpion_9_5 reward_0",
+          "index": 0,
+          "type": "Experience",
+          "value": "22500"
+        },
+        {
+          "id": "Scorpion_9_5 reward_1",
+          "index": 1,
+          "target": "Scorpion",
+          "type": "TraderStanding",
+          "value": "0.03"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_9_5 reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c652",
+              "_tpl": "627e14b21713922ded6f2c15",
+              "upd": {
+                "FireMode": {
+                  "FireMode": "single"
+                }
+              }
+            },
+            {
+              "_id": "6635a60afe3ddd40c508c653",
+              "_tpl": "628120fd5631d45211793c9f",
+              "parentId": "6635a60afe3ddd40c508c652",
+              "slotId": "mod_magazine"
+            },
+            {
+              "_id": "6635a60afe3ddd40c508c654",
+              "_tpl": "62811e2510e26c1f344e6554",
+              "parentId": "6635a60afe3ddd40c508c652",
+              "slotId": "mod_pistol_grip",
+              "upd": {
+                "Foldable": {
+                  "Folded": false
+                }
+              }
+            },
+            {
+              "_id": "6635a60afe3ddd40c508c655",
+              "_tpl": "62811f828193841aca4a45c3",
+              "parentId": "6635a60afe3ddd40c508c654",
+              "slotId": "mod_stock"
+            },
+            {
+              "_id": "6635a60afe3ddd40c508c656",
+              "_tpl": "6281204f308cb521f87a8f9b",
+              "parentId": "6635a60afe3ddd40c508c654",
+              "slotId": "mod_reciever"
+            },
+            {
+              "_id": "6635a60afe3ddd40c508c657",
+              "_tpl": "6281209662cba23f6c4d7a19",
+              "parentId": "6635a60afe3ddd40c508c656",
+              "slotId": "mod_handguard"
+            },
+            {
+              "_id": "6635a60afe3ddd40c508c658",
+              "_tpl": "628120c21d5df4475f46a337",
+              "parentId": "6635a60afe3ddd40c508c657",
+              "slotId": "mod_mount_000"
+            },
+            {
+              "_id": "6635a60afe3ddd40c508c659",
+              "_tpl": "628120d309427b40ab14e76d",
+              "parentId": "6635a60afe3ddd40c508c657",
+              "slotId": "mod_mount_001"
+            },
+            {
+              "_id": "6635a60afe3ddd40c508c65a",
+              "_tpl": "628120d309427b40ab14e76d",
+              "parentId": "6635a60afe3ddd40c508c657",
+              "slotId": "mod_mount_002"
+            },
+            {
+              "_id": "6635a60afe3ddd40c508c65b",
+              "_tpl": "628120dd308cb521f87a8fa1",
+              "parentId": "6635a60afe3ddd40c508c657",
+              "slotId": "mod_mount_003"
+            },
+            {
+              "_id": "6635a60afe3ddd40c508c662",
+              "_tpl": "6171407e50224f204c1da3c5",
+              "parentId": "6635a60afe3ddd40c508c65d",
+              "slotId": "mod_scope"
+            },
+            {
+              "_id": "6635a60afe3ddd40c508c65c",
+              "_tpl": "6281212a09427b40ab14e770",
+              "parentId": "6635a60afe3ddd40c508c656",
+              "slotId": "mod_foregrip"
+            },
+            {
+              "_id": "6635a60afe3ddd40c508c65d",
+              "_tpl": "62811fbf09427b40ab14e767",
+              "parentId": "6635a60afe3ddd40c508c656",
+              "slotId": "mod_reciever"
+            },
+            {
+              "_id": "6635a60afe3ddd40c508c65e",
+              "_tpl": "628121434fa03b6b6c35dc6a",
+              "parentId": "6635a60afe3ddd40c508c65d",
+              "slotId": "mod_barrel"
+            },
+            {
+              "_id": "6635a60afe3ddd40c508c663",
+              "_tpl": "617151c1d92c473c770214ab",
+              "parentId": "6635a60afe3ddd40c508c662",
+              "slotId": "mod_scope_000",
+              "upd": {
+                "Sight": {
+                  "ScopesCurrentCalibPointIndexes": [
+                    0
+                  ],
+                  "ScopesSelectedModes": [
+                    0
+                  ],
+                  "SelectedScope": 0
+                }
+              }
+            },
+            {
+              "_id": "6635a60afe3ddd40c508c65f",
+              "_tpl": "62812081d23f207deb0ab216",
+              "parentId": "6635a60afe3ddd40c508c65e",
+              "slotId": "mod_muzzle"
+            },
+            {
+              "_id": "6635a60afe3ddd40c508c660",
+              "_tpl": "628120621d5df4475f46a335",
+              "parentId": "6635a60afe3ddd40c508c65f",
+              "slotId": "mod_muzzle"
+            },
+            {
+              "_id": "6635a60afe3ddd40c508c661",
+              "_tpl": "62811cd7308cb521f87a8f99",
+              "parentId": "6635a60afe3ddd40c508c652",
+              "slotId": "mod_charge"
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c652",
+          "type": "Item",
+          "unknown": true,
+          "value": "1"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_9_5 reward_3",
+          "index": 3,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c651",
+              "_tpl": "5fc382a9d724d907e2077dab",
+              "upd": {
+                "StackObjectsCount": 80
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c651",
+          "type": "Item",
+          "unknown": true,
+          "value": "80"
+        }
+      ]
     },
     "secretQuest": false,
     "side": "Pmc",
@@ -21317,7 +21593,7 @@
           "oneSessionOnly": false,
           "parentId": "",
           "type": "Elimination",
-          "value": 15,
+          "value": 25,
           "visibilityConditions": []
         }
       ],
@@ -21353,7 +21629,57 @@
     "rewards": {
       "Fail": [],
       "Started": [],
-      "Success": []
+      "Success": [
+        {
+          "id": "Scorpion_9_6 reward_0",
+          "index": 0,
+          "type": "Experience",
+          "value": "25000"
+        },
+        {
+          "id": "Scorpion_9_6 reward_1",
+          "index": 1,
+          "target": "Scorpion",
+          "type": "TraderStanding",
+          "value": "0.03"
+        },
+        {
+          "id": "Scorpion_9_6 reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c664",
+              "_tpl": "5c05300686f7746dce784e5d",
+              "upd": {
+                "SpawnedInSession": true,
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "loyaltyLevel": 1,
+          "target": "6635a60afe3ddd40c508c664",
+          "traderId": "11",
+          "type": "ProductionScheme"
+        },
+        {
+          "id": "Scorpion_9_6 reward_3",
+          "index": 3,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c665",
+              "_tpl": "5c0530ee86f774697952d952",
+              "upd": {
+                "SpawnedInSession": true,
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "loyaltyLevel": 1,
+          "target": "6635a60afe3ddd40c508c665",
+          "traderId": "11",
+          "type": "ProductionScheme"
+        }
+      ]
     },
     "secretQuest": false,
     "side": "Pmc",
@@ -37304,6 +37630,24 @@
           "target": "6635a60afe3ddd40c508c5f9",
           "traderId": "Scorpion",
           "type": "AssortmentUnlock"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_10__11_0 reward_5",
+          "index": 5,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c622",
+              "_tpl": "5c093ca986f7740a1867ab12",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c622",
+          "type": "Item",
+          "unknown": true,
+          "value": "1"
         }
       ]
     },
