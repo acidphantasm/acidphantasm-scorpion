@@ -3425,7 +3425,7 @@
           "dogtagLevel": 0,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
-          "id": "Scorpion_Event_July_4 req_2_0",
+          "id": "Scorpion_Event_July_4 req_2",
           "index": 2,
           "isEncoded": false,
           "maxDurability": 100,
@@ -3445,7 +3445,7 @@
           "dogtagLevel": 0,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
-          "id": "Scorpion_Event_July_4 req_3_0",
+          "id": "Scorpion_Event_July_4 req_3",
           "index": 3,
           "isEncoded": false,
           "maxDurability": 100,
@@ -3465,7 +3465,7 @@
           "dogtagLevel": 0,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
-          "id": "Scorpion_Event_July_4 req_4_0",
+          "id": "Scorpion_Event_July_4 req_4",
           "index": 4,
           "isEncoded": false,
           "maxDurability": 100,
@@ -3485,7 +3485,7 @@
           "dogtagLevel": 0,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
-          "id": "Scorpion_Event_July_4 req_5_0",
+          "id": "Scorpion_Event_July_4 req_5",
           "index": 5,
           "isEncoded": false,
           "maxDurability": 100,
@@ -3505,7 +3505,7 @@
           "dogtagLevel": 0,
           "dynamicLocale": false,
           "globalQuestCounterId": "",
-          "id": "Scorpion_Event_July_4 req_6_0",
+          "id": "Scorpion_Event_July_4 req_6",
           "index": 6,
           "isEncoded": false,
           "maxDurability": 100,
@@ -3552,7 +3552,93 @@
     "restartable": false,
     "rewards": {
       "Fail": [],
-      "Started": [],
+      "Started": [
+        {
+          "findInRaid": true,
+          "id": "Scorpion_Event_July_4 start_reward_0",
+          "index": 0,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c630",
+              "_tpl": "5d1b33a686f7742523398398",
+              "upd": {
+                "StackObjectsCount": 1
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c630",
+          "type": "Item",
+          "value": "1"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_Event_July_4 start_reward_1",
+          "index": 1,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c631",
+              "_tpl": "5c0fa877d174af02a012e1cf",
+              "upd": {
+                "StackObjectsCount": 2
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c631",
+          "type": "Item",
+          "value": "2"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_Event_July_4 start_reward_2",
+          "index": 2,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c632",
+              "_tpl": "5448fee04bdc2dbc018b4567",
+              "upd": {
+                "StackObjectsCount": 3
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c632",
+          "type": "Item",
+          "value": "3"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_Event_July_4 start_reward_3",
+          "index": 3,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c633",
+              "_tpl": "60098b1705871270cd5352a1",
+              "upd": {
+                "StackObjectsCount": 3
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c633",
+          "type": "Item",
+          "value": "3"
+        },
+        {
+          "findInRaid": true,
+          "id": "Scorpion_Event_July_4 start_reward_4",
+          "index": 4,
+          "items": [
+            {
+              "_id": "6635a60afe3ddd40c508c634",
+              "_tpl": "6389c6c7dbfd5e4b95197e68",
+              "upd": {
+                "StackObjectsCount": 3
+              }
+            }
+          ],
+          "target": "6635a60afe3ddd40c508c634",
+          "type": "Item",
+          "value": "3"
+        }
+      ],
       "Success": []
     },
     "secretQuest": false,
@@ -3561,6 +3647,137 @@
     "successMessageText": "Scorpion_Event_July_4 successMessageText",
     "traderId": "Scorpion",
     "type": "Exploration"
+  },
+  "Scorpion_Event_July_5": {
+    "QuestName": "Riptide",
+    "_id": "Scorpion_Event_July_5",
+    "acceptPlayerMessage": "Scorpion_Event_July_5 acceptPlayerMessage",
+    "canShowNotificationsInGame": true,
+    "changeQuestMessageText": "Scorpion_Event_July_5 changeQuestMessageText",
+    "completePlayerMessage": "Scorpion_Event_July_5 completePlayerMessage",
+    "conditions": {
+      "AvailableForFinish": [
+        {
+          "completeInSeconds": 0,
+          "conditionType": "CounterCreator",
+          "counter": {
+            "conditions": [
+              {
+                "bodyPartsWithEffects": [
+                  {
+                    "bodyParts": [
+                      "Stomach"
+                    ],
+                    "effects": [
+                      "Dehydration"
+                    ]
+                  }
+                ],
+                "conditionType": "HealthEffect",
+                "dynamicLocale": false,
+                "energy": {
+                  "compareMethod": ">=",
+                  "value": 0
+                },
+                "hydration": {
+                  "compareMethod": ">=",
+                  "value": 0
+                },
+                "id": "Scorpion_Event_July_5 req_0_1",
+                "time": {
+                  "compareMethod": ">=",
+                  "value": 0
+                }
+              },
+              {
+                "bodyPart": [],
+                "compareMethod": ">=",
+                "conditionType": "Kills",
+                "daytime": {
+                  "from": 0,
+                  "to": 0
+                },
+                "distance": {
+                  "compareMethod": ">=",
+                  "value": 0
+                },
+                "dynamicLocale": false,
+                "enemyEquipmentExclusive": [],
+                "enemyEquipmentInclusive": [],
+                "enemyHealthEffects": [],
+                "id": "Scorpion_Event_July_5 req_0_2",
+                "resetOnSessionEnd": false,
+                "savageRole": [],
+                "target": "Savage",
+                "value": 1,
+                "weapon": [],
+                "weaponCaliber": [],
+                "weaponModsExclusive": [],
+                "weaponModsInclusive": []
+              },
+              {
+                "conditionType": "Location",
+                "dynamicLocale": false,
+                "id": "Scorpion_Event_July_5 req_0_3",
+                "target": [
+                  "Woods"
+                ]
+              }
+            ],
+            "id": "Scorpion_Event_July_5 req_0_4"
+          },
+          "doNotResetIfCounterCompleted": false,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_Event_July_5 req_0",
+          "index": 0,
+          "oneSessionOnly": false,
+          "parentId": "",
+          "type": "Elimination",
+          "value": 10,
+          "visibilityConditions": []
+        }
+      ],
+      "AvailableForStart": [
+        {
+          "availableAfter": 0,
+          "conditionType": "Quest",
+          "dispersion": 0,
+          "dynamicLocale": false,
+          "globalQuestCounterId": "",
+          "id": "Scorpion_Event_July_5 start_0",
+          "index": 0,
+          "parentId": "",
+          "status": [
+            4
+          ],
+          "target": "Scorpion_Event_July_4",
+          "visibilityConditions": []
+        }
+      ],
+      "Fail": []
+    },
+    "declinePlayerMessage": "Scorpion_Event_July_5 declinePlayerMessage",
+    "description": "Scorpion_Event_July_5 description",
+    "failMessageText": "Scorpion_Event_July_5 failMessageText",
+    "image": "/files/quest/icon/scorpion_questpic.png",
+    "instantComplete": false,
+    "isKey": false,
+    "location": "5704e3c2d2720bac5b8b4567",
+    "name": "Scorpion_Event_July_5 name",
+    "note": "Scorpion_Event_July_5 note",
+    "restartable": false,
+    "rewards": {
+      "Fail": [],
+      "Started": [],
+      "Success": []
+    },
+    "secretQuest": false,
+    "side": "Pmc",
+    "startedMessageText": "Scorpion_Event_July_5 startedMessageText",
+    "successMessageText": "Scorpion_Event_July_5 successMessageText",
+    "traderId": "Scorpion",
+    "type": "Elimination"
   },
   "Scorpion_1_1": {
     "QuestName": "Prove Yourself",
