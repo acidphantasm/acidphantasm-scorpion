@@ -10,7 +10,6 @@
 * If you have any questions please reach out to me in the SPT Discord - do not DM me
 *  
 */
-
 import { DependencyContainer, container } from "tsyringe";
 
 // SPT types
@@ -37,9 +36,7 @@ import path from "node:path";
 
 // Custom Imports
 import { TraderHelper } from "./traderHelpers";
-import { FluentAssortConstructor as FluentAssortCreator } from "./fluentTraderAssortCreator";
 import { Traders } from "@spt-aki/models/enums/Traders";
-import { HashUtil } from "@spt-aki/utils/HashUtil";
 import baseJson = require("../db/base.json");
 import questJson = require("../db/questassort.json");
 import assortJson = require("../db/assort.json");
@@ -84,8 +81,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
 {
     private mod: string
     private logger: ILogger
-    private traderHelper: TraderHelper
-    private fluentAssortCreator: FluentAssortCreator    
+    private traderHelper: TraderHelper 
 
     private static vfs = container.resolve<VFS>("VFS");    
     private static config: Config = jsonc.parse(Scorpion.vfs.readFile(path.resolve(__dirname, "../config/config.jsonc")));
@@ -116,7 +112,6 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         const databaseServer: DatabaseServer = container.resolve<DatabaseServer>("DatabaseServer");
         const imageRouter: ImageRouter = container.resolve<ImageRouter>("ImageRouter");
         const configServer = container.resolve<ConfigServer>("ConfigServer");
-        const hashUtil: HashUtil = container.resolve<HashUtil>("HashUtil");
         const traderConfig: ITraderConfig = configServer.getConfig<ITraderConfig>(ConfigTypes.TRADER);
         const ragfairConfig = configServer.getConfig<IRagfairConfig>(ConfigTypes.RAGFAIR);
         
@@ -133,7 +128,6 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         
         // Create helper class and use it to register our traders image/icon + set its stock refresh time
         this.traderHelper = new TraderHelper();
-        this.fluentAssortCreator = new FluentAssortCreator(hashUtil, this.logger);
         this.traderHelper.registerProfileImage(baseJson, this.mod, preAkiModLoader, imageRouter, "scorpion.jpg");
         this.traderHelper.setTraderUpdateTime(traderConfig, baseJson, minRefresh, maxRefresh);
 
