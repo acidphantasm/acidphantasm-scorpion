@@ -508,39 +508,48 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         if (wasAdded) { this.logger.log(`[${this.mod}] Custom Weapons added to proficiency quests. Enjoy!`, "cyan"); }
     }
     
-    private moddedWeaponPushToArray(questType, weaponType)
+    private moddedWeaponPushToArray(questTable, weaponType)
     {        
-        for (const quest in questType)
+        for (const quest in questTable)
         {
-            for (const condition in questType[quest].conditions.AvailableForFinish)
+            for (const condition in questTable[quest].conditions.AvailableForFinish)
             {
-                for (const item in questType[quest].conditions.AvailableForFinish[condition].counter.conditions)
+                for (const item in questTable[quest].conditions.AvailableForFinish[condition].counter.conditions)
                 {
                     for (const id of weaponType)
                     {
-                        questType[quest].conditions.AvailableForFinish[condition].counter.conditions[item].weapon.push(id);
+                        questTable[quest].conditions.AvailableForFinish[condition].counter.conditions[item].weapon.push(id);
                     }
                 }
             }
-            if (Scorpion.config.debugLogging) { this.logger.log(`[${this.mod}] ${questType[quest].QuestName} --- Added ${weaponType}`, "cyan"); }
+            if (Scorpion.config.debugLogging) { this.logger.log(`[${this.mod}] ${questTable[quest].QuestName} --- Added ${weaponType}`, "cyan"); }
         }
     }
     
-    
-    private eventQuestsAlwaysActive(questTable, scorpionQuests)
-    { 
-        for (const quest in scorpionQuests)
+    private eventQuestsAlwaysActive(questTable, quests)
+    {
+        let eventCount = 0;
+        for (const quest in quests)
         {
-            if (scorpionQuests[quest].startMonth && scorpionQuests[quest].startMonth > 0)
+            if (quests[quest].startMonth && quests[quest].startMonth > 0)
             {
-                delete scorpionQuests[quest].startMonth; 
-                delete scorpionQuests[quest].endMonth; 
-                delete scorpionQuests[quest].startDay; 
-                delete scorpionQuests[quest].endDay
-                questTable[quest] = scorpionQuests[quest];
+                const currentDate = new Date();
+                const questStartDate = new Date(currentDate.getFullYear(), quests[quest].startMonth - 1, quests[quest].startDay)
+                const questEndDate = new Date(currentDate.getFullYear(), quests[quest].endMonth - 1, quests[quest].endDay)
+                
+                if (currentDate < questStartDate || currentDate > questEndDate) 
+                {
+                    delete quests[quest].startMonth; 
+                    delete quests[quest].endMonth; 
+                    delete quests[quest].startDay; 
+                    delete quests[quest].endDay
+                    
+                    questTable[quest] = quests[quest];
+                    eventCount++;
+                }
             }
         }
-        this.logger.log(`[${this.mod}] Scorpion Event Quests are now always active - Enjoy!`, "cyan");
+        this.logger.log(`[${this.mod}] Reactivated ${eventCount} Event Quests from Scorpion - Enjoy!`, "cyan");
         this.logger.log(`[${this.mod}] !!! Remember to fix your config.jsonc when you update this mod to keep event quest progress !!!`, "cyan");
     }
 
