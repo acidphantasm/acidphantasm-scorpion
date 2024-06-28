@@ -45,6 +45,7 @@ import questJson = require("../db/questassort.json");
 import assortJson = require("../db/assort.json");
 import productionJson = require("../db/production.json");
 import weaponCompatibility = require("../config/ModdedWeaponCompatibility.json");
+import scorpionQuests = require("../../Virtual's Custom Quest Loader/database/quests/Scorpion_quests.json");
 
 let realismDetected: boolean;
 const loadMessage = {
@@ -197,6 +198,8 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         const databaseServer: DatabaseServer = container.resolve<DatabaseServer>("DatabaseServer");
         const jsonUtil: JsonUtil = container.resolve<JsonUtil>("JsonUtil");
         const logger = container.resolve<ILogger>("WinstonLogger");
+        const quests = databaseServer.getTables().templates.quests;
+
 
         //Set local variables for assortJson
         const assortPriceTable = assortJson.barter_scheme;
@@ -206,6 +209,9 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         //Run Modded Weapon Compatibility
         this.moddedWeaponCompatibility();
 
+        //Enable event quests
+        if (Scorpion.config.eventQuestsAlwaysActive) { this.eventQuestsAlwaysActive(quests,scorpionQuests);}
+
         //Check Mod Compatibility
         this.modDetection();
 
@@ -213,12 +219,12 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         this.pushProductionUnlocks();
 
         //Update Assort
-        if (Scorpion.config.priceMultiplier !== 1){this.setPriceMultiplier(assortPriceTable);}
-        if (Scorpion.config.randomizeBuyRestriction){this.randomizeBuyRestriction(assortItemTable);}
-        if (Scorpion.config.randomizeStockAvailable){this.randomizeStockAvailable(assortItemTable);}
-        if (Scorpion.config.unlimitedStock){this.setUnlimitedStock(assortItemTable);}
-        if (Scorpion.config.unlimitedBuyRestriction){this.setUnlimitedBuyRestriction(assortItemTable);}
-        if (Scorpion.config.removeLoyaltyRestriction){this.disableLoyaltyRestrictions(assortLoyaltyTable);}
+        if (Scorpion.config.priceMultiplier !== 1) {this.setPriceMultiplier(assortPriceTable);}
+        if (Scorpion.config.randomizeBuyRestriction) {this.randomizeBuyRestriction(assortItemTable);}
+        if (Scorpion.config.randomizeStockAvailable) {this.randomizeStockAvailable(assortItemTable);}
+        if (Scorpion.config.unlimitedStock) {this.setUnlimitedStock(assortItemTable);}
+        if (Scorpion.config.unlimitedBuyRestriction) {this.setUnlimitedBuyRestriction(assortItemTable);}
+        if (Scorpion.config.removeLoyaltyRestriction) {this.disableLoyaltyRestrictions(assortLoyaltyTable);}
 
         // Set local variable for assort to pass to traderHelper regardless of priceMultiplier config
         const newAssort = assortJson
@@ -519,6 +525,24 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
             if (Scorpion.config.debugLogging) { this.logger.log(`[${this.mod}] ${questType[quest].QuestName} --- Added ${weaponType}`, "cyan"); }
         }
     }
+    
+    
+    private eventQuestsAlwaysActive(questTable, scorpionQuests)
+    { 
+        for (const quest in scorpionQuests)
+        {
+            if (scorpionQuests[quest].startMonth && scorpionQuests[quest].startMonth > 0)
+            {
+                delete scorpionQuests[quest].startMonth; 
+                delete scorpionQuests[quest].endMonth; 
+                delete scorpionQuests[quest].startDay; 
+                delete scorpionQuests[quest].endDay
+                questTable[quest] = scorpionQuests[quest];
+            }
+        }
+        this.logger.log(`[${this.mod}] Scorpion Event Quests are now always active - Enjoy!`, "cyan");
+        this.logger.log(`[${this.mod}] !!! Remember to fix your config.jsonc when you update this mod to keep event quest progress !!!`, "cyan");
+    }
 
     private pushProductionUnlocks() {
         const databaseServer: DatabaseServer = container.resolve<DatabaseServer>("DatabaseServer");
@@ -554,6 +578,7 @@ interface Config
     traderRefreshMin: number,
     traderRefreshMax: number,
     addTraderToFlea: boolean,
+    eventQuestsAlwaysActive: boolean,
     debugLogging: boolean,
 }
 
