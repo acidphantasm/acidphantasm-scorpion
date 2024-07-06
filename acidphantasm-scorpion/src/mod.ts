@@ -13,22 +13,22 @@
 import { DependencyContainer, container } from "tsyringe";
 
 // SPT types
-import { IPreAkiLoadMod } from "@spt-aki/models/external/IPreAkiLoadMod";
-import { IPostDBLoadMod } from "@spt-aki/models/external/IPostDBLoadMod";
-import { ILogger } from "@spt-aki/models/spt/utils/ILogger";
-import { PreAkiModLoader } from "@spt-aki/loaders/PreAkiModLoader";
-import { DatabaseServer } from "@spt-aki/servers/DatabaseServer";
-import { ImageRouter } from "@spt-aki/routers/ImageRouter";
-import { ConfigServer } from "@spt-aki/servers/ConfigServer";
-import { ConfigTypes } from "@spt-aki/models/enums/ConfigTypes";
-import { ITraderConfig } from "@spt-aki/models/spt/config/ITraderConfig";
-import { IRagfairConfig } from "@spt-aki/models/spt/config/IRagfairConfig";
-import type {DynamicRouterModService} from "@spt-aki/services/mod/dynamicRouter/DynamicRouterModService";
-import { RandomUtil } from "@spt-aki/utils/RandomUtil";
+import { IPreAkiLoadMod } from "@spt/models/external/IPreAkiLoadMod";
+import { IPostDBLoadMod } from "@spt/models/external/IPostDBLoadMod";
+import { ILogger } from "@spt/models/spt/utils/ILogger";
+import { PreAkiModLoader } from "@spt/loaders/PreAkiModLoader";
+import { DatabaseService } from "@spt/services/DatabaseService";
+import { ImageRouter } from "@spt/routers/ImageRouter";
+import { ConfigServer } from "@spt/servers/ConfigServer";
+import { ConfigTypes } from "@spt/models/enums/ConfigTypes";
+import { ITraderConfig } from "@spt/models/spt/config/ITraderConfig";
+import { IRagfairConfig } from "@spt/models/spt/config/IRagfairConfig";
+import type {DynamicRouterModService} from "@spt/services/mod/dynamicRouter/DynamicRouterModService";
+import { RandomUtil } from "@spt/utils/RandomUtil";
 
 // JSON Imports
-import { JsonUtil } from "@spt-aki/utils/JsonUtil";
-import { VFS } from "@spt-aki/utils/VFS";
+import { JsonUtil } from "@spt/utils/JsonUtil";
+import { VFS } from "@spt/utils/VFS";
 import { jsonc } from "jsonc";
 import fs from "node:fs";
 import path from "node:path";
@@ -36,7 +36,7 @@ import path from "node:path";
 
 // Custom Imports
 import { TraderHelper } from "./traderHelpers";
-import { Traders } from "@spt-aki/models/enums/Traders";
+import { Traders } from "@spt/models/enums/Traders";
 import baseJson = require("../db/base.json");
 import questJson = require("../db/questassort.json");
 import assortJson = require("../db/assort.json");
@@ -109,7 +109,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         // Get SPT code/data we need later
         const dynamicRouterModService = container.resolve<DynamicRouterModService>("DynamicRouterModService");     
         const preAkiModLoader: PreAkiModLoader = container.resolve<PreAkiModLoader>("PreAkiModLoader");   
-        const databaseServer: DatabaseServer = container.resolve<DatabaseServer>("DatabaseServer");
+        const databaseService: DatabaseService = container.resolve<DatabaseService>("DatabaseService");
         const imageRouter: ImageRouter = container.resolve<ImageRouter>("ImageRouter");
         const configServer = container.resolve<ConfigServer>("ConfigServer");
         const traderConfig: ITraderConfig = configServer.getConfig<ITraderConfig>(ConfigTypes.TRADER);
@@ -149,9 +149,9 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
             [
                 {
                     url: "/client/items/prices/6688d464bc40c867f60e7d7e",
-                    action: (url, info, sessionId, output) => 
+                    action: (url, info, sessionId, output) =>
                     {
-                        const trader = databaseServer.getTables().traders["6688d464bc40c867f60e7d7e"];
+                        const trader = databaseService.getTables().traders["6688d464bc40c867f60e7d7e"];
                         const assortItems = trader.assort.items;
                         if (!realismDetected)
                         {
@@ -170,7 +170,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
                     }
                 }
             ],
-            "aki"
+            "spt"
         );
     }
     /*
@@ -189,10 +189,10 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         const start = performance.now();
 
         // Resolve SPT classes we'll use
-        const databaseServer: DatabaseServer = container.resolve<DatabaseServer>("DatabaseServer");
+        const databaseService: DatabaseService = container.resolve<DatabaseService>("DatabaseService");
         const jsonUtil: JsonUtil = container.resolve<JsonUtil>("JsonUtil");
         const logger = container.resolve<ILogger>("WinstonLogger");
-        const quests = databaseServer.getTables().templates.quests;
+        const quests = databaseService.getTables().templates.quests;
 
 
         //Set local variables for assortJson
@@ -224,7 +224,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         const newAssort = assortJson
 
         // Get a reference to the database tables
-        const tables = databaseServer.getTables();
+        const tables = databaseService.getTables();
 
         // Add new trader to the trader dictionary in DatabaseServer       
         // Add quest assort
@@ -421,8 +421,8 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
 
     private moddedWeaponCompatibility()
     {
-        const databaseServer: DatabaseServer = container.resolve<DatabaseServer>("DatabaseServer");
-        const questTable = databaseServer.getTables().templates.quests;
+        const databaseService: DatabaseService = container.resolve<DatabaseService>("DatabaseService");
+        const questTable = databaseService.getTables().templates.quests;
         const quests = Object.values(questTable);
 
         let questType;
@@ -548,8 +548,8 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
     }
 
     private pushProductionUnlocks() {
-        const databaseServer: DatabaseServer = container.resolve<DatabaseServer>("DatabaseServer");
-        const productionTable = databaseServer.getTables().hideout.production;
+        const databaseService: DatabaseService = container.resolve<DatabaseService>("DatabaseService");
+        const productionTable = databaseService.getTables().hideout.production;
 
         for (const item of productionJson)
         {
