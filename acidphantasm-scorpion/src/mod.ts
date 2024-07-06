@@ -148,10 +148,10 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
             "ScorpionRefreshStock",
             [
                 {
-                    url: "/client/items/prices/Scorpion",
+                    url: "/client/items/prices/6688d464bc40c867f60e7d7e",
                     action: (url, info, sessionId, output) => 
                     {
-                        const trader = databaseServer.getTables().traders.Scorpion;
+                        const trader = databaseServer.getTables().traders["6688d464bc40c867f60e7d7e"];
                         const assortItems = trader.assort.items;
                         if (!realismDetected)
                         {
@@ -231,7 +231,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         // Add trader to locale file, ensures trader text shows properly on screen
         this.traderHelper.addTraderToDb(baseJson, tables, jsonUtil, newAssort);
         tables.traders[baseJson._id].questassort = questJson;
-        this.traderHelper.addTraderToLocales(baseJson, tables, baseJson.name, "Scorpion", baseJson.nickname, baseJson.location, "I'm sellin', what are you buyin'?");
+        this.traderHelper.addTraderToLocales(baseJson, tables, baseJson.name, baseJson._id, baseJson.nickname, baseJson.location, "I'm sellin', what are you buyin'?");
 
         this.logger.debug(`[${this.mod}] loaded... `);
 
@@ -432,70 +432,70 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         if (weaponCompatibility.AssaultRifles.length >= 1)
         {
             weaponType = weaponCompatibility.AssaultRifles;
-            questType = quests.filter(x => x._id.includes("Scorpion_10_1_"));
+            questType = quests.filter(x => x.QuestName.includes("Weapon Proficiency - ARs"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
         if (weaponCompatibility.SubmachineGuns.length >= 1)
         {
             weaponType = weaponCompatibility.SubmachineGuns;
-            questType = quests.filter(x => x._id.includes("Scorpion_10_2_"));
+            questType = quests.filter(x => x._id.includes("Weapon Proficiency - SMGs"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
         if (weaponCompatibility.Snipers.length >= 1)
         {
             weaponType = weaponCompatibility.Snipers;
-            questType = quests.filter(x => x._id.includes("Scorpion_10_3_"));
+            questType = quests.filter(x => x._id.includes("Weapon Proficiency - Snipers"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
         if (weaponCompatibility.Marksman.length >= 1)
         {
             weaponType = weaponCompatibility.Marksman;
-            questType = quests.filter(x => x._id.includes("Scorpion_10_4_"));
+            questType = quests.filter(x => x._id.includes("Weapon Proficiency - Marksman"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
         if (weaponCompatibility.Shotguns.length >= 1)
         {
             weaponType = weaponCompatibility.Shotguns;
-            questType = quests.filter(x => x._id.includes("Scorpion_10_5_"));
+            questType = quests.filter(x => x._id.includes("Weapon Proficiency - Shotguns"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
         if (weaponCompatibility.Pistols.length >= 1)
         {
             weaponType = weaponCompatibility.Pistols;
-            questType = quests.filter(x => x._id.includes("Scorpion_10_6_"));
+            questType = quests.filter(x => x._id.includes("Weapon Proficiency - Pistols"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
         if (weaponCompatibility.LargeMachineGuns.length >= 1)
         {
             weaponType = weaponCompatibility.LargeMachineGuns;
-            questType = quests.filter(x => x._id.includes("Scorpion_10_7_"));
+            questType = quests.filter(x => x._id.includes("Weapon Proficiency - LMGs"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
         if (weaponCompatibility.Carbines.length >= 1)
         {
             weaponType = weaponCompatibility.Carbines;
-            questType = quests.filter(x => x._id.includes("Scorpion_10_8_"));
+            questType = quests.filter(x => x._id.includes("Weapon Proficiency - Carbines"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
         if (weaponCompatibility.Melee.length >= 1)
         {
             weaponType = weaponCompatibility.Melee;
-            questType = quests.filter(x => x._id.includes("Scorpion_10_9_"));
+            questType = quests.filter(x => x._id.includes("Weapon Proficiency - Melee"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
         if (weaponCompatibility.Explosives.length >= 1)
         {
             weaponType = weaponCompatibility.Explosives;
-            questType = quests.filter(x => x._id.includes("Scorpion_10_10_"));
+            questType = quests.filter(x => x._id.includes("Weapon Proficiency - Explosives"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
@@ -525,7 +525,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         let eventCount = 0;
         for (const quest in quests)
         {
-            if (quests[quest].startMonth && quests[quest].startMonth > 0)
+            if (quests[quest]?.startMonth)
             {
                 const currentDate = new Date();
                 const questStartDate = new Date(currentDate.getFullYear(), quests[quest].startMonth - 1, quests[quest].startDay)
