@@ -66,6 +66,72 @@
     }
   },
   {
+    "ZoneId": "scorpion_gz_ambulance_0_marker",
+    "ZoneName": "scorpion_gz_ambulance_0_marker",
+    "ZoneLocation": "Sandbox_high",
+    "ZoneType": "placeitem",
+    "FlareType": "",
+    "Position": {
+      "X": "80.30547",
+      "Y": "24.07533",
+      "Z": "226.7141"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "0",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "3.25",
+      "Y": "2",
+      "Z": "7.25"
+    }
+  },
+  {
+    "ZoneId": "scorpion_gz_ambulance_1_marker",
+    "ZoneName": "scorpion_gz_ambulance_1_marker",
+    "ZoneLocation": "Sandbox_high",
+    "ZoneType": "placeitem",
+    "FlareType": "",
+    "Position": {
+      "X": "63.45448",
+      "Y": "24.07728",
+      "Z": "89.75129"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "20.5",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "3.25",
+      "Y": "2",
+      "Z": "6"
+    }
+  },
+  {
+    "ZoneId": "scorpion_gz_ambulance_2_marker",
+    "ZoneName": "scorpion_gz_ambulance_2_marker",
+    "ZoneLocation": "Sandbox_high",
+    "ZoneType": "placeitem",
+    "FlareType": "",
+    "Position": {
+      "X": "158.3343",
+      "Y": "24.1111",
+      "Z": "-88.77029"
+    },
+    "Rotation": {
+      "X": "0",
+      "Y": "168",
+      "Z": "0"
+    },
+    "Scale": {
+      "X": "6.25",
+      "Y": "2",
+      "Z": "3.25"
+    }
+  },
+  {
     "ZoneId": "scorpion_factory_exit_0",
     "ZoneName": "scorpion_factory_exit_0",
     "ZoneLocation": "factory4_night",

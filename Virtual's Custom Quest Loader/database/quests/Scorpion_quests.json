@@ -4119,7 +4119,8 @@
                 "dynamicLocale": false,
                 "id": "668858720221bbe5f306b2ec",
                 "target": [
-                  "Sandbox"
+                  "Sandbox",
+                  "Sandbox_high"
                 ]
               }
             ],
@@ -4306,7 +4307,8 @@
                 "dynamicLocale": false,
                 "id": "668858720221bbe5f306b2fc",
                 "target": [
-                  "Sandbox"
+                  "Sandbox",
+                  "Sandbox_high"
                 ]
               }
             ],
@@ -9692,7 +9694,8 @@
                 "dynamicLocale": false,
                 "id": "668858720221bbe5f306b46c",
                 "target": [
-                  "Sandbox"
+                  "Sandbox",
+                  "Sandbox_high"
                 ]
               },
               {
@@ -9807,7 +9810,8 @@
                   "Woods",
                   "RezervBase",
                   "TarkovStreets",
-                  "Sandbox"
+                  "Sandbox",
+                  "Sandbox_high"
                 ]
               }
             ],
@@ -9854,7 +9858,8 @@
                   "Woods",
                   "RezervBase",
                   "TarkovStreets",
-                  "Sandbox"
+                  "Sandbox",
+                  "Sandbox_high"
                 ]
               }
             ],
@@ -10442,7 +10447,8 @@
                   "Woods",
                   "RezervBase",
                   "TarkovStreets",
-                  "Sandbox"
+                  "Sandbox",
+                  "Sandbox_high"
                 ]
               }
             ],
@@ -12630,7 +12636,8 @@
                   "Woods",
                   "RezervBase",
                   "TarkovStreets",
-                  "Sandbox"
+                  "Sandbox",
+                  "Sandbox_high"
                 ]
               }
             ],
