@@ -14,5 +14,7 @@
     "randomizeStockAvailable": false,   // Randomizes the amount of items in stock per reset
     "outOfStockChance": 25,             // Chance for an item to be out of stock per reset
 
+    "eventQuestsAlwaysActive" : false,       // Change to true to make event quests always active
+
     "debugLogging": false               // Enables server console logging for above settings
 }

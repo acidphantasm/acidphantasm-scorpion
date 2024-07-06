@@ -10,26 +10,25 @@
 * If you have any questions please reach out to me in the SPT Discord - do not DM me
 *  
 */
-
 import { DependencyContainer, container } from "tsyringe";
 
 // SPT types
-import { IPreAkiLoadMod } from "@spt-aki/models/external/IPreAkiLoadMod";
-import { IPostDBLoadMod } from "@spt-aki/models/external/IPostDBLoadMod";
-import { ILogger } from "@spt-aki/models/spt/utils/ILogger";
-import { PreAkiModLoader } from "@spt-aki/loaders/PreAkiModLoader";
-import { DatabaseServer } from "@spt-aki/servers/DatabaseServer";
-import { ImageRouter } from "@spt-aki/routers/ImageRouter";
-import { ConfigServer } from "@spt-aki/servers/ConfigServer";
-import { ConfigTypes } from "@spt-aki/models/enums/ConfigTypes";
-import { ITraderConfig } from "@spt-aki/models/spt/config/ITraderConfig";
-import { IRagfairConfig } from "@spt-aki/models/spt/config/IRagfairConfig";
-import type {DynamicRouterModService} from "@spt-aki/services/mod/dynamicRouter/DynamicRouterModService";
-import { RandomUtil } from "@spt-aki/utils/RandomUtil";
+import { IPreSptLoadMod } from "@spt/models/external/IPreSptLoadMod";
+import { IPostDBLoadMod } from "@spt/models/external/IPostDBLoadMod";
+import { ILogger } from "@spt/models/spt/utils/ILogger";
+import { PreSptModLoader } from "@spt/loaders/PreSptModLoader";
+import { DatabaseService } from "@spt/services/DatabaseService";
+import { ImageRouter } from "@spt/routers/ImageRouter";
+import { ConfigServer } from "@spt/servers/ConfigServer";
+import { ConfigTypes } from "@spt/models/enums/ConfigTypes";
+import { ITraderConfig } from "@spt/models/spt/config/ITraderConfig";
+import { IRagfairConfig } from "@spt/models/spt/config/IRagfairConfig";
+import type {DynamicRouterModService} from "@spt/services/mod/dynamicRouter/DynamicRouterModService";
+import { RandomUtil } from "@spt/utils/RandomUtil";
 
 // JSON Imports
-import { JsonUtil } from "@spt-aki/utils/JsonUtil";
-import { VFS } from "@spt-aki/utils/VFS";
+import { JsonUtil } from "@spt/utils/JsonUtil";
+import { VFS } from "@spt/utils/VFS";
 import { jsonc } from "jsonc";
 import fs from "node:fs";
 import path from "node:path";
@@ -37,14 +36,13 @@ import path from "node:path";
 
 // Custom Imports
 import { TraderHelper } from "./traderHelpers";
-import { FluentAssortConstructor as FluentAssortCreator } from "./fluentTraderAssortCreator";
-import { Traders } from "@spt-aki/models/enums/Traders";
-import { HashUtil } from "@spt-aki/utils/HashUtil";
+import { Traders } from "@spt/models/enums/Traders";
 import baseJson = require("../db/base.json");
 import questJson = require("../db/questassort.json");
 import assortJson = require("../db/assort.json");
 import productionJson = require("../db/production.json");
 import weaponCompatibility = require("../config/ModdedWeaponCompatibility.json");
+import scorpionQuests = require("../../Virtual's Custom Quest Loader/database/quests/Scorpion_quests.json");
 
 let realismDetected: boolean;
 const loadMessage = {
@@ -79,12 +77,11 @@ const loadMessage = {
     28: "This loading message is sponsored by Raid: Shadow Legends"
 }
 
-class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
+class Scorpion implements IPreSptLoadMod, IPostDBLoadMod
 {
     private mod: string
     private logger: ILogger
-    private traderHelper: TraderHelper
-    private fluentAssortCreator: FluentAssortCreator    
+    private traderHelper: TraderHelper 
 
     private static vfs = container.resolve<VFS>("VFS");    
     private static config: Config = jsonc.parse(Scorpion.vfs.readFile(path.resolve(__dirname, "../config/config.jsonc")));
@@ -104,18 +101,17 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
      * Register Dynamic Router for Randomization Config
      * 
      */
-    public preAkiLoad(container: DependencyContainer): void
+    public preSptLoad(container: DependencyContainer): void
     {
         // Get a logger
         this.logger = container.resolve<ILogger>("WinstonLogger");
 
         // Get SPT code/data we need later
         const dynamicRouterModService = container.resolve<DynamicRouterModService>("DynamicRouterModService");     
-        const preAkiModLoader: PreAkiModLoader = container.resolve<PreAkiModLoader>("PreAkiModLoader");   
-        const databaseServer: DatabaseServer = container.resolve<DatabaseServer>("DatabaseServer");
+        const preSptModLoader: PreSptModLoader = container.resolve<PreSptModLoader>("PreSptModLoader");   
+        const databaseService: DatabaseService = container.resolve<DatabaseService>("DatabaseService");
         const imageRouter: ImageRouter = container.resolve<ImageRouter>("ImageRouter");
         const configServer = container.resolve<ConfigServer>("ConfigServer");
-        const hashUtil: HashUtil = container.resolve<HashUtil>("HashUtil");
         const traderConfig: ITraderConfig = configServer.getConfig<ITraderConfig>(ConfigTypes.TRADER);
         const ragfairConfig = configServer.getConfig<IRagfairConfig>(ConfigTypes.RAGFAIR);
         
@@ -132,8 +128,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         
         // Create helper class and use it to register our traders image/icon + set its stock refresh time
         this.traderHelper = new TraderHelper();
-        this.fluentAssortCreator = new FluentAssortCreator(hashUtil, this.logger);
-        this.traderHelper.registerProfileImage(baseJson, this.mod, preAkiModLoader, imageRouter, "scorpion.jpg");
+        this.traderHelper.registerProfileImage(baseJson, this.mod, preSptModLoader, imageRouter, "6688d464bc40c867f60e7d7e.jpg");
         this.traderHelper.setTraderUpdateTime(traderConfig, baseJson, minRefresh, maxRefresh);
 
         // Add trader to trader enum
@@ -153,10 +148,10 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
             "ScorpionRefreshStock",
             [
                 {
-                    url: "/client/items/prices/Scorpion",
-                    action: (url, info, sessionId, output) => 
+                    url: "/client/items/prices/6688d464bc40c867f60e7d7e",
+                    action: (url, info, sessionId, output) =>
                     {
-                        const trader = databaseServer.getTables().traders.Scorpion;
+                        const trader = databaseService.getTables().traders["6688d464bc40c867f60e7d7e"];
                         const assortItems = trader.assort.items;
                         if (!realismDetected)
                         {
@@ -175,7 +170,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
                     }
                 }
             ],
-            "aki"
+            "spt"
         );
     }
     /*
@@ -194,9 +189,11 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         const start = performance.now();
 
         // Resolve SPT classes we'll use
-        const databaseServer: DatabaseServer = container.resolve<DatabaseServer>("DatabaseServer");
+        const databaseService: DatabaseService = container.resolve<DatabaseService>("DatabaseService");
         const jsonUtil: JsonUtil = container.resolve<JsonUtil>("JsonUtil");
         const logger = container.resolve<ILogger>("WinstonLogger");
+        const quests = databaseService.getTables().templates.quests;
+
 
         //Set local variables for assortJson
         const assortPriceTable = assortJson.barter_scheme;
@@ -206,6 +203,9 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         //Run Modded Weapon Compatibility
         this.moddedWeaponCompatibility();
 
+        //Enable event quests
+        if (Scorpion.config.eventQuestsAlwaysActive) { this.eventQuestsAlwaysActive(quests,scorpionQuests);}
+
         //Check Mod Compatibility
         this.modDetection();
 
@@ -213,25 +213,25 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         this.pushProductionUnlocks();
 
         //Update Assort
-        if (Scorpion.config.priceMultiplier !== 1){this.setPriceMultiplier(assortPriceTable);}
-        if (Scorpion.config.randomizeBuyRestriction){this.randomizeBuyRestriction(assortItemTable);}
-        if (Scorpion.config.randomizeStockAvailable){this.randomizeStockAvailable(assortItemTable);}
-        if (Scorpion.config.unlimitedStock){this.setUnlimitedStock(assortItemTable);}
-        if (Scorpion.config.unlimitedBuyRestriction){this.setUnlimitedBuyRestriction(assortItemTable);}
-        if (Scorpion.config.removeLoyaltyRestriction){this.disableLoyaltyRestrictions(assortLoyaltyTable);}
+        if (Scorpion.config.priceMultiplier !== 1) {this.setPriceMultiplier(assortPriceTable);}
+        if (Scorpion.config.randomizeBuyRestriction) {this.randomizeBuyRestriction(assortItemTable);}
+        if (Scorpion.config.randomizeStockAvailable) {this.randomizeStockAvailable(assortItemTable);}
+        if (Scorpion.config.unlimitedStock) {this.setUnlimitedStock(assortItemTable);}
+        if (Scorpion.config.unlimitedBuyRestriction) {this.setUnlimitedBuyRestriction(assortItemTable);}
+        if (Scorpion.config.removeLoyaltyRestriction) {this.disableLoyaltyRestrictions(assortLoyaltyTable);}
 
         // Set local variable for assort to pass to traderHelper regardless of priceMultiplier config
         const newAssort = assortJson
 
         // Get a reference to the database tables
-        const tables = databaseServer.getTables();
+        const tables = databaseService.getTables();
 
         // Add new trader to the trader dictionary in DatabaseServer       
         // Add quest assort
         // Add trader to locale file, ensures trader text shows properly on screen
         this.traderHelper.addTraderToDb(baseJson, tables, jsonUtil, newAssort);
         tables.traders[baseJson._id].questassort = questJson;
-        this.traderHelper.addTraderToLocales(baseJson, tables, baseJson.name, "Scorpion", baseJson.nickname, baseJson.location, "I'm sellin', what are you buyin'?");
+        this.traderHelper.addTraderToLocales(baseJson, tables, baseJson.name, baseJson._id, baseJson.nickname, baseJson.location, "I'm sellin', what are you buyin'?");
 
         this.logger.debug(`[${this.mod}] loaded... `);
 
@@ -376,9 +376,9 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
 
     private modDetection()
     {
-        const preAkiModLoader: PreAkiModLoader = container.resolve<PreAkiModLoader>("PreAkiModLoader");
-        const vcqlCheck = preAkiModLoader.getImportedModsNames().includes("Virtual's Custom Quest Loader");
-        const realismCheck = preAkiModLoader.getImportedModsNames().includes("SPT-Realism");
+        const preSptModLoader: PreSptModLoader = container.resolve<PreSptModLoader>("PreSptModLoader");
+        const vcqlCheck = preSptModLoader.getImportedModsNames().includes("Virtual's Custom Quest Loader");
+        const realismCheck = preSptModLoader.getImportedModsNames().includes("SPT-Realism");
         const vcqlDllPath = path.resolve(__dirname, "../../../../BepInEx/plugins/VCQLQuestZones.dll");
         const heliCrashSamSWAT = path.resolve(__dirname, "../../../../BepInEx/plugins/SamSWAT.HeliCrash/SamSWAT.HeliCrash.dll");
         const heliCrashTyrian = path.resolve(__dirname, "../../../../BepInEx/plugins/SamSWAT.HeliCrash.TyrianReboot/SamSWAT.HeliCrash.TyrianReboot.dll");
@@ -421,8 +421,8 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
 
     private moddedWeaponCompatibility()
     {
-        const databaseServer: DatabaseServer = container.resolve<DatabaseServer>("DatabaseServer");
-        const questTable = databaseServer.getTables().templates.quests;
+        const databaseService: DatabaseService = container.resolve<DatabaseService>("DatabaseService");
+        const questTable = databaseService.getTables().templates.quests;
         const quests = Object.values(questTable);
 
         let questType;
@@ -432,97 +432,124 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         if (weaponCompatibility.AssaultRifles.length >= 1)
         {
             weaponType = weaponCompatibility.AssaultRifles;
-            questType = quests.filter(x => x._id.includes("Scorpion_10_1_"));
+            questType = quests.filter(x => x.QuestName.includes("Weapon Proficiency - ARs"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
         if (weaponCompatibility.SubmachineGuns.length >= 1)
         {
             weaponType = weaponCompatibility.SubmachineGuns;
-            questType = quests.filter(x => x._id.includes("Scorpion_10_2_"));
+            questType = quests.filter(x => x._id.includes("Weapon Proficiency - SMGs"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
         if (weaponCompatibility.Snipers.length >= 1)
         {
             weaponType = weaponCompatibility.Snipers;
-            questType = quests.filter(x => x._id.includes("Scorpion_10_3_"));
+            questType = quests.filter(x => x._id.includes("Weapon Proficiency - Snipers"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
         if (weaponCompatibility.Marksman.length >= 1)
         {
             weaponType = weaponCompatibility.Marksman;
-            questType = quests.filter(x => x._id.includes("Scorpion_10_4_"));
+            questType = quests.filter(x => x._id.includes("Weapon Proficiency - Marksman"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
         if (weaponCompatibility.Shotguns.length >= 1)
         {
             weaponType = weaponCompatibility.Shotguns;
-            questType = quests.filter(x => x._id.includes("Scorpion_10_5_"));
+            questType = quests.filter(x => x._id.includes("Weapon Proficiency - Shotguns"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
         if (weaponCompatibility.Pistols.length >= 1)
         {
             weaponType = weaponCompatibility.Pistols;
-            questType = quests.filter(x => x._id.includes("Scorpion_10_6_"));
+            questType = quests.filter(x => x._id.includes("Weapon Proficiency - Pistols"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
         if (weaponCompatibility.LargeMachineGuns.length >= 1)
         {
             weaponType = weaponCompatibility.LargeMachineGuns;
-            questType = quests.filter(x => x._id.includes("Scorpion_10_7_"));
+            questType = quests.filter(x => x._id.includes("Weapon Proficiency - LMGs"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
         if (weaponCompatibility.Carbines.length >= 1)
         {
             weaponType = weaponCompatibility.Carbines;
-            questType = quests.filter(x => x._id.includes("Scorpion_10_8_"));
+            questType = quests.filter(x => x._id.includes("Weapon Proficiency - Carbines"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
         if (weaponCompatibility.Melee.length >= 1)
         {
             weaponType = weaponCompatibility.Melee;
-            questType = quests.filter(x => x._id.includes("Scorpion_10_9_"));
+            questType = quests.filter(x => x._id.includes("Weapon Proficiency - Melee"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
         if (weaponCompatibility.Explosives.length >= 1)
         {
             weaponType = weaponCompatibility.Explosives;
-            questType = quests.filter(x => x._id.includes("Scorpion_10_10_"));
+            questType = quests.filter(x => x._id.includes("Weapon Proficiency - Explosives"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
         if (wasAdded) { this.logger.log(`[${this.mod}] Custom Weapons added to proficiency quests. Enjoy!`, "cyan"); }
     }
     
-    private moddedWeaponPushToArray(questType, weaponType)
+    private moddedWeaponPushToArray(questTable, weaponType)
     {        
-        for (const quest in questType)
+        for (const quest in questTable)
         {
-            for (const condition in questType[quest].conditions.AvailableForFinish)
+            for (const condition in questTable[quest].conditions.AvailableForFinish)
             {
-                for (const item in questType[quest].conditions.AvailableForFinish[condition].counter.conditions)
+                for (const item in questTable[quest].conditions.AvailableForFinish[condition].counter.conditions)
                 {
                     for (const id of weaponType)
                     {
-                        questType[quest].conditions.AvailableForFinish[condition].counter.conditions[item].weapon.push(id);
+                        questTable[quest].conditions.AvailableForFinish[condition].counter.conditions[item].weapon.push(id);
                     }
                 }
             }
-            if (Scorpion.config.debugLogging) { this.logger.log(`[${this.mod}] ${questType[quest].QuestName} --- Added ${weaponType}`, "cyan"); }
+            if (Scorpion.config.debugLogging) { this.logger.log(`[${this.mod}] ${questTable[quest].QuestName} --- Added ${weaponType}`, "cyan"); }
         }
+    }
+    
+    private eventQuestsAlwaysActive(questTable, quests)
+    {
+        let eventCount = 0;
+        for (const quest in quests)
+        {
+            if (quests[quest]?.startMonth)
+            {
+                const currentDate = new Date();
+                const questStartDate = new Date(currentDate.getFullYear(), quests[quest].startMonth - 1, quests[quest].startDay)
+                const questEndDate = new Date(currentDate.getFullYear(), quests[quest].endMonth - 1, quests[quest].endDay)
+                
+                if (currentDate < questStartDate || currentDate > questEndDate) 
+                {
+                    delete quests[quest].startMonth; 
+                    delete quests[quest].endMonth; 
+                    delete quests[quest].startDay; 
+                    delete quests[quest].endDay
+                    
+                    questTable[quest] = quests[quest];
+                    eventCount++;
+                }
+            }
+        }
+        this.logger.log(`[${this.mod}] Reactivated ${eventCount} Event Quests from Scorpion - Enjoy!`, "cyan");
+        this.logger.log(`[${this.mod}] !!! Remember to fix your config.jsonc when you update this mod to keep event quest progress !!!`, "cyan");
     }
 
     private pushProductionUnlocks() {
-        const databaseServer: DatabaseServer = container.resolve<DatabaseServer>("DatabaseServer");
-        const productionTable = databaseServer.getTables().hideout.production;
+        const databaseService: DatabaseService = container.resolve<DatabaseService>("DatabaseService");
+        const productionTable = databaseService.getTables().hideout.production;
 
         for (const item of productionJson)
         {
@@ -554,6 +581,7 @@ interface Config
     traderRefreshMin: number,
     traderRefreshMax: number,
     addTraderToFlea: boolean,
+    eventQuestsAlwaysActive: boolean,
     debugLogging: boolean,
 }
 

@@ -23,7 +23,7 @@
                 "type": "Item"
             },
             {
-                "questId": "Scorpion_9_5",
+                "questId": "66885a3d0221bbe5f306b6df",
                 "type": "QuestComplete"
             }
         ],
@@ -67,7 +67,7 @@
             "type": "Item"
         },
         {
-            "questId": "Scorpion_9_6",
+            "questId": "66885a3d0221bbe5f306b6e9",
             "type": "QuestComplete"
         }
     ],
