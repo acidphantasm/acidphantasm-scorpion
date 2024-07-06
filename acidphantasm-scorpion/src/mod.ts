@@ -13,10 +13,10 @@
 import { DependencyContainer, container } from "tsyringe";
 
 // SPT types
-import { IPreAkiLoadMod } from "@spt/models/external/IPreAkiLoadMod";
+import { IPreSptLoadMod } from "@spt/models/external/IPreSptLoadMod";
 import { IPostDBLoadMod } from "@spt/models/external/IPostDBLoadMod";
 import { ILogger } from "@spt/models/spt/utils/ILogger";
-import { PreAkiModLoader } from "@spt/loaders/PreAkiModLoader";
+import { PreSptModLoader } from "@spt/loaders/PreSptModLoader";
 import { DatabaseService } from "@spt/services/DatabaseService";
 import { ImageRouter } from "@spt/routers/ImageRouter";
 import { ConfigServer } from "@spt/servers/ConfigServer";
@@ -77,7 +77,7 @@ const loadMessage = {
     28: "This loading message is sponsored by Raid: Shadow Legends"
 }
 
-class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
+class Scorpion implements IPreSptLoadMod, IPostDBLoadMod
 {
     private mod: string
     private logger: ILogger
@@ -101,14 +101,14 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
      * Register Dynamic Router for Randomization Config
      * 
      */
-    public preAkiLoad(container: DependencyContainer): void
+    public preSptLoad(container: DependencyContainer): void
     {
         // Get a logger
         this.logger = container.resolve<ILogger>("WinstonLogger");
 
         // Get SPT code/data we need later
         const dynamicRouterModService = container.resolve<DynamicRouterModService>("DynamicRouterModService");     
-        const preAkiModLoader: PreAkiModLoader = container.resolve<PreAkiModLoader>("PreAkiModLoader");   
+        const preSptModLoader: PreSptModLoader = container.resolve<PreSptModLoader>("PreSptModLoader");   
         const databaseService: DatabaseService = container.resolve<DatabaseService>("DatabaseService");
         const imageRouter: ImageRouter = container.resolve<ImageRouter>("ImageRouter");
         const configServer = container.resolve<ConfigServer>("ConfigServer");
@@ -128,7 +128,7 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
         
         // Create helper class and use it to register our traders image/icon + set its stock refresh time
         this.traderHelper = new TraderHelper();
-        this.traderHelper.registerProfileImage(baseJson, this.mod, preAkiModLoader, imageRouter, "6688d464bc40c867f60e7d7e.jpg");
+        this.traderHelper.registerProfileImage(baseJson, this.mod, preSptModLoader, imageRouter, "6688d464bc40c867f60e7d7e.jpg");
         this.traderHelper.setTraderUpdateTime(traderConfig, baseJson, minRefresh, maxRefresh);
 
         // Add trader to trader enum
@@ -376,9 +376,9 @@ class Scorpion implements IPreAkiLoadMod, IPostDBLoadMod
 
     private modDetection()
     {
-        const preAkiModLoader: PreAkiModLoader = container.resolve<PreAkiModLoader>("PreAkiModLoader");
-        const vcqlCheck = preAkiModLoader.getImportedModsNames().includes("Virtual's Custom Quest Loader");
-        const realismCheck = preAkiModLoader.getImportedModsNames().includes("SPT-Realism");
+        const preSptModLoader: PreSptModLoader = container.resolve<PreSptModLoader>("PreSptModLoader");
+        const vcqlCheck = preSptModLoader.getImportedModsNames().includes("Virtual's Custom Quest Loader");
+        const realismCheck = preSptModLoader.getImportedModsNames().includes("SPT-Realism");
         const vcqlDllPath = path.resolve(__dirname, "../../../../BepInEx/plugins/VCQLQuestZones.dll");
         const heliCrashSamSWAT = path.resolve(__dirname, "../../../../BepInEx/plugins/SamSWAT.HeliCrash/SamSWAT.HeliCrash.dll");
         const heliCrashTyrian = path.resolve(__dirname, "../../../../BepInEx/plugins/SamSWAT.HeliCrash.TyrianReboot/SamSWAT.HeliCrash.TyrianReboot.dll");
