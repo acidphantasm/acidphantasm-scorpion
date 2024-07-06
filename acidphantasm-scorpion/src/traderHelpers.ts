@@ -1,10 +1,10 @@
-import { PreAkiModLoader } from "@spt-aki/loaders/PreAkiModLoader";
-import { ITraderBase, ITraderAssort } from "@spt-aki/models/eft/common/tables/ITrader";
-import { ITraderConfig, UpdateTime } from "@spt-aki/models/spt/config/ITraderConfig";
-import { IDatabaseTables } from "@spt-aki/models/spt/server/IDatabaseTables";
-import { ImageRouter } from "@spt-aki/routers/ImageRouter";
-import { JsonUtil } from "@spt-aki/utils/JsonUtil";
-import { ITraderUnlockRequirement } from "@spt-aki/models/eft/hideout/IQteData";
+import { PreAkiModLoader } from "@spt/loaders/PreAkiModLoader";
+import { ITraderBase, ITraderAssort } from "@spt/models/eft/common/tables/ITrader";
+import { ITraderConfig, UpdateTime } from "@spt/models/spt/config/ITraderConfig";
+import { IDatabaseTables } from "@spt/models/spt/server/IDatabaseTables";
+import { ImageRouter } from "@spt/routers/ImageRouter";
+import { JsonUtil } from "@spt/utils/JsonUtil";
+import { ITraderUnlockRequirement } from "@spt/models/eft/hideout/IQteData";
 import * as questAssort         from "../db/questassort.json";
 
 export class TraderHelper
@@ -20,7 +20,7 @@ export class TraderHelper
     {
         // Reference the mod "res" folder
         const imageFilepath = `./${preAkiModLoader.getModPath(modName)}res`;
- 
+
         // Register a route to point to the profile picture - remember to remove the .jpg from it
         imageRouter.addRoute(baseJson.avatar.replace(".jpg", ""), `${imageFilepath}/${traderImageName}`);
     }
