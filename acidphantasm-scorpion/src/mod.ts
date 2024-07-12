@@ -149,7 +149,7 @@ class Scorpion implements IPreSptLoadMod, IPostDBLoadMod
             [
                 {
                     url: "/client/items/prices/6688d464bc40c867f60e7d7e",
-                    action: (url, info, sessionId, output) =>
+                    action: async (url, info, sessionId, output) =>
                     {
                         const trader = databaseService.getTables().traders["6688d464bc40c867f60e7d7e"];
                         const assortItems = trader.assort.items;
