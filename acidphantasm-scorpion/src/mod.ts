@@ -439,63 +439,63 @@ class Scorpion implements IPreSptLoadMod, IPostDBLoadMod
         if (weaponCompatibility.SubmachineGuns.length >= 1)
         {
             weaponType = weaponCompatibility.SubmachineGuns;
-            questType = quests.filter(x => x._id.includes("Weapon Proficiency - SMGs"));
+            questType = quests.filter(x => x.QuestName.includes("Weapon Proficiency - SMGs"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
         if (weaponCompatibility.Snipers.length >= 1)
         {
             weaponType = weaponCompatibility.Snipers;
-            questType = quests.filter(x => x._id.includes("Weapon Proficiency - Snipers"));
+            questType = quests.filter(x => x.QuestName.includes("Weapon Proficiency - Snipers"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
         if (weaponCompatibility.Marksman.length >= 1)
         {
             weaponType = weaponCompatibility.Marksman;
-            questType = quests.filter(x => x._id.includes("Weapon Proficiency - Marksman"));
+            questType = quests.filter(x => x.QuestName.includes("Weapon Proficiency - Marksman"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
         if (weaponCompatibility.Shotguns.length >= 1)
         {
             weaponType = weaponCompatibility.Shotguns;
-            questType = quests.filter(x => x._id.includes("Weapon Proficiency - Shotguns"));
+            questType = quests.filter(x => x.QuestName.includes("Weapon Proficiency - Shotguns"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
         if (weaponCompatibility.Pistols.length >= 1)
         {
             weaponType = weaponCompatibility.Pistols;
-            questType = quests.filter(x => x._id.includes("Weapon Proficiency - Pistols"));
+            questType = quests.filter(x => x.QuestName.includes("Weapon Proficiency - Pistols"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
         if (weaponCompatibility.LargeMachineGuns.length >= 1)
         {
             weaponType = weaponCompatibility.LargeMachineGuns;
-            questType = quests.filter(x => x._id.includes("Weapon Proficiency - LMGs"));
+            questType = quests.filter(x => x.QuestName.includes("Weapon Proficiency - LMGs"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
         if (weaponCompatibility.Carbines.length >= 1)
         {
             weaponType = weaponCompatibility.Carbines;
-            questType = quests.filter(x => x._id.includes("Weapon Proficiency - Carbines"));
+            questType = quests.filter(x => x.QuestName.includes("Weapon Proficiency - Carbines"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
         if (weaponCompatibility.Melee.length >= 1)
         {
             weaponType = weaponCompatibility.Melee;
-            questType = quests.filter(x => x._id.includes("Weapon Proficiency - Melee"));
+            questType = quests.filter(x => x.QuestName.includes("Weapon Proficiency - Melee"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
         if (weaponCompatibility.Explosives.length >= 1)
         {
             weaponType = weaponCompatibility.Explosives;
-            questType = quests.filter(x => x._id.includes("Weapon Proficiency - Explosives"));
+            questType = quests.filter(x => x.QuestName.includes("Weapon Proficiency - Explosives"));
             wasAdded = true;
             this.moddedWeaponPushToArray(questType, weaponType);
         }
