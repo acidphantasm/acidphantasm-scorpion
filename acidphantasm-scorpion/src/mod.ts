@@ -549,11 +549,11 @@ class Scorpion implements IPreSptLoadMod, IPostDBLoadMod
 
     private pushProductionUnlocks() {
         const databaseService: DatabaseService = container.resolve<DatabaseService>("DatabaseService");
-        const productionTable = databaseService.getTables().hideout.production;
+        const recipesTable = databaseService.getTables().hideout.production.recipes;
 
         for (const item of productionJson)
         {
-            productionTable.push(item);
+            recipesTable.push(item);
         }
     }
 

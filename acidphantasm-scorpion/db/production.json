@@ -34,7 +34,8 @@
         "continuous": false,
         "count": 1,
         "productionLimitCount": 0,
-        "isEncoded": false
+        "isEncoded": false,
+        "isCodeProduction": false
     },
     {
     "_id": "6635a60afe3ddd40c508c667",
@@ -78,6 +79,7 @@
     "continuous": false,
     "count": 1,
     "productionLimitCount": 0,
-    "isEncoded": false
+    "isEncoded": false,
+    "isCodeProduction": false
     }
 ]
