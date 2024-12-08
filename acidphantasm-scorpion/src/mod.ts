@@ -295,7 +295,7 @@ class Scorpion implements IPreSptLoadMod, IPostDBLoadMod
                 }
                 const itemID = assortItemTable[item]._id;
                 const oldRestriction = assortItemTable[item].upd.BuyRestrictionMax;
-                const newRestriction = Math.round(randomUtil.randInt((oldRestriction * 0.5), oldRestriction));
+                const newRestriction = randomUtil.randInt(Math.round(oldRestriction * 0.5), oldRestriction);
                 
                 assortItemTable[item].upd.BuyRestrictionMax = newRestriction;
     
@@ -328,7 +328,7 @@ class Scorpion implements IPreSptLoadMod, IPostDBLoadMod
                 {
                     const itemID = assortItemTable[item]._id;
                     const originalStock = assortItemTable[item].upd.StackObjectsCount;
-                    const newStock = randomUtil.randInt(2, (originalStock*0.5));
+                    const newStock = randomUtil.randInt(3, Math.round(originalStock*0.75));
                     assortItemTable[item].upd.StackObjectsCount = newStock;
 
                     if (Scorpion.config.debugLogging) {this.logger.log(`[${this.mod}] Item: [${itemID}] Stock Count changed to: [${newStock}]`, "cyan");}
