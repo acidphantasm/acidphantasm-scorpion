@@ -289,13 +289,13 @@ class Scorpion implements IPreSptLoadMod, IPostDBLoadMod
         {
             for (const item in assortItemTable)
             {
-                if (assortItemTable[item].parentId !== "hideout")
+                if (assortItemTable[item].parentId !== "hideout" || assortItemTable[item].upd.BuyRestrictionMax <= 3)
                 {
                     continue // Skip setting count, it's a weapon attachment or armour plate
                 }
                 const itemID = assortItemTable[item]._id;
                 const oldRestriction = assortItemTable[item].upd.BuyRestrictionMax;
-                const newRestriction = randomUtil.randInt(Math.round(oldRestriction * 0.5), oldRestriction);
+                const newRestriction = randomUtil.randInt(4, oldRestriction + 40);
                 
                 assortItemTable[item].upd.BuyRestrictionMax = newRestriction;
     
@@ -326,12 +326,15 @@ class Scorpion implements IPreSptLoadMod, IPostDBLoadMod
                 } 
                 else
                 {
+                    if (assortItemTable[item].upd.StackObjectsCount <= 10) assortItemTable[item].upd.StackObjectsCount = 250
+
                     const itemID = assortItemTable[item]._id;
                     const originalStock = assortItemTable[item].upd.StackObjectsCount;
                     const newStock = randomUtil.randInt(3, Math.round(originalStock*0.75));
-                    assortItemTable[item].upd.StackObjectsCount = newStock;
 
-                    if (Scorpion.config.debugLogging) {this.logger.log(`[${this.mod}] Item: [${itemID}] Stock Count changed to: [${newStock}]`, "cyan");}
+                    if (Scorpion.config.debugLogging) {this.logger.log(`[${this.mod}] Item: [${itemID}] Original Count: ${originalStock} | Stock Count changed to: [${newStock}]`, "cyan");}
+
+                    assortItemTable[item].upd.StackObjectsCount = newStock;
                 }
             }
         }
