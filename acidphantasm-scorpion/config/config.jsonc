@@ -1,5 +1,5 @@
 {
-    "priceMultiplier": 1,               // Multiplies the prices by the number set here. 
+    "priceMultiplier": 1.25,               // Multiplies the prices by the number set here. 
 
     "traderRefreshMin": 1800,           // Minimum Refresh Timer for the trader (in seconds)
     "traderRefreshMax": 3600,           // Maximum Refresh Timer for the trader (in seconds)
