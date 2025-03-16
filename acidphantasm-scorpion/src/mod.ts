@@ -28,7 +28,7 @@ import { RandomUtil } from "@spt/utils/RandomUtil";
 
 // JSON Imports
 import { JsonUtil } from "@spt/utils/JsonUtil";
-import { VFS } from "@spt/utils/VFS";
+import { FileSystemSync } from "@spt/utils/FileSystemSync";
 import { jsonc } from "jsonc";
 import fs from "node:fs";
 import path from "node:path";
@@ -83,8 +83,8 @@ class Scorpion implements IPreSptLoadMod, IPostDBLoadMod
     private logger: ILogger
     private traderHelper: TraderHelper 
 
-    private static vfs = container.resolve<VFS>("VFS");    
-    private static config: Config = jsonc.parse(Scorpion.vfs.readFile(path.resolve(__dirname, "../config/config.jsonc")));
+    private static fileSystemSync = container.resolve<FileSystemSync>("FileSystemSync");    
+    private static config: Config = jsonc.parse(Scorpion.fileSystemSync.read(path.resolve(__dirname, "../config/config.jsonc")));
 
     // Set the name of mod for logging purposes
     constructor() 

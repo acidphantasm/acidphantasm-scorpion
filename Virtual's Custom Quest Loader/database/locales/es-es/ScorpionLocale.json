@@ -472,7 +472,7 @@
     "66885a3d0221bbe5f306b613": "Handover the custom MCX",
     "66885a3d0221bbe5f306b612 name": "Weapon Acquisition IV",
     "66885a3d0221bbe5f306b612 description": "Ooh, just got a call requesting a specialized SIG MCX .300 assault rifle, built for close quarters. I love this thing, too bad I need you to build you. I'd say you can take it for a spin but the guy wants it in pristine showroom condition. \n\nRequirements:\n  Ergonomics >= 62\n  Sighting Range >= 500\n Recoil Sum <= 312\n  Magazine Size <= 20\n  Durability == 100\n  Weight <= 3.6 kg\n  Barrel: 171mm\n  Silencer Required",
-    "66885a3d0221bbe5f306b612 startedMessageText": "I need to get a couple of these for myself, honestly. \n\nRequirements:\n SIG MCX SPEAR 6.8x51 assault rifle\n  Ergonomics >= 62\n  Sighting Range >= 500\n Recoil Sum <= 312\n  Magazine Size <= 20\n  Durability == 100\n  Weight <= 3.6 kg\n  Barrel: 171mm\n  Silencer Required",
+    "66885a3d0221bbe5f306b612 startedMessageText": "I need to get a couple of these for myself, honestly. \n\nRequirements:\n SIG MCX .300 assault rifle\n  Ergonomics >= 62\n  Sighting Range >= 500\n Recoil Sum <= 312\n  Magazine Size <= 20\n  Durability == 100\n  Weight <= 3.6 kg\n  Barrel: 171mm\n  Silencer Required",
     "66885a3d0221bbe5f306b612 successMessagetext": "I'm sad to see this one go, but the client is paying good for it.",
     "66885a3d0221bbe5f306b61f": "Handover the custom MCX SPEAR",
     "66885a3d0221bbe5f306b61e name": "Weapon Acquisition V",

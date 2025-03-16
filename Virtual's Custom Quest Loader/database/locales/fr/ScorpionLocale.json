@@ -472,7 +472,7 @@
     "66885a3d0221bbe5f306b613": "Remettre le MCX personnalisé",
     "66885a3d0221bbe5f306b612 name": "Acquisition d'arme IV",
     "66885a3d0221bbe5f306b612 description": "Je viens de recevoir un appel demandant un fusil d'assaut SIG MCX .300 spécialisé, conçu pour les combats rapprochés. J'adore ce truc, dommage que j'aie besoin de vous pour le construire. Je dirais bien que vous pouvez l'essayer, mais le gars veut qu'il soit dans un état impeccable. \n\nExigences :\n  Ergonomie >= 62\n  Distance de visée >= 500\n  Recul total <= 312\n  Taille du chargeur <= 20\n  Durabilité == 100\n  Poids <= 3.6 kg\n  Canon : 171mm\n  Silencieux requis",
-    "66885a3d0221bbe5f306b612 startedMessageText": "Il faut que je m'en procure quelques-uns pour moi, honnêtement. \n\nExigences :\n Fusil d'assaut SIG MCX SPEAR 6.8x51\n  Ergonomie >= 62\n  Distance de visée >= 500\n  Recul total <= 312\n  Taille du chargeur <= 20\n  Durabilité == 100\n  Poids <= 3.6 kg\n  Canon : 171mm\n  Silencieux requis",
+    "66885a3d0221bbe5f306b612 startedMessageText": "Il faut que je m'en procure quelques-uns pour moi, honnêtement. \n\nExigences :\n Fusil d'assaut SIG MCX .300\n  Ergonomie >= 62\n  Distance de visée >= 500\n  Recul total <= 312\n  Taille du chargeur <= 20\n  Durabilité == 100\n  Poids <= 3.6 kg\n  Canon : 171mm\n  Silencieux requis",
     "66885a3d0221bbe5f306b612 successMessagetext": "Je suis triste de voir celui-ci partir, mais le client paie bien pour cela.",
     "66885a3d0221bbe5f306b61f": "Remettre le MCX SPEAR personnalisé",
     "66885a3d0221bbe5f306b61e name": "Acquisition d'arme V",
