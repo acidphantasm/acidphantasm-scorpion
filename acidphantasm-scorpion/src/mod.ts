@@ -43,6 +43,7 @@ import assortJson = require("../db/assort.json");
 import productionJson = require("../db/production.json");
 import weaponCompatibility = require("../config/ModdedWeaponCompatibility.json");
 import scorpionQuests = require("../../Virtual's Custom Quest Loader/database/quests/Scorpion_quests.json");
+import { RagfairOfferGenerator } from "@spt/generators/RagfairOfferGenerator";
 
 let realismDetected: boolean;
 const loadMessage = {
@@ -110,6 +111,7 @@ class Scorpion implements IPreSptLoadMod, IPostDBLoadMod
         const dynamicRouterModService = container.resolve<DynamicRouterModService>("DynamicRouterModService");     
         const preSptModLoader: PreSptModLoader = container.resolve<PreSptModLoader>("PreSptModLoader");   
         const databaseService: DatabaseService = container.resolve<DatabaseService>("DatabaseService");
+        const ragfairOfferGenerator = container.resolve<RagfairOfferGenerator>("RagfairOfferGenerator");
         const imageRouter: ImageRouter = container.resolve<ImageRouter>("ImageRouter");
         const configServer = container.resolve<ConfigServer>("ConfigServer");
         const traderConfig: ITraderConfig = configServer.getConfig<ITraderConfig>(ConfigTypes.TRADER);
@@ -128,7 +130,18 @@ class Scorpion implements IPreSptLoadMod, IPostDBLoadMod
         
         // Create helper class and use it to register our traders image/icon + set its stock refresh time
         this.traderHelper = new TraderHelper();
-        this.traderHelper.registerProfileImage(baseJson, this.mod, preSptModLoader, imageRouter, "6688d464bc40c867f60e7d7e.jpg");
+        const currentDate = new Date();
+        const month = currentDate.getMonth();
+        const day = currentDate.getDate();
+        if (month == 3 && day == 1) 
+        {
+            baseJson.nickname = "ScorpionXYZ"
+            baseJson.name = "ScorpionXYZ"
+            baseJson.avatar = "/files/trader/avatar/6688d464bc40c867f60e7d7e_aprilfools.jpg"
+            this.traderHelper.registerProfileImage(baseJson, this.mod, preSptModLoader, imageRouter, "6688d464bc40c867f60e7d7e_aprilfools.jpg");
+        }
+        else this.traderHelper.registerProfileImage(baseJson, this.mod, preSptModLoader, imageRouter, "6688d464bc40c867f60e7d7e.jpg");
+        
         this.traderHelper.setTraderUpdateTime(traderConfig, baseJson, minRefresh, maxRefresh);
 
         // Add trader to trader enum
@@ -153,18 +166,23 @@ class Scorpion implements IPreSptLoadMod, IPostDBLoadMod
                     {
                         const trader = databaseService.getTables().traders["6688d464bc40c867f60e7d7e"];
                         const assortItems = trader.assort.items;
+                        let updateFleaOffers = false;
                         if (!realismDetected)
                         {
                             if (Scorpion.config.randomizeBuyRestriction)
                             {
                                 if (Scorpion.config.debugLogging) {this.logger.info(`[${this.mod}] Refreshing Scorpion Stock with Randomized Buy Restrictions.`);}
+                                updateFleaOffers = true;
                                 this.randomizeBuyRestriction(assortItems);
                             }
                             if (Scorpion.config.randomizeStockAvailable)
                             {
                                 if (Scorpion.config.debugLogging) {this.logger.info(`[${this.mod}] Refreshing Scorpion Stock with Randomized Stock Availability.`);}
+                                updateFleaOffers = true;
                                 this.randomizeStockAvailable(assortItems);
                             }
+
+                            if (updateFleaOffers) ragfairOfferGenerator.generateFleaOffersForTrader("6688d464bc40c867f60e7d7e");
                         }
                         return output;
                     }

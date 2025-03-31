@@ -8,3 +8,7 @@ build.mjs
 package-lock.json
 tsconfig.json
 replacer.coffee
+acidphantasm-scorpion/aprilfoolsimage.xcf
+acidphantasm-scorpion/node_modules
+acidphantasm-scorpion/types
+acidphantasm-scorpion/dist
